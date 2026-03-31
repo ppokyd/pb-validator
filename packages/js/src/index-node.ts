@@ -17,7 +17,8 @@ export { createClient } from "./core.js";
  * The public API is identical to the ESM index.ts.
  */
 function schemasRoot(): string {
-  return join(__dirname, "..", "schemas");
+  // CJS output lives in dist/cjs/, so climb two levels to reach schemas/
+  return join(__dirname, "..", "..", "schemas");
 }
 
 const _client = createClient({
