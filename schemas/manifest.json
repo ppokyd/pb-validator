@@ -1,0 +1,23 @@
+{
+  "version": "0.1.0",
+  "sources": {
+    "prebid_github_io": {
+      "repo": "https://github.com/prebid/prebid.github.io",
+      "path": "dev-docs",
+      "commit": null,
+      "note": "Pin commit when generating schemas from docs."
+    },
+    "prebid_server": {
+      "repo": "https://github.com/prebid/prebid-server",
+      "path": "adapters",
+      "commit": null,
+      "note": "Pin commit when generating PBS-oriented schemas."
+    }
+  },
+  "bidders": {
+    "appnexus": {
+      "pbjs": { "schema": "pbjs/appnexus.json" },
+      "pbs": null
+    }
+  }
+}
