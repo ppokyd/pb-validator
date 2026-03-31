@@ -1,0 +1,8 @@
+{
+  "$id": "https://prebid.org/schemas/pbjs/saambaa.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": true,
+  "description": "Generated from prebid.github.io dev-docs/bidders (saambaa.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "title": "Saambaa bidder params (Prebid.js)",
+  "type": "object"
+}

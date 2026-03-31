@@ -4,8 +4,8 @@
     "prebid_github_io": {
       "repo": "https://github.com/prebid/prebid.github.io",
       "path": "dev-docs",
-      "commit": null,
-      "note": "Pin commit when generating schemas from docs."
+      "commit": "e2559b3ae8367f0a851736c18ee18965806e803a",
+      "note": "Updated by tools/sync-prebid-docs from dev-docs/bidders."
     },
     "prebid_server": {
       "repo": "https://github.com/prebid/prebid-server",
@@ -15,12 +15,4354 @@
     }
   },
   "bidders": {
+    "1accord": {
+      "pbjs": {
+        "schema": "pbjs/1accord.json"
+      },
+      "pbs": null
+    },
+    "33across": {
+      "pbjs": {
+        "schema": "pbjs/33across.json"
+      },
+      "pbs": null
+    },
+    "360playvid": {
+      "pbjs": {
+        "schema": "pbjs/360playvid.json"
+      },
+      "pbs": null
+    },
+    "9dotsmedia": {
+      "pbjs": {
+        "schema": "pbjs/9dotsmedia.json"
+      },
+      "pbs": null
+    },
+    "AdView": {
+      "pbjs": {
+        "schema": "pbjs/AdView.json"
+      },
+      "pbs": null
+    },
+    "CodeFuel": {
+      "pbjs": {
+        "schema": "pbjs/CodeFuel.json"
+      },
+      "pbs": null
+    },
+    "ProgrammaticX": {
+      "pbjs": {
+        "schema": "pbjs/ProgrammaticX.json"
+      },
+      "pbs": null
+    },
+    "a1media": {
+      "pbjs": {
+        "schema": "pbjs/a1media.json"
+      },
+      "pbs": null
+    },
+    "a4g": {
+      "pbjs": {
+        "schema": "pbjs/a4g.json"
+      },
+      "pbs": null
+    },
+    "aax": {
+      "pbjs": {
+        "schema": "pbjs/aax.json"
+      },
+      "pbs": null
+    },
+    "ablida": {
+      "pbjs": {
+        "schema": "pbjs/ablida.json"
+      },
+      "pbs": null
+    },
+    "aceex": {
+      "pbjs": {
+        "schema": "pbjs/aceex.json"
+      },
+      "pbs": null
+    },
+    "acuityads": {
+      "pbjs": {
+        "schema": "pbjs/acuityads.json"
+      },
+      "pbs": null
+    },
+    "ad2iction": {
+      "pbjs": {
+        "schema": "pbjs/ad2iction.json"
+      },
+      "pbs": null
+    },
+    "adWMG": {
+      "pbjs": {
+        "schema": "pbjs/adWMG.json"
+      },
+      "pbs": null
+    },
+    "adagio": {
+      "pbjs": {
+        "schema": "pbjs/adagio.json"
+      },
+      "pbs": null
+    },
+    "adasta": {
+      "pbjs": {
+        "schema": "pbjs/adasta.json"
+      },
+      "pbs": null
+    },
+    "adastra": {
+      "pbjs": {
+        "schema": "pbjs/adastra.json"
+      },
+      "pbs": null
+    },
+    "adbite": {
+      "pbjs": {
+        "schema": "pbjs/adbite.json"
+      },
+      "pbs": null
+    },
+    "adblender": {
+      "pbjs": {
+        "schema": "pbjs/adblender.json"
+      },
+      "pbs": null
+    },
+    "adbookpsp": {
+      "pbjs": {
+        "schema": "pbjs/adbookpsp.json"
+      },
+      "pbs": null
+    },
+    "adbro": {
+      "pbjs": {
+        "schema": "pbjs/adbro.json"
+      },
+      "pbs": null
+    },
+    "adbutler": {
+      "pbjs": {
+        "schema": "pbjs/adbutler.json"
+      },
+      "pbs": null
+    },
+    "adcluster": {
+      "pbjs": {
+        "schema": "pbjs/adcluster.json"
+      },
+      "pbs": null
+    },
+    "addefend": {
+      "pbjs": {
+        "schema": "pbjs/addefend.json"
+      },
+      "pbs": null
+    },
+    "addigi": {
+      "pbjs": {
+        "schema": "pbjs/addigi.json"
+      },
+      "pbs": null
+    },
+    "adelement": {
+      "pbjs": {
+        "schema": "pbjs/adelement.json"
+      },
+      "pbs": null
+    },
+    "adf": {
+      "pbjs": {
+        "schema": "pbjs/adf.json"
+      },
+      "pbs": null
+    },
+    "adfusion": {
+      "pbjs": {
+        "schema": "pbjs/adfusion.json"
+      },
+      "pbs": null
+    },
+    "adgeneration": {
+      "pbjs": {
+        "schema": "pbjs/adgeneration.json"
+      },
+      "pbs": null
+    },
+    "adgrid": {
+      "pbjs": {
+        "schema": "pbjs/adgrid.json"
+      },
+      "pbs": null
+    },
+    "adhash": {
+      "pbjs": {
+        "schema": "pbjs/adhash.json"
+      },
+      "pbs": null
+    },
+    "adhese": {
+      "pbjs": {
+        "schema": "pbjs/adhese.json"
+      },
+      "pbs": null
+    },
+    "adinify": {
+      "pbjs": {
+        "schema": "pbjs/adinify.json"
+      },
+      "pbs": null
+    },
+    "adipolo": {
+      "pbjs": {
+        "schema": "pbjs/adipolo.json"
+      },
+      "pbs": null
+    },
+    "adkernel": {
+      "pbjs": {
+        "schema": "pbjs/adkernel.json"
+      },
+      "pbs": null
+    },
+    "adkernelAdn": {
+      "pbjs": {
+        "schema": "pbjs/adkernelAdn.json"
+      },
+      "pbs": null
+    },
+    "adklip": {
+      "pbjs": {
+        "schema": "pbjs/adklip.json"
+      },
+      "pbs": null
+    },
+    "adliveconnect": {
+      "pbjs": {
+        "schema": "pbjs/adliveconnect.json"
+      },
+      "pbs": null
+    },
+    "adliveplus": {
+      "pbjs": {
+        "schema": "pbjs/adliveplus.json"
+      },
+      "pbs": null
+    },
+    "adlivetech": {
+      "pbjs": {
+        "schema": "pbjs/adlivetech.json"
+      },
+      "pbs": null
+    },
+    "adman": {
+      "pbjs": {
+        "schema": "pbjs/adman.json"
+      },
+      "pbs": null
+    },
+    "admaru": {
+      "pbjs": {
+        "schema": "pbjs/admaru.json"
+      },
+      "pbs": null
+    },
+    "admatic": {
+      "pbjs": {
+        "schema": "pbjs/admatic.json"
+      },
+      "pbs": null
+    },
+    "admaticde": {
+      "pbjs": {
+        "schema": "pbjs/admaticde.json"
+      },
+      "pbs": null
+    },
+    "admedia": {
+      "pbjs": {
+        "schema": "pbjs/admedia.json"
+      },
+      "pbs": null
+    },
+    "admixer": {
+      "pbjs": {
+        "schema": "pbjs/admixer.json"
+      },
+      "pbs": null
+    },
+    "admixeradx": {
+      "pbjs": {
+        "schema": "pbjs/admixeradx.json"
+      },
+      "pbs": null
+    },
+    "adnimation": {
+      "pbjs": {
+        "schema": "pbjs/adnimation.json"
+      },
+      "pbs": null
+    },
+    "adnow": {
+      "pbjs": {
+        "schema": "pbjs/adnow.json"
+      },
+      "pbs": null
+    },
+    "adnuntius": {
+      "pbjs": {
+        "schema": "pbjs/adnuntius.json"
+      },
+      "pbs": null
+    },
+    "adocean": {
+      "pbjs": {
+        "schema": "pbjs/adocean.json"
+      },
+      "pbs": null
+    },
+    "adomega": {
+      "pbjs": {
+        "schema": "pbjs/adomega.json"
+      },
+      "pbs": null
+    },
+    "adoppler": {
+      "pbjs": {
+        "schema": "pbjs/adoppler.json"
+      },
+      "pbs": null
+    },
+    "adot": {
+      "pbjs": {
+        "schema": "pbjs/adot.json"
+      },
+      "pbs": null
+    },
+    "adpartner": {
+      "pbjs": {
+        "schema": "pbjs/adpartner.json"
+      },
+      "pbs": null
+    },
+    "adplus": {
+      "pbjs": {
+        "schema": "pbjs/adplus.json"
+      },
+      "pbs": null
+    },
+    "adpluto": {
+      "pbjs": {
+        "schema": "pbjs/adpluto.json"
+      },
+      "pbs": null
+    },
+    "adpluto_dsp": {
+      "pbjs": {
+        "schema": "pbjs/adpluto_dsp.json"
+      },
+      "pbs": null
+    },
+    "adpone": {
+      "pbjs": {
+        "schema": "pbjs/adpone.json"
+      },
+      "pbs": null
+    },
+    "adport": {
+      "pbjs": {
+        "schema": "pbjs/adport.json"
+      },
+      "pbs": null
+    },
+    "adprime": {
+      "pbjs": {
+        "schema": "pbjs/adprime.json"
+      },
+      "pbs": null
+    },
+    "adquery": {
+      "pbjs": {
+        "schema": "pbjs/adquery.json"
+      },
+      "pbs": null
+    },
+    "adrelevantis": {
+      "pbjs": {
+        "schema": "pbjs/adrelevantis.json"
+      },
+      "pbs": null
+    },
+    "adrino": {
+      "pbjs": {
+        "schema": "pbjs/adrino.json"
+      },
+      "pbs": null
+    },
+    "adriver": {
+      "pbjs": {
+        "schema": "pbjs/adriver.json"
+      },
+      "pbs": null
+    },
+    "adrubi": {
+      "pbjs": {
+        "schema": "pbjs/adrubi.json"
+      },
+      "pbs": null
+    },
+    "ads_interactive": {
+      "pbjs": {
+        "schema": "pbjs/ads_interactive.json"
+      },
+      "pbs": null
+    },
+    "adsinteractive": {
+      "pbjs": {
+        "schema": "pbjs/adsinteractive.json"
+      },
+      "pbs": null
+    },
+    "adsolut": {
+      "pbjs": {
+        "schema": "pbjs/adsolut.json"
+      },
+      "pbs": null
+    },
+    "adsparc": {
+      "pbjs": {
+        "schema": "pbjs/adsparc.json"
+      },
+      "pbs": null
+    },
+    "adspirit": {
+      "pbjs": {
+        "schema": "pbjs/adspirit.json"
+      },
+      "pbs": null
+    },
+    "adstir": {
+      "pbjs": {
+        "schema": "pbjs/adstir.json"
+      },
+      "pbs": null
+    },
+    "adsyield": {
+      "pbjs": {
+        "schema": "pbjs/adsyield.json"
+      },
+      "pbs": null
+    },
+    "adt": {
+      "pbjs": {
+        "schema": "pbjs/adt.json"
+      },
+      "pbs": null
+    },
+    "adtarget": {
+      "pbjs": {
+        "schema": "pbjs/adtarget.json"
+      },
+      "pbs": null
+    },
+    "adtelligent": {
+      "pbjs": {
+        "schema": "pbjs/adtelligent.json"
+      },
+      "pbs": null
+    },
+    "adtg_org": {
+      "pbjs": {
+        "schema": "pbjs/adtg_org.json"
+      },
+      "pbs": null
+    },
+    "adtonos": {
+      "pbjs": {
+        "schema": "pbjs/adtonos.json"
+      },
+      "pbs": null
+    },
+    "adtrgtme": {
+      "pbjs": {
+        "schema": "pbjs/adtrgtme.json"
+      },
+      "pbs": null
+    },
+    "adtrue": {
+      "pbjs": {
+        "schema": "pbjs/adtrue.json"
+      },
+      "pbs": null
+    },
+    "aduptech": {
+      "pbjs": {
+        "schema": "pbjs/aduptech.json"
+      },
+      "pbs": null
+    },
+    "advangelists": {
+      "pbjs": {
+        "schema": "pbjs/advangelists.json"
+      },
+      "pbs": null
+    },
+    "advertising": {
+      "pbjs": {
+        "schema": "pbjs/advertising.json"
+      },
+      "pbs": null
+    },
+    "adverxo": {
+      "pbjs": {
+        "schema": "pbjs/adverxo.json"
+      },
+      "pbs": null
+    },
+    "adxcg": {
+      "pbjs": {
+        "schema": "pbjs/adxcg.json"
+      },
+      "pbs": null
+    },
+    "adyoulike": {
+      "pbjs": {
+        "schema": "pbjs/adyoulike.json"
+      },
+      "pbs": null
+    },
+    "adzymic": {
+      "pbjs": {
+        "schema": "pbjs/adzymic.json"
+      },
+      "pbs": null
+    },
+    "afp": {
+      "pbjs": {
+        "schema": "pbjs/afp.json"
+      },
+      "pbs": null
+    },
+    "afront": {
+      "pbjs": {
+        "schema": "pbjs/afront.json"
+      },
+      "pbs": null
+    },
+    "aidem": {
+      "pbjs": {
+        "schema": "pbjs/aidem.json"
+      },
+      "pbs": null
+    },
+    "aja": {
+      "pbjs": {
+        "schema": "pbjs/aja.json"
+      },
+      "pbs": null
+    },
+    "akcelo": {
+      "pbjs": {
+        "schema": "pbjs/akcelo.json"
+      },
+      "pbs": null
+    },
+    "alchemyx": {
+      "pbjs": {
+        "schema": "pbjs/alchemyx.json"
+      },
+      "pbs": null
+    },
+    "algorix": {
+      "pbjs": {
+        "schema": "pbjs/algorix.json"
+      },
+      "pbs": null
+    },
+    "alkimi": {
+      "pbjs": {
+        "schema": "pbjs/alkimi.json"
+      },
+      "pbs": null
+    },
+    "allegro": {
+      "pbjs": {
+        "schema": "pbjs/allegro.json"
+      },
+      "pbs": null
+    },
+    "alliance_gravity": {
+      "pbjs": {
+        "schema": "pbjs/alliance_gravity.json"
+      },
+      "pbs": null
+    },
+    "altstar": {
+      "pbjs": {
+        "schema": "pbjs/altstar.json"
+      },
+      "pbs": null
+    },
+    "alvads": {
+      "pbjs": {
+        "schema": "pbjs/alvads.json"
+      },
+      "pbs": null
+    },
+    "amcom": {
+      "pbjs": {
+        "schema": "pbjs/amcom.json"
+      },
+      "pbs": null
+    },
+    "ampliffy": {
+      "pbjs": {
+        "schema": "pbjs/ampliffy.json"
+      },
+      "pbs": null
+    },
+    "amx": {
+      "pbjs": {
+        "schema": "pbjs/amx.json"
+      },
+      "pbs": null
+    },
+    "aniview": {
+      "pbjs": {
+        "schema": "pbjs/aniview.json"
+      },
+      "pbs": null
+    },
+    "anyclip": {
+      "pbjs": {
+        "schema": "pbjs/anyclip.json"
+      },
+      "pbs": null
+    },
+    "anzu": {
+      "pbjs": {
+        "schema": "pbjs/anzu.json"
+      },
+      "pbs": null
+    },
+    "anzuExchange": {
+      "pbjs": {
+        "schema": "pbjs/anzuExchange.json"
+      },
+      "pbs": null
+    },
+    "aol": {
+      "pbjs": {
+        "schema": "pbjs/aol.json"
+      },
+      "pbs": null
+    },
+    "apacdex": {
+      "pbjs": {
+        "schema": "pbjs/apacdex.json"
+      },
+      "pbs": null
+    },
+    "apester": {
+      "pbjs": {
+        "schema": "pbjs/apester.json"
+      },
+      "pbs": null
+    },
+    "appStockSSP": {
+      "pbjs": {
+        "schema": "pbjs/appStockSSP.json"
+      },
+      "pbs": null
+    },
+    "appier": {
+      "pbjs": {
+        "schema": "pbjs/appier.json"
+      },
+      "pbs": null
+    },
+    "appierBR": {
+      "pbjs": {
+        "schema": "pbjs/appierBR.json"
+      },
+      "pbs": null
+    },
+    "appierExt": {
+      "pbjs": {
+        "schema": "pbjs/appierExt.json"
+      },
+      "pbs": null
+    },
+    "appierGM": {
+      "pbjs": {
+        "schema": "pbjs/appierGM.json"
+      },
+      "pbs": null
+    },
+    "applogy": {
+      "pbjs": {
+        "schema": "pbjs/applogy.json"
+      },
+      "pbs": null
+    },
+    "appmonsta": {
+      "pbjs": {
+        "schema": "pbjs/appmonsta.json"
+      },
+      "pbs": null
+    },
     "appnexus": {
-      "pbjs": { "schema": "pbjs/appnexus.json" },
+      "pbjs": {
+        "schema": "pbjs/appnexus.json"
+      },
+      "pbs": null
+    },
+    "appstock": {
+      "pbjs": {
+        "schema": "pbjs/appstock.json"
+      },
+      "pbs": null
+    },
+    "appush": {
+      "pbjs": {
+        "schema": "pbjs/appush.json"
+      },
+      "pbs": null
+    },
+    "apstream": {
+      "pbjs": {
+        "schema": "pbjs/apstream.json"
+      },
+      "pbs": null
+    },
+    "artechnology": {
+      "pbjs": {
+        "schema": "pbjs/artechnology.json"
+      },
+      "pbs": null
+    },
+    "arteebee": {
+      "pbjs": {
+        "schema": "pbjs/arteebee.json"
+      },
+      "pbs": null
+    },
+    "aseal": {
+      "pbjs": {
+        "schema": "pbjs/aseal.json"
+      },
+      "pbs": null
+    },
+    "aso": {
+      "pbjs": {
+        "schema": "pbjs/aso.json"
+      },
+      "pbs": null
+    },
+    "astraone": {
+      "pbjs": {
+        "schema": "pbjs/astraone.json"
+      },
+      "pbs": null
+    },
+    "audienceNetwork": {
+      "pbjs": {
+        "schema": "pbjs/audienceNetwork.json"
+      },
+      "pbs": null
+    },
+    "audiencemedia": {
+      "pbjs": {
+        "schema": "pbjs/audiencemedia.json"
+      },
+      "pbs": null
+    },
+    "audiencerun": {
+      "pbjs": {
+        "schema": "pbjs/audiencerun.json"
+      },
+      "pbs": null
+    },
+    "automatad": {
+      "pbjs": {
+        "schema": "pbjs/automatad.json"
+      },
+      "pbs": null
+    },
+    "avantisvideo": {
+      "pbjs": {
+        "schema": "pbjs/avantisvideo.json"
+      },
+      "pbs": null
+    },
+    "avct": {
+      "pbjs": {
+        "schema": "pbjs/avct.json"
+      },
+      "pbs": null
+    },
+    "axis": {
+      "pbjs": {
+        "schema": "pbjs/axis.json"
+      },
+      "pbs": null
+    },
+    "axonix": {
+      "pbjs": {
+        "schema": "pbjs/axonix.json"
+      },
+      "pbs": null
+    },
+    "bcm": {
+      "pbjs": {
+        "schema": "pbjs/bcm.json"
+      },
+      "pbs": null
+    },
+    "bcmint": {
+      "pbjs": {
+        "schema": "pbjs/bcmint.json"
+      },
+      "pbs": null
+    },
+    "beachfront": {
+      "pbjs": {
+        "schema": "pbjs/beachfront.json"
+      },
+      "pbs": null
+    },
+    "bedigitech": {
+      "pbjs": {
+        "schema": "pbjs/bedigitech.json"
+      },
+      "pbs": null
+    },
+    "beintoo": {
+      "pbjs": {
+        "schema": "pbjs/beintoo.json"
+      },
+      "pbs": null
+    },
+    "beop": {
+      "pbjs": {
+        "schema": "pbjs/beop.json"
+      },
+      "pbs": null
+    },
+    "between": {
+      "pbjs": {
+        "schema": "pbjs/between.json"
+      },
+      "pbs": null
+    },
+    "beyondmedia": {
+      "pbjs": {
+        "schema": "pbjs/beyondmedia.json"
+      },
+      "pbs": null
+    },
+    "bidbuddy": {
+      "pbjs": {
+        "schema": "pbjs/bidbuddy.json"
+      },
+      "pbs": null
+    },
+    "biddo": {
+      "pbjs": {
+        "schema": "pbjs/biddo.json"
+      },
+      "pbs": null
+    },
+    "bidfuse": {
+      "pbjs": {
+        "schema": "pbjs/bidfuse.json"
+      },
+      "pbs": null
+    },
+    "bidgency": {
+      "pbjs": {
+        "schema": "pbjs/bidgency.json"
+      },
+      "pbs": null
+    },
+    "bidglass": {
+      "pbjs": {
+        "schema": "pbjs/bidglass.json"
+      },
+      "pbs": null
+    },
+    "bidmachine": {
+      "pbjs": {
+        "schema": "pbjs/bidmachine.json"
+      },
+      "pbs": null
+    },
+    "bidmyadz": {
+      "pbjs": {
+        "schema": "pbjs/bidmyadz.json"
+      },
+      "pbs": null
+    },
+    "bidscube": {
+      "pbjs": {
+        "schema": "pbjs/bidscube.json"
+      },
+      "pbs": null
+    },
+    "bidsmind": {
+      "pbjs": {
+        "schema": "pbjs/bidsmind.json"
+      },
+      "pbs": null
+    },
+    "bidstack": {
+      "pbjs": {
+        "schema": "pbjs/bidstack.json"
+      },
+      "pbs": null
+    },
+    "bidsxchange": {
+      "pbjs": {
+        "schema": "pbjs/bidsxchange.json"
+      },
+      "pbs": null
+    },
+    "bidtheatre": {
+      "pbjs": {
+        "schema": "pbjs/bidtheatre.json"
+      },
+      "pbs": null
+    },
+    "big-richmedia": {
+      "pbjs": {
+        "schema": "pbjs/big-richmedia.json"
+      },
+      "pbs": null
+    },
+    "bigoad": {
+      "pbjs": {
+        "schema": "pbjs/bigoad.json"
+      },
+      "pbs": null
+    },
+    "bitmedia": {
+      "pbjs": {
+        "schema": "pbjs/bitmedia.json"
+      },
+      "pbs": null
+    },
+    "blasto": {
+      "pbjs": {
+        "schema": "pbjs/blasto.json"
+      },
+      "pbs": null
+    },
+    "bliink": {
+      "pbjs": {
+        "schema": "pbjs/bliink.json"
+      },
+      "pbs": null
+    },
+    "blis": {
+      "pbjs": {
+        "schema": "pbjs/blis.json"
+      },
+      "pbs": null
+    },
+    "blockthrough": {
+      "pbjs": {
+        "schema": "pbjs/blockthrough.json"
+      },
+      "pbs": null
+    },
+    "blue": {
+      "pbjs": {
+        "schema": "pbjs/blue.json"
+      },
+      "pbs": null
+    },
+    "bluebillywig": {
+      "pbjs": {
+        "schema": "pbjs/bluebillywig.json"
+      },
+      "pbs": null
+    },
+    "bluesea": {
+      "pbjs": {
+        "schema": "pbjs/bluesea.json"
+      },
+      "pbs": null
+    },
+    "blutonic": {
+      "pbjs": {
+        "schema": "pbjs/blutonic.json"
+      },
+      "pbs": null
+    },
+    "bms": {
+      "pbjs": {
+        "schema": "pbjs/bms.json"
+      },
+      "pbs": null
+    },
+    "bmtm": {
+      "pbjs": {
+        "schema": "pbjs/bmtm.json"
+      },
+      "pbs": null
+    },
+    "boldwin": {
+      "pbjs": {
+        "schema": "pbjs/boldwin.json"
+      },
+      "pbs": null
+    },
+    "brainx": {
+      "pbjs": {
+        "schema": "pbjs/brainx.json"
+      },
+      "pbs": null
+    },
+    "brainy": {
+      "pbjs": {
+        "schema": "pbjs/brainy.json"
+      },
+      "pbs": null
+    },
+    "brave": {
+      "pbjs": {
+        "schema": "pbjs/brave.json"
+      },
+      "pbs": null
+    },
+    "brid": {
+      "pbjs": {
+        "schema": "pbjs/brid.json"
+      },
+      "pbs": null
+    },
+    "bridgewell": {
+      "pbjs": {
+        "schema": "pbjs/bridgewell.json"
+      },
+      "pbs": null
+    },
+    "brightroll": {
+      "pbjs": {
+        "schema": "pbjs/brightroll.json"
+      },
+      "pbs": null
+    },
+    "browsi": {
+      "pbjs": {
+        "schema": "pbjs/browsi.json"
+      },
+      "pbs": null
+    },
+    "bucksense": {
+      "pbjs": {
+        "schema": "pbjs/bucksense.json"
+      },
+      "pbs": null
+    },
+    "buzzoola": {
+      "pbjs": {
+        "schema": "pbjs/buzzoola.json"
+      },
+      "pbs": null
+    },
+    "bwx": {
+      "pbjs": {
+        "schema": "pbjs/bwx.json"
+      },
+      "pbs": null
+    },
+    "c1x": {
+      "pbjs": {
+        "schema": "pbjs/c1x.json"
+      },
+      "pbs": null
+    },
+    "cadent_aperture_mx": {
+      "pbjs": {
+        "schema": "pbjs/cadent_aperture_mx.json"
+      },
+      "pbs": null
+    },
+    "caroda": {
+      "pbjs": {
+        "schema": "pbjs/caroda.json"
+      },
+      "pbs": null
+    },
+    "ccx": {
+      "pbjs": {
+        "schema": "pbjs/ccx.json"
+      },
+      "pbs": null
+    },
+    "chtnw": {
+      "pbjs": {
+        "schema": "pbjs/chtnw.json"
+      },
       "pbs": null
     },
     "ci_fixture": {
-      "pbjs": { "schema": "pbjs/ci_fixture.json" },
+      "pbjs": {
+        "schema": "pbjs/ci_fixture.json"
+      },
+      "pbs": null
+    },
+    "cleanmedianet": {
+      "pbjs": {
+        "schema": "pbjs/cleanmedianet.json"
+      },
+      "pbs": null
+    },
+    "clickforce": {
+      "pbjs": {
+        "schema": "pbjs/clickforce.json"
+      },
+      "pbs": null
+    },
+    "clickio": {
+      "pbjs": {
+        "schema": "pbjs/clickio.json"
+      },
+      "pbs": null
+    },
+    "clydo": {
+      "pbjs": {
+        "schema": "pbjs/clydo.json"
+      },
+      "pbs": null
+    },
+    "cointraffic": {
+      "pbjs": {
+        "schema": "pbjs/cointraffic.json"
+      },
+      "pbs": null
+    },
+    "coinzilla": {
+      "pbjs": {
+        "schema": "pbjs/coinzilla.json"
+      },
+      "pbs": null
+    },
+    "collectcent": {
+      "pbjs": {
+        "schema": "pbjs/collectcent.json"
+      },
+      "pbs": null
+    },
+    "colombia": {
+      "pbjs": {
+        "schema": "pbjs/colombia.json"
+      },
+      "pbs": null
+    },
+    "colossus": {
+      "pbjs": {
+        "schema": "pbjs/colossus.json"
+      },
+      "pbs": null
+    },
+    "colossusssp": {
+      "pbjs": {
+        "schema": "pbjs/colossusssp.json"
+      },
+      "pbs": null
+    },
+    "compass": {
+      "pbjs": {
+        "schema": "pbjs/compass.json"
+      },
+      "pbs": null
+    },
+    "conceptx": {
+      "pbjs": {
+        "schema": "pbjs/conceptx.json"
+      },
+      "pbs": null
+    },
+    "concert": {
+      "pbjs": {
+        "schema": "pbjs/concert.json"
+      },
+      "pbs": null
+    },
+    "condorx": {
+      "pbjs": {
+        "schema": "pbjs/condorx.json"
+      },
+      "pbs": null
+    },
+    "connatix": {
+      "pbjs": {
+        "schema": "pbjs/connatix.json"
+      },
+      "pbs": null
+    },
+    "connectad": {
+      "pbjs": {
+        "schema": "pbjs/connectad.json"
+      },
+      "pbs": null
+    },
+    "connektai": {
+      "pbjs": {
+        "schema": "pbjs/connektai.json"
+      },
+      "pbs": null
+    },
+    "consumable": {
+      "pbjs": {
+        "schema": "pbjs/consumable.json"
+      },
+      "pbs": null
+    },
+    "contentexchange": {
+      "pbjs": {
+        "schema": "pbjs/contentexchange.json"
+      },
+      "pbs": null
+    },
+    "contentignite": {
+      "pbjs": {
+        "schema": "pbjs/contentignite.json"
+      },
+      "pbs": null
+    },
+    "contxtful": {
+      "pbjs": {
+        "schema": "pbjs/contxtful.json"
+      },
+      "pbs": null
+    },
+    "converge": {
+      "pbjs": {
+        "schema": "pbjs/converge.json"
+      },
+      "pbs": null
+    },
+    "conversant": {
+      "pbjs": {
+        "schema": "pbjs/conversant.json"
+      },
+      "pbs": null
+    },
+    "copper6ssp": {
+      "pbjs": {
+        "schema": "pbjs/copper6ssp.json"
+      },
+      "pbs": null
+    },
+    "cordless": {
+      "pbjs": {
+        "schema": "pbjs/cordless.json"
+      },
+      "pbs": null
+    },
+    "cox": {
+      "pbjs": {
+        "schema": "pbjs/cox.json"
+      },
+      "pbs": null
+    },
+    "cpmstar": {
+      "pbjs": {
+        "schema": "pbjs/cpmstar.json"
+      },
+      "pbs": null
+    },
+    "craft": {
+      "pbjs": {
+        "schema": "pbjs/craft.json"
+      },
+      "pbs": null
+    },
+    "criteo": {
+      "pbjs": {
+        "schema": "pbjs/criteo.json"
+      },
+      "pbs": null
+    },
+    "cwire": {
+      "pbjs": {
+        "schema": "pbjs/cwire.json"
+      },
+      "pbs": null
+    },
+    "dailymotion": {
+      "pbjs": {
+        "schema": "pbjs/dailymotion.json"
+      },
+      "pbs": null
+    },
+    "danmarket": {
+      "pbjs": {
+        "schema": "pbjs/danmarket.json"
+      },
+      "pbs": null
+    },
+    "das": {
+      "pbjs": {
+        "schema": "pbjs/das.json"
+      },
+      "pbs": null
+    },
+    "datablocks": {
+      "pbjs": {
+        "schema": "pbjs/datablocks.json"
+      },
+      "pbs": null
+    },
+    "datawrkz": {
+      "pbjs": {
+        "schema": "pbjs/datawrkz.json"
+      },
+      "pbs": null
+    },
+    "deepintent": {
+      "pbjs": {
+        "schema": "pbjs/deepintent.json"
+      },
+      "pbs": null
+    },
+    "definemedia": {
+      "pbjs": {
+        "schema": "pbjs/definemedia.json"
+      },
+      "pbs": null
+    },
+    "defymedia": {
+      "pbjs": {
+        "schema": "pbjs/defymedia.json"
+      },
+      "pbs": null
+    },
+    "deltaprojects": {
+      "pbjs": {
+        "schema": "pbjs/deltaprojects.json"
+      },
+      "pbs": null
+    },
+    "denakop": {
+      "pbjs": {
+        "schema": "pbjs/denakop.json"
+      },
+      "pbs": null
+    },
+    "dexerto": {
+      "pbjs": {
+        "schema": "pbjs/dexerto.json"
+      },
+      "pbs": null
+    },
+    "dianomi": {
+      "pbjs": {
+        "schema": "pbjs/dianomi.json"
+      },
+      "pbs": null
+    },
+    "didnadisplay": {
+      "pbjs": {
+        "schema": "pbjs/didnadisplay.json"
+      },
+      "pbs": null
+    },
+    "didnavideo": {
+      "pbjs": {
+        "schema": "pbjs/didnavideo.json"
+      },
+      "pbs": null
+    },
+    "digiad": {
+      "pbjs": {
+        "schema": "pbjs/digiad.json"
+      },
+      "pbs": null
+    },
+    "digitalMatter": {
+      "pbjs": {
+        "schema": "pbjs/digitalMatter.json"
+      },
+      "pbs": null
+    },
+    "digitalcaramel": {
+      "pbjs": {
+        "schema": "pbjs/digitalcaramel.json"
+      },
+      "pbs": null
+    },
+    "discovery": {
+      "pbjs": {
+        "schema": "pbjs/discovery.json"
+      },
+      "pbs": null
+    },
+    "displayio": {
+      "pbjs": {
+        "schema": "pbjs/displayio.json"
+      },
+      "pbs": null
+    },
+    "displayioads": {
+      "pbjs": {
+        "schema": "pbjs/displayioads.json"
+      },
+      "pbs": null
+    },
+    "districtm": {
+      "pbjs": {
+        "schema": "pbjs/districtm.json"
+      },
+      "pbs": null
+    },
+    "districtmDMX": {
+      "pbjs": {
+        "schema": "pbjs/districtmDMX.json"
+      },
+      "pbs": null
+    },
+    "distroscale": {
+      "pbjs": {
+        "schema": "pbjs/distroscale.json"
+      },
+      "pbs": null
+    },
+    "divreach": {
+      "pbjs": {
+        "schema": "pbjs/divreach.json"
+      },
+      "pbs": null
+    },
+    "djax": {
+      "pbjs": {
+        "schema": "pbjs/djax.json"
+      },
+      "pbs": null
+    },
+    "dmx": {
+      "pbjs": {
+        "schema": "pbjs/dmx.json"
+      },
+      "pbs": null
+    },
+    "doceree": {
+      "pbjs": {
+        "schema": "pbjs/doceree.json"
+      },
+      "pbs": null
+    },
+    "docereeadmanager": {
+      "pbjs": {
+        "schema": "pbjs/docereeadmanager.json"
+      },
+      "pbs": null
+    },
+    "dochase": {
+      "pbjs": {
+        "schema": "pbjs/dochase.json"
+      },
+      "pbs": null
+    },
+    "dpai": {
+      "pbjs": {
+        "schema": "pbjs/dpai.json"
+      },
+      "pbs": null
+    },
+    "driftpixel": {
+      "pbjs": {
+        "schema": "pbjs/driftpixel.json"
+      },
+      "pbs": null
+    },
+    "dsp_geniee": {
+      "pbjs": {
+        "schema": "pbjs/dsp_geniee.json"
+      },
+      "pbs": null
+    },
+    "dspx": {
+      "pbjs": {
+        "schema": "pbjs/dspx.json"
+      },
+      "pbs": null
+    },
+    "duration": {
+      "pbjs": {
+        "schema": "pbjs/duration.json"
+      },
+      "pbs": null
+    },
+    "dvgroup": {
+      "pbjs": {
+        "schema": "pbjs/dvgroup.json"
+      },
+      "pbs": null
+    },
+    "dxkulture": {
+      "pbjs": {
+        "schema": "pbjs/dxkulture.json"
+      },
+      "pbs": null
+    },
+    "dxtech": {
+      "pbjs": {
+        "schema": "pbjs/dxtech.json"
+      },
+      "pbs": null
+    },
+    "e_volution": {
+      "pbjs": {
+        "schema": "pbjs/e_volution.json"
+      },
+      "pbs": null
+    },
+    "easybid": {
+      "pbjs": {
+        "schema": "pbjs/easybid.json"
+      },
+      "pbs": null
+    },
+    "ebdr": {
+      "pbjs": {
+        "schema": "pbjs/ebdr.json"
+      },
+      "pbs": null
+    },
+    "eclick": {
+      "pbjs": {
+        "schema": "pbjs/eclick.json"
+      },
+      "pbs": null
+    },
+    "eclickads": {
+      "pbjs": {
+        "schema": "pbjs/eclickads.json"
+      },
+      "pbs": null
+    },
+    "edge226": {
+      "pbjs": {
+        "schema": "pbjs/edge226.json"
+      },
+      "pbs": null
+    },
+    "ehealthcaresolutions": {
+      "pbjs": {
+        "schema": "pbjs/ehealthcaresolutions.json"
+      },
+      "pbs": null
+    },
+    "eightPod": {
+      "pbjs": {
+        "schema": "pbjs/eightPod.json"
+      },
+      "pbs": null
+    },
+    "elementaltv": {
+      "pbjs": {
+        "schema": "pbjs/elementaltv.json"
+      },
+      "pbs": null
+    },
+    "embimedia": {
+      "pbjs": {
+        "schema": "pbjs/embimedia.json"
+      },
+      "pbs": null
+    },
+    "empower": {
+      "pbjs": {
+        "schema": "pbjs/empower.json"
+      },
+      "pbs": null
+    },
+    "emtv": {
+      "pbjs": {
+        "schema": "pbjs/emtv.json"
+      },
+      "pbs": null
+    },
+    "engageadx": {
+      "pbjs": {
+        "schema": "pbjs/engageadx.json"
+      },
+      "pbs": null
+    },
+    "engagebdr": {
+      "pbjs": {
+        "schema": "pbjs/engagebdr.json"
+      },
+      "pbs": null
+    },
+    "engageya": {
+      "pbjs": {
+        "schema": "pbjs/engageya.json"
+      },
+      "pbs": null
+    },
+    "eplanning": {
+      "pbjs": {
+        "schema": "pbjs/eplanning.json"
+      },
+      "pbs": null
+    },
+    "epom": {
+      "pbjs": {
+        "schema": "pbjs/epom.json"
+      },
+      "pbs": null
+    },
+    "epom_dsp": {
+      "pbjs": {
+        "schema": "pbjs/epom_dsp.json"
+      },
+      "pbs": null
+    },
+    "equativ": {
+      "pbjs": {
+        "schema": "pbjs/equativ.json"
+      },
+      "pbs": null
+    },
+    "ergadx": {
+      "pbjs": {
+        "schema": "pbjs/ergadx.json"
+      },
+      "pbs": null
+    },
+    "escalax": {
+      "pbjs": {
+        "schema": "pbjs/escalax.json"
+      },
+      "pbs": null
+    },
+    "eskimi": {
+      "pbjs": {
+        "schema": "pbjs/eskimi.json"
+      },
+      "pbs": null
+    },
+    "etarget": {
+      "pbjs": {
+        "schema": "pbjs/etarget.json"
+      },
+      "pbs": null
+    },
+    "evtech": {
+      "pbjs": {
+        "schema": "pbjs/evtech.json"
+      },
+      "pbs": null
+    },
+    "exads": {
+      "pbjs": {
+        "schema": "pbjs/exads.json"
+      },
+      "pbs": null
+    },
+    "exco": {
+      "pbjs": {
+        "schema": "pbjs/exco.json"
+      },
+      "pbs": null
+    },
+    "eywamedia": {
+      "pbjs": {
+        "schema": "pbjs/eywamedia.json"
+      },
+      "pbs": null
+    },
+    "fairtrade": {
+      "pbjs": {
+        "schema": "pbjs/fairtrade.json"
+      },
+      "pbs": null
+    },
+    "featureforward": {
+      "pbjs": {
+        "schema": "pbjs/featureforward.json"
+      },
+      "pbs": null
+    },
+    "feedad": {
+      "pbjs": {
+        "schema": "pbjs/feedad.json"
+      },
+      "pbs": null
+    },
+    "felixads": {
+      "pbjs": {
+        "schema": "pbjs/felixads.json"
+      },
+      "pbs": null
+    },
+    "filmzie": {
+      "pbjs": {
+        "schema": "pbjs/filmzie.json"
+      },
+      "pbs": null
+    },
+    "finative": {
+      "pbjs": {
+        "schema": "pbjs/finative.json"
+      },
+      "pbs": null
+    },
+    "flatads": {
+      "pbjs": {
+        "schema": "pbjs/flatads.json"
+      },
+      "pbs": null
+    },
+    "flipp": {
+      "pbjs": {
+        "schema": "pbjs/flipp.json"
+      },
+      "pbs": null
+    },
+    "floxis": {
+      "pbjs": {
+        "schema": "pbjs/floxis.json"
+      },
+      "pbs": null
+    },
+    "fluct": {
+      "pbjs": {
+        "schema": "pbjs/fluct.json"
+      },
+      "pbs": null
+    },
+    "freedomadnetwork": {
+      "pbjs": {
+        "schema": "pbjs/freedomadnetwork.json"
+      },
+      "pbs": null
+    },
+    "freepass": {
+      "pbjs": {
+        "schema": "pbjs/freepass.json"
+      },
+      "pbs": null
+    },
+    "frvradn": {
+      "pbjs": {
+        "schema": "pbjs/frvradn.json"
+      },
+      "pbs": null
+    },
+    "futureads": {
+      "pbjs": {
+        "schema": "pbjs/futureads.json"
+      },
+      "pbs": null
+    },
+    "fwssp": {
+      "pbjs": {
+        "schema": "pbjs/fwssp.json"
+      },
+      "pbs": null
+    },
+    "fyber": {
+      "pbjs": {
+        "schema": "pbjs/fyber.json"
+      },
+      "pbs": null
+    },
+    "gambid": {
+      "pbjs": {
+        "schema": "pbjs/gambid.json"
+      },
+      "pbs": null
+    },
+    "gamma": {
+      "pbjs": {
+        "schema": "pbjs/gamma.json"
+      },
+      "pbs": null
+    },
+    "gamoshi": {
+      "pbjs": {
+        "schema": "pbjs/gamoshi.json"
+      },
+      "pbs": null
+    },
+    "getintent": {
+      "pbjs": {
+        "schema": "pbjs/getintent.json"
+      },
+      "pbs": null
+    },
+    "giants": {
+      "pbjs": {
+        "schema": "pbjs/giants.json"
+      },
+      "pbs": null
+    },
+    "gjirafa": {
+      "pbjs": {
+        "schema": "pbjs/gjirafa.json"
+      },
+      "pbs": null
+    },
+    "glimpse": {
+      "pbjs": {
+        "schema": "pbjs/glimpse.json"
+      },
+      "pbs": null
+    },
+    "global_sun": {
+      "pbjs": {
+        "schema": "pbjs/global_sun.json"
+      },
+      "pbs": null
+    },
+    "globalsun": {
+      "pbjs": {
+        "schema": "pbjs/globalsun.json"
+      },
+      "pbs": null
+    },
+    "glomex": {
+      "pbjs": {
+        "schema": "pbjs/glomex.json"
+      },
+      "pbs": null
+    },
+    "gmossp": {
+      "pbjs": {
+        "schema": "pbjs/gmossp.json"
+      },
+      "pbs": null
+    },
+    "gnet": {
+      "pbjs": {
+        "schema": "pbjs/gnet.json"
+      },
+      "pbs": null
+    },
+    "go2net": {
+      "pbjs": {
+        "schema": "pbjs/go2net.json"
+      },
+      "pbs": null
+    },
+    "goldbach": {
+      "pbjs": {
+        "schema": "pbjs/goldbach.json"
+      },
+      "pbs": null
+    },
+    "gourmetads": {
+      "pbjs": {
+        "schema": "pbjs/gourmetads.json"
+      },
+      "pbs": null
+    },
+    "gravite": {
+      "pbjs": {
+        "schema": "pbjs/gravite.json"
+      },
+      "pbs": null
+    },
+    "greedygame": {
+      "pbjs": {
+        "schema": "pbjs/greedygame.json"
+      },
+      "pbs": null
+    },
+    "greenbids": {
+      "pbjs": {
+        "schema": "pbjs/greenbids.json"
+      },
+      "pbs": null
+    },
+    "grid": {
+      "pbjs": {
+        "schema": "pbjs/grid.json"
+      },
+      "pbs": null
+    },
+    "gridNM": {
+      "pbjs": {
+        "schema": "pbjs/gridNM.json"
+      },
+      "pbs": null
+    },
+    "growads": {
+      "pbjs": {
+        "schema": "pbjs/growads.json"
+      },
+      "pbs": null
+    },
+    "gumgum": {
+      "pbjs": {
+        "schema": "pbjs/gumgum.json"
+      },
+      "pbs": null
+    },
+    "gxone": {
+      "pbjs": {
+        "schema": "pbjs/gxone.json"
+      },
+      "pbs": null
+    },
+    "h12media": {
+      "pbjs": {
+        "schema": "pbjs/h12media.json"
+      },
+      "pbs": null
+    },
+    "harrenmedia": {
+      "pbjs": {
+        "schema": "pbjs/harrenmedia.json"
+      },
+      "pbs": null
+    },
+    "headbidder": {
+      "pbjs": {
+        "schema": "pbjs/headbidder.json"
+      },
+      "pbs": null
+    },
+    "headbidding": {
+      "pbjs": {
+        "schema": "pbjs/headbidding.json"
+      },
+      "pbs": null
+    },
+    "holid": {
+      "pbjs": {
+        "schema": "pbjs/holid.json"
+      },
+      "pbs": null
+    },
+    "houseofpubs": {
+      "pbjs": {
+        "schema": "pbjs/houseofpubs.json"
+      },
+      "pbs": null
+    },
+    "huaweiads": {
+      "pbjs": {
+        "schema": "pbjs/huaweiads.json"
+      },
+      "pbs": null
+    },
+    "huddledmasses": {
+      "pbjs": {
+        "schema": "pbjs/huddledmasses.json"
+      },
+      "pbs": null
+    },
+    "hybrid": {
+      "pbjs": {
+        "schema": "pbjs/hybrid.json"
+      },
+      "pbs": null
+    },
+    "hypelab": {
+      "pbjs": {
+        "schema": "pbjs/hypelab.json"
+      },
+      "pbs": null
+    },
+    "hyperbrainz": {
+      "pbjs": {
+        "schema": "pbjs/hyperbrainz.json"
+      },
+      "pbs": null
+    },
+    "ias": {
+      "pbjs": {
+        "schema": "pbjs/ias.json"
+      },
+      "pbs": null
+    },
+    "idx": {
+      "pbjs": {
+        "schema": "pbjs/idx.json"
+      },
+      "pbs": null
+    },
+    "iionads": {
+      "pbjs": {
+        "schema": "pbjs/iionads.json"
+      },
+      "pbs": null
+    },
+    "illumin": {
+      "pbjs": {
+        "schema": "pbjs/illumin.json"
+      },
+      "pbs": null
+    },
+    "imds": {
+      "pbjs": {
+        "schema": "pbjs/imds.json"
+      },
+      "pbs": null
+    },
+    "impactify": {
+      "pbjs": {
+        "schema": "pbjs/impactify.json"
+      },
+      "pbs": null
+    },
+    "improvedigital": {
+      "pbjs": {
+        "schema": "pbjs/improvedigital.json"
+      },
+      "pbs": null
+    },
+    "incrementx": {
+      "pbjs": {
+        "schema": "pbjs/incrementx.json"
+      },
+      "pbs": null
+    },
+    "indicue": {
+      "pbjs": {
+        "schema": "pbjs/indicue.json"
+      },
+      "pbs": null
+    },
+    "infinety": {
+      "pbjs": {
+        "schema": "pbjs/infinety.json"
+      },
+      "pbs": null
+    },
+    "infytv": {
+      "pbjs": {
+        "schema": "pbjs/infytv.json"
+      },
+      "pbs": null
+    },
+    "inmar": {
+      "pbjs": {
+        "schema": "pbjs/inmar.json"
+      },
+      "pbs": null
+    },
+    "inmobi": {
+      "pbjs": {
+        "schema": "pbjs/inmobi.json"
+      },
+      "pbs": null
+    },
+    "innity": {
+      "pbjs": {
+        "schema": "pbjs/innity.json"
+      },
+      "pbs": null
+    },
+    "inskin": {
+      "pbjs": {
+        "schema": "pbjs/inskin.json"
+      },
+      "pbs": null
+    },
+    "insticator": {
+      "pbjs": {
+        "schema": "pbjs/insticator.json"
+      },
+      "pbs": null
+    },
+    "insurads": {
+      "pbjs": {
+        "schema": "pbjs/insurads.json"
+      },
+      "pbs": null
+    },
+    "integr8": {
+      "pbjs": {
+        "schema": "pbjs/integr8.json"
+      },
+      "pbs": null
+    },
+    "intenze": {
+      "pbjs": {
+        "schema": "pbjs/intenze.json"
+      },
+      "pbs": null
+    },
+    "interactiveOffers": {
+      "pbjs": {
+        "schema": "pbjs/interactiveOffers.json"
+      },
+      "pbs": null
+    },
+    "intertech": {
+      "pbjs": {
+        "schema": "pbjs/intertech.json"
+      },
+      "pbs": null
+    },
+    "intlscoop": {
+      "pbjs": {
+        "schema": "pbjs/intlscoop.json"
+      },
+      "pbs": null
+    },
+    "invamia": {
+      "pbjs": {
+        "schema": "pbjs/invamia.json"
+      },
+      "pbs": null
+    },
+    "invibes": {
+      "pbjs": {
+        "schema": "pbjs/invibes.json"
+      },
+      "pbs": null
+    },
+    "iprom": {
+      "pbjs": {
+        "schema": "pbjs/iprom.json"
+      },
+      "pbs": null
+    },
+    "iqm": {
+      "pbjs": {
+        "schema": "pbjs/iqm.json"
+      },
+      "pbs": null
+    },
+    "iqx": {
+      "pbjs": {
+        "schema": "pbjs/iqx.json"
+      },
+      "pbs": null
+    },
+    "iqzone": {
+      "pbjs": {
+        "schema": "pbjs/iqzone.json"
+      },
+      "pbs": null
+    },
+    "ivs": {
+      "pbjs": {
+        "schema": "pbjs/ivs.json"
+      },
+      "pbs": null
+    },
+    "ix": {
+      "pbjs": {
+        "schema": "pbjs/ix.json"
+      },
+      "pbs": null
+    },
+    "jambojar": {
+      "pbjs": {
+        "schema": "pbjs/jambojar.json"
+      },
+      "pbs": null
+    },
+    "janet": {
+      "pbjs": {
+        "schema": "pbjs/janet.json"
+      },
+      "pbs": null
+    },
+    "jdpmedia": {
+      "pbjs": {
+        "schema": "pbjs/jdpmedia.json"
+      },
+      "pbs": null
+    },
+    "jixie": {
+      "pbjs": {
+        "schema": "pbjs/jixie.json"
+      },
+      "pbs": null
+    },
+    "justpremium": {
+      "pbjs": {
+        "schema": "pbjs/justpremium.json"
+      },
+      "pbs": null
+    },
+    "kargo": {
+      "pbjs": {
+        "schema": "pbjs/kargo.json"
+      },
+      "pbs": null
+    },
+    "kidoz": {
+      "pbjs": {
+        "schema": "pbjs/kidoz.json"
+      },
+      "pbs": null
+    },
+    "kimberlite": {
+      "pbjs": {
+        "schema": "pbjs/kimberlite.json"
+      },
+      "pbs": null
+    },
+    "kiviads": {
+      "pbjs": {
+        "schema": "pbjs/kiviads.json"
+      },
+      "pbs": null
+    },
+    "kobler": {
+      "pbjs": {
+        "schema": "pbjs/kobler.json"
+      },
+      "pbs": null
+    },
+    "krushmedia": {
+      "pbjs": {
+        "schema": "pbjs/krushmedia.json"
+      },
+      "pbs": null
+    },
+    "kuantyx": {
+      "pbjs": {
+        "schema": "pbjs/kuantyx.json"
+      },
+      "pbs": null
+    },
+    "kubient": {
+      "pbjs": {
+        "schema": "pbjs/kubient.json"
+      },
+      "pbs": null
+    },
+    "kueez": {
+      "pbjs": {
+        "schema": "pbjs/kueez.json"
+      },
+      "pbs": null
+    },
+    "kueezrtb": {
+      "pbjs": {
+        "schema": "pbjs/kueezrtb.json"
+      },
+      "pbs": null
+    },
+    "kumma": {
+      "pbjs": {
+        "schema": "pbjs/kumma.json"
+      },
+      "pbs": null
+    },
+    "lane4": {
+      "pbjs": {
+        "schema": "pbjs/lane4.json"
+      },
+      "pbs": null
+    },
+    "lasso": {
+      "pbjs": {
+        "schema": "pbjs/lasso.json"
+      },
+      "pbs": null
+    },
+    "leagueM": {
+      "pbjs": {
+        "schema": "pbjs/leagueM.json"
+      },
+      "pbs": null
+    },
+    "lemmadigital": {
+      "pbjs": {
+        "schema": "pbjs/lemmadigital.json"
+      },
+      "pbs": null
+    },
+    "lifestreet": {
+      "pbjs": {
+        "schema": "pbjs/lifestreet.json"
+      },
+      "pbs": null
+    },
+    "limelightDigital": {
+      "pbjs": {
+        "schema": "pbjs/limelightDigital.json"
+      },
+      "pbs": null
+    },
+    "livewrapped": {
+      "pbjs": {
+        "schema": "pbjs/livewrapped.json"
+      },
+      "pbs": null
+    },
+    "lkqd": {
+      "pbjs": {
+        "schema": "pbjs/lkqd.json"
+      },
+      "pbs": null
+    },
+    "lm_kiviads": {
+      "pbjs": {
+        "schema": "pbjs/lm_kiviads.json"
+      },
+      "pbs": null
+    },
+    "lockerdome": {
+      "pbjs": {
+        "schema": "pbjs/lockerdome.json"
+      },
+      "pbs": null
+    },
+    "logan": {
+      "pbjs": {
+        "schema": "pbjs/logan.json"
+      },
+      "pbs": null
+    },
+    "logicad": {
+      "pbjs": {
+        "schema": "pbjs/logicad.json"
+      },
+      "pbs": null
+    },
+    "loopme": {
+      "pbjs": {
+        "schema": "pbjs/loopme.json"
+      },
+      "pbs": null
+    },
+    "loyal": {
+      "pbjs": {
+        "schema": "pbjs/loyal.json"
+      },
+      "pbs": null
+    },
+    "lucead": {
+      "pbjs": {
+        "schema": "pbjs/lucead.json"
+      },
+      "pbs": null
+    },
+    "lunamedia": {
+      "pbjs": {
+        "schema": "pbjs/lunamedia.json"
+      },
+      "pbs": null
+    },
+    "lunamediahb": {
+      "pbjs": {
+        "schema": "pbjs/lunamediahb.json"
+      },
+      "pbs": null
+    },
+    "luponmedia": {
+      "pbjs": {
+        "schema": "pbjs/luponmedia.json"
+      },
+      "pbs": null
+    },
+    "mabidder": {
+      "pbjs": {
+        "schema": "pbjs/mabidder.json"
+      },
+      "pbs": null
+    },
+    "madsense": {
+      "pbjs": {
+        "schema": "pbjs/madsense.json"
+      },
+      "pbs": null
+    },
+    "madvertise": {
+      "pbjs": {
+        "schema": "pbjs/madvertise.json"
+      },
+      "pbs": null
+    },
+    "magnite": {
+      "pbjs": {
+        "schema": "pbjs/magnite.json"
+      },
+      "pbs": null
+    },
+    "malltv": {
+      "pbjs": {
+        "schema": "pbjs/malltv.json"
+      },
+      "pbs": null
+    },
+    "mantis": {
+      "pbjs": {
+        "schema": "pbjs/mantis.json"
+      },
+      "pbs": null
+    },
+    "markapp": {
+      "pbjs": {
+        "schema": "pbjs/markapp.json"
+      },
+      "pbs": null
+    },
+    "marsmedia": {
+      "pbjs": {
+        "schema": "pbjs/marsmedia.json"
+      },
+      "pbs": null
+    },
+    "mathildeads": {
+      "pbjs": {
+        "schema": "pbjs/mathildeads.json"
+      },
+      "pbs": null
+    },
+    "matomy": {
+      "pbjs": {
+        "schema": "pbjs/matomy.json"
+      },
+      "pbs": null
+    },
+    "mediaConsortium": {
+      "pbjs": {
+        "schema": "pbjs/mediaConsortium.json"
+      },
+      "pbs": null
+    },
+    "mediabrama": {
+      "pbjs": {
+        "schema": "pbjs/mediabrama.json"
+      },
+      "pbs": null
+    },
+    "mediaeyes": {
+      "pbjs": {
+        "schema": "pbjs/mediaeyes.json"
+      },
+      "pbs": null
+    },
+    "mediaforce": {
+      "pbjs": {
+        "schema": "pbjs/mediaforce.json"
+      },
+      "pbs": null
+    },
+    "mediafuse": {
+      "pbjs": {
+        "schema": "pbjs/mediafuse.json"
+      },
+      "pbs": null
+    },
+    "mediago": {
+      "pbjs": {
+        "schema": "pbjs/mediago.json"
+      },
+      "pbs": null
+    },
+    "mediaimpact": {
+      "pbjs": {
+        "schema": "pbjs/mediaimpact.json"
+      },
+      "pbs": null
+    },
+    "mediakeys": {
+      "pbjs": {
+        "schema": "pbjs/mediakeys.json"
+      },
+      "pbs": null
+    },
+    "medianet": {
+      "pbjs": {
+        "schema": "pbjs/medianet.json"
+      },
+      "pbs": null
+    },
+    "mediasniper": {
+      "pbjs": {
+        "schema": "pbjs/mediasniper.json"
+      },
+      "pbs": null
+    },
+    "mediasquare": {
+      "pbjs": {
+        "schema": "pbjs/mediasquare.json"
+      },
+      "pbs": null
+    },
+    "mediayo": {
+      "pbjs": {
+        "schema": "pbjs/mediayo.json"
+      },
+      "pbs": null
+    },
+    "melozen": {
+      "pbjs": {
+        "schema": "pbjs/melozen.json"
+      },
+      "pbs": null
+    },
+    "metax": {
+      "pbjs": {
+        "schema": "pbjs/metax.json"
+      },
+      "pbs": null
+    },
+    "mgid": {
+      "pbjs": {
+        "schema": "pbjs/mgid.json"
+      },
+      "pbs": null
+    },
+    "mgidX": {
+      "pbjs": {
+        "schema": "pbjs/mgidX.json"
+      },
+      "pbs": null
+    },
+    "michao": {
+      "pbjs": {
+        "schema": "pbjs/michao.json"
+      },
+      "pbs": null
+    },
+    "microad": {
+      "pbjs": {
+        "schema": "pbjs/microad.json"
+      },
+      "pbs": null
+    },
+    "mile": {
+      "pbjs": {
+        "schema": "pbjs/mile.json"
+      },
+      "pbs": null
+    },
+    "minutemedia": {
+      "pbjs": {
+        "schema": "pbjs/minutemedia.json"
+      },
+      "pbs": null
+    },
+    "missena": {
+      "pbjs": {
+        "schema": "pbjs/missena.json"
+      },
+      "pbs": null
+    },
+    "mmplus": {
+      "pbjs": {
+        "schema": "pbjs/mmplus.json"
+      },
+      "pbs": null
+    },
+    "mobfoxpb": {
+      "pbjs": {
+        "schema": "pbjs/mobfoxpb.json"
+      },
+      "pbs": null
+    },
+    "mobilefuse": {
+      "pbjs": {
+        "schema": "pbjs/mobilefuse.json"
+      },
+      "pbs": null
+    },
+    "mobkoi": {
+      "pbjs": {
+        "schema": "pbjs/mobkoi.json"
+      },
+      "pbs": null
+    },
+    "monetix": {
+      "pbjs": {
+        "schema": "pbjs/monetix.json"
+      },
+      "pbs": null
+    },
+    "monetixads": {
+      "pbjs": {
+        "schema": "pbjs/monetixads.json"
+      },
+      "pbs": null
+    },
+    "motionspots": {
+      "pbjs": {
+        "schema": "pbjs/motionspots.json"
+      },
+      "pbs": null
+    },
+    "motorik": {
+      "pbjs": {
+        "schema": "pbjs/motorik.json"
+      },
+      "pbs": null
+    },
+    "msft": {
+      "pbjs": {
+        "schema": "pbjs/msft.json"
+      },
+      "pbs": null
+    },
+    "my6sense": {
+      "pbjs": {
+        "schema": "pbjs/my6sense.json"
+      },
+      "pbs": null
+    },
+    "mycodemedia": {
+      "pbjs": {
+        "schema": "pbjs/mycodemedia.json"
+      },
+      "pbs": null
+    },
+    "mytarget": {
+      "pbjs": {
+        "schema": "pbjs/mytarget.json"
+      },
+      "pbs": null
+    },
+    "nativery": {
+      "pbjs": {
+        "schema": "pbjs/nativery.json"
+      },
+      "pbs": null
+    },
+    "nativo": {
+      "pbjs": {
+        "schema": "pbjs/nativo.json"
+      },
+      "pbs": null
+    },
+    "netaddiction": {
+      "pbjs": {
+        "schema": "pbjs/netaddiction.json"
+      },
+      "pbs": null
+    },
+    "netads": {
+      "pbjs": {
+        "schema": "pbjs/netads.json"
+      },
+      "pbs": null
+    },
+    "newdream": {
+      "pbjs": {
+        "schema": "pbjs/newdream.json"
+      },
+      "pbs": null
+    },
+    "newspassid": {
+      "pbjs": {
+        "schema": "pbjs/newspassid.json"
+      },
+      "pbs": null
+    },
+    "nextMillennium": {
+      "pbjs": {
+        "schema": "pbjs/nextMillennium.json"
+      },
+      "pbs": null
+    },
+    "nextroll": {
+      "pbjs": {
+        "schema": "pbjs/nextroll.json"
+      },
+      "pbs": null
+    },
+    "nexverse": {
+      "pbjs": {
+        "schema": "pbjs/nexverse.json"
+      },
+      "pbs": null
+    },
+    "nexx360": {
+      "pbjs": {
+        "schema": "pbjs/nexx360.json"
+      },
+      "pbs": null
+    },
+    "ninthdecimal": {
+      "pbjs": {
+        "schema": "pbjs/ninthdecimal.json"
+      },
+      "pbs": null
+    },
+    "nobid": {
+      "pbjs": {
+        "schema": "pbjs/nobid.json"
+      },
+      "pbs": null
+    },
+    "nuba": {
+      "pbjs": {
+        "schema": "pbjs/nuba.json"
+      },
+      "pbs": null
+    },
+    "ocm": {
+      "pbjs": {
+        "schema": "pbjs/ocm.json"
+      },
+      "pbs": null
+    },
+    "oftmedia": {
+      "pbjs": {
+        "schema": "pbjs/oftmedia.json"
+      },
+      "pbs": null
+    },
+    "ogury": {
+      "pbjs": {
+        "schema": "pbjs/ogury.json"
+      },
+      "pbs": null
+    },
+    "omnidex": {
+      "pbjs": {
+        "schema": "pbjs/omnidex.json"
+      },
+      "pbs": null
+    },
+    "oms": {
+      "pbjs": {
+        "schema": "pbjs/oms.json"
+      },
+      "pbs": null
+    },
+    "onedisplay": {
+      "pbjs": {
+        "schema": "pbjs/onedisplay.json"
+      },
+      "pbs": null
+    },
+    "onemobile": {
+      "pbjs": {
+        "schema": "pbjs/onemobile.json"
+      },
+      "pbs": null
+    },
+    "oneplanetonly": {
+      "pbjs": {
+        "schema": "pbjs/oneplanetonly.json"
+      },
+      "pbs": null
+    },
+    "onetag": {
+      "pbjs": {
+        "schema": "pbjs/onetag.json"
+      },
+      "pbs": null
+    },
+    "onomagic": {
+      "pbjs": {
+        "schema": "pbjs/onomagic.json"
+      },
+      "pbs": null
+    },
+    "opamarketplace": {
+      "pbjs": {
+        "schema": "pbjs/opamarketplace.json"
+      },
+      "pbs": null
+    },
+    "open8": {
+      "pbjs": {
+        "schema": "pbjs/open8.json"
+      },
+      "pbs": null
+    },
+    "openweb": {
+      "pbjs": {
+        "schema": "pbjs/openweb.json"
+      },
+      "pbs": null
+    },
+    "openwebvideo": {
+      "pbjs": {
+        "schema": "pbjs/openwebvideo.json"
+      },
+      "pbs": null
+    },
+    "openwebxchange": {
+      "pbjs": {
+        "schema": "pbjs/openwebxchange.json"
+      },
+      "pbs": null
+    },
+    "openx": {
+      "pbjs": {
+        "schema": "pbjs/openx.json"
+      },
+      "pbs": null
+    },
+    "openxoutstream": {
+      "pbjs": {
+        "schema": "pbjs/openxoutstream.json"
+      },
+      "pbs": null
+    },
+    "operaads": {
+      "pbjs": {
+        "schema": "pbjs/operaads.json"
+      },
+      "pbs": null
+    },
+    "oppamedia": {
+      "pbjs": {
+        "schema": "pbjs/oppamedia.json"
+      },
+      "pbs": null
+    },
+    "oprx": {
+      "pbjs": {
+        "schema": "pbjs/oprx.json"
+      },
+      "pbs": null
+    },
+    "opsco": {
+      "pbjs": {
+        "schema": "pbjs/opsco.json"
+      },
+      "pbs": null
+    },
+    "optable": {
+      "pbjs": {
+        "schema": "pbjs/optable.json"
+      },
+      "pbs": null
+    },
+    "optidigital": {
+      "pbjs": {
+        "schema": "pbjs/optidigital.json"
+      },
+      "pbs": null
+    },
+    "optimatic": {
+      "pbjs": {
+        "schema": "pbjs/optimatic.json"
+      },
+      "pbs": null
+    },
+    "optimera": {
+      "pbjs": {
+        "schema": "pbjs/optimera.json"
+      },
+      "pbs": null
+    },
+    "optout": {
+      "pbjs": {
+        "schema": "pbjs/optout.json"
+      },
+      "pbs": null
+    },
+    "oraki": {
+      "pbjs": {
+        "schema": "pbjs/oraki.json"
+      },
+      "pbs": null
+    },
+    "orangeclickmedia": {
+      "pbjs": {
+        "schema": "pbjs/orangeclickmedia.json"
+      },
+      "pbs": null
+    },
+    "orbidder": {
+      "pbjs": {
+        "schema": "pbjs/orbidder.json"
+      },
+      "pbs": null
+    },
+    "orbitsoft": {
+      "pbjs": {
+        "schema": "pbjs/orbitsoft.json"
+      },
+      "pbs": null
+    },
+    "otm": {
+      "pbjs": {
+        "schema": "pbjs/otm.json"
+      },
+      "pbs": null
+    },
+    "ottadvisors": {
+      "pbjs": {
+        "schema": "pbjs/ottadvisors.json"
+      },
+      "pbs": null
+    },
+    "outbrain": {
+      "pbjs": {
+        "schema": "pbjs/outbrain.json"
+      },
+      "pbs": null
+    },
+    "oveeo": {
+      "pbjs": {
+        "schema": "pbjs/oveeo.json"
+      },
+      "pbs": null
+    },
+    "ownadx": {
+      "pbjs": {
+        "schema": "pbjs/ownadx.json"
+      },
+      "pbs": null
+    },
+    "ozone": {
+      "pbjs": {
+        "schema": "pbjs/ozone.json"
+      },
+      "pbs": null
+    },
+    "padsquad": {
+      "pbjs": {
+        "schema": "pbjs/padsquad.json"
+      },
+      "pbs": null
+    },
+    "pagescience": {
+      "pbjs": {
+        "schema": "pbjs/pagescience.json"
+      },
+      "pbs": null
+    },
+    "pangle": {
+      "pbjs": {
+        "schema": "pbjs/pangle.json"
+      },
+      "pbs": null
+    },
+    "panxo": {
+      "pbjs": {
+        "schema": "pbjs/panxo.json"
+      },
+      "pbs": null
+    },
+    "peak226": {
+      "pbjs": {
+        "schema": "pbjs/peak226.json"
+      },
+      "pbs": null
+    },
+    "performax": {
+      "pbjs": {
+        "schema": "pbjs/performax.json"
+      },
+      "pbs": null
+    },
+    "performist": {
+      "pbjs": {
+        "schema": "pbjs/performist.json"
+      },
+      "pbs": null
+    },
+    "pgam": {
+      "pbjs": {
+        "schema": "pbjs/pgam.json"
+      },
+      "pbs": null
+    },
+    "pgammedia": {
+      "pbjs": {
+        "schema": "pbjs/pgammedia.json"
+      },
+      "pbs": null
+    },
+    "pgamssp": {
+      "pbjs": {
+        "schema": "pbjs/pgamssp.json"
+      },
+      "pbs": null
+    },
+    "pilotx": {
+      "pbjs": {
+        "schema": "pbjs/pilotx.json"
+      },
+      "pbs": null
+    },
+    "pinkLion": {
+      "pbjs": {
+        "schema": "pbjs/pinkLion.json"
+      },
+      "pbs": null
+    },
+    "pixad": {
+      "pbjs": {
+        "schema": "pbjs/pixad.json"
+      },
+      "pbs": null
+    },
+    "pixelpluses": {
+      "pbjs": {
+        "schema": "pbjs/pixelpluses.json"
+      },
+      "pbs": null
+    },
+    "pixfuture": {
+      "pbjs": {
+        "schema": "pbjs/pixfuture.json"
+      },
+      "pbs": null
+    },
+    "playdigo": {
+      "pbjs": {
+        "schema": "pbjs/playdigo.json"
+      },
+      "pbs": null
+    },
+    "playwire": {
+      "pbjs": {
+        "schema": "pbjs/playwire.json"
+      },
+      "pbs": null
+    },
+    "pollux": {
+      "pbjs": {
+        "schema": "pbjs/pollux.json"
+      },
+      "pbs": null
+    },
+    "polymorph": {
+      "pbjs": {
+        "schema": "pbjs/polymorph.json"
+      },
+      "pbs": null
+    },
+    "prisma": {
+      "pbjs": {
+        "schema": "pbjs/prisma.json"
+      },
+      "pbs": null
+    },
+    "progX": {
+      "pbjs": {
+        "schema": "pbjs/progX.json"
+      },
+      "pbs": null
+    },
+    "programmatica": {
+      "pbjs": {
+        "schema": "pbjs/programmatica.json"
+      },
+      "pbs": null
+    },
+    "projectagora": {
+      "pbjs": {
+        "schema": "pbjs/projectagora.json"
+      },
+      "pbs": null
+    },
+    "proxistore": {
+      "pbjs": {
+        "schema": "pbjs/proxistore.json"
+      },
+      "pbs": null
+    },
+    "pstudio": {
+      "pbjs": {
+        "schema": "pbjs/pstudio.json"
+      },
+      "pbs": null
+    },
+    "pubcircle": {
+      "pbjs": {
+        "schema": "pbjs/pubcircle.json"
+      },
+      "pbs": null
+    },
+    "pubgenius": {
+      "pbjs": {
+        "schema": "pbjs/pubgenius.json"
+      },
+      "pbs": null
+    },
+    "publicgood": {
+      "pbjs": {
+        "schema": "pbjs/publicgood.json"
+      },
+      "pbs": null
+    },
+    "publir": {
+      "pbjs": {
+        "schema": "pbjs/publir.json"
+      },
+      "pbs": null
+    },
+    "pubmatic": {
+      "pbjs": {
+        "schema": "pbjs/pubmatic.json"
+      },
+      "pbs": null
+    },
+    "pubnative": {
+      "pbjs": {
+        "schema": "pbjs/pubnative.json"
+      },
+      "pbs": null
+    },
+    "pubrise": {
+      "pbjs": {
+        "schema": "pbjs/pubrise.json"
+      },
+      "pbs": null
+    },
+    "pubstack": {
+      "pbjs": {
+        "schema": "pbjs/pubstack.json"
+      },
+      "pbs": null
+    },
+    "pubtech": {
+      "pbjs": {
+        "schema": "pbjs/pubtech.json"
+      },
+      "pbs": null
+    },
+    "pubx": {
+      "pbjs": {
+        "schema": "pbjs/pubx.json"
+      },
+      "pbs": null
+    },
+    "pubxai": {
+      "pbjs": {
+        "schema": "pbjs/pubxai.json"
+      },
+      "pbs": null
+    },
+    "pulsepoint": {
+      "pbjs": {
+        "schema": "pbjs/pulsepoint.json"
+      },
+      "pbs": null
+    },
+    "pwbid": {
+      "pbjs": {
+        "schema": "pbjs/pwbid.json"
+      },
+      "pbs": null
+    },
+    "pxyz": {
+      "pbjs": {
+        "schema": "pbjs/pxyz.json"
+      },
+      "pbs": null
+    },
+    "qohere": {
+      "pbjs": {
+        "schema": "pbjs/qohere.json"
+      },
+      "pbs": null
+    },
+    "qortex": {
+      "pbjs": {
+        "schema": "pbjs/qortex.json"
+      },
+      "pbs": null
+    },
+    "qt": {
+      "pbjs": {
+        "schema": "pbjs/qt.json"
+      },
+      "pbs": null
+    },
+    "quantum": {
+      "pbjs": {
+        "schema": "pbjs/quantum.json"
+      },
+      "pbs": null
+    },
+    "quantumdex": {
+      "pbjs": {
+        "schema": "pbjs/quantumdex.json"
+      },
+      "pbs": null
+    },
+    "qwarry": {
+      "pbjs": {
+        "schema": "pbjs/qwarry.json"
+      },
+      "pbs": null
+    },
+    "r2b2": {
+      "pbjs": {
+        "schema": "pbjs/r2b2.json"
+      },
+      "pbs": null
+    },
+    "radiantfusion": {
+      "pbjs": {
+        "schema": "pbjs/radiantfusion.json"
+      },
+      "pbs": null
+    },
+    "rads": {
+      "pbjs": {
+        "schema": "pbjs/rads.json"
+      },
+      "pbs": null
+    },
+    "rakuten": {
+      "pbjs": {
+        "schema": "pbjs/rakuten.json"
+      },
+      "pbs": null
+    },
+    "ras": {
+      "pbjs": {
+        "schema": "pbjs/ras.json"
+      },
+      "pbs": null
+    },
+    "readpeak": {
+      "pbjs": {
+        "schema": "pbjs/readpeak.json"
+      },
+      "pbs": null
+    },
+    "rediads": {
+      "pbjs": {
+        "schema": "pbjs/rediads.json"
+      },
+      "pbs": null
+    },
+    "redtram": {
+      "pbjs": {
+        "schema": "pbjs/redtram.json"
+      },
+      "pbs": null
+    },
+    "relaido": {
+      "pbjs": {
+        "schema": "pbjs/relaido.json"
+      },
+      "pbs": null
+    },
+    "relay": {
+      "pbjs": {
+        "schema": "pbjs/relay.json"
+      },
+      "pbs": null
+    },
+    "relevantdigital": {
+      "pbjs": {
+        "schema": "pbjs/relevantdigital.json"
+      },
+      "pbs": null
+    },
+    "relevatehealth": {
+      "pbjs": {
+        "schema": "pbjs/relevatehealth.json"
+      },
+      "pbs": null
+    },
+    "resetdigital": {
+      "pbjs": {
+        "schema": "pbjs/resetdigital.json"
+      },
+      "pbs": null
+    },
+    "responsiveads": {
+      "pbjs": {
+        "schema": "pbjs/responsiveads.json"
+      },
+      "pbs": null
+    },
+    "retailspot": {
+      "pbjs": {
+        "schema": "pbjs/retailspot.json"
+      },
+      "pbs": null
+    },
+    "revantage": {
+      "pbjs": {
+        "schema": "pbjs/revantage.json"
+      },
+      "pbs": null
+    },
+    "revbid": {
+      "pbjs": {
+        "schema": "pbjs/revbid.json"
+      },
+      "pbs": null
+    },
+    "revcontent": {
+      "pbjs": {
+        "schema": "pbjs/revcontent.json"
+      },
+      "pbs": null
+    },
+    "rexrtb": {
+      "pbjs": {
+        "schema": "pbjs/rexrtb.json"
+      },
+      "pbs": null
+    },
+    "rhythmone": {
+      "pbjs": {
+        "schema": "pbjs/rhythmone.json"
+      },
+      "pbs": null
+    },
+    "richaudience": {
+      "pbjs": {
+        "schema": "pbjs/richaudience.json"
+      },
+      "pbs": null
+    },
+    "ringieraxelspringer": {
+      "pbjs": {
+        "schema": "pbjs/ringieraxelspringer.json"
+      },
+      "pbs": null
+    },
+    "rise": {
+      "pbjs": {
+        "schema": "pbjs/rise.json"
+      },
+      "pbs": null
+    },
+    "risemediatech": {
+      "pbjs": {
+        "schema": "pbjs/risemediatech.json"
+      },
+      "pbs": null
+    },
+    "risexchange": {
+      "pbjs": {
+        "schema": "pbjs/risexchange.json"
+      },
+      "pbs": null
+    },
+    "rixengine": {
+      "pbjs": {
+        "schema": "pbjs/rixengine.json"
+      },
+      "pbs": null
+    },
+    "robustApps": {
+      "pbjs": {
+        "schema": "pbjs/robustApps.json"
+      },
+      "pbs": null
+    },
+    "robusta": {
+      "pbjs": {
+        "schema": "pbjs/robusta.json"
+      },
+      "pbs": null
+    },
+    "rocketlab": {
+      "pbjs": {
+        "schema": "pbjs/rocketlab.json"
+      },
+      "pbs": null
+    },
+    "rockyou": {
+      "pbjs": {
+        "schema": "pbjs/rockyou.json"
+      },
+      "pbs": null
+    },
+    "roundel": {
+      "pbjs": {
+        "schema": "pbjs/roundel.json"
+      },
+      "pbs": null
+    },
+    "rtbanalytica": {
+      "pbjs": {
+        "schema": "pbjs/rtbanalytica.json"
+      },
+      "pbs": null
+    },
+    "rtbdemand": {
+      "pbjs": {
+        "schema": "pbjs/rtbdemand.json"
+      },
+      "pbs": null
+    },
+    "rtbdemand_com": {
+      "pbjs": {
+        "schema": "pbjs/rtbdemand_com.json"
+      },
+      "pbs": null
+    },
+    "rtbhouse": {
+      "pbjs": {
+        "schema": "pbjs/rtbhouse.json"
+      },
+      "pbs": null
+    },
+    "rtbsape": {
+      "pbjs": {
+        "schema": "pbjs/rtbsape.json"
+      },
+      "pbs": null
+    },
+    "rtbstack": {
+      "pbjs": {
+        "schema": "pbjs/rtbstack.json"
+      },
+      "pbs": null
+    },
+    "rubicon": {
+      "pbjs": {
+        "schema": "pbjs/rubicon.json"
+      },
+      "pbs": null
+    },
+    "rumble": {
+      "pbjs": {
+        "schema": "pbjs/rumble.json"
+      },
+      "pbs": null
+    },
+    "rxrtb": {
+      "pbjs": {
+        "schema": "pbjs/rxrtb.json"
+      },
+      "pbs": null
+    },
+    "sa_lunamedia": {
+      "pbjs": {
+        "schema": "pbjs/sa_lunamedia.json"
+      },
+      "pbs": null
+    },
+    "saambaa": {
+      "pbjs": {
+        "schema": "pbjs/saambaa.json"
+      },
+      "pbs": null
+    },
+    "sara": {
+      "pbjs": {
+        "schema": "pbjs/sara.json"
+      },
+      "pbs": null
+    },
+    "scalibur": {
+      "pbjs": {
+        "schema": "pbjs/scalibur.json"
+      },
+      "pbs": null
+    },
+    "scattered": {
+      "pbjs": {
+        "schema": "pbjs/scattered.json"
+      },
+      "pbs": null
+    },
+    "screencore": {
+      "pbjs": {
+        "schema": "pbjs/screencore.json"
+      },
+      "pbs": null
+    },
+    "seedingAlliance": {
+      "pbjs": {
+        "schema": "pbjs/seedingAlliance.json"
+      },
+      "pbs": null
+    },
+    "seedtag": {
+      "pbjs": {
+        "schema": "pbjs/seedtag.json"
+      },
+      "pbs": null
+    },
+    "selectmedia": {
+      "pbjs": {
+        "schema": "pbjs/selectmedia.json"
+      },
+      "pbs": null
+    },
+    "selectmediavideo": {
+      "pbjs": {
+        "schema": "pbjs/selectmediavideo.json"
+      },
+      "pbs": null
+    },
+    "setupad": {
+      "pbjs": {
+        "schema": "pbjs/setupad.json"
+      },
+      "pbs": null
+    },
+    "sevio": {
+      "pbjs": {
+        "schema": "pbjs/sevio.json"
+      },
+      "pbs": null
+    },
+    "sharethrough": {
+      "pbjs": {
+        "schema": "pbjs/sharethrough.json"
+      },
+      "pbs": null
+    },
+    "shinez": {
+      "pbjs": {
+        "schema": "pbjs/shinez.json"
+      },
+      "pbs": null
+    },
+    "shinezRtb": {
+      "pbjs": {
+        "schema": "pbjs/shinezRtb.json"
+      },
+      "pbs": null
+    },
+    "showheroes-bs": {
+      "pbjs": {
+        "schema": "pbjs/showheroes-bs.json"
+      },
+      "pbs": null
+    },
+    "silvermob": {
+      "pbjs": {
+        "schema": "pbjs/silvermob.json"
+      },
+      "pbs": null
+    },
+    "silverpush": {
+      "pbjs": {
+        "schema": "pbjs/silverpush.json"
+      },
+      "pbs": null
+    },
+    "slimcut": {
+      "pbjs": {
+        "schema": "pbjs/slimcut.json"
+      },
+      "pbs": null
+    },
+    "smaato": {
+      "pbjs": {
+        "schema": "pbjs/smaato.json"
+      },
+      "pbs": null
+    },
+    "smartadline": {
+      "pbjs": {
+        "schema": "pbjs/smartadline.json"
+      },
+      "pbs": null
+    },
+    "smarthub": {
+      "pbjs": {
+        "schema": "pbjs/smarthub.json"
+      },
+      "pbs": null
+    },
+    "smartico": {
+      "pbjs": {
+        "schema": "pbjs/smartico.json"
+      },
+      "pbs": null
+    },
+    "smartx": {
+      "pbjs": {
+        "schema": "pbjs/smartx.json"
+      },
+      "pbs": null
+    },
+    "smartyads": {
+      "pbjs": {
+        "schema": "pbjs/smartyads.json"
+      },
+      "pbs": null
+    },
+    "smartytech": {
+      "pbjs": {
+        "schema": "pbjs/smartytech.json"
+      },
+      "pbs": null
+    },
+    "smilewanted": {
+      "pbjs": {
+        "schema": "pbjs/smilewanted.json"
+      },
+      "pbs": null
+    },
+    "smn": {
+      "pbjs": {
+        "schema": "pbjs/smn.json"
+      },
+      "pbs": null
+    },
+    "smoot": {
+      "pbjs": {
+        "schema": "pbjs/smoot.json"
+      },
+      "pbs": null
+    },
+    "smootai": {
+      "pbjs": {
+        "schema": "pbjs/smootai.json"
+      },
+      "pbs": null
+    },
+    "smrtconnect": {
+      "pbjs": {
+        "schema": "pbjs/smrtconnect.json"
+      },
+      "pbs": null
+    },
+    "snigel": {
+      "pbjs": {
+        "schema": "pbjs/snigel.json"
+      },
+      "pbs": null
+    },
+    "somoaudience": {
+      "pbjs": {
+        "schema": "pbjs/somoaudience.json"
+      },
+      "pbs": null
+    },
+    "sonarads": {
+      "pbjs": {
+        "schema": "pbjs/sonarads.json"
+      },
+      "pbs": null
+    },
+    "sonic_twist": {
+      "pbjs": {
+        "schema": "pbjs/sonic_twist.json"
+      },
+      "pbs": null
+    },
+    "sonobi": {
+      "pbjs": {
+        "schema": "pbjs/sonobi.json"
+      },
+      "pbs": null
+    },
+    "sovrn": {
+      "pbjs": {
+        "schema": "pbjs/sovrn.json"
+      },
+      "pbs": null
+    },
+    "sparteo": {
+      "pbjs": {
+        "schema": "pbjs/sparteo.json"
+      },
+      "pbs": null
+    },
+    "spinx": {
+      "pbjs": {
+        "schema": "pbjs/spinx.json"
+      },
+      "pbs": null
+    },
+    "spotx": {
+      "pbjs": {
+        "schema": "pbjs/spotx.json"
+      },
+      "pbs": null
+    },
+    "ssmas": {
+      "pbjs": {
+        "schema": "pbjs/ssmas.json"
+      },
+      "pbs": null
+    },
+    "sspBC": {
+      "pbjs": {
+        "schema": "pbjs/sspBC.json"
+      },
+      "pbs": null
+    },
+    "ssp_geniee": {
+      "pbjs": {
+        "schema": "pbjs/ssp_geniee.json"
+      },
+      "pbs": null
+    },
+    "stackadapt": {
+      "pbjs": {
+        "schema": "pbjs/stackadapt.json"
+      },
+      "pbs": null
+    },
+    "stailamedia": {
+      "pbjs": {
+        "schema": "pbjs/stailamedia.json"
+      },
+      "pbs": null
+    },
+    "startio": {
+      "pbjs": {
+        "schema": "pbjs/startio.json"
+      },
+      "pbs": null
+    },
+    "stellorMediaRtb": {
+      "pbjs": {
+        "schema": "pbjs/stellorMediaRtb.json"
+      },
+      "pbs": null
+    },
+    "stellormedia": {
+      "pbjs": {
+        "schema": "pbjs/stellormedia.json"
+      },
+      "pbs": null
+    },
+    "stn": {
+      "pbjs": {
+        "schema": "pbjs/stn.json"
+      },
+      "pbs": null
+    },
+    "streamkey": {
+      "pbjs": {
+        "schema": "pbjs/streamkey.json"
+      },
+      "pbs": null
+    },
+    "streamlyn": {
+      "pbjs": {
+        "schema": "pbjs/streamlyn.json"
+      },
+      "pbs": null
+    },
+    "streamvision": {
+      "pbjs": {
+        "schema": "pbjs/streamvision.json"
+      },
+      "pbs": null
+    },
+    "stroeerCore": {
+      "pbjs": {
+        "schema": "pbjs/stroeerCore.json"
+      },
+      "pbs": null
+    },
+    "stv": {
+      "pbjs": {
+        "schema": "pbjs/stv.json"
+      },
+      "pbs": null
+    },
+    "sublime": {
+      "pbjs": {
+        "schema": "pbjs/sublime.json"
+      },
+      "pbs": null
+    },
+    "suim": {
+      "pbjs": {
+        "schema": "pbjs/suim.json"
+      },
+      "pbs": null
+    },
+    "suntContent": {
+      "pbjs": {
+        "schema": "pbjs/suntContent.json"
+      },
+      "pbs": null
+    },
+    "supply2": {
+      "pbjs": {
+        "schema": "pbjs/supply2.json"
+      },
+      "pbs": null
+    },
+    "synacormedia": {
+      "pbjs": {
+        "schema": "pbjs/synacormedia.json"
+      },
+      "pbs": null
+    },
+    "taboola": {
+      "pbjs": {
+        "schema": "pbjs/taboola.json"
+      },
+      "pbs": null
+    },
+    "tadvertising": {
+      "pbjs": {
+        "schema": "pbjs/tadvertising.json"
+      },
+      "pbs": null
+    },
+    "tagoras": {
+      "pbjs": {
+        "schema": "pbjs/tagoras.json"
+      },
+      "pbs": null
+    },
+    "talkads": {
+      "pbjs": {
+        "schema": "pbjs/talkads.json"
+      },
+      "pbs": null
+    },
+    "tapnative": {
+      "pbjs": {
+        "schema": "pbjs/tapnative.json"
+      },
+      "pbs": null
+    },
+    "tappx": {
+      "pbjs": {
+        "schema": "pbjs/tappx.json"
+      },
+      "pbs": null
+    },
+    "targetVideo": {
+      "pbjs": {
+        "schema": "pbjs/targetVideo.json"
+      },
+      "pbs": null
+    },
+    "teads": {
+      "pbjs": {
+        "schema": "pbjs/teads.json"
+      },
+      "pbs": null
+    },
+    "teal": {
+      "pbjs": {
+        "schema": "pbjs/teal.json"
+      },
+      "pbs": null
+    },
+    "telaria": {
+      "pbjs": {
+        "schema": "pbjs/telaria.json"
+      },
+      "pbs": null
+    },
+    "temedya": {
+      "pbjs": {
+        "schema": "pbjs/temedya.json"
+      },
+      "pbs": null
+    },
+    "teqBlazeSalesAgent": {
+      "pbjs": {
+        "schema": "pbjs/teqBlazeSalesAgent.json"
+      },
+      "pbs": null
+    },
+    "tgm": {
+      "pbjs": {
+        "schema": "pbjs/tgm.json"
+      },
+      "pbs": null
+    },
+    "theads": {
+      "pbjs": {
+        "schema": "pbjs/theads.json"
+      },
+      "pbs": null
+    },
+    "theadx": {
+      "pbjs": {
+        "schema": "pbjs/theadx.json"
+      },
+      "pbs": null
+    },
+    "themoneytizer": {
+      "pbjs": {
+        "schema": "pbjs/themoneytizer.json"
+      },
+      "pbs": null
+    },
+    "topon": {
+      "pbjs": {
+        "schema": "pbjs/topon.json"
+      },
+      "pbs": null
+    },
+    "tpmn": {
+      "pbjs": {
+        "schema": "pbjs/tpmn.json"
+      },
+      "pbs": null
+    },
+    "tradplus": {
+      "pbjs": {
+        "schema": "pbjs/tradplus.json"
+      },
+      "pbs": null
+    },
+    "trafficgate": {
+      "pbjs": {
+        "schema": "pbjs/trafficgate.json"
+      },
+      "pbs": null
+    },
+    "trafficroots": {
+      "pbjs": {
+        "schema": "pbjs/trafficroots.json"
+      },
+      "pbs": null
+    },
+    "tredio": {
+      "pbjs": {
+        "schema": "pbjs/tredio.json"
+      },
+      "pbs": null
+    },
+    "tremor": {
+      "pbjs": {
+        "schema": "pbjs/tremor.json"
+      },
+      "pbs": null
+    },
+    "trion": {
+      "pbjs": {
+        "schema": "pbjs/trion.json"
+      },
+      "pbs": null
+    },
+    "triplelift": {
+      "pbjs": {
+        "schema": "pbjs/triplelift.json"
+      },
+      "pbs": null
+    },
+    "triplelift_native": {
+      "pbjs": {
+        "schema": "pbjs/triplelift_native.json"
+      },
+      "pbs": null
+    },
+    "truereach": {
+      "pbjs": {
+        "schema": "pbjs/truereach.json"
+      },
+      "pbs": null
+    },
+    "trustedstack": {
+      "pbjs": {
+        "schema": "pbjs/trustedstack.json"
+      },
+      "pbs": null
+    },
+    "trustx": {
+      "pbjs": {
+        "schema": "pbjs/trustx.json"
+      },
+      "pbs": null
+    },
+    "turktelekom": {
+      "pbjs": {
+        "schema": "pbjs/turktelekom.json"
+      },
+      "pbs": null
+    },
+    "twistdigital": {
+      "pbjs": {
+        "schema": "pbjs/twistdigital.json"
+      },
+      "pbs": null
+    },
+    "ucfunnel": {
+      "pbjs": {
+        "schema": "pbjs/ucfunnel.json"
+      },
+      "pbs": null
+    },
+    "underdogmedia": {
+      "pbjs": {
+        "schema": "pbjs/underdogmedia.json"
+      },
+      "pbs": null
+    },
+    "undertone": {
+      "pbjs": {
+        "schema": "pbjs/undertone.json"
+      },
+      "pbs": null
+    },
+    "unibots": {
+      "pbjs": {
+        "schema": "pbjs/unibots.json"
+      },
+      "pbs": null
+    },
+    "unicorn": {
+      "pbjs": {
+        "schema": "pbjs/unicorn.json"
+      },
+      "pbs": null
+    },
+    "uniquest": {
+      "pbjs": {
+        "schema": "pbjs/uniquest.json"
+      },
+      "pbs": null
+    },
+    "uniquest_widget": {
+      "pbjs": {
+        "schema": "pbjs/uniquest_widget.json"
+      },
+      "pbs": null
+    },
+    "unruly": {
+      "pbjs": {
+        "schema": "pbjs/unruly.json"
+      },
+      "pbs": null
+    },
+    "uol": {
+      "pbjs": {
+        "schema": "pbjs/uol.json"
+      },
+      "pbs": null
+    },
+    "urekamedia": {
+      "pbjs": {
+        "schema": "pbjs/urekamedia.json"
+      },
+      "pbs": null
+    },
+    "vaayaMedia": {
+      "pbjs": {
+        "schema": "pbjs/vaayaMedia.json"
+      },
+      "pbs": null
+    },
+    "valueimpression": {
+      "pbjs": {
+        "schema": "pbjs/valueimpression.json"
+      },
+      "pbs": null
+    },
+    "vdoai": {
+      "pbjs": {
+        "schema": "pbjs/vdoai.json"
+      },
+      "pbs": null
+    },
+    "velonium": {
+      "pbjs": {
+        "schema": "pbjs/velonium.json"
+      },
+      "pbs": null
+    },
+    "ventes": {
+      "pbjs": {
+        "schema": "pbjs/ventes.json"
+      },
+      "pbs": null
+    },
+    "verben": {
+      "pbjs": {
+        "schema": "pbjs/verben.json"
+      },
+      "pbs": null
+    },
+    "vertamedia": {
+      "pbjs": {
+        "schema": "pbjs/vertamedia.json"
+      },
+      "pbs": null
+    },
+    "viantOrtb": {
+      "pbjs": {
+        "schema": "pbjs/viantOrtb.json"
+      },
+      "pbs": null
+    },
+    "vibrantmedia": {
+      "pbjs": {
+        "schema": "pbjs/vibrantmedia.json"
+      },
+      "pbs": null
+    },
+    "vidazoo": {
+      "pbjs": {
+        "schema": "pbjs/vidazoo.json"
+      },
+      "pbs": null
+    },
+    "vidcrunch": {
+      "pbjs": {
+        "schema": "pbjs/vidcrunch.json"
+      },
+      "pbs": null
+    },
+    "vidcrunchllc": {
+      "pbjs": {
+        "schema": "pbjs/vidcrunchllc.json"
+      },
+      "pbs": null
+    },
+    "videobyte": {
+      "pbjs": {
+        "schema": "pbjs/videobyte.json"
+      },
+      "pbs": null
+    },
+    "videonow": {
+      "pbjs": {
+        "schema": "pbjs/videonow.json"
+      },
+      "pbs": null
+    },
+    "videoreach": {
+      "pbjs": {
+        "schema": "pbjs/videoreach.json"
+      },
+      "pbs": null
+    },
+    "vidoomy": {
+      "pbjs": {
+        "schema": "pbjs/vidoomy.json"
+      },
+      "pbs": null
+    },
+    "viewdeos": {
+      "pbjs": {
+        "schema": "pbjs/viewdeos.json"
+      },
+      "pbs": null
+    },
+    "viewdeosDX": {
+      "pbjs": {
+        "schema": "pbjs/viewdeosDX.json"
+      },
+      "pbs": null
+    },
+    "viously": {
+      "pbjs": {
+        "schema": "pbjs/viously.json"
+      },
+      "pbs": null
+    },
+    "viqeo": {
+      "pbjs": {
+        "schema": "pbjs/viqeo.json"
+      },
+      "pbs": null
+    },
+    "visiblemeasures": {
+      "pbjs": {
+        "schema": "pbjs/visiblemeasures.json"
+      },
+      "pbs": null
+    },
+    "vistars": {
+      "pbjs": {
+        "schema": "pbjs/vistars.json"
+      },
+      "pbs": null
+    },
+    "visx": {
+      "pbjs": {
+        "schema": "pbjs/visx.json"
+      },
+      "pbs": null
+    },
+    "vlyby": {
+      "pbjs": {
+        "schema": "pbjs/vlyby.json"
+      },
+      "pbs": null
+    },
+    "voisetech": {
+      "pbjs": {
+        "schema": "pbjs/voisetech.json"
+      },
+      "pbs": null
+    },
+    "vox": {
+      "pbjs": {
+        "schema": "pbjs/vox.json"
+      },
+      "pbs": null
+    },
+    "vrtcal": {
+      "pbjs": {
+        "schema": "pbjs/vrtcal.json"
+      },
+      "pbs": null
+    },
+    "vungle": {
+      "pbjs": {
+        "schema": "pbjs/vungle.json"
+      },
+      "pbs": null
+    },
+    "vuukle": {
+      "pbjs": {
+        "schema": "pbjs/vuukle.json"
+      },
+      "pbs": null
+    },
+    "waardex": {
+      "pbjs": {
+        "schema": "pbjs/waardex.json"
+      },
+      "pbs": null
+    },
+    "waardex_ak": {
+      "pbjs": {
+        "schema": "pbjs/waardex_ak.json"
+      },
+      "pbs": null
+    },
+    "welect": {
+      "pbjs": {
+        "schema": "pbjs/welect.json"
+      },
+      "pbs": null
+    },
+    "widespace": {
+      "pbjs": {
+        "schema": "pbjs/widespace.json"
+      },
+      "pbs": null
+    },
+    "winr": {
+      "pbjs": {
+        "schema": "pbjs/winr.json"
+      },
+      "pbs": null
+    },
+    "wipes": {
+      "pbjs": {
+        "schema": "pbjs/wipes.json"
+      },
+      "pbs": null
+    },
+    "xe": {
+      "pbjs": {
+        "schema": "pbjs/xe.json"
+      },
+      "pbs": null
+    },
+    "xendiz": {
+      "pbjs": {
+        "schema": "pbjs/xendiz.json"
+      },
+      "pbs": null
+    },
+    "xtrmqb": {
+      "pbjs": {
+        "schema": "pbjs/xtrmqb.json"
+      },
+      "pbs": null
+    },
+    "yahooAds": {
+      "pbjs": {
+        "schema": "pbjs/yahooAds.json"
+      },
+      "pbs": null
+    },
+    "yaleo": {
+      "pbjs": {
+        "schema": "pbjs/yaleo.json"
+      },
+      "pbs": null
+    },
+    "yandex": {
+      "pbjs": {
+        "schema": "pbjs/yandex.json"
+      },
+      "pbs": null
+    },
+    "ybidder": {
+      "pbjs": {
+        "schema": "pbjs/ybidder.json"
+      },
+      "pbs": null
+    },
+    "yeahmobi": {
+      "pbjs": {
+        "schema": "pbjs/yeahmobi.json"
+      },
+      "pbs": null
+    },
+    "yieldbot": {
+      "pbjs": {
+        "schema": "pbjs/yieldbot.json"
+      },
+      "pbs": null
+    },
+    "yieldlab": {
+      "pbjs": {
+        "schema": "pbjs/yieldlab.json"
+      },
+      "pbs": null
+    },
+    "yieldlift": {
+      "pbjs": {
+        "schema": "pbjs/yieldlift.json"
+      },
+      "pbs": null
+    },
+    "yieldlove": {
+      "pbjs": {
+        "schema": "pbjs/yieldlove.json"
+      },
+      "pbs": null
+    },
+    "yieldmo": {
+      "pbjs": {
+        "schema": "pbjs/yieldmo.json"
+      },
+      "pbs": null
+    },
+    "yieldnexus": {
+      "pbjs": {
+        "schema": "pbjs/yieldnexus.json"
+      },
+      "pbs": null
+    },
+    "yieldone": {
+      "pbjs": {
+        "schema": "pbjs/yieldone.json"
+      },
+      "pbs": null
+    },
+    "yobee": {
+      "pbjs": {
+        "schema": "pbjs/yobee.json"
+      },
+      "pbs": null
+    },
+    "zentotem": {
+      "pbjs": {
+        "schema": "pbjs/zentotem.json"
+      },
+      "pbs": null
+    },
+    "zeroclickfraud": {
+      "pbjs": {
+        "schema": "pbjs/zeroclickfraud.json"
+      },
+      "pbs": null
+    },
+    "zeta": {
+      "pbjs": {
+        "schema": "pbjs/zeta.json"
+      },
+      "pbs": null
+    },
+    "zeta_global_ssp": {
+      "pbjs": {
+        "schema": "pbjs/zeta_global_ssp.json"
+      },
+      "pbs": null
+    },
+    "zmaticoo": {
+      "pbjs": {
+        "schema": "pbjs/zmaticoo.json"
+      },
       "pbs": null
     }
   }

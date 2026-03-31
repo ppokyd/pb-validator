@@ -1,18 +1,8 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://prebid.org/schemas/pbjs/appnexus.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": true,
+  "description": "Generated from prebid.github.io dev-docs/bidders (appnexus.md). Table-derived constraints are not yet applied; params object is accepted.",
   "title": "AppNexus bidder params (Prebid.js)",
-  "description": "Starter schema derived from prebid.github.io dev-docs; extend via codegen/overrides.",
-  "type": "object",
-  "properties": {
-    "placementId": {
-      "type": ["integer", "string"],
-      "description": "Placement ID (Prebid.js camelCase; prefer placement_id for PBS-aligned setups when supported)."
-    },
-    "placement_id": { "type": "integer" },
-    "member": { "type": "string" },
-    "invCode": { "type": "string" },
-    "inv_code": { "type": "string" }
-  },
-  "additionalProperties": true
+  "type": "object"
 }

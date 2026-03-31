@@ -1,0 +1,8 @@
+{
+  "$id": "https://prebid.org/schemas/pbjs/pxyz.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": true,
+  "description": "Generated from prebid.github.io dev-docs/bidders (pxyz.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "title": "Playground XYZ bidder params (Prebid.js)",
+  "type": "object"
+}

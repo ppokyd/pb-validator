@@ -1,0 +1,8 @@
+{
+  "$id": "https://prebid.org/schemas/pbjs/lasso.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": true,
+  "description": "Generated from prebid.github.io dev-docs/bidders (lasso.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "title": "Lasso bidder params (Prebid.js)",
+  "type": "object"
+}
