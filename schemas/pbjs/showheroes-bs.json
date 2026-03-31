@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbjs/showheroes-bs.json",
   "title": "ShowHeroes bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (showheroes-bs.md).",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/showheroes-bs.md",
   "type": "object",
   "properties": {
     "unitId": {

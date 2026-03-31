@@ -33,5 +33,6 @@
       "description": "A string array of CWire features"
     }
   },
-  "required": []
+  "required": [],
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/cwire.json"
 }

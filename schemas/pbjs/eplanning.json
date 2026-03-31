@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbjs/eplanning.json",
   "title": "E-Planning bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (eplanning.md).",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/eplanning.md",
   "type": "object",
   "properties": {
     "ci": {

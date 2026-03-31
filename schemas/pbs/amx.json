@@ -13,5 +13,6 @@
       "type": "string",
       "description": "Override imp.tagid value to provide a custom value in AMX ad unit ID reporting"
     }
-  }
+  },
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/amx.json"
 }
