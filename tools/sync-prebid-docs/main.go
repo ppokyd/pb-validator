@@ -67,18 +67,23 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-
-	seen := make(map[string]bidderInfo)
-	var skipped int
-
+	names := make([]string, 0, len(entries))
 	for _, ent := range entries {
 		if ent.IsDir() || !strings.HasSuffix(strings.ToLower(ent.Name()), ".md") {
 			continue
 		}
-		path := filepath.Join(biddersDir, ent.Name())
+		names = append(names, ent.Name())
+	}
+	sort.Strings(names)
+
+	seen := make(map[string]bidderInfo)
+	var skipped int
+
+	for _, name := range names {
+		path := filepath.Join(biddersDir, name)
 		body, err := os.ReadFile(path)
 		if err != nil {
-			log.Printf("skip read %s: %v", ent.Name(), err)
+			log.Printf("skip read %s: %v", name, err)
 			skipped++
 			continue
 		}
@@ -101,11 +106,11 @@ func main() {
 			title = strings.TrimSpace(t)
 		}
 		if prev, dup := seen[code]; dup {
-			log.Printf("duplicate biddercode %q: keeping %s, skipping %s", code, prev.File, ent.Name())
+			log.Printf("duplicate biddercode %q: keeping %s, skipping %s", code, prev.File, name)
 			skipped++
 			continue
 		}
-		seen[code] = bidderInfo{Title: title, File: ent.Name()}
+		seen[code] = bidderInfo{Title: title, File: name}
 	}
 
 	codes := make([]string, 0, len(seen))
