@@ -1,0 +1,37 @@
+{
+  "name": "@prebid/adapter-validator",
+  "version": "0.1.0",
+  "description": "Validate Prebid bidder params using JSON Schemas aligned with prebid.github.io and prebid-server",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "schemas"
+  ],
+  "scripts": {
+    "build": "tsc && node scripts/copy-schemas.mjs",
+    "test": "npm run build && node --test dist/index.test.js",
+    "prepack": "npm run build"
+  },
+  "keywords": [
+    "prebid",
+    "adapter",
+    "validation",
+    "json-schema"
+  ],
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.4.0"
+  },
+  "dependencies": {
+    "ajv": "^8.12.0"
+  }
+}
