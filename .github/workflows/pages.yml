@@ -1,0 +1,59 @@
+name: Deploy demo to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Only one deployment runs at a time; cancel any in-progress run when a new
+# commit lands so the latest build is always what gets published.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: |
+            packages/js/package-lock.json
+            demo/package-lock.json
+
+      # Build the library first so the local file: dep in demo is up to date.
+      - name: Build @ppokyd/pb-validator
+        working-directory: packages/js
+        run: npm ci && npm run build
+
+      - name: Build demo
+        working-directory: demo
+        run: npm ci && npm run build
+
+      # Add .nojekyll so GitHub Pages serves files that start with underscore.
+      - name: Add .nojekyll
+        run: touch demo/dist/.nojekyll
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: demo/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4

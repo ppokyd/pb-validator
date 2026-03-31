@@ -1,26 +1,32 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-module.exports = {
-  entry: "./src/main.js",
-  output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "bundle.[contenthash].js",
-    clean: true,
-  },
-  module: {
-    rules: [
-      {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"],
-      },
-    ],
-  },
-  plugins: [
-    new HtmlWebpackPlugin({
-      // Use templateContent (plain string) instead of a template file to
-      // avoid the lodash assignWith version conflict triggered by html-webpack-plugin's loader.
-      templateContent: `<!DOCTYPE html>
+module.exports = (env, argv) => {
+  // Production builds are deployed to GitHub Pages under /pb-validator/.
+  // Dev server serves from root so assets resolve without a subpath.
+  const publicPath = argv.mode === "production" ? "/pb-validator/" : "/";
+
+  return {
+    entry: "./src/main.js",
+    output: {
+      path: path.resolve(__dirname, "dist"),
+      filename: "bundle.[contenthash].js",
+      clean: true,
+      publicPath,
+    },
+    module: {
+      rules: [
+        {
+          test: /\.css$/,
+          use: ["style-loader", "css-loader"],
+        },
+      ],
+    },
+    plugins: [
+      new HtmlWebpackPlugin({
+        // Use templateContent (plain string) instead of a template file to
+        // avoid the lodash assignWith version conflict triggered by html-webpack-plugin's loader.
+        templateContent: `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -39,7 +45,7 @@ module.exports = {
       <span class="logo-tag">Demo</span>
     </div>
     <div class="header-right">
-      <span class="pkg-badge">@prebid/adapter-validator</span>
+      <span class="pkg-badge">@ppokyd/pb-validator</span>
       <div class="runtime-toggle" id="runtimeToggle">
         <button class="rt-btn active" data-runtime="pbjs">pbjs</button>
         <button class="rt-btn" data-runtime="pbs">pbs</button>
@@ -87,10 +93,11 @@ module.exports = {
   </div>
 </body>
 </html>`,
-    }),
-  ],
-  devServer: {
-    port: 3000,
-    hot: true,
-  },
+      }),
+    ],
+    devServer: {
+      port: 3000,
+      hot: true,
+    },
+  };
 };

@@ -9,6 +9,10 @@ Sources of truth:
 - **Prebid.js bidder docs:** [prebid.github.io `dev-docs/bidders`](https://github.com/prebid/prebid.github.io/tree/master/dev-docs/bidders) — `node tools/sync-prebid-client/index.mjs --out schemas` clones that repo, reads `layout: bidder` pages, writes one `schemas/pbjs/<biddercode>.json` per bidder, and updates `schemas/manifest.json` (pinned commit under `sources.prebid_github_io.commit`). Schemas are permissive objects (`additionalProperties: true`) until Bid Params tables are parsed into constraints.
 - **Prebid Server adapters:** [prebid-server `static/bidder-params`](https://github.com/prebid/prebid-server/tree/master/static/bidder-params) — `node tools/sync-prebid-server/index.mjs --out schemas` clones that repo, copies the ready-made JSON Schema files (one per adapter) to `schemas/pbs/<code>.json`, and merges `pbs` entries into `schemas/manifest.json` (pinned commit under `sources.prebid_server.commit`) while preserving existing `pbjs` entries. Each adapter schema is normalised with a canonical `$id` and `$schema`.
 
+## Demo
+
+**[ppokyd.github.io/pb-validator](https://ppokyd.github.io/pb-validator/)** — interactive browser playground: browse bidders, inspect schemas, and validate params against the pbjs or pbs schema without installing anything.
+
 ## Quick check
 
 ```bash
