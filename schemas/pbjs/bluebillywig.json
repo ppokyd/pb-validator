@@ -31,10 +31,26 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "publicationName",
-    "accountId",
-    "rendererCode",
-    "connections"
+  "allOf": [
+    {
+      "required": [
+        "publicationName"
+      ]
+    },
+    {
+      "required": [
+        "accountId"
+      ]
+    },
+    {
+      "required": [
+        "rendererCode"
+      ]
+    },
+    {
+      "required": [
+        "connections"
+      ]
+    }
   ]
 }

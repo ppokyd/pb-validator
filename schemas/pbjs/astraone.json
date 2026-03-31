@@ -19,9 +19,21 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "placeId",
-    "imageUrl",
-    "placement"
+  "allOf": [
+    {
+      "required": [
+        "placeId"
+      ]
+    },
+    {
+      "required": [
+        "imageUrl"
+      ]
+    },
+    {
+      "required": [
+        "placement"
+      ]
+    }
   ]
 }

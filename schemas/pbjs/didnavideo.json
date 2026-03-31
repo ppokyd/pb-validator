@@ -15,8 +15,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "AV_PUBLISHERID",
-    "AV_CHANNELID"
+  "allOf": [
+    {
+      "required": [
+        "AV_PUBLISHERID"
+      ]
+    },
+    {
+      "required": [
+        "AV_CHANNELID"
+      ]
+    }
   ]
 }

@@ -15,8 +15,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "property_slug",
-    "placement_slug"
+  "allOf": [
+    {
+      "required": [
+        "property_slug"
+      ]
+    },
+    {
+      "required": [
+        "placement_slug"
+      ]
+    }
   ]
 }

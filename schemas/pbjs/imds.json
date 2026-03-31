@@ -23,8 +23,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "seatId",
-    "tagId"
+  "allOf": [
+    {
+      "required": [
+        "seatId"
+      ]
+    },
+    {
+      "required": [
+        "tagId"
+      ]
+    }
   ]
 }

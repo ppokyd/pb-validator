@@ -23,8 +23,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "pid",
-    "supplyType"
+  "allOf": [
+    {
+      "required": [
+        "pid"
+      ]
+    },
+    {
+      "required": [
+        "supplyType"
+      ]
+    }
   ]
 }

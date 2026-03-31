@@ -19,9 +19,21 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "publisherId",
-    "placementId",
-    "siteId"
+  "allOf": [
+    {
+      "required": [
+        "publisherId"
+      ]
+    },
+    {
+      "required": [
+        "placementId"
+      ]
+    },
+    {
+      "required": [
+        "siteId"
+      ]
+    }
   ]
 }

@@ -21,7 +21,7 @@
       "type": "string",
       "description": "The Adform domain"
     },
-    "priceType (alias pt)": {
+    "priceType": {
       "type": "string",
       "description": "Price type"
     },

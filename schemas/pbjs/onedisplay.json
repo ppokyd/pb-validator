@@ -27,8 +27,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "placement",
-    "network"
+  "allOf": [
+    {
+      "required": [
+        "placement"
+      ]
+    },
+    {
+      "required": [
+        "network"
+      ]
+    }
   ]
 }

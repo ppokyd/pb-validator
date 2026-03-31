@@ -15,8 +15,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "placementId",
-    "traffic"
+  "allOf": [
+    {
+      "required": [
+        "placementId"
+      ]
+    },
+    {
+      "required": [
+        "traffic"
+      ]
+    }
   ]
 }

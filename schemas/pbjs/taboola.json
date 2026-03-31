@@ -38,8 +38,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "tagId",
-    "publisherId"
+  "allOf": [
+    {
+      "required": [
+        "tagId"
+      ]
+    },
+    {
+      "required": [
+        "publisherId"
+      ]
+    }
   ]
 }

@@ -35,8 +35,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "host",
-    "publisherId"
+  "allOf": [
+    {
+      "required": [
+        "host"
+      ]
+    },
+    {
+      "required": [
+        "publisherId"
+      ]
+    }
   ]
 }

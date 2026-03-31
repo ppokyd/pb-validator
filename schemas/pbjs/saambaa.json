@@ -30,8 +30,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "placement",
-    "pubid"
+  "allOf": [
+    {
+      "required": [
+        "placement"
+      ]
+    },
+    {
+      "required": [
+        "pubid"
+      ]
+    }
   ]
 }

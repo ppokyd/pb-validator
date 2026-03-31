@@ -39,9 +39,21 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "adUnitId",
-    "adUnitType",
-    "publisherId"
+  "allOf": [
+    {
+      "required": [
+        "adUnitId"
+      ]
+    },
+    {
+      "required": [
+        "adUnitType"
+      ]
+    },
+    {
+      "required": [
+        "publisherId"
+      ]
+    }
   ]
 }

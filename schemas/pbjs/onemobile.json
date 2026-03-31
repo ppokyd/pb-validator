@@ -19,8 +19,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "dcn",
-    "pos"
+  "allOf": [
+    {
+      "required": [
+        "dcn"
+      ]
+    },
+    {
+      "required": [
+        "pos"
+      ]
+    }
   ]
 }

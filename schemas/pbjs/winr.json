@@ -8,14 +8,6 @@
     "placementId": {
       "type": "integer",
       "description": "Placement ID can be a string or integer, however integer is preferred."
-    },
-    "domParent*": {
-      "type": "string",
-      "description": "The DOM element where the ad unit will load into. The value is passed as a parameter to the JavaScript HTML DOM querySelector() method"
-    },
-    "child*": {
-      "type": "integer",
-      "description": "The number of child nodes of domParent preceding the ad unit."
     }
   },
   "additionalProperties": false,

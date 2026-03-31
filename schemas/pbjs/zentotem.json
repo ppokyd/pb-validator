@@ -4,10 +4,6 @@
   "title": "Zentotem bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (zentotem.md).",
   "type": "object",
-  "properties": {
-    "(none)": {
-      "description": "no params required"
-    }
-  },
+  "properties": {},
   "additionalProperties": false
 }

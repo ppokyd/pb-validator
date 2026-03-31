@@ -19,8 +19,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "placement_id",
-    "publisher_id"
+  "allOf": [
+    {
+      "required": [
+        "placement_id"
+      ]
+    },
+    {
+      "required": [
+        "publisher_id"
+      ]
+    }
   ]
 }

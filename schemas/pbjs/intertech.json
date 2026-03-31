@@ -15,8 +15,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "pageId",
-    "impId"
+  "allOf": [
+    {
+      "required": [
+        "pageId"
+      ]
+    },
+    {
+      "required": [
+        "impId"
+      ]
+    }
   ]
 }

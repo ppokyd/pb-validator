@@ -35,8 +35,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "token",
-    "publisher"
+  "allOf": [
+    {
+      "required": [
+        "token"
+      ]
+    },
+    {
+      "required": [
+        "publisher"
+      ]
+    }
   ]
 }

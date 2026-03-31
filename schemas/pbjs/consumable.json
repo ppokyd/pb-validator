@@ -27,11 +27,31 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "siteId",
-    "networkId",
-    "unitId",
-    "unitName",
-    "placementId"
+  "allOf": [
+    {
+      "required": [
+        "siteId"
+      ]
+    },
+    {
+      "required": [
+        "networkId"
+      ]
+    },
+    {
+      "required": [
+        "unitId"
+      ]
+    },
+    {
+      "required": [
+        "unitName"
+      ]
+    },
+    {
+      "required": [
+        "placementId"
+      ]
+    }
   ]
 }

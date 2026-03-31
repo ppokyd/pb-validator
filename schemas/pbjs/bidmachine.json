@@ -19,9 +19,21 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "host",
-    "path",
-    "seller_id"
+  "allOf": [
+    {
+      "required": [
+        "host"
+      ]
+    },
+    {
+      "required": [
+        "path"
+      ]
+    },
+    {
+      "required": [
+        "seller_id"
+      ]
+    }
   ]
 }

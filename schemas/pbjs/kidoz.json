@@ -15,8 +15,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "access_token",
-    "publisher_id"
+  "allOf": [
+    {
+      "required": [
+        "access_token"
+      ]
+    },
+    {
+      "required": [
+        "publisher_id"
+      ]
+    }
   ]
 }

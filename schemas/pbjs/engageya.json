@@ -19,8 +19,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "widgetId",
-    "websiteId"
+  "allOf": [
+    {
+      "required": [
+        "widgetId"
+      ]
+    },
+    {
+      "required": [
+        "websiteId"
+      ]
+    }
   ]
 }

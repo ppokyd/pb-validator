@@ -19,9 +19,21 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "sspId",
-    "seatId",
-    "tokenId"
+  "allOf": [
+    {
+      "required": [
+        "sspId"
+      ]
+    },
+    {
+      "required": [
+        "seatId"
+      ]
+    },
+    {
+      "required": [
+        "tokenId"
+      ]
+    }
   ]
 }

@@ -23,8 +23,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "accountId",
-    "placementId"
+  "allOf": [
+    {
+      "required": [
+        "accountId"
+      ]
+    },
+    {
+      "required": [
+        "placementId"
+      ]
+    }
   ]
 }

@@ -15,8 +15,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "ai",
-    "sc"
+  "allOf": [
+    {
+      "required": [
+        "ai"
+      ]
+    },
+    {
+      "required": [
+        "sc"
+      ]
+    }
   ]
 }

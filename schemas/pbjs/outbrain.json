@@ -5,18 +5,6 @@
   "description": "Generated from prebid.github.io dev-docs/bidders (outbrain.md).",
   "type": "object",
   "properties": {
-    "publisher.id": {
-      "type": "string",
-      "description": "The publisher account ID"
-    },
-    "publisher.name": {
-      "type": "string",
-      "description": "The publisher name"
-    },
-    "publisher.domain": {
-      "type": "string",
-      "description": "The publisher domain"
-    },
     "tagid": {
       "type": "string",
       "description": "Identifier for specific ad placement or ad tag"
@@ -28,8 +16,5 @@
       "description": "(Deprecated)"
     }
   },
-  "additionalProperties": false,
-  "required": [
-    "publisher.id"
-  ]
+  "additionalProperties": false
 }

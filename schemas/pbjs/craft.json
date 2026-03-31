@@ -19,8 +19,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "sitekey",
-    "placementId"
+  "allOf": [
+    {
+      "required": [
+        "sitekey"
+      ]
+    },
+    {
+      "required": [
+        "placementId"
+      ]
+    }
   ]
 }

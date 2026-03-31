@@ -5,13 +5,26 @@
   "description": "Generated from prebid.github.io dev-docs/bidders (stailamedia.md).",
   "type": "object",
   "properties": {
-    "placement_id (PBS+PBJS) or placementId (PBJS)": {
+    "placement_id": {
+      "type": "string",
+      "description": "Placement id"
+    },
+    "placementId": {
       "type": "string",
       "description": "Placement id"
     }
   },
   "additionalProperties": false,
-  "required": [
-    "placement_id (PBS+PBJS) or placementId (PBJS)"
+  "anyOf": [
+    {
+      "required": [
+        "placement_id"
+      ]
+    },
+    {
+      "required": [
+        "placementId"
+      ]
+    }
   ]
 }

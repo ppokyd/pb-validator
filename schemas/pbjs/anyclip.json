@@ -19,8 +19,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "publisherId",
-    "supplyTagId"
+  "allOf": [
+    {
+      "required": [
+        "publisherId"
+      ]
+    },
+    {
+      "required": [
+        "supplyTagId"
+      ]
+    }
   ]
 }

@@ -31,9 +31,21 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "seller_id",
-    "publisher_id",
-    "tagid"
+  "allOf": [
+    {
+      "required": [
+        "seller_id"
+      ]
+    },
+    {
+      "required": [
+        "publisher_id"
+      ]
+    },
+    {
+      "required": [
+        "tagid"
+      ]
+    }
   ]
 }

@@ -15,8 +15,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "sourceId",
-    "accountId"
+  "allOf": [
+    {
+      "required": [
+        "sourceId"
+      ]
+    },
+    {
+      "required": [
+        "accountId"
+      ]
+    }
   ]
 }

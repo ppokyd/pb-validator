@@ -23,8 +23,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "publisherId",
-    "region"
+  "allOf": [
+    {
+      "required": [
+        "publisherId"
+      ]
+    },
+    {
+      "required": [
+        "region"
+      ]
+    }
   ]
 }

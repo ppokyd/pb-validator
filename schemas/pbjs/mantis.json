@@ -15,8 +15,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "property",
-    "zone"
+  "allOf": [
+    {
+      "required": [
+        "property"
+      ]
+    },
+    {
+      "required": [
+        "zone"
+      ]
+    }
   ]
 }

@@ -19,8 +19,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "siteId",
-    "networkId"
+  "allOf": [
+    {
+      "required": [
+        "siteId"
+      ]
+    },
+    {
+      "required": [
+        "networkId"
+      ]
+    }
   ]
 }

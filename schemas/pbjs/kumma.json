@@ -35,9 +35,21 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "pubId",
-    "siteId",
-    "placementId"
+  "allOf": [
+    {
+      "required": [
+        "pubId"
+      ]
+    },
+    {
+      "required": [
+        "siteId"
+      ]
+    },
+    {
+      "required": [
+        "placementId"
+      ]
+    }
   ]
 }

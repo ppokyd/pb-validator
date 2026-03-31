@@ -27,11 +27,31 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "publisherid",
-    "signkey",
-    "keyid",
-    "slotid",
-    "adtype"
+  "allOf": [
+    {
+      "required": [
+        "publisherid"
+      ]
+    },
+    {
+      "required": [
+        "signkey"
+      ]
+    },
+    {
+      "required": [
+        "keyid"
+      ]
+    },
+    {
+      "required": [
+        "slotid"
+      ]
+    },
+    {
+      "required": [
+        "adtype"
+      ]
+    }
   ]
 }

@@ -15,8 +15,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "assetKey",
-    "adUnitId"
+  "allOf": [
+    {
+      "required": [
+        "assetKey"
+      ]
+    },
+    {
+      "required": [
+        "adUnitId"
+      ]
+    }
   ]
 }

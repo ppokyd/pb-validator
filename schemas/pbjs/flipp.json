@@ -42,9 +42,21 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "publisherNameIdentifier",
-    "creativeType",
-    "siteId"
+  "allOf": [
+    {
+      "required": [
+        "publisherNameIdentifier"
+      ]
+    },
+    {
+      "required": [
+        "creativeType"
+      ]
+    },
+    {
+      "required": [
+        "siteId"
+      ]
+    }
   ]
 }

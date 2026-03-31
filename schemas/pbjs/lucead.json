@@ -18,8 +18,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "placementId",
-    "loader"
+  "allOf": [
+    {
+      "required": [
+        "placementId"
+      ]
+    },
+    {
+      "required": [
+        "loader"
+      ]
+    }
   ]
 }

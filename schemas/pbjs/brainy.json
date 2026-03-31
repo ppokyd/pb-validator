@@ -23,10 +23,26 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "accountID",
-    "slotID",
-    "width",
-    "height"
+  "allOf": [
+    {
+      "required": [
+        "accountID"
+      ]
+    },
+    {
+      "required": [
+        "slotID"
+      ]
+    },
+    {
+      "required": [
+        "width"
+      ]
+    },
+    {
+      "required": [
+        "height"
+      ]
+    }
   ]
 }

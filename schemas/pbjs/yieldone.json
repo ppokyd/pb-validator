@@ -15,14 +15,6 @@
     "playerParams": {
       "type": "object",
       "description": "Video Player Params (see below)"
-    },
-    "playerParams.wrapperWidth": {
-      "type": "string",
-      "description": "Video Player Width"
-    },
-    "playerParams.wrapperHeight": {
-      "type": "string",
-      "description": "Video Player Height"
     }
   },
   "additionalProperties": false,

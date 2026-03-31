@@ -27,8 +27,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "appId",
-    "bidfloor"
+  "allOf": [
+    {
+      "required": [
+        "appId"
+      ]
+    },
+    {
+      "required": [
+        "bidfloor"
+      ]
+    }
   ]
 }

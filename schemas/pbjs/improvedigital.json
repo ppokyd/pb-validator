@@ -31,8 +31,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "placementId",
-    "publisherId"
+  "allOf": [
+    {
+      "required": [
+        "placementId"
+      ]
+    },
+    {
+      "required": [
+        "publisherId"
+      ]
+    }
   ]
 }

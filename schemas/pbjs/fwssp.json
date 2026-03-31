@@ -104,13 +104,41 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "custom_site_section_id",
-    "network_id",
-    "profile_id",
-    "serverUrl",
-    "networkId",
-    "profile",
-    "siteSectionId"
+  "allOf": [
+    {
+      "required": [
+        "custom_site_section_id"
+      ]
+    },
+    {
+      "required": [
+        "network_id"
+      ]
+    },
+    {
+      "required": [
+        "profile_id"
+      ]
+    },
+    {
+      "required": [
+        "serverUrl"
+      ]
+    },
+    {
+      "required": [
+        "networkId"
+      ]
+    },
+    {
+      "required": [
+        "profile"
+      ]
+    },
+    {
+      "required": [
+        "siteSectionId"
+      ]
+    }
   ]
 }

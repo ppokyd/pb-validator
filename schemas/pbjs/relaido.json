@@ -9,9 +9,6 @@
       "type": "string",
       "description": "Relaido placement id"
     },
-    "video.playerSize": {
-      "description": "Video Player Size<br/>This field is mandatory if mediaTypes.video.playerSize is undefined."
-    },
     "ogUrl": {
       "type": "boolean",
       "description": "Get from og:url if canonicalUrl cannot be obtained. defaults to false."

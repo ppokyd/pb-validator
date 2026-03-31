@@ -23,9 +23,21 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "publisherId",
-    "adspaceId",
-    "adbreakId"
+  "allOf": [
+    {
+      "required": [
+        "publisherId"
+      ]
+    },
+    {
+      "required": [
+        "adspaceId"
+      ]
+    },
+    {
+      "required": [
+        "adbreakId"
+      ]
+    }
   ]
 }

@@ -19,8 +19,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "appId",
-    "adSpotType"
+  "allOf": [
+    {
+      "required": [
+        "appId"
+      ]
+    },
+    {
+      "required": [
+        "adSpotType"
+      ]
+    }
   ]
 }

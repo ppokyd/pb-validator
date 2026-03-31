@@ -19,9 +19,21 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "placementId",
-    "aid",
-    "referrrInfo"
+  "allOf": [
+    {
+      "required": [
+        "placementId"
+      ]
+    },
+    {
+      "required": [
+        "aid"
+      ]
+    },
+    {
+      "required": [
+        "referrrInfo"
+      ]
+    }
   ]
 }

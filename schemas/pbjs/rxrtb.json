@@ -19,9 +19,21 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "id",
-    "token",
-    "source"
+  "allOf": [
+    {
+      "required": [
+        "id"
+      ]
+    },
+    {
+      "required": [
+        "token"
+      ]
+    },
+    {
+      "required": [
+        "source"
+      ]
+    }
   ]
 }

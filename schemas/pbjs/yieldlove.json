@@ -15,8 +15,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "rid",
-    "pid"
+  "allOf": [
+    {
+      "required": [
+        "rid"
+      ]
+    },
+    {
+      "required": [
+        "pid"
+      ]
+    }
   ]
 }

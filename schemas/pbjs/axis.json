@@ -20,8 +20,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "integration",
-    "token"
+  "allOf": [
+    {
+      "required": [
+        "integration"
+      ]
+    },
+    {
+      "required": [
+        "token"
+      ]
+    }
   ]
 }

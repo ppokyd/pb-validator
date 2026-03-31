@@ -39,9 +39,21 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "host",
-    "adUnitId",
-    "adUnitType"
+  "allOf": [
+    {
+      "required": [
+        "host"
+      ]
+    },
+    {
+      "required": [
+        "adUnitId"
+      ]
+    },
+    {
+      "required": [
+        "adUnitType"
+      ]
+    }
   ]
 }

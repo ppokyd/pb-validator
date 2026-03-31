@@ -13,10 +13,6 @@
       "type": "object",
       "description": "The object containing user data (See OpenRTB spec)"
     },
-    "user.buyeruid": {
-      "type": "string",
-      "description": "Zeta's user id"
-    },
     "device": {
       "type": "object",
       "description": "The object containing device data (See OpenRTB spec)"
@@ -73,10 +69,21 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "definerId",
-    "user",
-    "user.buyeruid",
-    "device"
+  "allOf": [
+    {
+      "required": [
+        "definerId"
+      ]
+    },
+    {
+      "required": [
+        "user"
+      ]
+    },
+    {
+      "required": [
+        "device"
+      ]
+    }
   ]
 }

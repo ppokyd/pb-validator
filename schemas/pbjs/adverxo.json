@@ -19,8 +19,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "adUnitId",
-    "auth"
+  "allOf": [
+    {
+      "required": [
+        "adUnitId"
+      ]
+    },
+    {
+      "required": [
+        "auth"
+      ]
+    }
   ]
 }

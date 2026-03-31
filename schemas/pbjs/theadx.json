@@ -19,9 +19,21 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "pid",
-    "wid",
-    "tagId"
+  "allOf": [
+    {
+      "required": [
+        "pid"
+      ]
+    },
+    {
+      "required": [
+        "wid"
+      ]
+    },
+    {
+      "required": [
+        "tagId"
+      ]
+    }
   ]
 }

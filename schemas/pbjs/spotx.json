@@ -66,8 +66,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "channel_id",
-    "ad_unit"
+  "allOf": [
+    {
+      "required": [
+        "channel_id"
+      ]
+    },
+    {
+      "required": [
+        "ad_unit"
+      ]
+    }
   ]
 }

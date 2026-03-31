@@ -15,8 +15,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "sourceId",
-    "host"
+  "allOf": [
+    {
+      "required": [
+        "sourceId"
+      ]
+    },
+    {
+      "required": [
+        "host"
+      ]
+    }
   ]
 }

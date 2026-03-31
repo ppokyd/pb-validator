@@ -15,8 +15,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "host",
-    "zoneId"
+  "allOf": [
+    {
+      "required": [
+        "host"
+      ]
+    },
+    {
+      "required": [
+        "zoneId"
+      ]
+    }
   ]
 }

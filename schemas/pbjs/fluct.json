@@ -19,8 +19,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "tagId",
-    "groupId"
+  "allOf": [
+    {
+      "required": [
+        "tagId"
+      ]
+    },
+    {
+      "required": [
+        "groupId"
+      ]
+    }
   ]
 }

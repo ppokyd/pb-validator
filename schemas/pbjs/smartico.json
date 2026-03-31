@@ -34,8 +34,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "placementId",
-    "token"
+  "allOf": [
+    {
+      "required": [
+        "placementId"
+      ]
+    },
+    {
+      "required": [
+        "token"
+      ]
+    }
   ]
 }

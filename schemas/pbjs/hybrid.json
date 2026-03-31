@@ -19,8 +19,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "placeId",
-    "placement"
+  "allOf": [
+    {
+      "required": [
+        "placeId"
+      ]
+    },
+    {
+      "required": [
+        "placement"
+      ]
+    }
   ]
 }

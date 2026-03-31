@@ -23,8 +23,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "cId",
-    "pId"
+  "allOf": [
+    {
+      "required": [
+        "cId"
+      ]
+    },
+    {
+      "required": [
+        "pId"
+      ]
+    }
   ]
 }

@@ -15,8 +15,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "adUnitId",
-    "inventoryId"
+  "allOf": [
+    {
+      "required": [
+        "adUnitId"
+      ]
+    },
+    {
+      "required": [
+        "inventoryId"
+      ]
+    }
   ]
 }

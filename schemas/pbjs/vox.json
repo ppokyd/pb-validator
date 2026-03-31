@@ -26,8 +26,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "placementId",
-    "placement"
+  "allOf": [
+    {
+      "required": [
+        "placementId"
+      ]
+    },
+    {
+      "required": [
+        "placement"
+      ]
+    }
   ]
 }

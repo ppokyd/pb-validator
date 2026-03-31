@@ -19,9 +19,21 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "seat",
-    "region",
-    "partner"
+  "allOf": [
+    {
+      "required": [
+        "seat"
+      ]
+    },
+    {
+      "required": [
+        "region"
+      ]
+    },
+    {
+      "required": [
+        "partner"
+      ]
+    }
   ]
 }

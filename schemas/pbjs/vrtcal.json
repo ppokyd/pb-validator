@@ -4,10 +4,6 @@
   "title": "VRTCAL Markets Inc. bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (vrtcal.md).",
   "type": "object",
-  "properties": {
-    "(none)": {
-      "description": "no params required"
-    }
-  },
+  "properties": {},
   "additionalProperties": false
 }

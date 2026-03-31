@@ -13,8 +13,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "propertyId",
-    "placementId"
+  "allOf": [
+    {
+      "required": [
+        "propertyId"
+      ]
+    },
+    {
+      "required": [
+        "placementId"
+      ]
+    }
   ]
 }

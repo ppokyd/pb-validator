@@ -23,9 +23,21 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "cId",
-    "pId",
-    "bidFloor"
+  "allOf": [
+    {
+      "required": [
+        "cId"
+      ]
+    },
+    {
+      "required": [
+        "pId"
+      ]
+    },
+    {
+      "required": [
+        "bidFloor"
+      ]
+    }
   ]
 }

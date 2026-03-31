@@ -15,8 +15,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "publisher",
-    "adslot"
+  "allOf": [
+    {
+      "required": [
+        "publisher"
+      ]
+    },
+    {
+      "required": [
+        "adslot"
+      ]
+    }
   ]
 }

@@ -15,8 +15,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "server",
-    "zone"
+  "allOf": [
+    {
+      "required": [
+        "server"
+      ]
+    },
+    {
+      "required": [
+        "zone"
+      ]
+    }
   ]
 }

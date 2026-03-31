@@ -5,7 +5,11 @@
   "description": "Generated from prebid.github.io dev-docs/bidders (beop.md).",
   "type": "object",
   "properties": {
-    "accountId or networkId": {
+    "accountId": {
+      "type": "string",
+      "description": "Your BeOp account ID (24-character hex string)"
+    },
+    "networkId": {
       "type": "string",
       "description": "Your BeOp account ID (24-character hex string)"
     },
@@ -22,7 +26,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "accountId or networkId"
+  "anyOf": [
+    {
+      "required": [
+        "accountId"
+      ]
+    },
+    {
+      "required": [
+        "networkId"
+      ]
+    }
   ]
 }

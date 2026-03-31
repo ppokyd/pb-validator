@@ -13,8 +13,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "partnerId",
-    "region"
+  "allOf": [
+    {
+      "required": [
+        "partnerId"
+      ]
+    },
+    {
+      "required": [
+        "region"
+      ]
+    }
   ]
 }

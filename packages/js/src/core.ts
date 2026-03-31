@@ -34,12 +34,12 @@ export interface ValidatorClient {
   listBidders(): Promise<string[]>;
   getSchema(
     runtime: Runtime,
-    bidderCode: string
+    bidderCode: string,
   ): Promise<Record<string, unknown>>;
   validate(
     runtime: Runtime,
     bidderCode: string,
-    params: unknown
+    params: unknown,
   ): Promise<ValidationResult>;
 }
 
@@ -63,13 +63,12 @@ export function createClient(provider: SchemaProvider): ValidatorClient {
 
   async function getSchema(
     runtime: Runtime,
-    bidderCode: string
+    bidderCode: string,
   ): Promise<Record<string, unknown>> {
     const m = await loadManifest();
     const b = m.bidders[bidderCode];
     if (!b) throw new Error(`unknown bidder: ${bidderCode}`);
-    const ref =
-      runtime === "pbjs" ? b.pbjs : runtime === "pbs" ? b.pbs : null;
+    const ref = runtime === "pbjs" ? b.pbjs : runtime === "pbs" ? b.pbs : null;
     if (!ref?.schema) {
       throw new Error(`no ${runtime} schema for bidder: ${bidderCode}`);
     }
@@ -79,7 +78,7 @@ export function createClient(provider: SchemaProvider): ValidatorClient {
   async function validate(
     runtime: Runtime,
     bidderCode: string,
-    params: unknown
+    params: unknown,
   ): Promise<ValidationResult> {
     const schema = await getSchema(runtime, bidderCode);
     const key = `${runtime}/${bidderCode}`;

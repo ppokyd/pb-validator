@@ -34,8 +34,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "pubid",
-    "adtagid"
+  "allOf": [
+    {
+      "required": [
+        "pubid"
+      ]
+    },
+    {
+      "required": [
+        "adtagid"
+      ]
+    }
   ]
 }

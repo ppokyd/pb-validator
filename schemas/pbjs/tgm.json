@@ -43,10 +43,26 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "host",
-    "adUnitId",
-    "adUnitType",
-    "publisherId"
+  "allOf": [
+    {
+      "required": [
+        "host"
+      ]
+    },
+    {
+      "required": [
+        "adUnitId"
+      ]
+    },
+    {
+      "required": [
+        "adUnitType"
+      ]
+    },
+    {
+      "required": [
+        "publisherId"
+      ]
+    }
   ]
 }

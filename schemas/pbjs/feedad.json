@@ -23,8 +23,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "clientToken",
-    "placementId"
+  "allOf": [
+    {
+      "required": [
+        "clientToken"
+      ]
+    },
+    {
+      "required": [
+        "placementId"
+      ]
+    }
   ]
 }

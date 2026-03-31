@@ -33,8 +33,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "tappxkey",
-    "endpoint"
+  "allOf": [
+    {
+      "required": [
+        "tappxkey"
+      ]
+    },
+    {
+      "required": [
+        "endpoint"
+      ]
+    }
   ]
 }

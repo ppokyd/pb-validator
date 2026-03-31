@@ -27,8 +27,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "widget",
-    "website"
+  "allOf": [
+    {
+      "required": [
+        "widget"
+      ]
+    },
+    {
+      "required": [
+        "website"
+      ]
+    }
   ]
 }

@@ -5,7 +5,15 @@
   "description": "Generated from prebid.github.io dev-docs/bidders (gambid.md).",
   "type": "object",
   "properties": {
-    "supplyPartnerId or inventory_id or supply_partner_id": {
+    "supplyPartnerId": {
+      "type": "integer",
+      "description": "ID of the supply partner. This parameter can be either a string or integer for Prebid.js, however integer is preferred"
+    },
+    "inventory_id": {
+      "type": "integer",
+      "description": "ID of the supply partner. This parameter can be either a string or integer for Prebid.js, however integer is preferred"
+    },
+    "supply_partner_id": {
       "type": "integer",
       "description": "ID of the supply partner. This parameter can be either a string or integer for Prebid.js, however integer is preferred"
     },
@@ -27,7 +35,21 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "supplyPartnerId or inventory_id or supply_partner_id"
+  "anyOf": [
+    {
+      "required": [
+        "supplyPartnerId"
+      ]
+    },
+    {
+      "required": [
+        "inventory_id"
+      ]
+    },
+    {
+      "required": [
+        "supply_partner_id"
+      ]
+    }
   ]
 }

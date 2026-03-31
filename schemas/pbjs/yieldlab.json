@@ -31,8 +31,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "adslotId",
-    "supplyId"
+  "allOf": [
+    {
+      "required": [
+        "adslotId"
+      ]
+    },
+    {
+      "required": [
+        "supplyId"
+      ]
+    }
   ]
 }

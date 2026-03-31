@@ -15,8 +15,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "domainId",
-    "placement"
+  "allOf": [
+    {
+      "required": [
+        "domainId"
+      ]
+    },
+    {
+      "required": [
+        "placement"
+      ]
+    }
   ]
 }

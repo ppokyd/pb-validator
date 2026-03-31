@@ -27,8 +27,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "accountID",
-    "zoneID"
+  "allOf": [
+    {
+      "required": [
+        "accountID"
+      ]
+    },
+    {
+      "required": [
+        "zoneID"
+      ]
+    }
   ]
 }

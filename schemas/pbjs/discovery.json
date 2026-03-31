@@ -23,9 +23,21 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "token",
-    "tagid",
-    "publisher"
+  "allOf": [
+    {
+      "required": [
+        "token"
+      ]
+    },
+    {
+      "required": [
+        "tagid"
+      ]
+    },
+    {
+      "required": [
+        "publisher"
+      ]
+    }
   ]
 }

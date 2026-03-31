@@ -1,11 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import {
-  validate,
-  listBidders,
-  getSchema,
-  loadManifest,
-} from "./index.js";
+import { validate, listBidders, getSchema, loadManifest } from "./index.js";
 
 test("validate appnexus pbjs params", async () => {
   const res = await validate("pbjs", "appnexus", { placementId: 12345 });
@@ -47,5 +42,5 @@ test("unknown bidder throws", async () => {
 });
 
 test("pbs missing schema throws", async () => {
-  await assert.rejects(() => validate("pbs", "appnexus", {}), /no pbs schema/);
+  await assert.rejects(() => validate("pbs", "1accord", {}), /no pbs schema/);
 });

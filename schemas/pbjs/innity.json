@@ -15,8 +15,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "pub",
-    "zone"
+  "allOf": [
+    {
+      "required": [
+        "pub"
+      ]
+    },
+    {
+      "required": [
+        "zone"
+      ]
+    }
   ]
 }

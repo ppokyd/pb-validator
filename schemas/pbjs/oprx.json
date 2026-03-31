@@ -39,9 +39,21 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "placementId",
-    "key",
-    "type"
+  "allOf": [
+    {
+      "required": [
+        "placementId"
+      ]
+    },
+    {
+      "required": [
+        "key"
+      ]
+    },
+    {
+      "required": [
+        "type"
+      ]
+    }
   ]
 }

@@ -13,8 +13,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "siteId",
-    "placementId"
+  "allOf": [
+    {
+      "required": [
+        "siteId"
+      ]
+    },
+    {
+      "required": [
+        "placementId"
+      ]
+    }
   ]
 }

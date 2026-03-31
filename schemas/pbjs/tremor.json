@@ -105,8 +105,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "adCode",
-    "supplyCode"
+  "allOf": [
+    {
+      "required": [
+        "adCode"
+      ]
+    },
+    {
+      "required": [
+        "supplyCode"
+      ]
+    }
   ]
 }

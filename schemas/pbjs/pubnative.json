@@ -15,8 +15,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "zone_id",
-    "app_auth_token"
+  "allOf": [
+    {
+      "required": [
+        "zone_id"
+      ]
+    },
+    {
+      "required": [
+        "app_auth_token"
+      ]
+    }
   ]
 }

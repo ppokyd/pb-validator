@@ -108,10 +108,26 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "tagid",
-    "mimes",
-    "maxduration",
-    "protocols"
+  "allOf": [
+    {
+      "required": [
+        "tagid"
+      ]
+    },
+    {
+      "required": [
+        "mimes"
+      ]
+    },
+    {
+      "required": [
+        "maxduration"
+      ]
+    },
+    {
+      "required": [
+        "protocols"
+      ]
+    }
   ]
 }

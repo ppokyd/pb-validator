@@ -31,8 +31,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "publisher",
-    "placement"
+  "allOf": [
+    {
+      "required": [
+        "publisher"
+      ]
+    },
+    {
+      "required": [
+        "placement"
+      ]
+    }
   ]
 }

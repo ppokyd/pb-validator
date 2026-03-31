@@ -15,8 +15,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "ChannelID",
-    "cid"
+  "allOf": [
+    {
+      "required": [
+        "ChannelID"
+      ]
+    },
+    {
+      "required": [
+        "cid"
+      ]
+    }
   ]
 }

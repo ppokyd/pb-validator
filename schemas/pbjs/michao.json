@@ -23,8 +23,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "placement",
-    "site"
+  "allOf": [
+    {
+      "required": [
+        "placement"
+      ]
+    },
+    {
+      "required": [
+        "site"
+      ]
+    }
   ]
 }

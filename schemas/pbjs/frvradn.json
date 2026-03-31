@@ -15,8 +15,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "publisher_id",
-    "ad_unit_id"
+  "allOf": [
+    {
+      "required": [
+        "publisher_id"
+      ]
+    },
+    {
+      "required": [
+        "ad_unit_id"
+      ]
+    }
   ]
 }

@@ -19,9 +19,21 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "endpoint",
-    "sid",
-    "token"
+  "allOf": [
+    {
+      "required": [
+        "endpoint"
+      ]
+    },
+    {
+      "required": [
+        "sid"
+      ]
+    },
+    {
+      "required": [
+        "token"
+      ]
+    }
   ]
 }

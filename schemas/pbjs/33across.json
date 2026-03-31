@@ -23,9 +23,21 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "zoneId",
-    "siteId",
-    "productId"
+  "allOf": [
+    {
+      "required": [
+        "zoneId"
+      ]
+    },
+    {
+      "required": [
+        "siteId"
+      ]
+    },
+    {
+      "required": [
+        "productId"
+      ]
+    }
   ]
 }

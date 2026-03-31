@@ -19,8 +19,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "pub",
-    "source"
+  "allOf": [
+    {
+      "required": [
+        "pub"
+      ]
+    },
+    {
+      "required": [
+        "source"
+      ]
+    }
   ]
 }

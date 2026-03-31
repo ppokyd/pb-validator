@@ -19,9 +19,21 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "accountId",
-    "publisherId",
-    "tagId"
+  "allOf": [
+    {
+      "required": [
+        "accountId"
+      ]
+    },
+    {
+      "required": [
+        "publisherId"
+      ]
+    },
+    {
+      "required": [
+        "tagId"
+      ]
+    }
   ]
 }

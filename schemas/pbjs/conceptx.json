@@ -15,8 +15,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "site",
-    "adunit"
+  "allOf": [
+    {
+      "required": [
+        "site"
+      ]
+    },
+    {
+      "required": [
+        "adunit"
+      ]
+    }
   ]
 }

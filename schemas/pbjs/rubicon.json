@@ -64,9 +64,21 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "accountId",
-    "siteId",
-    "zoneId"
+  "allOf": [
+    {
+      "required": [
+        "accountId"
+      ]
+    },
+    {
+      "required": [
+        "siteId"
+      ]
+    },
+    {
+      "required": [
+        "zoneId"
+      ]
+    }
   ]
 }

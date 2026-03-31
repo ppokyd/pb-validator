@@ -19,8 +19,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "cid",
-    "crid"
+  "allOf": [
+    {
+      "required": [
+        "cid"
+      ]
+    },
+    {
+      "required": [
+        "crid"
+      ]
+    }
   ]
 }

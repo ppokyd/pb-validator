@@ -5,14 +5,6 @@
   "description": "Generated from prebid.github.io dev-docs/bidders (apacdex.md).",
   "type": "object",
   "properties": {
-    "placementId*": {
-      "type": "string",
-      "description": "Placement ID provided by Apacdex"
-    },
-    "siteId*": {
-      "type": "string",
-      "description": "Publisher site ID from Apacdex"
-    },
     "floorPrice": {
       "type": "number",
       "description": "CPM bidfloor in USD"
@@ -22,9 +14,5 @@
       "description": "GEO data of device. See [Geo Object](#apacdex-geo-object) for details."
     }
   },
-  "additionalProperties": false,
-  "required": [
-    "placementId*",
-    "siteId*"
-  ]
+  "additionalProperties": false
 }

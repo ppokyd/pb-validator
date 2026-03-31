@@ -9,25 +9,9 @@
       "type": "object",
       "description": "The object containing user data (See OpenRTB spec)"
     },
-    "user.buyeruid": {
-      "type": "string",
-      "description": "User id"
-    },
     "playerOptions": {
       "type": "object",
       "description": "The object containing Viqeo player options"
-    },
-    "playerOptions.profileId": {
-      "type": "number",
-      "description": "Viqeo profile id"
-    },
-    "playerOptions.videId": {
-      "type": "string",
-      "description": "Viqeo video id"
-    },
-    "playerOptions.playerId": {
-      "type": "number",
-      "description": "Viqeo player id"
     },
     "device": {
       "type": "object",
@@ -67,10 +51,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "user",
-    "user.buyeruid",
-    "playerOptions",
-    "playerOptions.profileId"
+  "allOf": [
+    {
+      "required": [
+        "user"
+      ]
+    },
+    {
+      "required": [
+        "playerOptions"
+      ]
+    }
   ]
 }

@@ -15,8 +15,16 @@
     }
   },
   "additionalProperties": false,
-  "required": [
-    "pub_id",
-    "adspace_id"
+  "allOf": [
+    {
+      "required": [
+        "pub_id"
+      ]
+    },
+    {
+      "required": [
+        "adspace_id"
+      ]
+    }
   ]
 }

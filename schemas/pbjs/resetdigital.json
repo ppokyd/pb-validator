@@ -17,18 +17,6 @@
       "type": "object",
       "description": "Used for extra fields"
     },
-    "zoneId.placementId": {
-      "type": "string",
-      "description": "ID used for reporting purposes"
-    },
-    "zoneId.deals": {
-      "type": "string",
-      "description": "Deal IDs comma-separated"
-    },
-    "zoneId.test": {
-      "type": "integer",
-      "description": "Flag to force bidder response with a creative"
-    },
     "forceBid": {
       "type": "boolean",
       "description": "Returns test bid"
