@@ -1,0 +1,8 @@
+{
+  "$id": "https://prebid.org/schemas/pbjs/viqeo.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": true,
+  "description": "Generated from prebid.github.io dev-docs/bidders (viqeo.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "title": "viqeo bidder params (Prebid.js)",
+  "type": "object"
+}

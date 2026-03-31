@@ -1,0 +1,8 @@
+{
+  "$id": "https://prebid.org/schemas/pbjs/adnow.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": true,
+  "description": "Generated from prebid.github.io dev-docs/bidders (adnow.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "title": "AdNow bidder params (Prebid.js)",
+  "type": "object"
+}

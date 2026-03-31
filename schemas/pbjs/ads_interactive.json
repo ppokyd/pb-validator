@@ -1,0 +1,8 @@
+{
+  "$id": "https://prebid.org/schemas/pbjs/ads_interactive.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": true,
+  "description": "Generated from prebid.github.io dev-docs/bidders (ads_interactive.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "title": "Ads Interactive bidder params (Prebid.js)",
+  "type": "object"
+}
