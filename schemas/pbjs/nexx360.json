@@ -1,8 +1,45 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/nexx360.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (nexx360.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/nexx360.json",
   "title": "Nexx360 bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (nexx360.md).",
+  "type": "object",
+  "properties": {
+    "tagId": {
+      "type": "string",
+      "description": "Nexx360 tag ID"
+    },
+    "videoTagId": {
+      "type": "string",
+      "description": "Nexx360 Video tag ID"
+    },
+    "nativeTagId": {
+      "type": "string",
+      "description": "Nexx360 Native tag ID"
+    },
+    "allBids": {
+      "type": "boolean",
+      "description": "Return all bids"
+    },
+    "divId": {
+      "type": "string",
+      "description": "divId linked to adUnit"
+    },
+    "adUnitName": {
+      "type": "string",
+      "description": "A code to identify adUnit"
+    },
+    "adUnitPath": {
+      "type": "string",
+      "description": "A reference to adUnit Path"
+    },
+    "placement": {
+      "type": "string",
+      "description": "Nexx360 placement"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "tagId"
+  ]
 }

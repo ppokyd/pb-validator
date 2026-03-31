@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/pangle.json",
+  "title": "Pangle bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Pangle adapter",
+  "type": "object",
+  "properties": {
+    "token": {
+      "type": "string",
+      "description": "Access Token",
+      "pattern": ".+"
+    },
+    "appid": {
+      "type": "string",
+      "description": "App ID",
+      "pattern": "[0-9]+"
+    },
+    "placementid": {
+      "type": "string",
+      "description": "Placement ID",
+      "pattern": "[0-9]+"
+    }
+  },
+  "required": [
+    "token"
+  ],
+  "dependencies": {
+    "placementid": [
+      "appid"
+    ],
+    "appid": [
+      "placementid"
+    ]
+  }
+}

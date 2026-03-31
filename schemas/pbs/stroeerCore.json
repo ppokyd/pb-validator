@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/stroeerCore.json",
+  "title": "StroeerCore bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the StroeerCore adapter",
+  "type": "object",
+  "properties": {
+    "sid": {
+      "type": "string",
+      "description": "Slot Id"
+    }
+  },
+  "required": [
+    "sid"
+  ]
+}

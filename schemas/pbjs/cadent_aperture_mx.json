@@ -1,8 +1,21 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/cadent_aperture_mx.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (cadent_aperture_mx.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/cadent_aperture_mx.json",
   "title": "Cadent Aperture MX bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (cadent_aperture_mx.md).",
+  "type": "object",
+  "properties": {
+    "tagid": {
+      "type": "string",
+      "description": "The Tag ID from Cadent Aperture MX."
+    },
+    "bidfloor": {
+      "type": "string",
+      "description": "The CPM bid floor"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "tagid"
+  ]
 }

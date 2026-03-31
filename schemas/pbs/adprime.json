@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/adprime.json",
+  "title": "Adprime bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Adprime adapter",
+  "type": "object",
+  "properties": {
+    "TagID": {
+      "type": "string",
+      "description": "An ID which identifies the adprime ad tag"
+    },
+    "keywords": {
+      "type": "array",
+      "description": "page context keywords",
+      "items": {
+        "type": "string"
+      }
+    },
+    "audiences": {
+      "type": "array",
+      "description": "publisher audiences",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "TagID"
+  ]
+}

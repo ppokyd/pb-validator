@@ -1,8 +1,17 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/smartytech.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (smartytech.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/smartytech.json",
   "title": "SmartyTech bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (smartytech.md).",
+  "type": "object",
+  "properties": {
+    "endpointId": {
+      "type": "integer",
+      "description": "Endpoint ID."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "endpointId"
+  ]
 }

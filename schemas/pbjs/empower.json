@@ -1,8 +1,21 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/empower.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (empower.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/empower.json",
   "title": "Empower bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (empower.md).",
+  "type": "object",
+  "properties": {
+    "zone": {
+      "type": "integer",
+      "description": "provided zone ID from Empower"
+    },
+    "site": {
+      "type": "string",
+      "description": "provided Site Code from Empower"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "zone"
+  ]
 }

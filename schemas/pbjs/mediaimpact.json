@@ -1,8 +1,21 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/mediaimpact.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (mediaimpact.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/mediaimpact.json",
   "title": "MEDIAIMPACT bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (mediaimpact.md).",
+  "type": "object",
+  "properties": {
+    "partnerId": {
+      "type": "integer",
+      "description": "Partner ID."
+    },
+    "sizes": {
+      "type": "array",
+      "description": "Custom size"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "partnerId"
+  ]
 }

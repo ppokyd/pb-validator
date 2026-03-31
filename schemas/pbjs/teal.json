@@ -1,8 +1,33 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/teal.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (teal.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/teal.json",
   "title": "Teal bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (teal.md).",
+  "type": "object",
+  "properties": {
+    "account": {
+      "type": "string",
+      "description": "Account name provided by your account manager - set to test-account for test mode"
+    },
+    "placement": {
+      "type": "string",
+      "description": "Placement name provided by your account manager - set to test-placement300x250 for test mode"
+    },
+    "testMode": {
+      "type": "boolean",
+      "description": "Activate test mode - 100% test bids - placement needs be set to test-placement300x250 for this option to work"
+    },
+    "useSourceBidderCode": {
+      "type": "boolean",
+      "description": "Use seat bidder code as hb_bidder, instead of teal (or configured alias)"
+    },
+    "subAccount": {
+      "type": "string",
+      "description": "subAccount name, if provided by your account manager"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "account"
+  ]
 }

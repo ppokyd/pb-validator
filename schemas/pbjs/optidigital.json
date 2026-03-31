@@ -1,8 +1,42 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/optidigital.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (optidigital.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/optidigital.json",
   "title": "Optidigital bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (optidigital.md).",
+  "type": "object",
+  "properties": {
+    "publisherId": {
+      "type": "string",
+      "description": "Unique id of the publisher"
+    },
+    "placementId": {
+      "type": "string",
+      "description": "Identifier for specific ad placement or ad tag"
+    },
+    "divId": {
+      "type": "string",
+      "description": "Id of the div containing the ad slot"
+    },
+    "pageTemplate": {
+      "type": "string",
+      "description": "Page template name of the current page"
+    },
+    "badv": {
+      "description": "Blocked advertiser domains"
+    },
+    "bcat": {
+      "description": "Blocked advertiser categories"
+    },
+    "bapp": {
+      "description": "Blocked advertiser mobile app bundles"
+    },
+    "battr": {
+      "description": "Blocked creative attributes"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "publisherId",
+    "placementId"
+  ]
 }

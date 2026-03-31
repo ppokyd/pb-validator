@@ -1,8 +1,17 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/pubx.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (pubx.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/pubx.json",
   "title": "Pub-X bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (pubx.md).",
+  "type": "object",
+  "properties": {
+    "sid": {
+      "type": "string",
+      "description": "The AdUnit ID from Pub-X"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "sid"
+  ]
 }

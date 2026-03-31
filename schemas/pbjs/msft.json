@@ -1,8 +1,53 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/msft.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (msft.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/msft.json",
   "title": "Microsoft bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (msft.md).",
+  "type": "object",
+  "properties": {
+    "placement_id": {
+      "type": "integer",
+      "description": "The placement ID from Microsoft Monetize.  You may identify a placement using the inv_code and member instead of a placement ID."
+    },
+    "member": {
+      "type": "integer",
+      "description": "The member ID from Microsoft Monetize.  Must be used with inv_code."
+    },
+    "inv_code": {
+      "type": "string",
+      "description": "The inventory code from Microsoft Monetize.  Must be used with member."
+    },
+    "allow_smaller_sizes": {
+      "type": "boolean",
+      "description": "If true, ads smaller than the values in your ad unit's sizes array will be allowed to serve. Defaults to false."
+    },
+    "use_pmt_rule": {
+      "type": "boolean",
+      "description": "If true, Microsoft Monetize will return net price to Prebid.js after publisher payment rules have been applied."
+    },
+    "keywords": {
+      "type": "string",
+      "description": "A comma-delimited string of key-value pairs (or terms) applied to this specific ad slot on the page. Mapped to [buy-side segment targeting](https://learn.microsoft.com/en-us/xandr/monetize/segment-targeting) (login required). A maximum of 100 key/value pairs can be defined at the request/page level. Each tag can have up to 100 additional key/value pairs defined. If you want to pass keywords for all adUnits, please use the relevant keywords fields in the First Party Data feature. Note that to use keyword with the Prebid Server adapter, that feature must be enabled for your account by an Microsoft Monetize account manager."
+    },
+    "traffic_source_code": {
+      "type": "string",
+      "description": "Specifies the third-party source of this impression."
+    },
+    "pubclick": {
+      "type": "string",
+      "description": "Specifies a publisher-supplied URL for third-party click tracking. This is just a placeholder into which the publisher can insert their own click tracker. This parameter should be used for an unencoded tracker. This parameter is expected to be the last parameter in the URL. Please note that the click tracker placed in this parameter will only fire if the creative winning the auction is using Microsoft Monetize click tracking properly."
+    },
+    "ext_inv_code": {
+      "type": "string",
+      "description": "Specifies predefined value passed on the query string that can be used in reporting. The value must be entered into the system before it is logged."
+    },
+    "ext_imp_id": {
+      "type": "string",
+      "description": "Specifies the unique identifier of an externally generated auction."
+    },
+    "banner_frameworks": {
+      "description": "Array of integers listing API frameworks for Banner supported by the publisher."
+    }
+  },
+  "additionalProperties": false
 }

@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/e_volution.json",
+  "title": "E-volution bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the E-volution adapter",
+  "type": "object",
+  "properties": {
+    "key": {
+      "type": "string",
+      "description": "network or placement key"
+    }
+  },
+  "required": [
+    "key"
+  ]
+}

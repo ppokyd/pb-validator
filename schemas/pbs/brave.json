@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/brave.json",
+  "title": "Brave bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Brave adapter",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": "string",
+      "description": "Unique Placement ID of publisher"
+    }
+  },
+  "required": [
+    "placementId"
+  ]
+}

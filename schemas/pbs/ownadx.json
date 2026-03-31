@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/ownadx.json",
+  "title": "OwnAdx bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the OwnAdx adapter",
+  "type": "object",
+  "properties": {
+    "sspId": {
+      "type": "string",
+      "description": "Ssp ID"
+    },
+    "seatId": {
+      "type": "string",
+      "description": "Seat ID"
+    },
+    "tokenId": {
+      "type": "string",
+      "description": "Token ID"
+    }
+  },
+  "required": [
+    "sspId",
+    "seatId",
+    "tokenId"
+  ]
+}

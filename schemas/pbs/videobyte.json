@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/videobyte.json",
+  "title": "VideoByte bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the VideoByte adapter",
+  "type": "object",
+  "properties": {
+    "pubId": {
+      "type": "string",
+      "description": "Publisher ID"
+    },
+    "placementId": {
+      "type": "string",
+      "description": "Placement ID"
+    },
+    "nid": {
+      "type": "string",
+      "description": "Network ID"
+    }
+  },
+  "required": [
+    "pubId"
+  ]
+}

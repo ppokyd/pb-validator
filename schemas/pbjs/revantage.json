@@ -1,8 +1,17 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/revantage.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (revantage.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/revantage.json",
   "title": "Revantage bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (revantage.md).",
+  "type": "object",
+  "properties": {
+    "feedId": {
+      "type": "string",
+      "description": "Unique identifier for your feed configuration"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "feedId"
+  ]
 }

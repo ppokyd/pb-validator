@@ -1,8 +1,25 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/rediads.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (rediads.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/rediads.json",
   "title": "Rediads bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (rediads.md).",
+  "type": "object",
+  "properties": {
+    "account_id": {
+      "type": "string",
+      "description": "Account ID generated on the Rediads Platform."
+    },
+    "endpoint": {
+      "type": "string",
+      "description": "Only to be used if RediAds team provides you with one."
+    },
+    "slot": {
+      "type": "string",
+      "description": "Unique identifier for the ad slot generated on the platform."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "account_id"
+  ]
 }

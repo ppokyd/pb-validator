@@ -1,8 +1,21 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/smn.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (smn.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/smn.json",
   "title": "SMN bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (smn.md).",
+  "type": "object",
+  "properties": {
+    "zone": {
+      "type": "string",
+      "description": "The unique identifier of the ad placement. Could be obtained from the SMN UI or from your account manager."
+    },
+    "kvTargeting": {
+      "type": "object",
+      "description": "Key/Value - a pair of the unique values that will be used for the custom targeting option."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "zone"
+  ]
 }

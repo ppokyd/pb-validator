@@ -1,8 +1,116 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/fwssp.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (fwssp.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/fwssp.json",
   "title": "FWSSP bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (fwssp.md).",
+  "type": "object",
+  "properties": {
+    "custom_site_section_id": {
+      "type": "string",
+      "description": "custom Site Section tag or numeric Site Section ID"
+    },
+    "network_id": {
+      "type": "string",
+      "description": "Network ID"
+    },
+    "profile_id": {
+      "type": "string",
+      "description": "The value should contain a profile name. and NOT a numeric profile ID. This can either include the network ID prefix or with the profile name alone"
+    },
+    "Name": {
+      "description": "Description"
+    },
+    "serverUrl": {
+      "type": "string",
+      "description": "Server Url"
+    },
+    "networkId": {
+      "type": "string",
+      "description": "Network ID"
+    },
+    "profile": {
+      "type": "string",
+      "description": "Profile Name - The value should contain a profile name. and NOT a numeric profile ID. This can either include the network ID prefix or with the profile name alone"
+    },
+    "siteSectionId": {
+      "type": "string",
+      "description": "Custom Site Section tag or numeric Site Section ID"
+    },
+    "videoAssetId": {
+      "description": "Custom content Video Asset ID. Default: 0"
+    },
+    "bidfloor": {
+      "type": "number",
+      "description": "Bid floor price"
+    },
+    "bidfloorcur": {
+      "type": "string",
+      "description": "Bid floor currency"
+    },
+    "flags": {
+      "type": "string",
+      "description": "Optional flags to include in the ad request"
+    },
+    "mode": {
+      "type": "string",
+      "description": "Request mode. Valid values are: “on-demand\", \"live\". Default: \"on-demand\""
+    },
+    "adRequestKeyValues": {
+      "type": "object",
+      "description": "An object of ad request key-value pairs. For a full list of supported key value pairs , please refer to [https://hub.freewheel.tv/display/MUG/HTTP+GET+Ad+Request+-+Key+Values]"
+    },
+    "gdpr_consented_providers": {
+      "type": "string",
+      "description": "List of Consented Providers. A comma-separated list of ids."
+    },
+    "tpos": {
+      "type": "number",
+      "description": "Slot time position in seconds. Default: 0"
+    },
+    "slid": {
+      "type": "string",
+      "description": "Slot custom ID. Any string with valid letters/digits/symbols. Default: \"Preroll_1\""
+    },
+    "slau": {
+      "description": "Specify custom ad unit names for this slot. Multiple ad unit names can be put into this parameter, separated by \"\\"
+    },
+    "listeners": {
+      "type": "object",
+      "description": "An object of AdManager event listeners"
+    },
+    "isMuted": {
+      "type": "boolean",
+      "description": "Controls if ad playback should start with volume muted. Default: true"
+    },
+    "showMuteButton": {
+      "type": "boolean",
+      "description": "Controls if a mute button should be shown during ad playback. Default: false"
+    },
+    "playerParams": {
+      "type": "object",
+      "description": "An object of AdManager player parameter values"
+    },
+    "sdkVersion": {
+      "type": "string",
+      "description": "The AdManager sdk version to use for playback. This is only valid for \"outstream\" formats. Default: \"7.10.0\""
+    },
+    "format": {
+      "type": "string",
+      "description": "The format to use for displaying the ad. Default: outstream"
+    },
+    "env": {
+      "type": "string",
+      "description": "The AdManager build to use for ad playback. Valid values: \"prd\", \"stg\". Default: \"prd\""
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "custom_site_section_id",
+    "network_id",
+    "profile_id",
+    "serverUrl",
+    "networkId",
+    "profile",
+    "siteSectionId"
+  ]
 }

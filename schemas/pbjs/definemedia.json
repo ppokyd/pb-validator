@@ -1,8 +1,21 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/definemedia.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (definemedia.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/definemedia.json",
   "title": "DEFINE MEDIA bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (definemedia.md).",
+  "type": "object",
+  "properties": {
+    "supplierDomainName": {
+      "type": "string",
+      "description": "The domain name of the last supplier in the chain. Under this domain a sellers.json must be available under https://${supplierDomainName}/sellers.json"
+    },
+    "devMode": {
+      "type": "boolean",
+      "description": "This parameter enables our development endpoint instead of the production endpoint. All requests done with this parameter set to \"true\" are *NOT* billable"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "supplierDomainName"
+  ]
 }

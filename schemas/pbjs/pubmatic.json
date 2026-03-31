@@ -1,8 +1,31 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/pubmatic.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (pubmatic.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/pubmatic.json",
   "title": "PubMatic bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (pubmatic.md).",
+  "type": "object",
+  "properties": {
+    "publisherId": {
+      "type": "string",
+      "description": "PubMatic-specific identifier associated with your account"
+    },
+    "adSlot": {
+      "type": "string",
+      "description": "PubMatic-specific identifier associated with this ad unit. Refers to Ad Tags within PubMatic UI. We accept Ad Tag Name or Ad Tag ID, refer to example."
+    },
+    "dctr": {
+      "description": "Deal Custom Targeting<br><i>(Value configured in each adunit will be passed inside adunit configs i.e., imp.ext)</i>"
+    },
+    "deals": {
+      "description": "PMP deals<br><i>(Passed per slot. Each deal-id should be a string with more than 3 characters.)</i>"
+    },
+    "outstreamAU": {
+      "type": "string",
+      "description": "Renderer ID provided by your account representative. Required for outstream video bids unless the ad unit has a [supplied renderer](https://docs.prebid.org/dev-docs/show-outstream-video-ads.html#renderers)."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "publisherId"
+  ]
 }

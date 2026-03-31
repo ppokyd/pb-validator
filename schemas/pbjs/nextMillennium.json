@@ -1,8 +1,24 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/nextMillennium.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (nextMillennium.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/nextMillennium.json",
   "title": "NextMillennium bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (nextMillennium.md).",
+  "type": "object",
+  "properties": {
+    "placement_id": {
+      "type": "string",
+      "description": "Placement ID, provided by nextMillennium"
+    },
+    "group_id": {
+      "type": "string",
+      "description": "Group ID, provided by nextMillennium"
+    },
+    "adSlots": {
+      "description": "adSlots is a specific location or container on a webpage where an advertisement is displayed."
+    },
+    "allowedAds": {
+      "description": "allowedAds is a list of ad types or formats that are permitted to be shown in a specific ad slot."
+    }
+  },
+  "additionalProperties": false
 }

@@ -1,8 +1,17 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/nativery.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (nativery.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/nativery.json",
   "title": "Nativery bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (nativery.md).",
+  "type": "object",
+  "properties": {
+    "widgetId": {
+      "type": "string",
+      "description": "Widget ID"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "widgetId"
+  ]
 }

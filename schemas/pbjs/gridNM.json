@@ -1,8 +1,87 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/gridNM.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (gridNM.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/gridNM.json",
   "title": "TheMediaGridNM bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (gridNM.md).",
+  "type": "object",
+  "properties": {
+    "secid": {
+      "type": "string",
+      "description": "section id, will be used by JW Player to pass their info"
+    },
+    "pubid": {
+      "type": "string",
+      "description": "publisher id, will be used by JW Player to pass their info"
+    },
+    "source": {
+      "type": "string",
+      "description": "source of traffic, in JW Player case should be 'jwp'"
+    },
+    "pubdata": {
+      "type": "object",
+      "description": "publisher data, will be used by JW Player to pass their info"
+    },
+    "floorcpm": {
+      "type": "number",
+      "description": "floor cpm"
+    },
+    "video": {
+      "type": "object",
+      "description": "video parameters which should be passed for no-mapping approach"
+    },
+    "video.mimes": {
+      "description": "Content MIME types supported"
+    },
+    "video.mind": {
+      "type": "integer",
+      "description": "Minimum video ad duration in seconds."
+    },
+    "video.maxd": {
+      "type": "integer",
+      "description": "Maximum video ad duration in seconds"
+    },
+    "video.protocols": {
+      "description": "Array of supported video protocols"
+    },
+    "video.size": {
+      "type": "string",
+      "description": "player size wxh"
+    },
+    "video.linearity": {
+      "type": "integer",
+      "description": "Indicates if the impression must be linear, nonlinear, etc."
+    },
+    "video.skip": {
+      "type": "integer",
+      "description": "Indicates if the player will allow the video to be skipped, where 0 = no, 1 = yes."
+    },
+    "video.skipmin": {
+      "type": "integer",
+      "description": "Videos of total duration greater than this number of seconds can be skippable; only applicable if the ad is skippable."
+    },
+    "video.skipafter": {
+      "type": "integer",
+      "description": "Number of seconds a video must play before skipping is enabled; only applicable if the ad is skippable."
+    },
+    "video.api": {
+      "description": "List of supported API frameworks for this impression"
+    },
+    "video.startdelay": {
+      "type": "integer",
+      "description": "Indicates the start delay in seconds"
+    },
+    "video.placement": {
+      "type": "integer",
+      "description": "Placement type for the impression."
+    },
+    "video.playbackmethod": {
+      "description": "Playback methods that may be in use"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "secid",
+    "pubid",
+    "source"
+  ]
 }

@@ -1,8 +1,47 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/oprx.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (oprx.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/oprx.json",
   "title": "OptimizeRx bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (oprx.md).",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": "integer",
+      "description": "Placement ID"
+    },
+    "key": {
+      "type": "string",
+      "description": "Key"
+    },
+    "width": {
+      "type": "integer",
+      "description": "Banner Width"
+    },
+    "height": {
+      "type": "integer",
+      "description": "Banner Height"
+    },
+    "bid_floor": {
+      "type": "number",
+      "description": "Bidding Price Floor"
+    },
+    "npi": {
+      "type": "string",
+      "description": "NPI"
+    },
+    "ndc": {
+      "type": "string",
+      "description": "NDC"
+    },
+    "type": {
+      "type": "string",
+      "description": "Type of Bid/Impression"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "placementId",
+    "key",
+    "type"
+  ]
 }

@@ -1,8 +1,43 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/kumma.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (kumma.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/kumma.json",
   "title": "Kumma bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (kumma.md).",
+  "type": "object",
+  "properties": {
+    "pubId": {
+      "type": "string",
+      "description": "The publisher account ID"
+    },
+    "siteId": {
+      "type": "string",
+      "description": "The publisher site ID"
+    },
+    "placementId": {
+      "type": "string",
+      "description": "Identifies specific ad placement"
+    },
+    "bidFloor": {
+      "type": "string",
+      "description": "The bid floor"
+    },
+    "ifa": {
+      "type": "string",
+      "description": "IFA ID"
+    },
+    "latitude": {
+      "type": "string",
+      "description": "Latitude"
+    },
+    "longitude": {
+      "type": "string",
+      "description": "Longitude"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "pubId",
+    "siteId",
+    "placementId"
+  ]
 }

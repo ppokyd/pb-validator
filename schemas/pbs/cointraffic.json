@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/cointraffic.json",
+  "title": "Cointraffic bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Cointraffic adapter",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Ad placement identifier"
+    }
+  },
+  "required": [
+    "placementId"
+  ]
+}

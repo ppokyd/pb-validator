@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/aax.json",
+  "title": "Aax bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Aax adapter",
+  "type": "object",
+  "properties": {
+    "cid": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The customer id provided by AAX."
+    },
+    "crid": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The placement id provided by AAX."
+    }
+  },
+  "required": [
+    "cid",
+    "crid"
+  ]
+}

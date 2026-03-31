@@ -1,8 +1,37 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/consumable.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (consumable-server.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/consumable.json",
   "title": "Consumable bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (consumable-server.md).",
+  "type": "object",
+  "properties": {
+    "siteId": {
+      "type": "integer",
+      "description": "The site ID from Consumable."
+    },
+    "networkId": {
+      "type": "integer",
+      "description": "The network ID from Consumable."
+    },
+    "unitId": {
+      "type": "integer",
+      "description": "The unit ID from Consumable."
+    },
+    "unitName": {
+      "type": "string",
+      "description": "The unit name from Consumable."
+    },
+    "placementId": {
+      "type": "string",
+      "description": "the placementid from Consumable."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "siteId",
+    "networkId",
+    "unitId",
+    "unitName",
+    "placementId"
+  ]
 }

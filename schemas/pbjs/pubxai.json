@@ -1,8 +1,21 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/pubxai.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (pubxai.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/pubxai.json",
   "title": "PubxAi bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (pubxai.md).",
+  "type": "object",
+  "properties": {
+    "tagId": {
+      "type": "string",
+      "description": "PubxAi tag ID"
+    },
+    "placement": {
+      "type": "string",
+      "description": "PubxAi placement"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "tagId"
+  ]
 }

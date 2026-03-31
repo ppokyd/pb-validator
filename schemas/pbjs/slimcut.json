@@ -1,8 +1,0 @@
-{
-  "$id": "https://prebid.org/schemas/pbjs/slimcut.json",
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (slimcut.md). Table-derived constraints are not yet applied; params object is accepted.",
-  "title": "Slimcut bidder params (Prebid.js)",
-  "type": "object"
-}

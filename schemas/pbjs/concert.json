@@ -1,8 +1,33 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/concert.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (concert.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/concert.json",
   "title": "Concert bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (concert.md).",
+  "type": "object",
+  "properties": {
+    "partnerId": {
+      "type": "string",
+      "description": "The partner id assigned by concert."
+    },
+    "placementId": {
+      "type": "integer",
+      "description": "The placement id."
+    },
+    "site": {
+      "type": "string",
+      "description": "The site name."
+    },
+    "slot": {
+      "type": "string",
+      "description": "The slot name."
+    },
+    "sizes": {
+      "type": "array",
+      "description": "All sizes this ad unit accepts."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "partnerId"
+  ]
 }

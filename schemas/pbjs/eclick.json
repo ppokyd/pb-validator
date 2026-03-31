@@ -1,8 +1,17 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/eclick.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (eclick.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/eclick.json",
   "title": "eClick bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (eclick.md).",
+  "type": "object",
+  "properties": {
+    "zid": {
+      "type": "string",
+      "description": "The Zone Id"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "zid"
+  ]
 }

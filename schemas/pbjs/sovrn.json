@@ -1,8 +1,117 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/sovrn.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (sovrn.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/sovrn.json",
   "title": "Sovrn bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (sovrn.md).",
+  "type": "object",
+  "properties": {
+    "tagid": {
+      "type": "string",
+      "description": "The sovrn Ad Tag ID"
+    },
+    "bidfloor": {
+      "type": "number",
+      "description": "Bid floor in dollars"
+    },
+    "adunitcode": {
+      "type": "string",
+      "description": "Ad unit identifier"
+    },
+    "Name": {
+      "description": "Description"
+    },
+    "mimes": {
+      "description": "Content MIME types supported"
+    },
+    "minduration": {
+      "type": "integer",
+      "description": "Minimum video ad duration in seconds"
+    },
+    "maxduration": {
+      "type": "integer",
+      "description": "Maximum video ad duration in seconds"
+    },
+    "protocols": {
+      "description": "The array of supported video protocols"
+    },
+    "w": {
+      "type": "integer",
+      "description": "Width of the video player in device independent pixels (DIPS)"
+    },
+    "h": {
+      "type": "integer",
+      "description": "Height of the video player in device independent pixels (DIPS)"
+    },
+    "startdelay": {
+      "type": "integer",
+      "description": "Indicates the start delay in seconds for pre-roll, mid-roll, or post-roll ad placements"
+    },
+    "placement": {
+      "type": "integer",
+      "description": "Placement type for the impression. Refer to List 5.9"
+    },
+    "linearity": {
+      "type": "integer",
+      "description": "Indicates if the impression must be linear, nonlinear, etc. Allowed by default"
+    },
+    "skip": {
+      "type": "integer",
+      "description": "Indicates if the player will allow the video to be skipped, where 0 = no, 1 = yes"
+    },
+    "skipmin": {
+      "type": "integer",
+      "description": "Only if the ad is skippable. Videos of total duration greater than this number of seconds can be skippable"
+    },
+    "skipafter": {
+      "type": "integer",
+      "description": "Only if the ad is skippable. Number of seconds a video must play before skipping is enabled"
+    },
+    "sequence": {
+      "type": "integer",
+      "description": "For multiple ad in the same bid request. This value allow will for the coordinated delivery of multiple ad"
+    },
+    "battr": {
+      "description": "Blocked creative attributes"
+    },
+    "maxextended": {
+      "type": "integer",
+      "description": "Max extended ad duration beyond the maxduration if extension is allowed. Blank or 0 - blocked. -1 - allowed without time limit"
+    },
+    "minbitrate": {
+      "type": "integer",
+      "description": "Minimum bit rate in Kbps"
+    },
+    "maxbitrate": {
+      "type": "integer",
+      "description": "Maximum bit rate in Kbps"
+    },
+    "boxingallowed": {
+      "type": "integer",
+      "description": "Indicates if letter-boxing of 4:3 content into a 16:9 window is allowed, where 0 = no, 1 = yes"
+    },
+    "playbackmethod": {
+      "description": "Playback methods that may be in use. See [Video Playback Methods](#video-playback-methods)"
+    },
+    "playbackend": {
+      "type": "integer",
+      "description": "The event that causes playback to end. Refer to Playback Cessation Modes"
+    },
+    "delivery": {
+      "description": "Supported delivery methods (1 = streaming, 2 = progressive, 3 = download). If none specified, assume all are supported."
+    },
+    "pos": {
+      "type": "integer",
+      "description": "Ad position on screen. Refer to [Ad Position](#ad-position)"
+    },
+    "api": {
+      "description": "List of supported API frameworks for this impression. Refer to [API Frameworks](#sovrn-api-frameworks)"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "tagid",
+    "mimes",
+    "maxduration",
+    "protocols"
+  ]
 }

@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/afront.json",
+  "title": "Afront bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Afront adapter",
+  "type": "object",
+  "properties": {
+    "accountId": {
+      "type": "string",
+      "description": "Client account id",
+      "minLength": 1
+    },
+    "sourceId": {
+      "type": "string",
+      "description": "Data source id",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "accountId",
+    "sourceId"
+  ]
+}

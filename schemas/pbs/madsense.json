@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/madsense.json",
+  "title": "madSense bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the madSense adapter",
+  "type": "object",
+  "properties": {
+    "company_id": {
+      "type": "string",
+      "description": "An id used to identify madSense company",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "company_id"
+  ]
+}

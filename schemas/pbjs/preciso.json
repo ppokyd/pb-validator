@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbjs/preciso.json",
+  "title": "Preciso bidder params (Prebid.js)",
+  "description": "Generated from prebid.github.io dev-docs/bidders (preciso.md).",
+  "type": "object",
+  "properties": {
+    "publisherId": {
+      "type": "string",
+      "description": "Numeric Publisher ID <br>(as provided by Preciso)"
+    },
+    "region": {
+      "type": "string",
+      "description": "3 letter country code"
+    },
+    "bidFloor": {
+      "type": "number",
+      "description": "Minimum bid for this impression expressed in CPM (USD). It is used if the Floor Module is not available"
+    },
+    "pageType": {
+      "type": "string",
+      "description": "Kind of content present in the page"
+    },
+    "bcat": {
+      "description": "List of blocked advertiser categories (IAB)"
+    },
+    "badv": {
+      "description": "Blocked Advertiser Domains"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "publisherId"
+  ]
+}

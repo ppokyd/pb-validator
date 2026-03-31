@@ -1,8 +1,27 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/bidmachine.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (bidmachine.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/bidmachine.json",
   "title": "Bidmachine bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (bidmachine.md).",
+  "type": "object",
+  "properties": {
+    "host": {
+      "type": "string",
+      "description": "DC region"
+    },
+    "path": {
+      "type": "string",
+      "description": "URL path, will be provided by manager"
+    },
+    "seller_id": {
+      "type": "string",
+      "description": "Your ID in Bidmachine system"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "host",
+    "path",
+    "seller_id"
+  ]
 }

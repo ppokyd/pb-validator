@@ -1,8 +1,52 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/smootai.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (smootai.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/smootai.json",
   "title": "SmootAI bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (smootai.md).",
+  "type": "object",
+  "properties": {
+    "host": {
+      "type": "string",
+      "description": "Ad network's RTB host"
+    },
+    "adUnitId": {
+      "type": "integer",
+      "description": "Ad Unit Id will be generated on <Public title name> Platform."
+    },
+    "adUnitType": {
+      "type": "string",
+      "description": "Type of Ad Unit ('video', 'banner')"
+    },
+    "publisherId": {
+      "type": "string",
+      "description": "Publisher ID"
+    },
+    "custom1": {
+      "type": "string",
+      "description": "Custom targeting field 1"
+    },
+    "custom2": {
+      "type": "string",
+      "description": "Custom targeting field 2"
+    },
+    "custom3": {
+      "type": "string",
+      "description": "Custom targeting field 3"
+    },
+    "custom4": {
+      "type": "string",
+      "description": "Custom targeting field 4"
+    },
+    "custom5": {
+      "type": "string",
+      "description": "Custom targeting field 5"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "host",
+    "adUnitId",
+    "adUnitType",
+    "publisherId"
+  ]
 }

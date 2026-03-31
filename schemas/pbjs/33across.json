@@ -1,8 +1,31 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/33across.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (33across.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/33across.json",
   "title": "33Across bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (33across.md).",
+  "type": "object",
+  "properties": {
+    "zoneId": {
+      "type": "string",
+      "description": "Publisher  GUID from 33Across"
+    },
+    "siteId": {
+      "type": "string",
+      "description": "(Deprecated) Publisher  GUID from 33Across"
+    },
+    "productId": {
+      "type": "string",
+      "description": "33Across Product ID that the Publisher has registered for (use 'siab' for Banner or Outstream Video , 'inview' for Adhesion, 'instream' for Instream Video)"
+    },
+    "test": {
+      "type": "integer",
+      "description": "Set to 1 to enable test mode"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "zoneId",
+    "siteId",
+    "productId"
+  ]
 }

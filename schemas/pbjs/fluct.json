@@ -1,8 +1,26 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/fluct.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (fluct.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/fluct.json",
   "title": "fluct bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (fluct.md).",
+  "type": "object",
+  "properties": {
+    "tagId": {
+      "type": "string",
+      "description": "The tag ID from fluct"
+    },
+    "groupId": {
+      "type": "string",
+      "description": "The group ID from fluct"
+    },
+    "dfpUnitCode": {
+      "type": "string",
+      "description": "DFP ad unit code"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "tagId",
+    "groupId"
+  ]
 }

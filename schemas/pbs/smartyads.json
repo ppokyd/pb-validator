@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/smartyads.json",
+  "title": "SmartyAds bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the SmartyAds adapter",
+  "type": "object",
+  "properties": {
+    "host": {
+      "type": "string",
+      "description": "Network host to send request"
+    },
+    "sourceid": {
+      "type": "string",
+      "description": "Partner id"
+    },
+    "accountid": {
+      "type": "string",
+      "description": "Account id"
+    }
+  },
+  "required": [
+    "host",
+    "sourceid",
+    "accountid"
+  ]
+}

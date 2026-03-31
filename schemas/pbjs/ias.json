@@ -1,8 +1,22 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/ias.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (ias.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/ias.json",
   "title": "Integral Ad Science (IAS) bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (ias.md).",
+  "type": "object",
+  "properties": {
+    "pubId": {
+      "type": "string",
+      "description": "Publisher client ID, provided by IAS"
+    },
+    "adUnitPath": {
+      "type": "string",
+      "description": "Ad unit path. The same one you use for GPT"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "pubId",
+    "adUnitPath"
+  ]
 }

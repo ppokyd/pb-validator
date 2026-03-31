@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/yahooAds.json",
+  "title": "YahooAds bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the YahooAds adapter",
+  "type": "object",
+  "properties": {
+    "dcn": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Site ID provided by One Mobile"
+    },
+    "pos": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Placement ID"
+    }
+  },
+  "required": [
+    "dcn",
+    "pos"
+  ]
+}

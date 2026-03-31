@@ -1,8 +1,34 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/onedisplay.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (onedisplay.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/onedisplay.json",
   "title": "ONE by AOL Display bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (onedisplay.md).",
+  "type": "object",
+  "properties": {
+    "placement": {
+      "type": "string",
+      "description": "The placement ID from AOL."
+    },
+    "network": {
+      "type": "string",
+      "description": "The network ID from AOL."
+    },
+    "alias": {
+      "type": "string",
+      "description": "The placement alias from AOL."
+    },
+    "server": {
+      "type": "string",
+      "description": "The server domain name. Default is adserver-us.adtech.advertising.com. EU customers must use adserver-eu.adtech.advertising.com, and Asia customers adserver-as.adtech.advertising.com."
+    },
+    "bidFloor": {
+      "type": "string",
+      "description": "Dynamic bid floor (added in Prebid 0.8.1)"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "placement",
+    "network"
+  ]
 }

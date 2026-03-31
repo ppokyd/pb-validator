@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/interactiveoffers.json",
+  "title": "Interactive Offers bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by Interactive Offers adapter",
+  "type": "object",
+  "properties": {
+    "partnerId": {
+      "type": "string",
+      "description": "The partners id"
+    }
+  },
+  "required": []
+}

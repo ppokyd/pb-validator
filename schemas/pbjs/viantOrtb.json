@@ -1,8 +1,17 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/viantOrtb.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (viant.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/viantOrtb.json",
   "title": "Viant bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (viant.md).",
+  "type": "object",
+  "properties": {
+    "publisherId": {
+      "type": "integer",
+      "description": "PublisherId to identify the Site from which Bid Requests will be seen."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "publisherId"
+  ]
 }

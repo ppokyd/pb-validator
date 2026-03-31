@@ -1,8 +1,33 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/cleanmedianet.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (cleanmedianet.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/cleanmedianet.json",
   "title": "Clean Media Net bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (cleanmedianet.md).",
+  "type": "object",
+  "properties": {
+    "supplyPartnerId or inventory_id or supply_partner_id": {
+      "type": "integer",
+      "description": "ID of the supply partner. This parameter can be either a string or integer for Prebid.js, however integer is preferred"
+    },
+    "bidfloor": {
+      "type": "number",
+      "description": "Minimum acceptable bid price. Must be a positive number."
+    },
+    "instl": {
+      "type": "integer",
+      "description": "Interstitial flag (1 for interstitial, 0 for non-interstitial)."
+    },
+    "pos": {
+      "type": "integer",
+      "description": "Ad position on the page."
+    },
+    "video": {
+      "type": "object",
+      "description": "Object containing video targeting parameters. See [Video Object](#video-object) for details."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "supplyPartnerId or inventory_id or supply_partner_id"
+  ]
 }

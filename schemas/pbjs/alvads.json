@@ -1,8 +1,17 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/alvads.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (alvads.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/alvads.json",
   "title": "Alvads bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (alvads.md).",
+  "type": "object",
+  "properties": {
+    "publisherUniqueId": {
+      "type": "string",
+      "description": "Publisher Unique ID"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "publisherUniqueId"
+  ]
 }

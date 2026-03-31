@@ -1,8 +1,30 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/rtbhouse.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (rtbhouse.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/rtbhouse.json",
   "title": "RTBHouse bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (rtbhouse.md).",
+  "type": "object",
+  "properties": {
+    "publisherId": {
+      "type": "string",
+      "description": "Unique publisher ID"
+    },
+    "region": {
+      "type": "string",
+      "description": "Assigned region"
+    },
+    "bidfloor": {
+      "type": "number",
+      "description": "Minimal CPM value"
+    },
+    "channel": {
+      "type": "string",
+      "description": "Inventory channel identifier, limited to 50 characters"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "publisherId",
+    "region"
+  ]
 }

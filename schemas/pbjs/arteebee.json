@@ -1,8 +1,26 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/arteebee.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (arteebee.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/arteebee.json",
   "title": "Arteebee bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (arteebee.md).",
+  "type": "object",
+  "properties": {
+    "pub": {
+      "type": "string",
+      "description": "RTB publisher id"
+    },
+    "source": {
+      "type": "string",
+      "description": "RTB traffic source id"
+    },
+    "coppa": {
+      "type": "integer",
+      "description": "flag this request subject to COPPA"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "pub",
+    "source"
+  ]
 }

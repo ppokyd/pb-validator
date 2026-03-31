@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/triplelift_native.json",
+  "title": "Triplelift bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Triplelift adapter",
+  "type": "object",
+  "properties": {
+    "inventoryCode": {
+      "type": "string",
+      "minLength": 1,
+      "description": "TripleLift inventory code for this ad unit (provided to you by your partner manager)"
+    },
+    "floor": {
+      "description": "the bid floor, in usd",
+      "type": "number"
+    }
+  },
+  "required": [
+    "inventoryCode"
+  ]
+}

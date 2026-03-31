@@ -1,8 +1,33 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/getintent.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (getintent.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/getintent.json",
   "title": "GetIntent bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (getintent.md).",
+  "type": "object",
+  "properties": {
+    "pid": {
+      "type": "integer",
+      "description": "Publisher ID registered in GetIntent system"
+    },
+    "tid": {
+      "type": "string",
+      "description": "Unique Tag ID. Required if multiple tags are used on the same page."
+    },
+    "cur": {
+      "type": "string",
+      "description": "Currency of the ad request. Default is the one configured at publisher settings."
+    },
+    "floor": {
+      "type": "number",
+      "description": "Floor price for the request."
+    },
+    "video": {
+      "type": "object",
+      "description": "Object with video parameters. See the [video section below](#getintent-video)."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "pid"
+  ]
 }

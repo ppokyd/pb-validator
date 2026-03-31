@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/blue.json",
+  "title": "Blue bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Blue adapter",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": "string",
+      "description": "Placement ID provided by Blue"
+    },
+    "publisherId": {
+      "type": "string",
+      "description": "The publisher’s ID provided by Blue"
+    }
+  },
+  "required": [
+    "publisherId"
+  ]
+}

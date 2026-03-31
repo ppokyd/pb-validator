@@ -1,8 +1,26 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/hybrid.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (hybrid.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/hybrid.json",
   "title": "Hybrid.ai bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (hybrid.md).",
+  "type": "object",
+  "properties": {
+    "placeId": {
+      "type": "string",
+      "description": "The place id."
+    },
+    "placement": {
+      "type": "string",
+      "description": "Adunit placement, possible values: banner, video, inImage"
+    },
+    "imageUrl": {
+      "type": "string",
+      "description": "URL of the image on which the banner will be displayed"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "placeId",
+    "placement"
+  ]
 }

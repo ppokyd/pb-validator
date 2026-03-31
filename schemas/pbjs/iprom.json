@@ -1,8 +1,22 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/iprom.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (iprom.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/iprom.json",
   "title": "iPROM bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (iprom.md).",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "The site ID from iPROM."
+    },
+    "dimension": {
+      "type": "string",
+      "description": "iPROM specific bidding zone."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "dimension"
+  ]
 }

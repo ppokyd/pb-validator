@@ -1,8 +1,21 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/a4g.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (a4g.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/a4g.json",
   "title": "A4G bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (a4g.md).",
+  "type": "object",
+  "properties": {
+    "zoneId": {
+      "type": "string",
+      "description": "The A4G zone ID"
+    },
+    "deliveryUrl": {
+      "type": "string",
+      "description": "The bid endpoint (might be used for debug)"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "zoneId"
+  ]
 }

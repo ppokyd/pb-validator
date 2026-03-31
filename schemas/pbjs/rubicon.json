@@ -1,8 +1,72 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/rubicon.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (rubicon.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/rubicon.json",
   "title": "Rubicon Project bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (rubicon.md).",
+  "type": "object",
+  "properties": {
+    "accountId": {
+      "type": "integer",
+      "description": "The publisher account ID"
+    },
+    "siteId": {
+      "type": "integer",
+      "description": "A unique ID for your site"
+    },
+    "zoneId": {
+      "type": "integer",
+      "description": "A unique ID for your site's ad placements"
+    },
+    "position": {
+      "type": "string",
+      "description": "Set the page position. Valid values are \"atf\" and \"btf\"."
+    },
+    "userId": {
+      "type": "string",
+      "description": "Site-specific user ID may be reflected back in creatives for analysis. Note that userId needs to be the same for all slots."
+    },
+    "floor": {
+      "type": "number",
+      "description": "Sets the global floor -- no bids will be made under this value."
+    },
+    "latLong": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "description": "Sets the latitude and longitude for the visitor (avail since PBJS 1.10)"
+    },
+    "inventory": {
+      "type": "object",
+      "description": "See below for details on First Party Data. In release 4.29 and earlier, this parameter allows the definition of an object defining arbitrary key-value pairs concerning the page for use in targeting. The values must be arrays of strings."
+    },
+    "visitor": {
+      "type": "object",
+      "description": "See below for details on First Party Data. In release 4.29 and earlier, this parameter allows the definition of an object defining arbitrary key-value pairs concerning the visitor for use in targeting. The values must be arrays of strings."
+    },
+    "keywords": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "See below for details on First Party Data. In release 4.29 and earlier, this can be used to influence reports for client-side display. To get video or server-side reporting, please use First Party data or the inventory/visitor parameters."
+    },
+    "video": {
+      "type": "object",
+      "description": "Video targeting parameters. See the [video section below](#mediatypesvideo)."
+    },
+    "pchain": {
+      "type": "string",
+      "description": "deprecated option that was an early alternative to schain"
+    },
+    "bidonmultiformat": {
+      "description": "By default, the Magnite exchange will bid on only one media type in this order: video, banner, native. Setting this flag to true will cause it to bid on all mediatypes."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "accountId",
+    "siteId",
+    "zoneId"
+  ]
 }

@@ -1,8 +1,25 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/adlivetech.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (adlivetech.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/adlivetech.json",
   "title": "Adlivetech bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (adlivetech.md).",
+  "type": "object",
+  "properties": {
+    "uid": {
+      "type": "integer",
+      "description": "Represents the Adlivetech bidder system Ad Slot ID associated with the respective div id from the site page."
+    },
+    "keywords": {
+      "type": "object",
+      "description": "A set of key-value pairs applied to all ad slots on the page. Values can be empty."
+    },
+    "bidFloor": {
+      "type": "number",
+      "description": "Floor of the impression opportunity. If present in the request overrides XML info."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "uid"
+  ]
 }

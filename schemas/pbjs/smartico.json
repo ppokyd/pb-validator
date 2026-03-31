@@ -1,8 +1,41 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/smartico.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (smartico.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/smartico.json",
   "title": "smartico bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (smartico.md).",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": "string",
+      "description": "Unique identificator per widget integration provided by customer"
+    },
+    "token": {
+      "type": "string",
+      "description": "Unique 40-symbols identificator per customer provided by smartico"
+    },
+    "region": {
+      "type": "string",
+      "description": "Creative region alias"
+    },
+    "regions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Creative region aliases list"
+    },
+    "bannerFormat": {
+      "type": "string",
+      "description": "Specific banner format alias"
+    },
+    "language": {
+      "type": "string",
+      "description": "Two letter language code"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "placementId",
+    "token"
+  ]
 }

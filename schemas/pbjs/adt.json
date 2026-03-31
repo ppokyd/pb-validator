@@ -1,8 +1,22 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/adt.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (adt.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/adt.json",
   "title": "AdTarget Teknoloji bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (adt.md).",
+  "type": "object",
+  "properties": {
+    "networkId": {
+      "type": "number",
+      "description": "The network ID from AdTarget Teknoloji"
+    },
+    "host": {
+      "type": "string",
+      "description": "RTB Host"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "networkId",
+    "host"
+  ]
 }

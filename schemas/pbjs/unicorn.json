@@ -1,8 +1,32 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/unicorn.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (unicorn.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/unicorn.json",
   "title": "UNICORN bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (unicorn.md).",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": "string",
+      "description": "Your placement ID"
+    },
+    "accountId": {
+      "type": "integer",
+      "description": "Account ID for charge request (provided by UNICORN)"
+    },
+    "publisherId": {
+      "type": "string",
+      "description": "Account specific publisher id."
+    },
+    "mediaId": {
+      "type": "string",
+      "description": "Publisher specific media id."
+    },
+    "bcat": {
+      "description": "Blocked IAB categories"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "accountId"
+  ]
 }

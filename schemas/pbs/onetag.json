@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/onetag.json",
+  "title": "Onetag bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Onetag adapter",
+  "type": "object",
+  "properties": {
+    "pubId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The publisher’s ID provided by OneTag"
+    },
+    "ext": {
+      "type": "object",
+      "description": "A set of custom key-value pairs"
+    }
+  },
+  "required": [
+    "pubId"
+  ]
+}

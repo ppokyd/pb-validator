@@ -1,8 +1,41 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/pstudio.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (pstudio.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/pstudio.json",
   "title": "PStudio bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (pstudio.md).",
+  "type": "object",
+  "properties": {
+    "pubid": {
+      "description": "UUID of the publisher"
+    },
+    "adtagid": {
+      "description": "UUID of the ad tag"
+    },
+    "bcat": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Blocked advertiser categories using the IAB content categories"
+    },
+    "bapp": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Block list of applications by their platform-specific exchange-independent application identifiers"
+    },
+    "badv": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Block list of advertisers by their domains"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "pubid",
+    "adtagid"
+  ]
 }

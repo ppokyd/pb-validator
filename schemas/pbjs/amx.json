@@ -1,8 +1,25 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/amx.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (amx-server.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/amx.json",
   "title": "AMX RTB bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (amx-server.md).",
+  "type": "object",
+  "properties": {
+    "tagId": {
+      "type": "string",
+      "description": "Tag ID"
+    },
+    "testMode": {
+      "type": "boolean",
+      "description": "Activate 100% fill ads"
+    },
+    "adUnitId": {
+      "type": "string",
+      "description": "Ad Unit ID used in reporting. Will default to bid.adUnitCode"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "tagId"
+  ]
 }

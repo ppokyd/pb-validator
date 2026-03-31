@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/mobkoi.json",
+  "title": "Mobkoi bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Mobkoi adapter",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": "string",
+      "description": "Placement ID"
+    }
+  }
+}

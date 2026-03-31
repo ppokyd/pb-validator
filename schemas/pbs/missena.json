@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/missena.json",
+  "title": "Missena bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Missena adapter",
+  "type": "object",
+  "properties": {
+    "apiKey": {
+      "type": "string",
+      "description": "API Key",
+      "minLength": 1
+    },
+    "placement": {
+      "type": "string",
+      "description": "Placement Type (Sticky, Header, ...)"
+    },
+    "sample": {
+      "type": "string",
+      "description": "Sample"
+    },
+    "formats": {
+      "type": "array",
+      "description": "An array of formats to request (banner, native, or video)",
+      "items": {
+        "type": "string"
+      }
+    },
+    "settings": {
+      "type": "object",
+      "description": "An object containing extra settings for the Missena adapter"
+    }
+  },
+  "required": [
+    "apiKey"
+  ]
+}

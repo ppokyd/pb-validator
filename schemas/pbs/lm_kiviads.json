@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/lm_kiviads.json",
+  "title": "Lm_Kiviads bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the lmkiviads adapter",
+  "type": "object",
+  "properties": {
+    "env": {
+      "type": "string",
+      "description": "kivi environment",
+      "minLength": 1
+    },
+    "pid": {
+      "type": "string",
+      "description": "Unique placement ID",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "env",
+    "pid"
+  ]
+}

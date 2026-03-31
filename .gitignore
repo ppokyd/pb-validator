@@ -4,3 +4,4 @@ packages/js/dist/
 packages/js/schemas/
 *.log
 .DS_Store
+.vscode/

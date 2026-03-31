@@ -1,8 +1,112 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/tremor.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (tremor.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/tremor.json",
   "title": "Tremor bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (tremor.md).",
+  "type": "object",
+  "properties": {
+    "adCode": {
+      "type": "string",
+      "description": "The Ad Code from Tremor."
+    },
+    "supplyCode": {
+      "type": "string",
+      "description": "The Supply Code from Tremor."
+    },
+    "playerWidth": {
+      "type": "integer",
+      "description": "The width of the video player. Full-screen video fills the width of the device, that is, if the video can play in full screen mode, the player width is the screen width."
+    },
+    "playerHeight": {
+      "type": "integer",
+      "description": "The height of the video player. Full-screen video fills the height of the device, that is, if the video can play in full screen mode, the player height is the screen height."
+    },
+    "mediaId": {
+      "type": "integer",
+      "description": "A unique (not random) value that identifies the content video aligned with the ad opportunity. Typically provided by the video player CMS."
+    },
+    "mediaUrl": {
+      "type": "string",
+      "description": "The URL to the content video source."
+    },
+    "mediaTitle": {
+      "type": "string",
+      "description": "The title of the content video aligned with the ad opportunity."
+    },
+    "contentLength": {
+      "type": "integer",
+      "description": "The length of the content video in seconds."
+    },
+    "srcPageUrl": {
+      "type": "string",
+      "description": "The url of the page where the video ad will be displayed."
+    },
+    "floor": {
+      "type": "string",
+      "description": "This is a formatted string of values. The format is a comma separated list of \"currency pairs\". Each pair consists of a currency code and the floor for that currency, separated by a colon."
+    },
+    "efloor": {
+      "type": "string",
+      "description": "Same as floor, except the entire string is encrypted using HMAC encryption and the encryption keys set on the supply's seat from the SSP UI."
+    },
+    "custom": {
+      "type": "string",
+      "description": "Any custom value that will be later be available for reporting."
+    },
+    "categories": {
+      "description": "Validated against RTB table 6.1 (Send comma delimited list if more than one category applies."
+    },
+    "keywords": {
+      "type": "string",
+      "description": "Comma separated list of keywords describing the supply."
+    },
+    "srcRelationship": {
+      "type": "integer",
+      "description": "Describes the relationship between the content owner and the requestor of the ad opportunity. 1 for \"direct\", 0 for \"indirect\""
+    },
+    "blockDomains": {
+      "type": "string",
+      "description": "A comma separated list of advertiser domains that should be added to the existing list of blocked advertiser domains that is set in the SSP console."
+    },
+    "skip": {
+      "description": "Is the video skippable? True or false. 1/T/Y is true and 0/F/N/null is false."
+    },
+    "skipmin": {
+      "type": "integer",
+      "description": "Shortest video ad (in seconds) that can be skipped. If provided and \"skip\" is not, then \"skip\" is automatically set to true."
+    },
+    "skipafter": {
+      "type": "integer",
+      "description": "Number of seconds after which the video can be skipped. If provided and \"skip\" is not, then \"skip\" is automatically set to true."
+    },
+    "delivery": {
+      "type": "string",
+      "description": "Comma delimited listed of Integers representing allowed delivery methods. See below as well as RTB 2.5 specification for valid values."
+    },
+    "placement": {
+      "type": "integer",
+      "description": "Integer value of placement type. See below as well as RTB 2.5 specification for valid values."
+    },
+    "videoMinBitrate": {
+      "type": "integer",
+      "description": "Minimum bitrate in kbps"
+    },
+    "videoMaxBitrate": {
+      "type": "integer",
+      "description": "Maximum bitrate in kbps"
+    },
+    "minDur": {
+      "type": "integer",
+      "description": "Minimum duration for an ad in seconds"
+    },
+    "maxDur": {
+      "type": "integer",
+      "description": "Maximum duration for an ad in seconds"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "adCode",
+    "supplyCode"
+  ]
 }

@@ -1,8 +1,17 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/topon.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (topon.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/topon.json",
   "title": "TopOn bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (topon.md).",
+  "type": "object",
+  "properties": {
+    "pubid": {
+      "type": "string",
+      "description": "TopOn-specific identifier associated with your account"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "pubid"
+  ]
 }

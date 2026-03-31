@@ -1,8 +1,38 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/improvedigital.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (improvedigital.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/improvedigital.json",
   "title": "Improve Digital bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (improvedigital.md).",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": "integer",
+      "description": "The placement ID from Improve Digital."
+    },
+    "publisherId": {
+      "type": "integer",
+      "description": "The publisher ID from Improve Digital."
+    },
+    "keyValues": {
+      "type": "object",
+      "description": "Contains one or more key-value pairings for key-value targeting"
+    },
+    "bidFloor": {
+      "type": "number",
+      "description": "Bid floor price"
+    },
+    "bidFloorCur": {
+      "type": "string",
+      "description": "Bid floor price currency. Supported values: USD (default), EUR, GBP, AUD, DKK, SEK, CZK, CHF, NOK"
+    },
+    "extend": {
+      "type": "boolean",
+      "description": "See the [Extend mode section](#improvedigital-extend)"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "placementId",
+    "publisherId"
+  ]
 }

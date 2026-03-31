@@ -1,8 +1,26 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/fyber.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (fyber.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/fyber.json",
   "title": "Fyber bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (fyber.md).",
+  "type": "object",
+  "properties": {
+    "appId": {
+      "type": "string",
+      "description": "The app. ID provided by Inneractive"
+    },
+    "adSpotType": {
+      "type": "string",
+      "description": "The ad spot type ('BANNER'/RECTANGLE)"
+    },
+    "customParams": {
+      "type": "object",
+      "description": "Allows passing custom parameters in the bid request."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "appId",
+    "adSpotType"
+  ]
 }

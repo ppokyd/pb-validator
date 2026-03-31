@@ -1,8 +1,29 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/logicad.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (logicad.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/logicad.json",
   "title": "Logicad for Publishers bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (logicad.md).",
+  "type": "object",
+  "properties": {
+    "tid": {
+      "type": "string",
+      "description": "Logicad for Publishers placement ID"
+    },
+    "page": {
+      "type": "string",
+      "description": "Url of the webpage where the request is originating from"
+    },
+    "cur": {
+      "type": "string",
+      "description": "Currency of request and response (Default: JPY )"
+    },
+    "test": {
+      "type": "boolean",
+      "description": "Indicates bidding for testing purposes"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "tid"
+  ]
 }

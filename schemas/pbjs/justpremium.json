@@ -1,8 +1,31 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/justpremium.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (justpremium.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/justpremium.json",
   "title": "Justpremium bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (justpremium.md).",
+  "type": "object",
+  "properties": {
+    "zone": {
+      "type": "string",
+      "description": "The zone ID provided by Justpremium"
+    },
+    "allow": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Permits publisher to decide which products can be run from specific ad unit"
+    },
+    "exclude": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Permits publisher to decide which products should be excluded from running in specific ad unit"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "zone"
+  ]
 }

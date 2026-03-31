@@ -1,8 +1,17 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/quantum.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (quantum.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/quantum.json",
   "title": "Quantum bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (quantum.md).",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": "integer",
+      "description": "The ID issued by Quantum to the publisher"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "placementId"
+  ]
 }

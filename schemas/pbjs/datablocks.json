@@ -1,8 +1,29 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/datablocks.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (datablocks.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/datablocks.json",
   "title": "DataBlocks bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (datablocks.md).",
+  "type": "object",
+  "properties": {
+    "source_id": {
+      "type": "integer",
+      "description": "Website Source Id"
+    },
+    "host": {
+      "type": "string",
+      "description": "Network Host to request from"
+    },
+    "tagid": {
+      "type": "string",
+      "description": "Placement ID"
+    },
+    "vis_optout": {
+      "type": "boolean",
+      "description": "Opt out of visibility metric"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "source_id"
+  ]
 }

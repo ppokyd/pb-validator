@@ -1,8 +1,30 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/imds.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (imds.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/imds.json",
   "title": "iMedia Digital Services (iMDS) bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (imds.md).",
+  "type": "object",
+  "properties": {
+    "seatId": {
+      "type": "string",
+      "description": "The seat ID from iMedia Digital Services. This will be the same for all ad units."
+    },
+    "tagId": {
+      "type": "string",
+      "description": "The placement ID or tag ID from iMedia Digital Services."
+    },
+    "placementId": {
+      "type": "string",
+      "description": "Legacy parameter replaced by tagId"
+    },
+    "bidfloor": {
+      "type": "number",
+      "description": "Legacy parameter for floor price for the request. Replaced by [Price Floors Module](/dev-docs/modules/floors.html)"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "seatId",
+    "tagId"
+  ]
 }

@@ -1,8 +1,27 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/mile.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (mile.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/mile.json",
   "title": "Mile bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (mile.md).",
+  "type": "object",
+  "properties": {
+    "publisherId": {
+      "type": "string",
+      "description": "The publisher ID from Mile"
+    },
+    "placementId": {
+      "type": "string",
+      "description": "The placement ID from Mile"
+    },
+    "siteId": {
+      "type": "string",
+      "description": "The site ID from Mile"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "publisherId",
+    "placementId",
+    "siteId"
+  ]
 }

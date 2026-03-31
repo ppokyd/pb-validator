@@ -1,8 +1,22 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/escalax.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (escalax.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/escalax.json",
   "title": "Escalax bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (escalax.md).",
+  "type": "object",
+  "properties": {
+    "sourceId": {
+      "type": "string",
+      "description": "Patner name"
+    },
+    "accountId": {
+      "type": "string",
+      "description": "Hash"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "sourceId",
+    "accountId"
+  ]
 }

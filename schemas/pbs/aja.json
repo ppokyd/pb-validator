@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/aja.json",
+  "title": "AJA bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the AJA adapter",
+  "type": "object",
+  "properties": {
+    "asi": {
+      "type": "string",
+      "description": "Ad spot ID"
+    }
+  },
+  "required": [
+    "asi"
+  ]
+}

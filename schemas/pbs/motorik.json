@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/motorik.json",
+  "title": "Motorik bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Motorik adapter",
+  "type": "object",
+  "properties": {
+    "accountId": {
+      "type": "string",
+      "description": "Account id",
+      "minLength": 1
+    },
+    "placementId": {
+      "type": "string",
+      "description": "Placement id",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "accountId",
+    "placementId"
+  ]
+}

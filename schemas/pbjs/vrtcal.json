@@ -1,8 +1,13 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/vrtcal.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (vrtcal.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/vrtcal.json",
   "title": "VRTCAL Markets Inc. bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (vrtcal.md).",
+  "type": "object",
+  "properties": {
+    "(none)": {
+      "description": "no params required"
+    }
+  },
+  "additionalProperties": false
 }

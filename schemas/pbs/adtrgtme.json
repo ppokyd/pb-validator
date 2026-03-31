@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/adtrgtme.json",
+  "title": "Adtrgtme bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Adtrgtme adapter",
+  "type": "object",
+  "properties": {
+    "site_id": {
+      "type": "integer",
+      "description": "Site ID"
+    }
+  },
+  "required": [
+    "site_id"
+  ]
+}

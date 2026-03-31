@@ -1,8 +1,45 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/insurads.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (insurads.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/insurads.json",
   "title": "InsurAds bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (insurads.md).",
+  "type": "object",
+  "properties": {
+    "tagId": {
+      "type": "string",
+      "description": "InsurAds tag ID"
+    },
+    "videoTagId": {
+      "type": "string",
+      "description": "InsurAds Video tag ID"
+    },
+    "nativeTagId": {
+      "type": "string",
+      "description": "InsurAds Native tag ID"
+    },
+    "allBids": {
+      "type": "boolean",
+      "description": "Return all bids"
+    },
+    "divId": {
+      "type": "string",
+      "description": "divId linked to adUnit"
+    },
+    "adUnitName": {
+      "type": "string",
+      "description": "A code to identify adUnit"
+    },
+    "adUnitPath": {
+      "type": "string",
+      "description": "A reference to adUnit Path"
+    },
+    "placement": {
+      "type": "string",
+      "description": "InsurAds placement"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "tagId"
+  ]
 }

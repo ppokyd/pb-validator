@@ -1,8 +1,17 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/avct.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (avct.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/avct.json",
   "title": "Avocet bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (avct.md).",
+  "type": "object",
+  "properties": {
+    "placement": {
+      "type": "string",
+      "description": "A Placement ID from Avocet."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "placement"
+  ]
 }

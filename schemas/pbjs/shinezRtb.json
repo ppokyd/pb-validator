@@ -1,8 +1,26 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/shinezRtb.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (shinezRtb.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/shinezRtb.json",
   "title": "ShinezRTB bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (shinezRtb.md).",
+  "type": "object",
+  "properties": {
+    "cId": {
+      "type": "string",
+      "description": "The connection ID from shinezRtb."
+    },
+    "pId": {
+      "type": "string",
+      "description": "The publisher ID from shinezRtb."
+    },
+    "bidFloor": {
+      "type": "number",
+      "description": "The minimum bid value desired. shinezRtb will not respond with bids lower than this value."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "cId",
+    "pId"
+  ]
 }

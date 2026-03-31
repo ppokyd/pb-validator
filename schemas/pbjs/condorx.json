@@ -1,8 +1,34 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/condorx.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (condorx.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/condorx.json",
   "title": "CondorX bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (condorx.md).",
+  "type": "object",
+  "properties": {
+    "widget": {
+      "type": "integer",
+      "description": "The widget ID, by CondorX"
+    },
+    "website": {
+      "type": "integer",
+      "description": "The website ID, by CondorX"
+    },
+    "url": {
+      "type": "string",
+      "description": "Current url"
+    },
+    "bidfloor": {
+      "type": "number",
+      "description": "Minimum bid price in USD"
+    },
+    "useOpenRTB": {
+      "type": "boolean",
+      "description": "Enable OpenRTB format requests"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "widget",
+    "website"
+  ]
 }

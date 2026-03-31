@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/videoheroes.json",
+  "title": "VideoHeroes bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the VideoHeroes adapter",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": "string",
+      "description": "Unique Placement ID of publisher"
+    }
+  },
+  "required": [
+    "placementId"
+  ]
+}

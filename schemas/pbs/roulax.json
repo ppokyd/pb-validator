@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/roulax.json",
+  "title": "Roulax bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Roulax adapter",
+  "type": "object",
+  "properties": {
+    "PId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "PID"
+    },
+    "PublisherPath": {
+      "type": "string",
+      "minLength": 1,
+      "description": "PublisherPath"
+    }
+  },
+  "required": [
+    "Pid",
+    "PublisherPath"
+  ]
+}

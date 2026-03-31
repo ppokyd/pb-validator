@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/relevantdigital.json",
+  "title": "Relevant Digital bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Relevant Digital adapter",
+  "type": "object",
+  "properties": {
+    "accountId": {
+      "type": "string",
+      "description": "An ID which identifies the Relevant Digital account ID"
+    },
+    "placementId": {
+      "type": "string",
+      "description": "An ID which identifies the Relevant Digital placement ID"
+    },
+    "pbsHost": {
+      "type": "string",
+      "description": "Prebid Server Host supplied by Relevant Digital"
+    },
+    "pbsBufferMs": {
+      "type": "number",
+      "description": "TMax buffer, default is 250"
+    }
+  },
+  "required": [
+    "accountId",
+    "placementId",
+    "pbsHost"
+  ]
+}

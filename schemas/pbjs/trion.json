@@ -1,8 +1,22 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/trion.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (trion.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/trion.json",
   "title": "Trion Interactive bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (trion.md).",
+  "type": "object",
+  "properties": {
+    "pubId": {
+      "type": "string",
+      "description": "publisher Id provided by Trion Interactive"
+    },
+    "sectionId": {
+      "type": "string",
+      "description": "section Id provided by Trion Interactive"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "pubId",
+    "sectionId"
+  ]
 }

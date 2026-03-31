@@ -1,8 +1,25 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/yaleo.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (yaleo.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/yaleo.json",
   "title": "Yaleo bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (yaleo.md).",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": "string",
+      "description": "Yaleo placement identifier."
+    },
+    "memberId": {
+      "type": "number",
+      "description": "Member identifier."
+    },
+    "maxCpm": {
+      "type": "number",
+      "description": "Maximum CPM value. Bids with a CPM higher than the specified value will be rejected."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "placementId"
+  ]
 }

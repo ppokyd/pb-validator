@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/beop.json",
+  "title": "BeOp bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the BeOp adapter",
+  "type": "object",
+  "properties": {
+    "pid": {
+      "type": "string",
+      "description": "Beop publisher ID"
+    },
+    "nid": {
+      "type": "string",
+      "description": "Beop Network ID"
+    },
+    "ntpnid": {
+      "type": "string",
+      "description": "Network partner ID"
+    }
+  },
+  "oneOf": [
+    {
+      "required": [
+        "pid"
+      ]
+    },
+    {
+      "required": [
+        "nid",
+        "ntpnid"
+      ]
+    }
+  ]
+}

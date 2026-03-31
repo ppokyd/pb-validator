@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/gamoshi.json",
+  "title": "Gamoshi bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by Gamoshi adapter",
+  "type": "object",
+  "properties": {
+    "supplyPartnerId": {
+      "type": "string",
+      "description": "Supply partner id to use."
+    },
+    "favoredMediaType": {
+      "type": "string",
+      "description": "favored media type"
+    }
+  },
+  "required": [
+    "supplyPartnerId"
+  ]
+}

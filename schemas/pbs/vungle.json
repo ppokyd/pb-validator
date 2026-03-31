@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/vungle.json",
+  "title": "Vungle bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Vungle adapter",
+  "type": "object",
+  "properties": {
+    "app_store_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Pub App Store ID"
+    },
+    "placement_reference_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Placement Reference ID"
+    }
+  },
+  "required": [
+    "app_store_id",
+    "placement_reference_id"
+  ]
+}

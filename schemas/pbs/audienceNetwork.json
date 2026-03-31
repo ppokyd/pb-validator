@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/audienceNetwork.json",
+  "title": "Facebook Audience Network bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Facebook Audience Network adapter",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": "string",
+      "description": "An ID which identifies the placement selling the impression"
+    }
+  },
+  "required": [
+    "placementId"
+  ]
+}

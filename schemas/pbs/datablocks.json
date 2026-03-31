@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/datablocks.json",
+  "title": "Datablocks bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Datablocks adapter",
+  "type": "object",
+  "properties": {
+    "sourceId": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Website Source Id"
+    }
+  },
+  "required": [
+    "sourceId"
+  ]
+}

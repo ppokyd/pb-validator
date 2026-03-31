@@ -1,8 +1,40 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/bluebillywig.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (bluebillywig.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/bluebillywig.json",
   "title": "Blue Billywig bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (bluebillywig.md).",
+  "type": "object",
+  "properties": {
+    "publicationName": {
+      "type": "string",
+      "description": "The name of your Blue Billywig publication"
+    },
+    "accountId": {
+      "type": "integer",
+      "description": "Your publication ID at Blue Billywig"
+    },
+    "rendererCode": {
+      "type": "string",
+      "description": "The name of the renderer to use in your Blue Billywig publication"
+    },
+    "connections": {
+      "type": "array",
+      "description": "Back-ends to connect with. For every value in this a param matching the back-end should exist too."
+    },
+    "video": {
+      "type": "object",
+      "description": "Any OpenRTB 2.5 video params to additionally send along to the SSPs."
+    },
+    "rendererSettings": {
+      "type": "object",
+      "description": "Any playout property for the renderer you wish to override."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "publicationName",
+    "accountId",
+    "rendererCode",
+    "connections"
+  ]
 }

@@ -1,8 +1,37 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/eplanning.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (eplanning.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/eplanning.json",
   "title": "E-Planning bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (eplanning.md).",
+  "type": "object",
+  "properties": {
+    "ci": {
+      "type": "string",
+      "description": "Your partner ID (provided by E-Planning)"
+    },
+    "sv": {
+      "type": "string",
+      "description": "Indicates a bidder URL different than default"
+    },
+    "isv": {
+      "type": "string",
+      "description": "Indicates a CDN URL different than default"
+    },
+    "t": {
+      "type": "integer",
+      "description": "Indicates bidding for testing purposes"
+    },
+    "ml": {
+      "type": "integer",
+      "description": "Uses placement names as ad unit names instead of sizes"
+    },
+    "sn": {
+      "type": "string",
+      "description": "Uses space name instead of sizes"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "ci"
+  ]
 }

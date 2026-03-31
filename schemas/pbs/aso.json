@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/aso.json",
+  "title": "Adserver.Online bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the aso adapter",
+  "type": "object",
+  "properties": {
+    "zone": {
+      "type": "integer",
+      "description": "An ID which identifies the zone selling the impression"
+    }
+  },
+  "required": [
+    "zone"
+  ]
+}

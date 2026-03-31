@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/sovrn.json",
+  "title": "Sovrn bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Sovrn adapter",
+  "type": "object",
+  "properties": {
+    "tagid": {
+      "type": "string",
+      "description": "An ID which identifies the sovrn ad tag"
+    },
+    "tagId": {
+      "type": "string",
+      "description": "An ID which identifies the sovrn ad tag (DEPRECATED, use \"tagid\" instead)"
+    },
+    "bidfloor": {
+      "anyOf": [
+        {
+          "type": "number",
+          "description": "The minimum acceptable bid, in CPM, using US Dollars"
+        },
+        {
+          "type": "string",
+          "description": "The minimum acceptable bid, in CPM, using US Dollars (as a string)"
+        }
+      ]
+    },
+    "adunitcode": {
+      "type": "string",
+      "description": "The string which identifies Ad Unit"
+    }
+  },
+  "oneOf": [
+    {
+      "required": [
+        "tagid"
+      ]
+    },
+    {
+      "required": [
+        "tagId"
+      ]
+    }
+  ]
+}

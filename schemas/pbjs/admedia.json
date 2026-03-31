@@ -1,8 +1,27 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/admedia.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (admedia.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/admedia.json",
   "title": "admedia bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (admedia.md).",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": "string",
+      "description": "The placement ID provided by admedia"
+    },
+    "aid": {
+      "type": "string",
+      "description": "The aid provided by admedia"
+    },
+    "referrrInfo": {
+      "type": "string",
+      "description": "The referring page url to be sent by the publisher"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "placementId",
+    "aid",
+    "referrrInfo"
+  ]
 }

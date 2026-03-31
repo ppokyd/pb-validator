@@ -1,8 +1,0 @@
-{
-  "$id": "https://prebid.org/schemas/pbjs/mediaConsortium.json",
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (mediaConsortium.md). Table-derived constraints are not yet applied; params object is accepted.",
-  "title": "Media Consortium bidder params (Prebid.js)",
-  "type": "object"
-}

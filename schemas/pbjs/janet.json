@@ -1,8 +1,17 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/janet.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (janet.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/janet.json",
   "title": "JANet bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (janet.md).",
+  "type": "object",
+  "properties": {
+    "aid": {
+      "type": "integer",
+      "description": "The source ID from janet."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "aid"
+  ]
 }

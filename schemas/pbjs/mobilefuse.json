@@ -1,8 +1,21 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/mobilefuse.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (mobilefuse.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/mobilefuse.json",
   "title": "MobileFuse bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (mobilefuse.md).",
+  "type": "object",
+  "properties": {
+    "placement_id": {
+      "type": "integer",
+      "description": "An ID which identifies this specific inventory placement"
+    },
+    "bidfloor": {
+      "type": "number",
+      "description": "Static floor price (in USD) for the impression, pbjs only"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "placement_id"
+  ]
 }

@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/adview.json",
+  "title": "AdView bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the adview adapter",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": "string",
+      "description": "An ID which identifies the placement selling the impression",
+      "minLength": 1
+    },
+    "accountId": {
+      "type": "string",
+      "description": "Account id",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "placementId",
+    "accountId"
+  ]
+}

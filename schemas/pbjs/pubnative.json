@@ -1,8 +1,22 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/pubnative.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (pubnative.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/pubnative.json",
   "title": "PubNative bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (pubnative.md).",
+  "type": "object",
+  "properties": {
+    "zone_id": {
+      "type": "integer",
+      "description": "The ad zone identifier"
+    },
+    "app_auth_token": {
+      "type": "string",
+      "description": "The app's authentication token"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "zone_id",
+    "app_auth_token"
+  ]
 }

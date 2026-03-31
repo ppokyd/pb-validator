@@ -1,8 +1,0 @@
-{
-  "$id": "https://prebid.org/schemas/pbjs/appush.json",
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (appush.md). Table-derived constraints are not yet applied; params object is accepted.",
-  "title": "Appush bidder params (Prebid.js)",
-  "type": "object"
-}

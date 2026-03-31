@@ -1,8 +1,34 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/apstream.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (apstream.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/apstream.json",
   "title": "AP Stream bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (apstream.md).",
+  "type": "object",
+  "properties": {
+    "publisherId": {
+      "type": "string",
+      "description": "Publisher Id will be generated on AP Stream."
+    },
+    "code": {
+      "type": "string",
+      "description": "Ad code"
+    },
+    "adunitId": {
+      "type": "integer",
+      "description": "Ad unit Id"
+    },
+    "endpoint": {
+      "type": "string",
+      "description": "Endpoint for custom bidder"
+    },
+    "test": {
+      "type": "boolean",
+      "description": "Use test endpoint"
+    },
+    "sendDsu": {
+      "type": "boolean",
+      "description": "Send DSU to bidder (default true)"
+    }
+  },
+  "additionalProperties": false
 }

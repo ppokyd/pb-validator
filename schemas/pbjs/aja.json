@@ -1,8 +1,17 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/aja.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (aja.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/aja.json",
   "title": "AJA bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (aja.md).",
+  "type": "object",
+  "properties": {
+    "asi": {
+      "type": "string",
+      "description": "ad spot hash code"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "asi"
+  ]
 }

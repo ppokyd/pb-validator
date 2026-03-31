@@ -1,8 +1,33 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/datawrkz.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (datawrkz.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/datawrkz.json",
   "title": "Datawrkz bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (datawrkz.md).",
+  "type": "object",
+  "properties": {
+    "site_id": {
+      "type": "string",
+      "description": "Site id"
+    },
+    "deals": {
+      "type": "array",
+      "description": "Array of deal objects"
+    },
+    "bidfloor": {
+      "type": "number",
+      "description": "Minimum bid for this impression expressed in CPM"
+    },
+    "outstreamType": {
+      "type": "string",
+      "description": "Type of outstream video to the played. Available options: inline, slider_top_left, slider_top_right, slider_bottom_left, slider_bottom_right, interstitial_close, and listicle"
+    },
+    "outstreamConfig": {
+      "type": "object",
+      "description": "Configuration settings for outstream ad unit"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "site_id"
+  ]
 }

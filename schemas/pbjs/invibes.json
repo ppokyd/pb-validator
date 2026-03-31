@@ -1,8 +1,29 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/invibes.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (invibes.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/invibes.json",
   "title": "Invibes bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (invibes.md).",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": "string",
+      "description": "The Invibes placement ID"
+    },
+    "domainId": {
+      "type": "integer",
+      "description": "Id of domain"
+    },
+    "customEndpoint": {
+      "type": "string",
+      "description": "Custom test domain"
+    },
+    "debug": {
+      "type": "object",
+      "description": "Debug paramentes (only prebid server)"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "placementId"
+  ]
 }

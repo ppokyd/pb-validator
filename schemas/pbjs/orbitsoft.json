@@ -1,8 +1,30 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/orbitsoft.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (orbitsoft.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/orbitsoft.json",
   "title": "Orbitsoft bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (orbitsoft.md).",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": "integer",
+      "description": "The placement ID (site channel ID)"
+    },
+    "requestUrl": {
+      "type": "string",
+      "description": "Url to perform search request"
+    },
+    "style": {
+      "type": "string",
+      "description": "Creative styles. Actual only for text ads"
+    },
+    "customParams": {
+      "type": "object",
+      "description": "Permits passing any publisher key-value pairing into the bid request"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "placementId",
+    "requestUrl"
+  ]
 }

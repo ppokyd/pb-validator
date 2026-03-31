@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/logicad.json",
+  "title": "Logicad bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Logicad adapter",
+  "type": "object",
+  "properties": {
+    "tid": {
+      "type": "string",
+      "description": "Logicad for Publishers placement ID"
+    }
+  },
+  "required": [
+    "tid"
+  ]
+}

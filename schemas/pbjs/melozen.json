@@ -1,8 +1,17 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/melozen.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (melozen.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/melozen.json",
   "title": "MeloZen bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (melozen.md).",
+  "type": "object",
+  "properties": {
+    "pubId": {
+      "type": "string",
+      "description": "The publisher's ID provided by MeloZen"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "pubId"
+  ]
 }

@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/medianet.json",
+  "title": "Medianet bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Medianet adapter",
+  "type": "object",
+  "properties": {
+    "cid": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The customer id provided by Media.net."
+    },
+    "crid": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The placement id provided by Media.net."
+    }
+  },
+  "required": [
+    "cid",
+    "crid"
+  ]
+}

@@ -1,8 +1,54 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/eskimi.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (eskimi.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/eskimi.json",
   "title": "Eskimi bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (eskimi.md).",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": "integer",
+      "description": "The placement ID from Eskimi."
+    },
+    "bcat": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "ORTB blocked categories"
+    },
+    "badv": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "ORTB blocked advertiser domains"
+    },
+    "bapp": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "ORTB blocked applications"
+    },
+    "bidFloor": {
+      "type": "number",
+      "description": "Minimum CPM"
+    },
+    "bidFloorCur": {
+      "type": "string",
+      "description": "Currency of bid floor"
+    },
+    "coppa": {
+      "type": "boolean",
+      "description": "Set to true to enable COPPA"
+    },
+    "test": {
+      "type": "integer",
+      "description": "Set to 1 to enable test mode"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "placementId"
+  ]
 }

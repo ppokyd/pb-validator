@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/krushmedia.json",
+  "title": "Krushmedia bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Krushmedia adapter",
+  "type": "object",
+  "properties": {
+    "key": {
+      "type": "string",
+      "description": "ssp key"
+    }
+  },
+  "required": [
+    "key"
+  ]
+}

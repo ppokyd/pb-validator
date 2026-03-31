@@ -1,8 +1,27 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/rxrtb.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (rxrtb.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/rxrtb.json",
   "title": "rxrtb bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (rxrtb.md).",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "description": "endpoint id"
+    },
+    "token": {
+      "type": "string",
+      "description": "endpoint token"
+    },
+    "source": {
+      "type": "string",
+      "description": "traffic source id"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "token",
+    "source"
+  ]
 }

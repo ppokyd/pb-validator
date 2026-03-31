@@ -1,8 +1,21 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/stroeerCore.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (stroeerCore.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/stroeerCore.json",
   "title": "StroeerCore bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (stroeerCore.md).",
+  "type": "object",
+  "properties": {
+    "sid": {
+      "type": "string",
+      "description": "Slot ID"
+    },
+    "sfp": {
+      "type": "object",
+      "description": "Params for rendering special ad formats like Dynamic Sitebar. Contact your Account Manager for more information."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "sid"
+  ]
 }

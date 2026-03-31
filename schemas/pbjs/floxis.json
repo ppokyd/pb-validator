@@ -1,8 +1,27 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/floxis.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (floxis.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/floxis.json",
   "title": "Floxis bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (floxis.md).",
+  "type": "object",
+  "properties": {
+    "seat": {
+      "type": "string",
+      "description": "Seat identifier provided by Floxis"
+    },
+    "region": {
+      "type": "string",
+      "description": "Region identifier for routing"
+    },
+    "partner": {
+      "type": "string",
+      "description": "Partner identifier provided by Floxis"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "seat",
+    "region",
+    "partner"
+  ]
 }

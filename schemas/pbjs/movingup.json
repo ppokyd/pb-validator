@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbjs/movingup.json",
+  "title": "Moving Up bidder params (Prebid.js)",
+  "description": "Generated from prebid.github.io dev-docs/bidders (movingup.md).",
+  "type": "object",
+  "properties": {
+    "tagId": {
+      "type": "string",
+      "description": "tag ID"
+    },
+    "placement": {
+      "type": "string",
+      "description": "Placement"
+    }
+  },
+  "additionalProperties": false
+}

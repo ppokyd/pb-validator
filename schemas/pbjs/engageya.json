@@ -1,8 +1,26 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/engageya.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (engageya.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/engageya.json",
   "title": "Engageya bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (engageya.md).",
+  "type": "object",
+  "properties": {
+    "widgetId": {
+      "type": "integer",
+      "description": "Widget ID, provided by Engageya."
+    },
+    "websiteId": {
+      "type": "integer",
+      "description": "Website ID, provided by Engageya."
+    },
+    "pageUrl": {
+      "type": "string",
+      "description": "Pass current user URL."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "widgetId",
+    "websiteId"
+  ]
 }

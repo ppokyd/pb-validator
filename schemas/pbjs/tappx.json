@@ -1,8 +1,40 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/tappx.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (tappx.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/tappx.json",
   "title": "tappx bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (tappx.md).",
+  "type": "object",
+  "properties": {
+    "tappxkey": {
+      "type": "string",
+      "description": "An ID which identifies the adunit"
+    },
+    "endpoint": {
+      "type": "string",
+      "description": "Endpoint provided to publisher"
+    },
+    "host": {
+      "type": "string",
+      "description": "Tappx host"
+    },
+    "bidfloor": {
+      "type": "number",
+      "description": "Minimum bid for this impression expressed in CPM (USD)"
+    },
+    "mktag": {
+      "type": "string",
+      "description": "An ID which identifies a group of adunits"
+    },
+    "bcid": {
+      "description": "Block list of CID"
+    },
+    "bcrid": {
+      "description": "Block list of CRID"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "tappxkey",
+    "endpoint"
+  ]
 }

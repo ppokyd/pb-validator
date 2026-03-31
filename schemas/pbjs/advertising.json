@@ -1,8 +1,30 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/advertising.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (advertising.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/advertising.json",
   "title": "Advertising.com bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (advertising.md).",
+  "type": "object",
+  "properties": {
+    "seatId": {
+      "type": "string",
+      "description": "The seat ID from Advertising.com. This will be the same for all ad units."
+    },
+    "tagId": {
+      "type": "string",
+      "description": "The placement ID or tag ID from Advertising.com."
+    },
+    "placementId": {
+      "type": "string",
+      "description": "Legacy parameter replaced by tagId"
+    },
+    "bidfloor": {
+      "type": "number",
+      "description": "Legacy parameter for floor price for the request. Replaced by [Price Floors Module](/dev-docs/modules/floors.html)"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "seatId",
+    "tagId"
+  ]
 }

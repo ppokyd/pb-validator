@@ -1,8 +1,22 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/contxtful.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (contxtful.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/contxtful.json",
   "title": "Contxtful bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (contxtful.md).",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": "string",
+      "description": "The placement identifier"
+    },
+    "customerId": {
+      "type": "string",
+      "description": "The customer identifier"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "placementId",
+    "customerId"
+  ]
 }

@@ -1,8 +1,29 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/axonix.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (axonix.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/axonix.json",
   "title": "Axonix bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (axonix.md).",
+  "type": "object",
+  "properties": {
+    "supplyId": {
+      "type": "string",
+      "description": "Supply UUID"
+    },
+    "region": {
+      "type": "string",
+      "description": "Cloud region"
+    },
+    "endpoint": {
+      "type": "string",
+      "description": "Supply custom endpoint"
+    },
+    "instl": {
+      "type": "integer",
+      "description": "Set to 1 if using interstitial (default: 0)"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "supplyId"
+  ]
 }

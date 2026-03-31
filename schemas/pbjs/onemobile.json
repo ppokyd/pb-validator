@@ -1,8 +1,26 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/onemobile.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (onemobile.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/onemobile.json",
   "title": "ONE by AOL Mobile bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (onemobile.md).",
+  "type": "object",
+  "properties": {
+    "dcn": {
+      "type": "string",
+      "description": "Site ID provided by ONE."
+    },
+    "pos": {
+      "type": "string",
+      "description": "Position on a page where an ad will appear."
+    },
+    "ext": {
+      "type": "object",
+      "description": "Object that allows the client to send any extra parameters."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "dcn",
+    "pos"
+  ]
 }

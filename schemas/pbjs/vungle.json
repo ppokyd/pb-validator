@@ -1,8 +1,25 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/vungle.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (vungle.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/vungle.json",
   "title": "vungle bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (vungle.md).",
+  "type": "object",
+  "properties": {
+    "bid_token": {
+      "type": "string",
+      "description": "super token"
+    },
+    "app_store_id": {
+      "type": "string",
+      "description": "pub appstore id"
+    },
+    "placement_reference_id": {
+      "type": "string",
+      "description": "placement reference id"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "bid_token"
+  ]
 }

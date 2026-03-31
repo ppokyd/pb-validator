@@ -1,8 +1,29 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/pangle.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (pangle.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/pangle.json",
   "title": "Pangle bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (pangle.md).",
+  "type": "object",
+  "properties": {
+    "token": {
+      "type": "string",
+      "description": "**Prebid.js**: please fill 'pangle' by default. **Prebid Server**: access token, please contact Pangle team to get your token"
+    },
+    "appid": {
+      "type": "string",
+      "description": "**(Required for Prebid.js)** The app id on Pangle platform, please get them from the platform or contact Pangle team"
+    },
+    "placementid": {
+      "type": "string",
+      "description": "**(Required for Prebid.js)** The placement id created on Pangle platform, please get them from the platform or contact Pangle team"
+    },
+    "test": {
+      "type": "number",
+      "description": "For testing, please set it to '1' so that you can test the integration. Pangle strongly recommends testing before going live."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "token"
+  ]
 }

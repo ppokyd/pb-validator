@@ -1,8 +1,22 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/conceptx.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (conceptx.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/conceptx.json",
   "title": "Conceptx bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (conceptx.md).",
+  "type": "object",
+  "properties": {
+    "site": {
+      "type": "string",
+      "description": "The site 'your-page-name'."
+    },
+    "adunit": {
+      "type": "string",
+      "description": "The specific adunit"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "site",
+    "adunit"
+  ]
 }

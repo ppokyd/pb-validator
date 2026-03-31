@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/showheroes.json",
+  "title": "Showheroes bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Showheroes adapter",
+  "type": "object",
+  "properties": {
+    "unitId": {
+      "type": "string",
+      "description": "Unit ID",
+      "minLength": 8
+    }
+  },
+  "required": [
+    "unitId"
+  ]
+}

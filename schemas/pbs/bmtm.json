@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/bmtm.json",
+  "title": "Bright Mountain Media bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Bright Mountain Media adapter",
+  "type": "object",
+  "properties": {
+    "placement_id": {
+      "type": "number",
+      "minimum": 1,
+      "description": "Placement ID from Bright Mountain Media"
+    }
+  },
+  "required": [
+    "placement_id"
+  ]
+}

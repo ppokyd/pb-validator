@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/apacdex.json",
+  "title": "Apacdex bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Apacdex adapter",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": "string",
+      "description": "Placement ID provided by Apacdex"
+    },
+    "siteId": {
+      "type": "string",
+      "description": "Publisher site ID from Apacdex"
+    },
+    "floorPrice": {
+      "type": "number",
+      "description": "CPM bidfloor in USD"
+    }
+  },
+  "oneOf": [
+    {
+      "required": [
+        "placementId"
+      ]
+    },
+    {
+      "required": [
+        "siteId"
+      ]
+    }
+  ]
+}

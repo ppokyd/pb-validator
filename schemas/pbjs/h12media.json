@@ -1,8 +1,37 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/h12media.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (h12media.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/h12media.json",
   "title": "H12 Media bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (h12media.md).",
+  "type": "object",
+  "properties": {
+    "pubid": {
+      "type": "string",
+      "description": "Publisher ID"
+    },
+    "pubsubid": {
+      "type": "string",
+      "description": "Publisher Sub ID"
+    },
+    "pubcontainerid": {
+      "type": "string",
+      "description": "Custom container ID"
+    },
+    "placementid": {
+      "type": "string",
+      "description": "Publisher placement ID"
+    },
+    "size": {
+      "type": "string",
+      "description": "Creative size"
+    },
+    "endpointdom": {
+      "type": "string",
+      "description": "Custom Endpoint URL"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "pubid"
+  ]
 }

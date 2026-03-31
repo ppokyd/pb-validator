@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/adrino.json",
+  "title": "Adrino bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Adrino adapter",
+  "type": "object",
+  "properties": {
+    "hash": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The placement id provided by Adrino."
+    }
+  },
+  "required": [
+    "hash"
+  ]
+}

@@ -1,8 +1,17 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/brid.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (brid.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/brid.json",
   "title": "Brid bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (brid.md).",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": "integer",
+      "description": "The placement ID from Brid. The placementID parameter can be either a string or integer for Prebid.js, however integer is preferred. Legacy code can retain the string value. **Prebid Server requires an integer value.**"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "placementId"
+  ]
 }

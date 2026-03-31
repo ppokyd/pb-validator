@@ -1,8 +1,42 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/mediago.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (mediago.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/mediago.json",
   "title": "MediaGo bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (mediago.md).",
+  "type": "object",
+  "properties": {
+    "token": {
+      "type": "string",
+      "description": "publisher token, This parameter expects all imps to be the same"
+    },
+    "region": {
+      "type": "string",
+      "description": "Server region for PBS request: US for US Region, EU for EU Region, APAC for APAC Region, default is US. This parameter expects all imps to be the same. This parameter is available for PBS only."
+    },
+    "test": {
+      "type": "number",
+      "description": "0(default): production env mode. <br> 1: dev env mode and no charge.we will bid Higher frequency to make debug easier. This parameter is available for PBJS only."
+    },
+    "bidfloor": {
+      "type": "number",
+      "description": "Sets a floor price for the bid. This parameter is available for PBJS only."
+    },
+    "publisher": {
+      "type": "string",
+      "description": "publisher id"
+    },
+    "placementId": {
+      "type": "string",
+      "description": "The AD placement ID"
+    },
+    "tagid": {
+      "type": "string",
+      "description": "Tag identifier for the impression"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "token",
+    "publisher"
+  ]
 }

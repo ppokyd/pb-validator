@@ -1,8 +1,22 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/afront.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (afront.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/afront.json",
   "title": "Afront bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (afront.md).",
+  "type": "object",
+  "properties": {
+    "accountId": {
+      "type": "string",
+      "description": "Client account id"
+    },
+    "sourceId": {
+      "type": "string",
+      "description": "Data source id"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "accountId",
+    "sourceId"
+  ]
 }

@@ -1,8 +1,27 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/ownadx.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (ownadx.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/ownadx.json",
   "title": "OwnAdX bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (ownadx.md).",
+  "type": "object",
+  "properties": {
+    "sspId": {
+      "type": "string",
+      "description": "Supply side ID"
+    },
+    "seatId": {
+      "type": "string",
+      "description": "Seat Id"
+    },
+    "tokenId": {
+      "type": "string",
+      "description": "Token Id"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "sspId",
+    "seatId",
+    "tokenId"
+  ]
 }

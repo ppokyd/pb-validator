@@ -1,8 +1,29 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/readpeak.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (readpeak.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/readpeak.json",
   "title": "Readpeak bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (readpeak.md).",
+  "type": "object",
+  "properties": {
+    "publisherId": {
+      "type": "string",
+      "description": "Publisher ID provided by Readpeak"
+    },
+    "siteId": {
+      "type": "string",
+      "description": "Site/Media ID provided by Readpeak"
+    },
+    "bidfloor": {
+      "type": "number",
+      "description": "CPM Bid Floor"
+    },
+    "tagId": {
+      "type": "string",
+      "description": "Ad placement identifier"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "publisherId"
+  ]
 }

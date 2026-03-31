@@ -1,8 +1,37 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/my6sense.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (my6sense.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/my6sense.json",
   "title": "My6Sense bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (my6sense.md).",
+  "type": "object",
+  "properties": {
+    "key": {
+      "type": "string",
+      "description": "Widget key, provided by the network."
+    },
+    "pageUrl": {
+      "type": "string",
+      "description": "Used to pass the served page URL."
+    },
+    "zone": {
+      "type": "string",
+      "description": "Used to pass optional data to the platform."
+    },
+    "dataView": {
+      "type": "string",
+      "description": "3rd party tracker URL in order to track widget view."
+    },
+    "organicClicks": {
+      "type": "string",
+      "description": "3rd party click tracker URL to track organic clicks."
+    },
+    "paidClicks": {
+      "type": "string",
+      "description": "3rd party click tracker URL to track paid clicks."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "key"
+  ]
 }

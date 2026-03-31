@@ -1,8 +1,21 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/viewdeosDX.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (viewdeosDX.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/viewdeosDX.json",
   "title": "ViewdeosDX Client bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (viewdeosDX.md).",
+  "type": "object",
+  "properties": {
+    "aid": {
+      "type": "integer",
+      "description": "The source ID from member zone"
+    },
+    "outstream": {
+      "type": "object",
+      "description": "Oustream player settings object"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "aid"
+  ]
 }

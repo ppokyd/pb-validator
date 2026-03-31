@@ -1,8 +1,17 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/bidsxchange.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (bidsxchange.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/bidsxchange.json",
   "title": "Bidsxchange bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (bidsxchange.md).",
+  "type": "object",
+  "properties": {
+    "aid": {
+      "type": "integer",
+      "description": "The source ID from bidsxchange."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "aid"
+  ]
 }

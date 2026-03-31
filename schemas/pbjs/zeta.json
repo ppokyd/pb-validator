@@ -1,8 +1,82 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/zeta.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (zeta_global.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/zeta.json",
   "title": "Zeta Global bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (zeta_global.md).",
+  "type": "object",
+  "properties": {
+    "definerId": {
+      "type": "string",
+      "description": "The Definer ID provided by Zeta Global"
+    },
+    "user": {
+      "type": "object",
+      "description": "The object containing user data (See OpenRTB spec)"
+    },
+    "user.buyeruid": {
+      "type": "string",
+      "description": "Zeta's user id"
+    },
+    "device": {
+      "type": "object",
+      "description": "The object containing device data (See OpenRTB spec)"
+    },
+    "site": {
+      "type": "object",
+      "description": "The object containing site data (See OpenRTB spec)"
+    },
+    "app": {
+      "type": "object",
+      "description": "The object containing app data (See OpenRTB spec)"
+    },
+    "test": {
+      "type": "integer",
+      "description": "Flag which will induce a sample bid response when true; only set to true for testing purposes (1 = true, 0 = false)"
+    },
+    "at": {
+      "type": "integer",
+      "description": "Auction type, where 1 = First Price, 2 = Second Price Plus"
+    },
+    "tmax": {
+      "type": "integer",
+      "description": "Maximum time in milliseconds the exchange allows for bids to be received including Internet latency to avoid timeout"
+    },
+    "wseat": {
+      "description": "White list of buyer seats (e.g., advertisers, agencies) allowed to bid on this impression"
+    },
+    "bseat": {
+      "description": "Block list of buyer seats (e.g., advertisers, agencies) restricted from bidding on this impression"
+    },
+    "allimps": {
+      "type": "integer",
+      "description": "Flag to indicate that the impressions offered represent all the impressions available in context (1 = true, 0 = false)"
+    },
+    "wlang": {
+      "description": "White list of languages for creatives"
+    },
+    "bcat": {
+      "description": "Blocked advertiser categories using the IAB content categories"
+    },
+    "badv": {
+      "description": "Block list of advertisers by their domains"
+    },
+    "bapp": {
+      "description": "Block list of applications by their platform-specific exchange independent application identifiers"
+    },
+    "source": {
+      "type": "object",
+      "description": "A Source object that provides data about the inventory source and which entity makes the final decision (See OpenRTB spec)"
+    },
+    "ext": {
+      "type": "object",
+      "description": "An extension object that allows for custom fields and objects to be sent  (See OpenRTB spec)"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "definerId",
+    "user",
+    "user.buyeruid",
+    "device"
+  ]
 }

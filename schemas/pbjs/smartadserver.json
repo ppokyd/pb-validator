@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbjs/smartadserver.json",
+  "title": "Smart AdServer bidder params (Prebid.js)",
+  "description": "Generated from prebid.github.io dev-docs/bidders (smartadserver.md).",
+  "type": "object",
+  "properties": {
+    "networkId": {
+      "type": "integer",
+      "description": "The network identifier you have been provided with"
+    },
+    "siteId": {
+      "type": "integer",
+      "description": "The placement site ID"
+    },
+    "pageId": {
+      "type": "integer",
+      "description": "The placement page ID"
+    },
+    "formatId": {
+      "type": "integer",
+      "description": "The placement format ID"
+    },
+    "domain": {
+      "type": "string",
+      "description": "The network domain (default see example)"
+    },
+    "target": {
+      "type": "string",
+      "description": "The keyword targeting"
+    },
+    "bidfloor": {
+      "type": "number",
+      "description": "Bid floor for this placement in USD or in the currency specified by the currency parameter. (Default: 0.0)"
+    },
+    "appName": {
+      "type": "string",
+      "description": "Mobile application name"
+    },
+    "buId": {
+      "type": "string",
+      "description": "Mobile application bundle ID"
+    },
+    "ckId": {
+      "type": "integer",
+      "description": "Unique Smart AdServer user ID"
+    },
+    "video": {
+      "type": "object",
+      "description": "Parameter object for instream video. See [video Object](#smartadserver-video-object)"
+    },
+    "schain": {
+      "type": "string",
+      "description": "Supply Chain"
+    }
+  },
+  "additionalProperties": false
+}

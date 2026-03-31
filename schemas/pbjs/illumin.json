@@ -1,8 +1,26 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/illumin.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (illumin.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/illumin.json",
   "title": "Illumin bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (illumin.md).",
+  "type": "object",
+  "properties": {
+    "cId": {
+      "type": "string",
+      "description": "The connection ID from Illumin."
+    },
+    "pId": {
+      "type": "string",
+      "description": "The publisher ID from Illumin."
+    },
+    "bidFloor": {
+      "type": "number",
+      "description": "The minimum bid value desired. Illumin will not respond with bids lower than this value."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "cId",
+    "pId"
+  ]
 }

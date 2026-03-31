@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/tpmn.json",
+  "title": "TPMN bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the TPMN adapter",
+  "type": "object",
+  "properties": {
+    "inventoryId": {
+      "description": "Inventory ID",
+      "type": "integer",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "inventoryId"
+  ]
+}

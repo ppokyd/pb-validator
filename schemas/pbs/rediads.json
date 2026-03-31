@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/rediads.json",
+  "title": "RediAds bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Rediads adapter",
+  "type": "object",
+  "properties": {
+    "account_id": {
+      "type": "string"
+    },
+    "slot": {
+      "type": "string"
+    },
+    "endpoint": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "account_id"
+  ]
+}

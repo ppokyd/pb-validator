@@ -1,8 +1,17 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/krushmedia.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (krushmedia.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/krushmedia.json",
   "title": "Krushmedia bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (krushmedia.md).",
+  "type": "object",
+  "properties": {
+    "key": {
+      "type": "string",
+      "description": "Unique client id on krushmedia platform"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "key"
+  ]
 }

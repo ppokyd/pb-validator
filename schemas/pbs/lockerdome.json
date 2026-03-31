@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/lockerdome.json",
+  "title": "LockerDome bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the LockerDome adapter",
+  "type": "object",
+  "properties": {
+    "adUnitId": {
+      "type": "string",
+      "description": "A tag which identifies the LockerDome ad unit by adUnitId"
+    }
+  },
+  "required": [
+    "adUnitId"
+  ]
+}

@@ -1,8 +1,25 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/bidstack.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (bidstack.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/bidstack.json",
   "title": "Bidstack bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (bidstack.md).",
+  "type": "object",
+  "properties": {
+    "publisherId": {
+      "type": "string",
+      "description": "Publisher ID"
+    },
+    "placementId": {
+      "type": "string",
+      "description": "Placement ID"
+    },
+    "consent": {
+      "type": "boolean",
+      "description": "User EULA consent"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "publisherId"
+  ]
 }

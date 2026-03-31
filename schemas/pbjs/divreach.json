@@ -1,8 +1,27 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/divreach.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (divreach.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/divreach.json",
   "title": "DivReach bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (divreach.md).",
+  "type": "object",
+  "properties": {
+    "accountID": {
+      "type": "string",
+      "description": "Account ID"
+    },
+    "zoneID": {
+      "type": "string",
+      "description": "Zone ID"
+    },
+    "domain": {
+      "type": "string",
+      "description": "Serving Domain"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "accountID",
+    "zoneID",
+    "domain"
+  ]
 }

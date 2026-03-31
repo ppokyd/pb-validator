@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/contxtful.json",
+  "title": "Contxtful bidder params (Prebid Server)",
+  "description": "A schema which validates params for the Contxtful adapter",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": "string",
+      "description": "Placement ID",
+      "minLength": 1
+    },
+    "customerId": {
+      "type": "string",
+      "description": "Customer ID used to build the endpoint URL",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "placementId",
+    "customerId"
+  ]
+}

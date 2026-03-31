@@ -1,8 +1,22 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/metax.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (metax.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/metax.json",
   "title": "MetaX bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (metax.md).",
+  "type": "object",
+  "properties": {
+    "publisherId": {
+      "type": "integer",
+      "description": "MetaX's publisher ID."
+    },
+    "adunit": {
+      "type": "integer",
+      "description": "MetaX's AdUnit."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "publisherId",
+    "adunit"
+  ]
 }

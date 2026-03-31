@@ -1,5 +1,5 @@
 {
-  "name": "@prebid/adapter-validator",
+  "name": "@ppokyd/pb-validator",
   "version": "0.1.0",
   "description": "Validate Prebid bidder params using JSON Schemas aligned with prebid.github.io and prebid-server",
   "type": "module",
@@ -7,8 +7,22 @@
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
+      "browser": {
+        "types": "./dist/browser.d.ts",
+        "import": "./dist/browser.js"
+      },
+      "node": {
+        "types": "./dist/index.d.ts",
+        "import": "./dist/index.js"
+      },
+      "default": {
+        "types": "./dist/browser.d.ts",
+        "import": "./dist/browser.js"
+      }
+    },
+    "./browser": {
+      "types": "./dist/browser.d.ts",
+      "import": "./dist/browser.js"
     }
   },
   "files": [

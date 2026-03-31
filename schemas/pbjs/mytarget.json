@@ -1,8 +1,29 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/mytarget.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (mytarget.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/mytarget.json",
   "title": "myTarget bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (mytarget.md).",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": "string",
+      "description": "The slot ID from myTarget."
+    },
+    "bidfloor": {
+      "type": "number",
+      "description": "Bid floor"
+    },
+    "position": {
+      "type": "number",
+      "description": "Ad position on screen. See details below."
+    },
+    "response": {
+      "type": "number",
+      "description": "Bid response type. 0 - ad url (default), 1 - ad markup."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "placementId"
+  ]
 }

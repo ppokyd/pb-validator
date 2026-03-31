@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/adgeneration.json",
+  "title": "AdGeneration bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the AdGeneration adapter",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Ad ID registered by AdGeneration."
+    }
+  },
+  "required": [
+    "id"
+  ]
+}

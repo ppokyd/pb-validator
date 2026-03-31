@@ -1,8 +1,26 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/tagoras.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (tagoras.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/tagoras.json",
   "title": "Tagoras bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (tagoras.md).",
+  "type": "object",
+  "properties": {
+    "cId": {
+      "type": "string",
+      "description": "The connection ID from Tagoras."
+    },
+    "pId": {
+      "type": "string",
+      "description": "The publisher ID from Tagoras."
+    },
+    "bidFloor": {
+      "type": "number",
+      "description": "The minimum bid value desired. Tagoras will not respond with bids lower than this value."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "cId",
+    "pId"
+  ]
 }

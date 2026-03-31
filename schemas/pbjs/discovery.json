@@ -1,8 +1,31 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/discovery.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (discovery.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/discovery.json",
   "title": "DiscoveryDsp bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (discovery.md).",
+  "type": "object",
+  "properties": {
+    "token": {
+      "type": "string",
+      "description": "publisher token"
+    },
+    "test": {
+      "type": "number",
+      "description": "0(default): production env mode. <br> 1: dev env mode and no charge.we will bid Higher frequency to make debug easier."
+    },
+    "tagid": {
+      "type": "string",
+      "description": "tagid"
+    },
+    "publisher": {
+      "type": "string",
+      "description": "publisher id"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "token",
+    "tagid",
+    "publisher"
+  ]
 }

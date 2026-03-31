@@ -1,8 +1,71 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/resetdigital.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (resetdigital.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/resetdigital.json",
   "title": "ResetDigital bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (resetdigital.md).",
+  "type": "object",
+  "properties": {
+    "pubId": {
+      "type": "string",
+      "description": "Publisher Account ID provided by ResetDigital"
+    },
+    "siteID": {
+      "type": "string",
+      "description": "Publisher Site ID"
+    },
+    "zoneId": {
+      "type": "object",
+      "description": "Used for extra fields"
+    },
+    "zoneId.placementId": {
+      "type": "string",
+      "description": "ID used for reporting purposes"
+    },
+    "zoneId.deals": {
+      "type": "string",
+      "description": "Deal IDs comma-separated"
+    },
+    "zoneId.test": {
+      "type": "integer",
+      "description": "Flag to force bidder response with a creative"
+    },
+    "forceBid": {
+      "type": "boolean",
+      "description": "Returns test bid"
+    },
+    "position": {
+      "type": "string",
+      "description": "Override the Prebid.js page position. Valid values are \"atf\" and \"btf\"."
+    },
+    "inventory": {
+      "type": "object",
+      "description": "This parameter allows the definition of an object defining arbitrary key-value pairs concerning the page for use in targeting. The values must be arrays of strings."
+    },
+    "visitor": {
+      "type": "object",
+      "description": "This parameter allows the definition of an object defining arbitrary key-value pairs concerning the visitor for use in targeting. The values must be arrays of strings."
+    },
+    "keywords": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "This can be used to influence reports for client-side display. To get video or server-side reporting, please use First Party data or the inventory/visitor parameters."
+    },
+    "bidFloor": {
+      "type": "number",
+      "description": "Override the Prebid.js bid floor -- no bids will be made under this value."
+    },
+    "latLong": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "description": "Override the Prebid.js latitude and longitude for the visitor."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "pubId"
+  ]
 }

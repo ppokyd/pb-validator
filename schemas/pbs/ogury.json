@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/ogury.json",
+  "title": "Ogury bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Ogury adapter",
+  "type": "object",
+  "properties": {
+    "assetKey": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Ogury provided id for you site."
+    },
+    "adUnitId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Ogury provided id for you placement."
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "required": [
+          "assetKey"
+        ]
+      },
+      "then": {
+        "required": [
+          "adUnitId"
+        ]
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "adUnitId"
+        ]
+      },
+      "then": {
+        "required": [
+          "assetKey"
+        ]
+      }
+    }
+  ]
+}

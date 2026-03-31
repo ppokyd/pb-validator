@@ -1,8 +1,38 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/afp.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (afp.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/afp.json",
   "title": "AFP bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (afp.md).",
+  "type": "object",
+  "properties": {
+    "placeId": {
+      "type": "string",
+      "description": "Place id."
+    },
+    "placeType": {
+      "type": "string",
+      "description": "Place type."
+    },
+    "placeContainer": {
+      "type": "string",
+      "description": "The container of the place where the ad will be displayed. The css selector is specified as the value."
+    },
+    "imageUrl": {
+      "type": "string",
+      "description": "URL of the image on which the banner will be displayed."
+    },
+    "imageWidth": {
+      "type": "integer",
+      "description": "Image width."
+    },
+    "imageHeight": {
+      "type": "integer",
+      "description": "Image height."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "placeId",
+    "placeType"
+  ]
 }

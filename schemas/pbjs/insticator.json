@@ -1,8 +1,49 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/insticator.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (insticator.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/insticator.json",
   "title": "Insticator bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (insticator.md).",
+  "type": "object",
+  "properties": {
+    "adUnitId": {
+      "type": "string",
+      "description": "The ad unit ID provided by Insticator"
+    },
+    "publisherId": {
+      "type": "string",
+      "description": "The publisher ID provided by Insticator"
+    },
+    "yob": {
+      "type": "string",
+      "description": "Year of Birth"
+    },
+    "gender": {
+      "type": "string",
+      "description": "Gender"
+    },
+    "instl": {
+      "type": "number",
+      "description": "1 = the ad is interstitial or full screen, 0 = not interstitial."
+    },
+    "pos": {
+      "type": "number",
+      "description": "ad position as per IAB standards"
+    },
+    "bid_endpoint_request_url": {
+      "type": "string",
+      "description": "Url string representing the endpoint Insticator adaptor should make the request bids to."
+    },
+    "floor": {
+      "type": "number",
+      "description": "Sets a floor for bidder."
+    },
+    "bidfloorcur": {
+      "type": "string",
+      "description": "Currency of the floor. (Insticator only supports USD floors)"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "adUnitId"
+  ]
 }

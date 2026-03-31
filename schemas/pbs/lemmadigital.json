@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/lemmadigital.json",
+  "title": "Lemma bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Lemma adapter",
+  "type": "object",
+  "properties": {
+    "pid": {
+      "type": "integer",
+      "description": "Publisher ID"
+    },
+    "aid": {
+      "type": "integer",
+      "description": "Ad ID"
+    }
+  },
+  "required": [
+    "pid",
+    "aid"
+  ]
+}

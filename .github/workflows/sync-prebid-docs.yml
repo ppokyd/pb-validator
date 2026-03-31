@@ -20,13 +20,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-node@v4
         with:
-          go-version: "1.22.x"
-          cache-dependency-path: go.sum
+          node-version: "20"
 
       - name: Sync schemas from prebid.github.io
-        run: go run ./tools/sync-prebid-docs -out schemas
+        run: node tools/sync-prebid-client/index.mjs --out schemas
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
@@ -34,10 +33,10 @@ jobs:
           commit-message: "chore(schemas): sync pbjs from prebid.github.io"
           title: "chore(schemas): sync pbjs schemas from prebid.github.io"
           body: |
-            Automated update from `tools/sync-prebid-docs`, cloning [prebid.github.io](https://github.com/prebid/prebid.github.io) `dev-docs/bidders` on the default ref (`master`).
+            Automated update from `tools/sync-prebid-client/index.mjs`, cloning [prebid.github.io](https://github.com/prebid/prebid.github.io) `dev-docs/bidders` on the default ref (`master`).
 
             - Check `schemas/manifest.json` → `sources.prebid_github_io.commit` for the pinned documentation revision.
-            - Generated files are permissive object schemas (`additionalProperties: true`) until table-level constraints are implemented.
+            - Generated schemas include typed `properties` and `required` fields parsed from each bidder's **Bid Params** table. Bidders without a params table fall back to `additionalProperties: true`.
 
             `workflow_dispatch` runs this job on demand; the schedule runs it weekly.
           branch: chore/sync-prebid-docs

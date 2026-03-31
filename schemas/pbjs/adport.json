@@ -1,8 +1,22 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/adport.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (adport.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/adport.json",
   "title": "AdPort bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (adport.md).",
+  "type": "object",
+  "properties": {
+    "adUnitId": {
+      "type": "integer",
+      "description": "Unique identifier for the ad unit in AdPort platform."
+    },
+    "auth": {
+      "type": "string",
+      "description": "Authentication token provided by AdPort platform for the AdUnit."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "adUnitId",
+    "auth"
+  ]
 }

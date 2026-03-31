@@ -1,8 +1,37 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/saambaa.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (saambaa.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/saambaa.json",
   "title": "Saambaa bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (saambaa.md).",
+  "type": "object",
+  "properties": {
+    "placement": {
+      "type": "string"
+    },
+    "pubid": {
+      "type": "string"
+    },
+    "size": {
+      "type": "string"
+    },
+    "mimes": {
+      "description": "video only"
+    },
+    "playbackmethod": {
+      "description": "video only"
+    },
+    "maxduration": {
+      "type": "number",
+      "description": "video only"
+    },
+    "skip": {
+      "type": "number",
+      "description": "video only"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "placement",
+    "pubid"
+  ]
 }

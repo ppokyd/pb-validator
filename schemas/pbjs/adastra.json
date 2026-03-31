@@ -1,8 +1,0 @@
-{
-  "$id": "https://prebid.org/schemas/pbjs/adastra.json",
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (adastra.md). Table-derived constraints are not yet applied; params object is accepted.",
-  "title": "Adastra Tech bidder params (Prebid.js)",
-  "type": "object"
-}

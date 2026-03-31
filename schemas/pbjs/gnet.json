@@ -1,8 +1,22 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/gnet.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (gnet.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/gnet.json",
   "title": "Gnet bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (gnet.md).",
+  "type": "object",
+  "properties": {
+    "websiteId": {
+      "type": "string",
+      "description": "The Gnet website ID"
+    },
+    "adunitId": {
+      "type": "string",
+      "description": "The Gnet adunit ID"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "websiteId",
+    "adunitId"
+  ]
 }

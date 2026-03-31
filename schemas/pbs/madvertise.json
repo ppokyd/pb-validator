@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/madvertise.json",
+  "title": "Madvertise bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Madvertise adapter",
+  "type": "object",
+  "properties": {
+    "zoneId": {
+      "type": "string",
+      "minLength": 7,
+      "description": "The zone ID provided by Madvertise"
+    }
+  },
+  "required": [
+    "zoneId"
+  ]
+}

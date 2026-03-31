@@ -1,8 +1,24 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/a1media.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (a1media.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/a1media.json",
   "title": "A1Media bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (a1media.md).",
+  "type": "object",
+  "properties": {
+    "bidfloor": {
+      "type": "number",
+      "description": "Bid Floor Price, It is used if the Floor Module is not available"
+    },
+    "currency": {
+      "type": "string",
+      "description": "Currency For Bid and Bid Floor, It is used if the Currency Module is not available"
+    },
+    "bcat": {
+      "description": "Blocked advertiser categories using the IAB content categories"
+    },
+    "battr": {
+      "description": "Blocked creative attributes"
+    }
+  },
+  "additionalProperties": false
 }

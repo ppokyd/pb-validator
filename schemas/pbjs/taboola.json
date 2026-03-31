@@ -1,8 +1,45 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/taboola.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (taboola.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/taboola.json",
   "title": "Taboola bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (taboola.md).",
+  "type": "object",
+  "properties": {
+    "tagId": {
+      "type": "string",
+      "description": "Tag ID / Unique Placement Name <br>"
+    },
+    "publisherId": {
+      "type": "string",
+      "description": "Numeric Publisher ID <br>(as provided by Taboola)"
+    },
+    "pageType": {
+      "type": "string",
+      "description": "Kind of content present in the page"
+    },
+    "position": {
+      "type": "integer",
+      "description": "Identify the placement position on screen. Possible values:  0 - 7  <br> <br>  0    Unknown <br> 1    Above The Fold <br> 2    Locked  (i.e., fixed position) <br> 3    Below The Fold <br> 4    Header <br> 5    Footer <br> 6    Sidebar <br> 7    Fullscreen <br>"
+    },
+    "publisherDomain": {
+      "type": "string",
+      "description": "Publisher Domain (server-side adapter only)"
+    },
+    "bidfloor": {
+      "type": "number",
+      "description": "CPM bid floor"
+    },
+    "bcat": {
+      "type": "array",
+      "description": "List of blocked advertiser categories (IAB)"
+    },
+    "badv": {
+      "description": "Blocked Advertiser Domains"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "tagId",
+    "publisherId"
+  ]
 }

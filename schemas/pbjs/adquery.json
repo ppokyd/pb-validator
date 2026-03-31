@@ -1,8 +1,22 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/adquery.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (adquery.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/adquery.json",
   "title": "Adquery bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (adquery.md).",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": "string",
+      "description": "Placement ID provided by Adquery (must match the type/format in dashboard)"
+    },
+    "type": {
+      "type": "string",
+      "description": "Ad format/type – tells Adquery what kind of creative to return"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "placementId",
+    "type"
+  ]
 }

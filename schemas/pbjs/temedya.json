@@ -1,8 +1,21 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/temedya.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (temedya.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/temedya.json",
   "title": "TE Medya bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (temedya.md).",
+  "type": "object",
+  "properties": {
+    "widgetId": {
+      "type": "number",
+      "description": "The widget ID from Vidyome"
+    },
+    "count": {
+      "type": "number",
+      "description": "Ad Count"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "widgetId"
+  ]
 }

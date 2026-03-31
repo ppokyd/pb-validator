@@ -1,8 +1,21 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/finative.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (finative.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/finative.json",
   "title": "Finative bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (finative.md).",
+  "type": "object",
+  "properties": {
+    "adUnitId": {
+      "type": "string",
+      "description": "ID of the Ad Unit"
+    },
+    "url": {
+      "type": "string",
+      "description": "URL from the Page"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "adUnitId"
+  ]
 }

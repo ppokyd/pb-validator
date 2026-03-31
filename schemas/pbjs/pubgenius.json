@@ -1,8 +1,29 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/pubgenius.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (pubgenius.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/pubgenius.json",
   "title": "pubGENIUS bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (pubgenius.md).",
+  "type": "object",
+  "properties": {
+    "adUnitId": {
+      "type": "string",
+      "description": "pubGENIUS ad unit ID."
+    },
+    "position": {
+      "type": "integer",
+      "description": "Ad position on the page. Supported values: 0 - unknown (default), 1 - above the fold, 3 - below the fold."
+    },
+    "test": {
+      "type": "boolean",
+      "description": "Indicates bidding for testing purposes"
+    },
+    "video": {
+      "type": "object",
+      "description": "Contains properties of the video ad. Any fields of Video object in OpenRTB v2.5 are accepted."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "adUnitId"
+  ]
 }

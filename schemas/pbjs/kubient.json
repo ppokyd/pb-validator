@@ -1,8 +1,17 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/kubient.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (kubient.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/kubient.json",
   "title": "Kubient bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (kubient.md).",
+  "type": "object",
+  "properties": {
+    "zoneid": {
+      "type": "string",
+      "description": "The AdUnit or Tag specific ID"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "zoneid"
+  ]
 }

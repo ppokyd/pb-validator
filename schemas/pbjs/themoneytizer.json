@@ -1,8 +1,25 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/themoneytizer.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (themoneytizer.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/themoneytizer.json",
   "title": "The Moneytizer bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (themoneytizer.md).",
+  "type": "object",
+  "properties": {
+    "pid": {
+      "type": "integer",
+      "description": "The Moneytizer's publisher token"
+    },
+    "test": {
+      "type": "integer",
+      "description": "Set to 1 to receive a test bid response"
+    },
+    "baseUrl": {
+      "type": "string",
+      "description": "Call on custom endpoint"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "pid"
+  ]
 }

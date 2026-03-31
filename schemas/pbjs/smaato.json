@@ -1,8 +1,31 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/smaato.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (smaato.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/smaato.json",
   "title": "Smaato bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (smaato.md).",
+  "type": "object",
+  "properties": {
+    "publisherId": {
+      "type": "string",
+      "description": "Your Smaato publisher id"
+    },
+    "adspaceId": {
+      "type": "string",
+      "description": "Your Smaato adspace id. Required for non adpod requests"
+    },
+    "adbreakId": {
+      "type": "string",
+      "description": "Your Smaato adbreak id. Required for adpod (long-form video) requests"
+    },
+    "app": {
+      "type": "object",
+      "description": "Object containing mobile app parameters.  See the [App Object](#smaato-app-object) for details."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "publisherId",
+    "adspaceId",
+    "adbreakId"
+  ]
 }

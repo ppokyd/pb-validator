@@ -1,8 +1,34 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/c1x.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (c1x.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/c1x.json",
   "title": "C1X bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (c1x.md).",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": "string",
+      "description": "Placement ID"
+    },
+    "siteId": {
+      "type": "string",
+      "description": "Site ID from which the request is originating"
+    },
+    "dealId": {
+      "type": "string",
+      "description": "Deal ID to get the specific deal from our DSP"
+    },
+    "floorPriceMap": {
+      "type": "object",
+      "description": "Minimum floor prices needed from the DSP's to enter the auction"
+    },
+    "pageurl": {
+      "type": "string",
+      "description": "Url of the webpage where the request is originating from"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "placementId",
+    "siteId"
+  ]
 }

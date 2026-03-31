@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/sspBC.json",
+  "title": "sspBC Bid bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the sspBC bid adapter",
+  "type": "object",
+  "properties": {
+    "siteid": {
+      "type": [
+        "string"
+      ],
+      "description": "Identifier of site that is selling the impression"
+    },
+    "id": {
+      "type": [
+        "string"
+      ],
+      "description": "Identifier of adslot that the auction in running on"
+    },
+    "test": {
+      "type": [
+        "integer"
+      ],
+      "description": "Switch that enables test responses"
+    }
+  },
+  "required": []
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/aidem.json",
+  "title": "AIDEM bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the AIDEM adapter",
+  "type": "object",
+  "properties": {
+    "siteId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Unique site ID"
+    },
+    "publisherId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Unique publisher ID"
+    },
+    "placementId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Unique publisher tag ID"
+    },
+    "rateLimit": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    }
+  },
+  "required": [
+    "siteId",
+    "publisherId"
+  ]
+}

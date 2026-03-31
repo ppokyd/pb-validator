@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbjs/prismassp.json",
+  "title": "Prismassp bidder params (Prebid.js)",
+  "description": "Generated from prebid.github.io dev-docs/bidders (prismassp.md).",
+  "type": "object",
+  "properties": {
+    "tagId": {
+      "type": "string",
+      "description": "tag ID"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "tagId"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/telaria.json",
+  "title": "Telaria bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Telaria adapter",
+  "type": "object",
+  "properties": {
+    "adCode": {
+      "type": "string",
+      "description": "The Ad Unit Code."
+    },
+    "seatCode": {
+      "type": "string",
+      "description": "Your Seat Code."
+    },
+    "originalPublisherid": {
+      "type": "string",
+      "description": "publisher ID from the original request"
+    }
+  },
+  "required": [
+    "seatCode"
+  ]
+}

@@ -1,8 +1,17 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/luponmedia.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (luponmedia.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/luponmedia.json",
   "title": "LuponMedia bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (luponmedia.md).",
+  "type": "object",
+  "properties": {
+    "keyId": {
+      "type": "string",
+      "description": "The key ID"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "keyId"
+  ]
 }

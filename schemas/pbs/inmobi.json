@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/inmobi.json",
+  "title": "InMobi bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the InMobi adapter",
+  "type": "object",
+  "properties": {
+    "plc": {
+      "type": [
+        "string"
+      ],
+      "description": "An ID corresponding to the placement selling the impression"
+    }
+  },
+  "required": [
+    "plc"
+  ]
+}

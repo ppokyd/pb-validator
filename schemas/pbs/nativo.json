@@ -1,0 +1,8 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/nativo.json",
+  "title": "Nativo bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Nativo adapter",
+  "type": "object",
+  "properties": {}
+}

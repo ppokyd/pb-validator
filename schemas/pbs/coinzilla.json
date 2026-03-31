@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/coinzilla.json",
+  "title": "Coinzilla bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Coinzilla adapter",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Placement Id or Website Id"
+    }
+  },
+  "required": [
+    "placementId"
+  ]
+}

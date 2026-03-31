@@ -1,8 +1,17 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/brightroll.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (brightroll.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/brightroll.json",
   "title": "Brightroll bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (brightroll.md).",
+  "type": "object",
+  "properties": {
+    "publisher": {
+      "type": "string",
+      "description": "Publisher Name to use"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "publisher"
+  ]
 }

@@ -1,8 +1,22 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/yieldlift.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (yieldlift.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/yieldlift.json",
   "title": "YieldLift bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (yieldlift.md).",
+  "type": "object",
+  "properties": {
+    "unitId": {
+      "type": "string",
+      "description": "Unit Id"
+    },
+    "networkId": {
+      "type": "string",
+      "description": "Network Id"
+    },
+    "publisherId": {
+      "type": "string",
+      "description": "Publisher Id"
+    }
+  },
+  "additionalProperties": false
 }

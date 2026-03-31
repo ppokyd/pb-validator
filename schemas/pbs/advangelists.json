@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/advangelists.json",
+  "title": "Advangelists bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Advangelists adapter",
+  "type": "object",
+  "properties": {
+    "pubid": {
+      "type": "string",
+      "description": "An id used to identify Advangelists publisher.",
+      "minLength": 8
+    },
+    "placement": {
+      "type": "string",
+      "description": "An id used to identify placements."
+    }
+  },
+  "required": [
+    "pubid"
+  ]
+}

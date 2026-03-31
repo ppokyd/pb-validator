@@ -1,8 +1,22 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/urekamedia.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (urekamedia.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/urekamedia.json",
   "title": "UrekaMedia bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (urekamedia.md).",
+  "type": "object",
+  "properties": {
+    "host": {
+      "type": "string",
+      "description": "Host"
+    },
+    "zoneId": {
+      "type": "integer",
+      "description": "Zone Id"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "host",
+    "zoneId"
+  ]
 }

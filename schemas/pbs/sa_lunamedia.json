@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/sa_lunamedia.json",
+  "title": "Sa_Lunamedia bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Sa_Lunamedia adapter",
+  "type": "object",
+  "properties": {
+    "key": {
+      "type": "string",
+      "description": "network or placement key"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "network",
+        "publisher"
+      ]
+    }
+  },
+  "required": [
+    "key",
+    "type"
+  ]
+}

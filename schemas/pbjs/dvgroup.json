@@ -1,8 +1,17 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/dvgroup.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (dvgroup.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/dvgroup.json",
   "title": "dvgroup bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (dvgroup.md).",
+  "type": "object",
+  "properties": {
+    "sspId": {
+      "type": "string",
+      "description": "ssp id"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "sspId"
+  ]
 }

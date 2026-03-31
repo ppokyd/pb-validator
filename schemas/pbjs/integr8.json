@@ -1,8 +1,30 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/integr8.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (integr8.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/integr8.json",
   "title": "Integr8 bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (integr8.md).",
+  "type": "object",
+  "properties": {
+    "propertyId": {
+      "type": "string",
+      "description": "Property id"
+    },
+    "placementId": {
+      "type": "string",
+      "description": "Placement id"
+    },
+    "deliveryUrl": {
+      "type": "string",
+      "description": "Custom endpoint url for the bid request"
+    },
+    "data": {
+      "type": "object",
+      "description": "Catalog data (contents) and/or inventory data (custom key/value pairs)"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "propertyId",
+    "placementId"
+  ]
 }

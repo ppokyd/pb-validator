@@ -1,8 +1,21 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/targetVideo.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (targetvideo.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/targetVideo.json",
   "title": "TargetVideo bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (targetvideo.md).",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": "string",
+      "description": "The placement ID from TargetVideo. You will get this value from your TargetVideo account manager. The placementID parameter should be a string."
+    },
+    "floor": {
+      "type": "number",
+      "description": "Sets the global floor -- no bids will be made under this value."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "placementId"
+  ]
 }

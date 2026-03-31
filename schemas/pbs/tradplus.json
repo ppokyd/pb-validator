@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/tradplus.json",
+  "title": "TradPlus bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the TradPlus adapter",
+  "type": "object",
+  "properties": {
+    "accountId": {
+      "type": "string",
+      "description": "Account ID",
+      "minLength": 1
+    },
+    "zoneId": {
+      "type": "string",
+      "description": "Zone ID"
+    }
+  },
+  "required": [
+    "accountId"
+  ]
+}

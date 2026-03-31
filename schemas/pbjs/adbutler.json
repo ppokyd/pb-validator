@@ -1,8 +1,42 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/adbutler.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (adbutler.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/adbutler.json",
   "title": "AdButler bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (adbutler.md).",
+  "type": "object",
+  "properties": {
+    "accountID": {
+      "type": "string",
+      "description": "Account ID"
+    },
+    "zoneID": {
+      "type": "string",
+      "description": "Zone ID"
+    },
+    "domain": {
+      "type": "string",
+      "description": "Ad serving domain (set if using custom domains)"
+    },
+    "keyword": {
+      "type": "string",
+      "description": "Keyword(s) used for custom targeting"
+    },
+    "minCPM": {
+      "type": "string",
+      "description": "Minimum CPM value to accept"
+    },
+    "maxCPM": {
+      "type": "string",
+      "description": "Maximum CPM value to accept"
+    },
+    "extra": {
+      "type": "object",
+      "description": "Other ad request parameters [(API Docs)](https://www.adbutler.com/docs/api/#tag/AdServe/paths/~1adserve/get)"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "accountID",
+    "zoneID"
+  ]
 }

@@ -1,8 +1,42 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/sonobi.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (sonobi.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/sonobi.json",
   "title": "Sonobi bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (sonobi.md).",
+  "type": "object",
+  "properties": {
+    "placement_id": {
+      "type": "string",
+      "description": "The placement ID"
+    },
+    "ad_unit": {
+      "type": "string",
+      "description": "The adunit ID"
+    },
+    "floor": {
+      "type": "number",
+      "description": "Bid floor for this placement in USD"
+    },
+    "sizes": {
+      "type": "array",
+      "description": "Adunit sizes that will override global sizes"
+    },
+    "hfa": {
+      "type": "string",
+      "description": "Publisher Unique Identifier"
+    },
+    "referrer": {
+      "type": "string",
+      "description": "Overrides the default value for the ref param in a bid request"
+    },
+    "keywords": {
+      "type": "string",
+      "description": "Comma separated list of keywords about the site"
+    },
+    "bid_request_url": {
+      "type": "string",
+      "description": "String representing the url the Sonobi adapter should make to request bids"
+    }
+  },
+  "additionalProperties": false
 }

@@ -1,8 +1,17 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/stailamedia.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (stailamedia.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/stailamedia.json",
   "title": "stailamedia bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (stailamedia.md).",
+  "type": "object",
+  "properties": {
+    "placement_id (PBS+PBJS) or placementId (PBJS)": {
+      "type": "string",
+      "description": "Placement id"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "placement_id (PBS+PBJS) or placementId (PBJS)"
+  ]
 }

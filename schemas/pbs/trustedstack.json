@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/trustedstack.json",
+  "title": "Trustedstack bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Trustedstack adapter",
+  "type": "object",
+  "properties": {
+    "cid": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The customer id provided by Trustedstack."
+    },
+    "crid": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The placement id provided by Trustedstack."
+    }
+  },
+  "required": [
+    "cid",
+    "crid"
+  ]
+}

@@ -1,8 +1,29 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/livewrapped.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (livewrapped.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/livewrapped.json",
   "title": "Livewrapped bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (livewrapped.md).",
+  "type": "object",
+  "properties": {
+    "adUnitId": {
+      "type": "string",
+      "description": "The ad unit ID from Livewrapped. You may identify an ad unit using the publisherId and adUnitName instead of an ad unit ID."
+    },
+    "publisherId": {
+      "type": "string",
+      "description": "The publisher ID from Livewrapped. Must be used with adUnitName."
+    },
+    "adUnitName": {
+      "type": "string",
+      "description": "The ad unit name from Livewrapped. Must be used with publisherId."
+    },
+    "userId": {
+      "type": "string",
+      "description": "If a user id is available, pass the id into this parameter."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "adUnitId"
+  ]
 }

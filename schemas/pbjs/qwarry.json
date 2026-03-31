@@ -1,8 +1,21 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/qwarry.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (qwarry.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/qwarry.json",
   "title": "Qwarry bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (qwarry.md).",
+  "type": "object",
+  "properties": {
+    "zoneToken": {
+      "type": "string",
+      "description": "The ID issued by Qwarry to the publisher"
+    },
+    "pos": {
+      "type": "integer",
+      "description": "Specify the position of the ad as a relative measure of visibility or prominence. Allowed values: Above the fold: 1; Below the fold: 3; Middle of the fold: 7;"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "zoneToken"
+  ]
 }

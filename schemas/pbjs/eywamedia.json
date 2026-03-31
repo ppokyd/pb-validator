@@ -1,8 +1,47 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/eywamedia.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (eywamedia.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/eywamedia.json",
   "title": "Eywamedia bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (eywamedia.md).",
+  "type": "object",
+  "properties": {
+    "publisherId": {
+      "type": "string",
+      "description": "Given by Eywamedia"
+    },
+    "bidFloor": {
+      "type": "string",
+      "description": "Floor bid price"
+    },
+    "cats": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "IAB Categories of the web page"
+    },
+    "keywords": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Categogy Keywords of the web page"
+    },
+    "lat": {
+      "type": "number",
+      "description": "Latitude"
+    },
+    "lon": {
+      "type": "number",
+      "description": "Longitude"
+    },
+    "locn": {
+      "type": "string",
+      "description": "Location in country$region$city$zip format"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "publisherId"
+  ]
 }

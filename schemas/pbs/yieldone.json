@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/yieldone.json",
+  "title": "Yieldone bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Yieldone adapter",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": "string",
+      "description": "Internal Yieldone Placement ID"
+    }
+  },
+  "required": [
+    "placementId"
+  ]
+}

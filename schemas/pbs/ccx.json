@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/ccx.json",
+  "title": "Clickonometrics bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Clickonometrics adapter",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": "integer",
+      "description": "Placement ID"
+    }
+  },
+  "required": [
+    "placementId"
+  ]
+}

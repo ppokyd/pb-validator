@@ -1,8 +1,20 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/headbidding.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (headbidding.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/headbidding.json",
   "title": "Head Bidding bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (headbidding.md).",
+  "type": "object",
+  "properties": {
+    "zoneId": {
+      "type": "integer"
+    },
+    "host": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "zoneId",
+    "host"
+  ]
 }

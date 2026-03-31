@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/adf.json",
+  "title": "Adf bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the adf adapter",
+  "type": "object",
+  "properties": {
+    "mid": {
+      "type": [
+        "integer",
+        "string"
+      ],
+      "pattern": "^\\d+$",
+      "description": "An ID which identifies the placement selling the impression"
+    },
+    "inv": {
+      "type": [
+        "integer"
+      ],
+      "description": "An ID which identifies the Adform inventory source id"
+    },
+    "mname": {
+      "type": [
+        "string"
+      ],
+      "description": "A Name which identifies the placement selling the impression"
+    },
+    "priceType": {
+      "type": [
+        "string"
+      ],
+      "description": "gross or net. Default is net.",
+      "pattern": "gross|net"
+    }
+  },
+  "anyOf": [
+    {
+      "required": [
+        "mid"
+      ]
+    },
+    {
+      "required": [
+        "inv",
+        "mname"
+      ]
+    }
+  ]
+}

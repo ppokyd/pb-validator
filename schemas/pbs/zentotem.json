@@ -1,0 +1,8 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/zentotem.json",
+  "title": "Zentotem bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Zentotem adapter",
+  "type": "object",
+  "properties": {}
+}

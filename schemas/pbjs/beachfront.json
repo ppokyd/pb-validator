@@ -1,8 +1,34 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/beachfront.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (beachfront.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/beachfront.json",
   "title": "Beachfront bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (beachfront.md).",
+  "type": "object",
+  "properties": {
+    "appId": {
+      "type": "string",
+      "description": "Beachfront Exchange ID"
+    },
+    "bidfloor": {
+      "type": "number",
+      "description": "Bid floor. The floor price module will take priority over this value."
+    },
+    "video": {
+      "type": "object",
+      "description": "Object with video parameters. See the [video section below](#beachfront-video) for details."
+    },
+    "banner": {
+      "type": "object",
+      "description": "Object with banner parameters. See the [banner section below](#beachfront-banner) for details."
+    },
+    "player": {
+      "type": "object",
+      "description": "Object with outstream player parameters. See the [player section below](#beachfront-player) for details."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "appId",
+    "bidfloor"
+  ]
 }

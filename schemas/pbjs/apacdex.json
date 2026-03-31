@@ -1,8 +1,30 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/apacdex.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (apacdex.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/apacdex.json",
   "title": "Apacdex bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (apacdex.md).",
+  "type": "object",
+  "properties": {
+    "placementId*": {
+      "type": "string",
+      "description": "Placement ID provided by Apacdex"
+    },
+    "siteId*": {
+      "type": "string",
+      "description": "Publisher site ID from Apacdex"
+    },
+    "floorPrice": {
+      "type": "number",
+      "description": "CPM bidfloor in USD"
+    },
+    "geo": {
+      "type": "object",
+      "description": "GEO data of device. See [Geo Object](#apacdex-geo-object) for details."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "placementId*",
+    "siteId*"
+  ]
 }

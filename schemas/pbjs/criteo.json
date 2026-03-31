@@ -1,8 +1,40 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/criteo.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (criteo.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/criteo.json",
   "title": "Criteo bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (criteo.md).",
+  "type": "object",
+  "properties": {
+    "zoneId": {
+      "type": "integer",
+      "description": "(deprecated) The zone ID from Criteo. Should be replaced by networkId when using zone matching."
+    },
+    "networkId": {
+      "type": "integer",
+      "description": "The network ID from Criteo. Please reach out your Criteo representative for more details."
+    },
+    "pubid": {
+      "type": "string",
+      "description": "Publisher id of your inventory group provided by your Technical account manager if using inventory groups to map your inventory in Commerce Grid"
+    },
+    "uid": {
+      "type": "integer",
+      "description": "Ad Unit ID"
+    },
+    "nativeCallback": {
+      "description": "(deprecated) (Prebid.js only) Callback to perform render in native integrations. Please reach out your Criteo representative for more details."
+    },
+    "integrationMode": {
+      "type": "string",
+      "description": "(Prebid.js only) Integration mode to use for ad render (none or 'AMP'). Please reach out your Criteo representative for more details."
+    },
+    "publisherSubId": {
+      "type": "string",
+      "description": "Custom identifier for reporting. Please reach out your Criteo representative for more details."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "networkId"
+  ]
 }

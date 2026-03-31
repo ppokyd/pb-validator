@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/rise.json",
+  "title": "Rise bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Rise adapter",
+  "type": "object",
+  "properties": {
+    "org": {
+      "type": "string",
+      "description": "The organization ID."
+    },
+    "publisher_id": {
+      "type": "string",
+      "description": "Deprecated, use org instead."
+    },
+    "placementId": {
+      "type": "string",
+      "description": "Placement ID."
+    }
+  },
+  "oneOf": [
+    {
+      "required": [
+        "org"
+      ]
+    },
+    {
+      "required": [
+        "publisher_id"
+      ]
+    }
+  ]
+}

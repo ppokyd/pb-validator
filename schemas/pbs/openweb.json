@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/openweb.json",
+  "title": "OpenWeb bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the OpenWeb adapter",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": "string",
+      "description": "An ID which identifies this placement of the impression",
+      "minLength": 1
+    },
+    "aid": {
+      "type": "integer",
+      "description": "Deprecated: An ID which identifies the channel"
+    },
+    "org": {
+      "type": "string",
+      "description": "The organization ID.",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "placementId"
+  ],
+  "oneOf": [
+    {
+      "required": [
+        "aid"
+      ]
+    },
+    {
+      "required": [
+        "org"
+      ]
+    }
+  ]
+}

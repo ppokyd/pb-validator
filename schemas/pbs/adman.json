@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/adman.json",
+  "title": "Adman bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Adman adapter",
+  "type": "object",
+  "properties": {
+    "TagID": {
+      "type": "string",
+      "description": "An ID which identifies the adman ad tag"
+    }
+  },
+  "required": [
+    "TagID"
+  ]
+}

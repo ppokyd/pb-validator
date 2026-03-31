@@ -1,8 +1,22 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/newspassid.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (newspassid.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/newspassid.json",
   "title": "NewsPassID bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (newspassid.md).",
+  "type": "object",
+  "properties": {
+    "publisherId": {
+      "type": "string",
+      "description": "The publisher ID in the NewsPassID backend."
+    },
+    "placementId": {
+      "type": "string",
+      "description": "The placement ID in the NewsPassID backend."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "publisherId",
+    "placementId"
+  ]
 }

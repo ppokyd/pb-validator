@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/displayio.json",
+  "title": "Display.io bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Display.io adapter",
+  "type": "object",
+  "properties": {
+    "publisherId": {
+      "type": "string",
+      "description": "Publisher Id"
+    },
+    "inventoryId": {
+      "type": "string",
+      "description": "Inventory Id"
+    },
+    "placementId": {
+      "type": "string",
+      "description": "Placement Id"
+    }
+  },
+  "required": [
+    "publisherId",
+    "inventoryId",
+    "placementId"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/imds.json",
+  "title": "iMedia Digital Services (IMDS) bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the iMedia Digital Services (IMDS) adapter",
+  "type": "object",
+  "properties": {
+    "seatId": {
+      "type": "string",
+      "description": "The seat id."
+    },
+    "tagId": {
+      "type": "string",
+      "description": "The tag id."
+    }
+  },
+  "required": [
+    "seatId"
+  ]
+}

@@ -1,8 +1,25 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/unruly.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (unruly.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/unruly.json",
   "title": "Unruly bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (unruly.md).",
+  "type": "object",
+  "properties": {
+    "siteId": {
+      "type": "integer",
+      "description": "The site ID from Unruly(Nexxen). This will be provided to you by your Unruly account manager, this is prefered."
+    },
+    "siteid": {
+      "type": "integer",
+      "description": "The site ID from Unruly. This will be provided to you by your Unruly account manager, this is backward compability."
+    },
+    "featureOverrides": {
+      "type": "object",
+      "description": "This param is a generic object for configuring Unruly outstream demand. To run UNmissable, set ‘canRunUnmissable’ to true."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "siteId"
+  ]
 }

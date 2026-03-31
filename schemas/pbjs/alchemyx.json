@@ -1,8 +1,22 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/alchemyx.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (alchemyx.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/alchemyx.json",
   "title": "AlchemyX bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (alchemyx.md).",
+  "type": "object",
+  "properties": {
+    "adUnitId": {
+      "type": "integer",
+      "description": "Unique identifier for the ad unit in AlchemyX platform."
+    },
+    "auth": {
+      "type": "string",
+      "description": "Authentication token provided by AlchemyX platform for the AdUnit."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "adUnitId",
+    "auth"
+  ]
 }

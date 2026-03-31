@@ -1,8 +1,18 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/adbookpsp.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (adbookpsp.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/adbookpsp.json",
   "title": "AdBookPSP bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (adbookpsp.md).",
+  "type": "object",
+  "properties": {
+    "orgId": {
+      "type": "string",
+      "description": "Org ID listed in the Deal File"
+    },
+    "placementId": {
+      "type": "string",
+      "description": "Placement ID listed in the Deal File"
+    }
+  },
+  "additionalProperties": false
 }

@@ -1,8 +1,33 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/deltaprojects.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (deltaprojects.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/deltaprojects.json",
   "title": "Delta Projects bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (deltaprojects.md).",
+  "type": "object",
+  "properties": {
+    "publisherId": {
+      "type": "string",
+      "description": "Publisher ID from Delta Projects. Contact <publishers@deltaprojects.com>"
+    },
+    "currency": {
+      "type": "string",
+      "description": "The bid currency agreed with Delta Projects."
+    },
+    "siteId": {
+      "type": "string",
+      "description": "Site ID from Delta Projects."
+    },
+    "tagId": {
+      "type": "string",
+      "description": "Identifier for specific ad placement or ad tag."
+    },
+    "test": {
+      "type": "string",
+      "description": "Indicate test model. Don't set anything if it is not in test mode."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "publisherId"
+  ]
 }

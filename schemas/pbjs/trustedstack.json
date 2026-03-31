@@ -1,8 +1,30 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/trustedstack.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (trustedstack.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/trustedstack.json",
   "title": "TrustedStack bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (trustedstack.md).",
+  "type": "object",
+  "properties": {
+    "cid": {
+      "type": "string",
+      "description": "The customer id provided by TrustedStack."
+    },
+    "crid": {
+      "type": "string",
+      "description": "The placement id provided by TrustedStack."
+    },
+    "bidfloor": {
+      "type": "number",
+      "description": "Bidfloor for the impression"
+    },
+    "video": {
+      "type": "object",
+      "description": "Object containing video targeting parameters.  See [Video Object](#video-object) for details."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "cid",
+    "crid"
+  ]
 }

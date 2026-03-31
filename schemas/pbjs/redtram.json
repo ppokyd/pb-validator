@@ -1,8 +1,18 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/redtram.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (redtram.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/redtram.json",
   "title": "Redtram bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (redtram.md).",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": "string",
+      "description": "The placement ID from Redtram"
+    },
+    "bidFloor": {
+      "type": "number",
+      "description": "Lowest value of expected bid price"
+    }
+  },
+  "additionalProperties": false
 }

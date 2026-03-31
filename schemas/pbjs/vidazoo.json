@@ -1,8 +1,30 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/vidazoo.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (vidazoo.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/vidazoo.json",
   "title": "Vidazoo bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (vidazoo.md).",
+  "type": "object",
+  "properties": {
+    "cId": {
+      "type": "string",
+      "description": "The connection ID from Vidazoo."
+    },
+    "pId": {
+      "type": "string",
+      "description": "The publisher ID from Vidazoo (pbjs only)."
+    },
+    "bidFloor": {
+      "type": "number",
+      "description": "The minimum bid value desired. Vidazoo will not respond with bids lower than this value."
+    },
+    "subDomain": {
+      "type": "string",
+      "description": "Sets the server subdomain, default: 'prebid'."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "cId",
+    "pId"
+  ]
 }

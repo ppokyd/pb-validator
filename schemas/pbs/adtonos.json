@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/adtonos.json",
+  "title": "AdTonos bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the AdTonos adapter",
+  "type": "object",
+  "properties": {
+    "supplierId": {
+      "type": "string",
+      "description": "ID of the supplier account in AdTonos platform"
+    }
+  },
+  "required": [
+    "supplierId"
+  ]
+}

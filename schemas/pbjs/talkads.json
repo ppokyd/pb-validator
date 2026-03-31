@@ -1,8 +1,22 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/talkads.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (talkads.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/talkads.json",
   "title": "Talkads bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (talkads.md).",
+  "type": "object",
+  "properties": {
+    "tag_id": {
+      "type": "number",
+      "description": "The publisher tag id given by the Natexo team"
+    },
+    "bidder_url": {
+      "type": "string",
+      "description": "The publisher bidder url given by the Natexo team"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "tag_id",
+    "bidder_url"
+  ]
 }

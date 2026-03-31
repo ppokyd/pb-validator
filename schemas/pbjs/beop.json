@@ -1,8 +1,28 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/beop.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (beop.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/beop.json",
   "title": "BeOp bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (beop.md).",
+  "type": "object",
+  "properties": {
+    "accountId or networkId": {
+      "type": "string",
+      "description": "Your BeOp account ID (24-character hex string)"
+    },
+    "networkPartnerId": {
+      "type": "string",
+      "description": "Your internal network partner ID (used for advanced partner tracking)"
+    },
+    "currency": {
+      "type": "string",
+      "description": "Preferred bidding currency (defaults to 'EUR')"
+    },
+    "keywords": {
+      "description": "Contextual keywords string or array to help target your campaign"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "accountId or networkId"
+  ]
 }

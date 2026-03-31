@@ -1,0 +1,44 @@
+name: Sync Prebid Server schemas
+
+on:
+  schedule:
+    # Weekly: Tuesdays 06:00 UTC (offset from pbjs sync on Mondays)
+    - cron: "0 6 * * 2"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: sync-prebid-server
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Sync schemas from prebid-server
+        run: node tools/sync-prebid-server/index.mjs --out schemas
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "chore(schemas): sync pbs from prebid-server"
+          title: "chore(schemas): sync pbs schemas from prebid-server"
+          body: |
+            Automated update from `tools/sync-prebid-server/index.mjs`, cloning [prebid/prebid-server](https://github.com/prebid/prebid-server) `static/bidder-params/` on the default ref (`master`).
+
+            - Check `schemas/manifest.json` → `sources.prebid_server.commit` for the pinned adapter revision.
+            - Existing `pbjs` entries in the manifest are preserved unchanged.
+            - Schemas are copied verbatim from the upstream repo (already valid JSON Schema), with a normalised `$id` and `$schema`.
+
+            `workflow_dispatch` runs this job on demand; the schedule runs it weekly (Tuesdays).
+          branch: chore/sync-prebid-server
+          delete-branch: true

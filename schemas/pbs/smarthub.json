@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/smarthub.json",
+  "title": "Attekmi (formerly SmartHub) bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Attekmi (formerly SmartHub) adapter",
+  "type": "object",
+  "properties": {
+    "partnerName": {
+      "type": "string",
+      "description": "Attekmi (formerly SmartHub) unique partner name"
+    },
+    "seat": {
+      "type": "string",
+      "description": "Seat",
+      "minLength": 1
+    },
+    "token": {
+      "type": "string",
+      "description": "Token",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "seat",
+    "token"
+  ]
+}

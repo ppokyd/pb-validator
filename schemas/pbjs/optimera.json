@@ -1,8 +1,21 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/optimera.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (optimera.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/optimera.json",
   "title": "Optimera bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (optimera.md).",
+  "type": "object",
+  "properties": {
+    "clientID": {
+      "type": "string",
+      "description": "The Optimera Client ID"
+    },
+    "device": {
+      "type": "string",
+      "description": "Device type code for mobile, tablet, or desktop. Either mo, tb, de"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "clientID"
+  ]
 }

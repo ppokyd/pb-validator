@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/richaudience.json",
+  "title": "richaudience bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the richaudience adapter",
+  "type": "object",
+  "properties": {
+    "pid": {
+      "type": "string",
+      "description": "Placement ID"
+    },
+    "supplyType": {
+      "type": "string",
+      "description": "Type integration"
+    },
+    "test": {
+      "type": "boolean",
+      "description": "TestMode"
+    },
+    "bidFloor": {
+      "type": "number",
+      "description": "floor price"
+    },
+    "bidFloorCur": {
+      "type": "string",
+      "description": "currency floor price"
+    }
+  },
+  "required": [
+    "pid",
+    "supplyType"
+  ]
+}

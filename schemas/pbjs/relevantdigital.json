@@ -1,8 +1,29 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/relevantdigital.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (relevantdigital.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/relevantdigital.json",
   "title": "Relevant Digital bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (relevantdigital.md).",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": "string",
+      "description": "The placement id."
+    },
+    "pbsHost": {
+      "type": "string",
+      "description": "Host name of the server."
+    },
+    "accountId": {
+      "type": "string",
+      "description": "The account id."
+    },
+    "useSourceBidderCode": {
+      "type": "boolean",
+      "description": "Set to true in order to use the bidder code of the actual server-side bidder in bid responses. You **MUST** also use allowAlternateBidderCodes: true in bidderSettings if you enabled this - as otherwise the bids will be rejected."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "placementId"
+  ]
 }

@@ -1,8 +1,16 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/progX.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (progx.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/progX.json",
   "title": "ProgX bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (progx.md).",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "description": "Placement Id"
+    },
+    "endpointId": {
+      "description": "Endpoint Id"
+    }
+  },
+  "additionalProperties": false
 }

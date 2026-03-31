@@ -1,8 +1,31 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/mmplus.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (minutemediaplus.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/mmplus.json",
   "title": "MinuteMediaPlus bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (minutemediaplus.md).",
+  "type": "object",
+  "properties": {
+    "cId": {
+      "type": "string",
+      "description": "The connection ID from MinuteMediaPlus."
+    },
+    "pId": {
+      "type": "string",
+      "description": "The publisher ID from MinuteMediaPlus."
+    },
+    "bidFloor": {
+      "type": "number",
+      "description": "The minimum bid value desired. MinuteMediaPlus will not respond with bids lower than this value."
+    },
+    "subDomain": {
+      "type": "string",
+      "description": "Sets the server subdomain, default: 'exchange'."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "cId",
+    "pId",
+    "bidFloor"
+  ]
 }

@@ -1,8 +1,24 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/polymorph.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (polymorph.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/polymorph.json",
   "title": "Polymorph bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (polymorph.md).",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": "string",
+      "description": "The placement id/key provided by Polymorph"
+    },
+    "defaultWidth": {
+      "type": "integer",
+      "description": "In case multiple ad sizes are supported, it's recommended to specify default height and width for native ad (in case native ad is chose as a winner). In case of banner or outstream ad any one of the above sizes can be chosen depending on the highest bid."
+    },
+    "defaultHeight": {
+      "type": "integer"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "placementId"
+  ]
 }

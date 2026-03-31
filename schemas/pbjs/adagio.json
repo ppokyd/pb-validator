@@ -1,8 +1,34 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/adagio.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (adagio.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/adagio.json",
   "title": "Adagio bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (adagio.md).",
+  "type": "object",
+  "properties": {
+    "organizationId": {
+      "type": "string",
+      "description": "Id of the Organization. Handed out by Adagio."
+    },
+    "site": {
+      "type": "string",
+      "description": "Name of the site. Handed out by Adagio.<br><span style=\"display:inline-block; margin-top: 0.6em; line-height:1.5; font-size:14px; font-style:italic;\">- max length: 50</span>"
+    },
+    "placement": {
+      "type": "string",
+      "description": "Refers to the placement of an adunit in a page. See [recommended values](#recommended-placement-param-values).<br><span style=\"display:inline-block; margin-top: 0.6em; line-height:1.5; font-size:14px; font-style:italic;\">- max length: 50<br>- max distinctives values: 10</span>"
+    },
+    "pagetype": {
+      "type": "string",
+      "description": "Describes what kind of content will be present in the page.<br><span style=\"display:inline-block; margin-top: 0.6em; line-height:1.5; font-size:14px; font-style:italic;\">- max length: 30<br>- max distinctives values: 50</span><br><span style=\"display:inline-block; line-height:1.5; font-size:14px;\">Can be set at adUnit level or via FPD ([see below](#setting-params-adunit-level-vs-first-party-data))</span>"
+    },
+    "category": {
+      "type": "string",
+      "description": "Category of the content displayed in the page.<br><span style=\"display:inline-block; margin-top: 0.6em; line-height:1.5; font-size:14px; font-style:italic;\">- max length: 30<br>- max distinctives values: 50</span><br><span style=\"display:inline-block; line-height:1.5; font-size:14px;\">Can be set at adUnit level or via FPD ([see below](#setting-params-adunit-level-vs-first-party-data))</span>"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "organizationId",
+    "placement"
+  ]
 }

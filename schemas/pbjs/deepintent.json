@@ -1,8 +1,38 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/deepintent.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (deepintent.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/deepintent.json",
   "title": "Deepintent bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (deepintent.md).",
+  "type": "object",
+  "properties": {
+    "tagId": {
+      "type": "string",
+      "description": "Ad Tag Id"
+    },
+    "bidfloor": {
+      "type": "number",
+      "description": "bid floor price in USD"
+    },
+    "height": {
+      "type": "number",
+      "description": "height of the creative"
+    },
+    "width": {
+      "type": "number",
+      "description": "width of the creative"
+    },
+    "custom": {
+      "type": "object",
+      "description": "custom key value params"
+    },
+    "user": {
+      "type": "object",
+      "description": "user params according to IAB standards"
+    },
+    "pos": {
+      "type": "number",
+      "description": "ad position as per IAB standards"
+    }
+  },
+  "additionalProperties": false
 }

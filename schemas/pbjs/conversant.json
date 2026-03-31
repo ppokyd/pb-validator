@@ -1,8 +1,37 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/conversant.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (epsilon.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/conversant.json",
   "title": "Epsilon bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (epsilon.md).",
+  "type": "object",
+  "properties": {
+    "site_id": {
+      "type": "string",
+      "description": "The site ID from Epsilon."
+    },
+    "secure": {
+      "type": "integer",
+      "description": "If impression requires secure HTTPS URL creative assets and markup. 0 for non-secure, 1 for secure. Default is non-secure"
+    },
+    "bidfloor": {
+      "type": "number",
+      "description": "Bid floor"
+    },
+    "tag_id": {
+      "type": "string",
+      "description": "Identifies specific ad placement."
+    },
+    "white_label_url": {
+      "type": "string",
+      "description": "Override the destination URL the request is sent to."
+    },
+    "pubcid_name": {
+      "type": "string",
+      "description": "Name of the pub common id. Epsilon adapter can read the id directly if the UserID module is absent. Default is _pubcid."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "site_id"
+  ]
 }

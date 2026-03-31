@@ -1,8 +1,76 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/viqeo.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (viqeo.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/viqeo.json",
   "title": "viqeo bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (viqeo.md).",
+  "type": "object",
+  "properties": {
+    "user": {
+      "type": "object",
+      "description": "The object containing user data (See OpenRTB spec)"
+    },
+    "user.buyeruid": {
+      "type": "string",
+      "description": "User id"
+    },
+    "playerOptions": {
+      "type": "object",
+      "description": "The object containing Viqeo player options"
+    },
+    "playerOptions.profileId": {
+      "type": "number",
+      "description": "Viqeo profile id"
+    },
+    "playerOptions.videId": {
+      "type": "string",
+      "description": "Viqeo video id"
+    },
+    "playerOptions.playerId": {
+      "type": "number",
+      "description": "Viqeo player id"
+    },
+    "device": {
+      "type": "object",
+      "description": "The object containing device data (See OpenRTB spec)"
+    },
+    "site": {
+      "type": "object",
+      "description": "The object containing site data (See OpenRTB spec)"
+    },
+    "app": {
+      "type": "object",
+      "description": "The object containing app data (See OpenRTB spec)"
+    },
+    "floor": {
+      "type": "number",
+      "description": "Bid floor price"
+    },
+    "currency": {
+      "type": "string",
+      "description": "3-letter ISO 4217 code defining the currency of the bid."
+    },
+    "test": {
+      "type": "integer",
+      "description": "Flag which will induce a sample bid response when true; only set to true for testing purposes (1 = true, 0 = false)"
+    },
+    "sspId": {
+      "type": "number",
+      "description": "For debug, request id"
+    },
+    "renderUrl": {
+      "type": "string",
+      "description": "For debug, script player url"
+    },
+    "endpointUrl": {
+      "type": "string",
+      "description": "For debug, api endpoint"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "user",
+    "user.buyeruid",
+    "playerOptions",
+    "playerOptions.profileId"
+  ]
 }

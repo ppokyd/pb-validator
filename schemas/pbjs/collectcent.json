@@ -1,8 +1,22 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/collectcent.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (collectcent.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/collectcent.json",
   "title": "Collectcent bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (collectcent.md).",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": "integer",
+      "description": "Placement Id will be generated on Collectcent Platform."
+    },
+    "traffic": {
+      "type": "string",
+      "description": "Type traffic"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "placementId",
+    "traffic"
+  ]
 }

@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/blis.json",
+  "title": "Blis bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Blis adapter",
+  "type": "object",
+  "properties": {
+    "spid": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Unique supply partner ID provided by Blis"
+    }
+  },
+  "required": [
+    "spid"
+  ]
+}

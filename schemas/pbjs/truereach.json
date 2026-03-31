@@ -1,8 +1,22 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/truereach.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (truereach.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/truereach.json",
   "title": "TrueReach bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (truereach.md).",
+  "type": "object",
+  "properties": {
+    "site_id": {
+      "type": "string",
+      "description": "TrueReach provided site ID"
+    },
+    "bidfloor": {
+      "type": "number",
+      "description": "Minimum price (CPM) in USD. Must be greater than 0."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "site_id",
+    "bidfloor"
+  ]
 }

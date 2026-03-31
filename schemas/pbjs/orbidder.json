@@ -1,8 +1,30 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/orbidder.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (orbidder.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/orbidder.json",
   "title": "Orbidder bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (orbidder.md).",
+  "type": "object",
+  "properties": {
+    "accountId": {
+      "type": "string",
+      "description": "Orbidder Account ID"
+    },
+    "placementId": {
+      "type": "string",
+      "description": "Placement Id"
+    },
+    "bidfloor": {
+      "type": "number",
+      "description": "Placement floor price"
+    },
+    "keyValues": {
+      "type": "object",
+      "description": "Custom key/value object"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "accountId",
+    "placementId"
+  ]
 }

@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/adelement.json",
+  "title": "Adelement Params bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Adelement",
+  "type": "object",
+  "properties": {
+    "supply_id": {
+      "type": "string",
+      "description": "Supply id",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "supply_id"
+  ]
+}

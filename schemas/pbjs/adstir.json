@@ -1,8 +1,22 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/adstir.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (adstir.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/adstir.json",
   "title": "adstir bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (adstir.md).",
+  "type": "object",
+  "properties": {
+    "appId": {
+      "type": "string",
+      "description": "The AppID from adstir"
+    },
+    "adSpaceNo": {
+      "type": "integer",
+      "description": "The AdSpaceNo from adstir"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "appId",
+    "adSpaceNo"
+  ]
 }

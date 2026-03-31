@@ -1,8 +1,25 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/otm.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (otm.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/otm.json",
   "title": "OTM bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (otm.md).",
+  "type": "object",
+  "properties": {
+    "tid": {
+      "type": "string",
+      "description": "A tag id"
+    },
+    "bidfloor": {
+      "type": "integer",
+      "description": "Floor price"
+    },
+    "domain": {
+      "type": "string",
+      "description": "Custom domain"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "tid"
+  ]
 }

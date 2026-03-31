@@ -1,8 +1,25 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/videobyte.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (videobyte.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/videobyte.json",
   "title": "VideoByte bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (videobyte.md).",
+  "type": "object",
+  "properties": {
+    "pubId": {
+      "type": "string",
+      "description": "Publisher ID"
+    },
+    "placementId": {
+      "type": "string",
+      "description": "Placement ID"
+    },
+    "nid": {
+      "type": "string",
+      "description": "Network ID"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "pubId"
+  ]
 }

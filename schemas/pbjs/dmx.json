@@ -1,8 +1,39 @@
 {
-  "$id": "https://prebid.org/schemas/pbjs/dmx.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "additionalProperties": true,
-  "description": "Generated from prebid.github.io dev-docs/bidders (dmx.md). Table-derived constraints are not yet applied; params object is accepted.",
+  "$id": "https://prebid.org/schemas/pbjs/dmx.json",
   "title": "DistrictM DMX bidder params (Prebid.js)",
-  "type": "object"
+  "description": "Generated from prebid.github.io dev-docs/bidders (dmx.md).",
+  "type": "object",
+  "properties": {
+    "seller_id": {
+      "type": "string",
+      "description": "The DMX Partner ID provided upon onboarding, this is for specific setup BURL, NURL or ADM support"
+    },
+    "publisher_id": {
+      "type": "string",
+      "description": "Boost MemberId from DistrictM UI"
+    },
+    "tagid": {
+      "type": "string",
+      "description": "Represent the placement ID from DistrictM or your own"
+    },
+    "bidfloor": {
+      "type": "string",
+      "description": "The minimum price acceptable for a bid"
+    },
+    "memberid": {
+      "type": "string",
+      "description": "MemberId from DistrictM UI (legacy: replaced by publisher_id)"
+    },
+    "dmxid": {
+      "type": "string",
+      "description": "Placement ID from DistrictM (legacy: replaced by tagid)"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "seller_id",
+    "publisher_id",
+    "tagid"
+  ]
 }

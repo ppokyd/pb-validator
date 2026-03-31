@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/eplanning.json",
+  "title": "EPlanning bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the EPlanning adapter",
+  "type": "object",
+  "properties": {
+    "ci": {
+      "type": [
+        "string"
+      ],
+      "description": "Client ID to use."
+    },
+    "adunit_code": {
+      "type": [
+        "string"
+      ],
+      "description": "Adunit Code."
+    }
+  },
+  "required": [
+    "ci"
+  ]
+}
