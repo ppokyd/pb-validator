@@ -18,6 +18,10 @@
     "appnexus": {
       "pbjs": { "schema": "pbjs/appnexus.json" },
       "pbs": null
+    },
+    "ci_fixture": {
+      "pbjs": { "schema": "pbjs/ci_fixture.json" },
+      "pbs": null
     }
   }
 }

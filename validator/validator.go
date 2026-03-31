@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/fs"
+	"sort"
 
 	"github.com/ppokyd/cursor-cloud-test/schemas"
 	jsonschema "github.com/santhosh-tekuri/jsonschema/v5"
@@ -144,5 +145,6 @@ func ListBidders() ([]string, error) {
 	for code := range m.Bidders {
 		out = append(out, code)
 	}
+	sort.Strings(out)
 	return out, nil
 }

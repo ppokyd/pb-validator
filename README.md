@@ -13,3 +13,7 @@ Sources of truth for generated schemas (next step): [prebid.github.io `dev-docs`
 go test ./...
 cd packages/js && npm test
 ```
+
+## CI
+
+GitHub Actions (`.github/workflows/ci.yml`) runs `go test ./...`, `go vet ./...`, and `npm ci` + `npm test` in `packages/js` on pushes and pull requests to `main` (and pushes to `cursor/**` branches).
