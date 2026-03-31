@@ -109,7 +109,7 @@ try {
     // Optionally read bidder-info YAML for a human-readable title.
     const infoTitle = readBidderInfoTitle(infoDir, code);
 
-    writePbsSchema(pbsDir, code, raw, infoTitle);
+    writePbsSchema(pbsDir, code, raw, infoTitle, pbsCommit);
     codes.push(code);
   }
 
@@ -173,16 +173,18 @@ function readBidderInfoTitle(infoDir, code) {
  *
  * The upstream files are already valid JSON Schema (draft-04 or draft-07).
  * We preserve all properties, required, etc. and only add/overwrite:
- *   - $schema  → http://json-schema.org/draft-07/schema#
- *   - $id      → https://prebid.org/schemas/pbs/<code>.json
- *   - title    → "<Title> bidder params (Prebid Server)" when absent
+ *   - $schema       → http://json-schema.org/draft-07/schema#
+ *   - $id           → https://prebid.org/schemas/pbs/<code>.json
+ *   - title         → "<Title> bidder params (Prebid Server)" when absent
+ *   - x-source-url  → permalink to the upstream file on GitHub
  *
  * @param {string} dir
  * @param {string} code
  * @param {Record<string,unknown>} raw
  * @param {string|null} _infoTitle
+ * @param {string} commit - the resolved HEAD commit of the cloned repo
  */
-function writePbsSchema(dir, code, raw, _infoTitle) {
+function writePbsSchema(dir, code, raw, _infoTitle, commit) {
   const upstreamTitle = typeof raw.title === "string" ? raw.title.trim() : "";
   // Normalise title: strip trailing "(Prebid Server)" variants to re-add consistently.
   const baseTitle =
@@ -207,6 +209,7 @@ function writePbsSchema(dir, code, raw, _infoTitle) {
   schema.$schema = "http://json-schema.org/draft-07/schema#";
   schema.$id = `https://prebid.org/schemas/pbs/${code}.json`;
   schema.title = `${baseTitle} bidder params (Prebid Server)`;
+  schema["x-source-url"] = `https://github.com/prebid/prebid-server/blob/${commit}/${PBS_PARAMS_DIR}/${code}.json`;
 
   writeFileSync(
     join(dir, `${code}.json`),

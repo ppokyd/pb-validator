@@ -10,5 +10,6 @@
       "description": "We only have this param as the prebid server crashes without at least 1 custom param; Not set to required to achieve parameter-less custom functionality"
     }
   },
-  "required": []
+  "required": [],
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/vrtcal.json"
 }

@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbjs/illumin.json",
   "title": "Illumin bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (illumin.md).",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/illumin.md",
   "type": "object",
   "properties": {
     "cId": {

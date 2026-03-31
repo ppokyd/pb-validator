@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbjs/admaru.json",
   "title": "Admaru bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (admaru.md).",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/admaru.md",
   "type": "object",
   "properties": {
     "pub_id": {

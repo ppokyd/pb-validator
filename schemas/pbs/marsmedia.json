@@ -12,5 +12,6 @@
       ],
       "description": "The zone ID from Mars Media Group."
     }
-  }
+  },
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/marsmedia.json"
 }

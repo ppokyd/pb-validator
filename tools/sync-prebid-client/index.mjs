@@ -132,7 +132,7 @@ try {
       );
       process.exit(1);
     }
-    if (writePbjsSchema(pbjsDir, code, seen.get(code))) {
+    if (writePbjsSchema(pbjsDir, code, seen.get(code), docsCommit)) {
       codesWithSchema.add(code);
     }
   }
@@ -375,9 +375,10 @@ function mapPrimitive(t) {
  * @param {string} dir
  * @param {string} code
  * @param {{ title: string, file: string, params: BidParam[] }} entry
+ * @param {string} commit - the resolved HEAD commit of the cloned docs repo
  * @returns {boolean}
  */
-function writePbjsSchema(dir, code, { title, file, params }) {
+function writePbjsSchema(dir, code, { title, file, params }, commit) {
   if (params.length === 0) return false;
 
   const displayTitle = title || code;
@@ -407,6 +408,7 @@ function writePbjsSchema(dir, code, { title, file, params }) {
     $id: `https://prebid.org/schemas/pbjs/${code}.json`,
     title: `${displayTitle} bidder params (Prebid.js)`,
     description: `Generated from prebid.github.io ${DOCS_SUBDIR} (${file}).`,
+    "x-source-url": `https://github.com/prebid/prebid.github.io/blob/${commit}/${DOCS_SUBDIR}/${file}`,
     type: "object",
     properties,
     additionalProperties: false,

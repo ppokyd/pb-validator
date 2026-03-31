@@ -37,5 +37,6 @@
     "keyid",
     "slotid",
     "adtype"
-  ]
+  ],
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/huaweiads.json"
 }

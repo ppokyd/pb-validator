@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbjs/33across.json",
   "title": "33Across bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (33across.md).",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/33across.md",
   "type": "object",
   "properties": {
     "zoneId": {
