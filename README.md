@@ -16,10 +16,10 @@ Validate Prebid bidder adapter parameters against auto-synced JSON Schemas — f
 
 This project maintains a canonical set of **JSON Schema** files for every registered Prebid bidder adapter, covering two runtimes:
 
-| Runtime | Source | Schema path |
-| ------- | ------ | ----------- |
-| **pbjs** (Prebid.js) | [prebid.github.io `dev-docs/bidders`](https://github.com/prebid/prebid.github.io/tree/master/dev-docs/bidders) | `schemas/pbjs/<bidder>.json` |
-| **pbs** (Prebid Server) | [prebid-server `static/bidder-params`](https://github.com/prebid/prebid-server/tree/master/static/bidder-params) | `schemas/pbs/<bidder>.json` |
+| Runtime                 | Source                                                                                                           | Schema path                  |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------- |
+| **pbjs** (Prebid.js)    | [prebid.github.io `dev-docs/bidders`](https://github.com/prebid/prebid.github.io/tree/master/dev-docs/bidders)   | `schemas/pbjs/<bidder>.json` |
+| **pbs** (Prebid Server) | [prebid-server `static/bidder-params`](https://github.com/prebid/prebid-server/tree/master/static/bidder-params) | `schemas/pbs/<bidder>.json`  |
 
 Schemas are indexed by a shared `schemas/manifest.json` (with pinned upstream commits) and published as the npm package **`@ppokyd/pb-validator`**.
 
@@ -52,8 +52,12 @@ The browser entry exposes `createClient`, which accepts a custom schema provider
 import { createClient } from '@ppokyd/pb-validator/browser';
 
 const client = createClient({
-  async loadManifest() { /* fetch manifest.json */ },
-  async loadSchema(path) { /* fetch individual schema */ },
+  async loadManifest() {
+    /* fetch manifest.json */
+  },
+  async loadSchema(path) {
+    /* fetch individual schema */
+  },
 });
 
 const result = await client.validate('appnexus', { placement_id: 123 }, 'pbs');
@@ -106,12 +110,12 @@ node tools/sync-prebid-server/index.mjs --out schemas
 
 ## CI / CD
 
-| Workflow | Trigger | What it does |
-| -------- | ------- | ------------ |
-| **ci.yml** | Push to `main` / `cursor/**`, PRs to `main` | Lint, format check, test (`packages/js`) |
-| **publish.yml** | GitHub release published | Test, version bump from tag, `npm publish` |
-| **sync-prebid-docs.yml** | Weekly (Mon 06:00 UTC) + manual | Sync pbjs schemas, open PR if changes detected |
-| **sync-prebid-server.yml** | Weekly (Tue 06:00 UTC) + manual | Sync pbs schemas, open PR if changes detected |
+| Workflow                   | Trigger                                     | What it does                                   |
+| -------------------------- | ------------------------------------------- | ---------------------------------------------- |
+| **ci.yml**                 | Push to `main` / `cursor/**`, PRs to `main` | Lint, format check, test (`packages/js`)       |
+| **publish.yml**            | GitHub release published                    | Test, version bump from tag, `npm publish`     |
+| **sync-prebid-docs.yml**   | Weekly (Mon 06:00 UTC) + manual             | Sync pbjs schemas, open PR if changes detected |
+| **sync-prebid-server.yml** | Weekly (Tue 06:00 UTC) + manual             | Sync pbs schemas, open PR if changes detected  |
 
 ## License
 
