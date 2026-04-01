@@ -26,18 +26,14 @@ jobs:
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: |
-            packages/js/package-lock.json
-            demo/package-lock.json
 
-      # Build the library first so the local file: dep in demo is up to date.
+      - run: npm ci
+
       - name: Build @ppokyd/pb-validator
-        working-directory: packages/js
-        run: npm ci && npm run build
+        run: npm -w packages/js run build
 
       - name: Build demo
-        working-directory: demo
-        run: npm ci && npm run build
+        run: npm -w demo run build
 
       # Add .nojekyll so GitHub Pages serves files that start with underscore.
       - name: Add .nojekyll

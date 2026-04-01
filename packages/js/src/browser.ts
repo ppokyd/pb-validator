@@ -15,11 +15,5 @@
  *   getSchemaData: async (path) => files[path],
  * });
  */
-export { createClient } from "./core.js";
-export type {
-  Runtime,
-  ValidationResult,
-  Manifest,
-  SchemaProvider,
-  ValidatorClient,
-} from "./core.js";
+export { createClient } from './core.js';
+export type { Runtime, ValidationResult, Manifest, SchemaProvider, ValidatorClient } from './core.js';

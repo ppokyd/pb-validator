@@ -1,15 +1,9 @@
-import { readFile } from "node:fs/promises";
-import { join } from "node:path";
-import { createClient } from "./core.js";
+import { readFile } from 'node:fs/promises';
+import { join } from 'node:path';
+import { createClient } from './core.js';
 
-export type {
-  Runtime,
-  ValidationResult,
-  Manifest,
-  SchemaProvider,
-  ValidatorClient,
-} from "./core.js";
-export { createClient } from "./core.js";
+export type { Runtime, ValidationResult, Manifest, SchemaProvider, ValidatorClient } from './core.js';
+export { createClient } from './core.js';
 
 /**
  * CJS-compatible Node entry point. Uses the CommonJS __dirname global instead
@@ -18,16 +12,16 @@ export { createClient } from "./core.js";
  */
 function schemasRoot(): string {
   // CJS output lives in dist/cjs/, so climb two levels to reach schemas/
-  return join(__dirname, "..", "..", "schemas");
+  return join(__dirname, '..', '..', 'schemas');
 }
 
 const _client = createClient({
   async getManifest() {
-    const raw = await readFile(join(schemasRoot(), "manifest.json"), "utf8");
+    const raw = await readFile(join(schemasRoot(), 'manifest.json'), 'utf8');
     return JSON.parse(raw);
   },
   async getSchemaData(path: string) {
-    const raw = await readFile(join(schemasRoot(), path), "utf8");
+    const raw = await readFile(join(schemasRoot(), path), 'utf8');
     return JSON.parse(raw);
   },
 });

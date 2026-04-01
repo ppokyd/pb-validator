@@ -1,6 +1,6 @@
-import { Ajv, type ErrorObject, type ValidateFunction } from "ajv";
+import { Ajv, type ErrorObject, type ValidateFunction } from 'ajv';
 
-export type Runtime = "pbjs" | "pbs";
+export type Runtime = 'pbjs' | 'pbs';
 
 export interface ValidationResult {
   valid: boolean;
@@ -32,20 +32,13 @@ export interface SchemaProvider {
 export interface ValidatorClient {
   loadManifest(): Promise<Manifest>;
   listBidders(): Promise<string[]>;
-  getSchema(
-    runtime: Runtime,
-    bidderCode: string,
-  ): Promise<Record<string, unknown>>;
-  validate(
-    runtime: Runtime,
-    bidderCode: string,
-    params: unknown,
-  ): Promise<ValidationResult>;
+  getSchema(runtime: Runtime, bidderCode: string): Promise<Record<string, unknown>>;
+  validate(runtime: Runtime, bidderCode: string, params: unknown): Promise<ValidationResult>;
 }
 
 function formatAjvErrors(errors: ErrorObject[] | null | undefined): string[] {
   if (!errors?.length) return [];
-  return errors.map((e) => `${e.instancePath || "/"} ${e.message}`.trim());
+  return errors.map((e) => `${e.instancePath || '/'} ${e.message}`.trim());
 }
 
 /** Creates a validator client backed by the given schema provider. */
@@ -61,25 +54,18 @@ export function createClient(provider: SchemaProvider): ValidatorClient {
     return Object.keys(m.bidders).sort();
   }
 
-  async function getSchema(
-    runtime: Runtime,
-    bidderCode: string,
-  ): Promise<Record<string, unknown>> {
+  async function getSchema(runtime: Runtime, bidderCode: string): Promise<Record<string, unknown>> {
     const m = await loadManifest();
     const b = m.bidders[bidderCode];
     if (!b) throw new Error(`unknown bidder: ${bidderCode}`);
-    const ref = runtime === "pbjs" ? b.pbjs : runtime === "pbs" ? b.pbs : null;
+    const ref = runtime === 'pbjs' ? b.pbjs : runtime === 'pbs' ? b.pbs : null;
     if (!ref?.schema) {
       throw new Error(`no ${runtime} schema for bidder: ${bidderCode}`);
     }
     return provider.getSchemaData(ref.schema);
   }
 
-  async function validate(
-    runtime: Runtime,
-    bidderCode: string,
-    params: unknown,
-  ): Promise<ValidationResult> {
+  async function validate(runtime: Runtime, bidderCode: string, params: unknown): Promise<ValidationResult> {
     const schema = await getSchema(runtime, bidderCode);
     const key = `${runtime}/${bidderCode}`;
     let validateFn = ajvValidators.get(key);

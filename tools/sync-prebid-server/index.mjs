@@ -17,33 +17,25 @@
  *            Cleanup of stale schema files is skipped.
  */
 
-import { execSync } from "node:child_process";
-import {
-  mkdirSync,
-  readFileSync,
-  writeFileSync,
-  readdirSync,
-  rmSync,
-  mkdtempSync,
-  existsSync,
-} from "node:fs";
-import { join, resolve } from "node:path";
-import { tmpdir } from "node:os";
-import { parseArgs } from "node:util";
+import { execSync } from 'node:child_process';
+import { mkdirSync, readFileSync, writeFileSync, readdirSync, rmSync, mkdtempSync, existsSync } from 'node:fs';
+import { join, resolve } from 'node:path';
+import { tmpdir } from 'node:os';
+import { parseArgs } from 'node:util';
 
-const PBS_REPO_URL = "https://github.com/prebid/prebid-server.git";
-const PBS_PARAMS_DIR = "static/bidder-params";
-const PBS_INFO_DIR = "static/bidder-info";
+const PBS_REPO_URL = 'https://github.com/prebid/prebid-server.git';
+const PBS_PARAMS_DIR = 'static/bidder-params';
+const PBS_INFO_DIR = 'static/bidder-info';
 
 // ── CLI ──────────────────────────────────────────────────────────────────────
 
 const { values: args } = parseArgs({
   options: {
-    out: { type: "string", default: "schemas" },
-    repo: { type: "string", default: PBS_REPO_URL },
-    ref: { type: "string", default: "master" },
-    "keep-temp": { type: "boolean", default: false },
-    bidders: { type: "string", default: "" },
+    out: { type: 'string', default: 'schemas' },
+    repo: { type: 'string', default: PBS_REPO_URL },
+    ref: { type: 'string', default: 'master' },
+    'keep-temp': { type: 'boolean', default: false },
+    bidders: { type: 'string', default: '' },
   },
   allowPositionals: true,
   strict: false,
@@ -53,29 +45,27 @@ const { values: args } = parseArgs({
 const bidderFilter = args.bidders
   ? new Set(
       args.bidders
-        .split(",")
+        .split(',')
         .map((s) => s.trim())
         .filter(Boolean),
     )
   : null;
 
 const absOut = resolve(process.cwd(), args.out);
-const pbsDir = join(absOut, "pbs");
+const pbsDir = join(absOut, 'pbs');
 mkdirSync(pbsDir, { recursive: true });
 
 // ── Clone ────────────────────────────────────────────────────────────────────
 
-const tmpRoot = mkdtempSync(join(tmpdir(), "prebid-server-"));
-const repoDir = join(tmpRoot, "prebid-server");
+const tmpRoot = mkdtempSync(join(tmpdir(), 'prebid-server-'));
+const repoDir = join(tmpRoot, 'prebid-server');
 
 try {
   execSync(`git clone --depth 1 --branch ${args.ref} ${args.repo} ${repoDir}`, {
-    stdio: "inherit",
+    stdio: 'inherit',
   });
 
-  const pbsCommit = execSync(`git -C "${repoDir}" rev-parse HEAD`)
-    .toString()
-    .trim();
+  const pbsCommit = execSync(`git -C "${repoDir}" rev-parse HEAD`).toString().trim();
 
   // ── Collect adapter schemas ──────────────────────────────────────────────
 
@@ -83,24 +73,22 @@ try {
   const infoDir = join(repoDir, PBS_INFO_DIR);
 
   if (!existsSync(paramsDir)) {
-    throw new Error(
-      `Expected ${PBS_PARAMS_DIR} in the cloned repo – wrong ref or repo?`,
-    );
+    throw new Error(`Expected ${PBS_PARAMS_DIR} in the cloned repo – wrong ref or repo?`);
   }
 
   const jsonFiles = readdirSync(paramsDir)
-    .filter((f) => f.toLowerCase().endsWith(".json"))
+    .filter((f) => f.toLowerCase().endsWith('.json'))
     .sort();
 
   /** @type {string[]} */
   const codes = [];
 
   for (const name of jsonFiles) {
-    const code = name.replace(/\.json$/i, "");
+    const code = name.replace(/\.json$/i, '');
     if (bidderFilter && !bidderFilter.has(code)) continue;
     let raw;
     try {
-      raw = JSON.parse(readFileSync(join(paramsDir, name), "utf8"));
+      raw = JSON.parse(readFileSync(join(paramsDir, name), 'utf8'));
     } catch (err) {
       console.warn(`  skip ${name}: JSON parse error – ${err.message}`);
       continue;
@@ -116,22 +104,19 @@ try {
   if (bidderFilter) {
     // Warn about any requested bidder that was never found in the repo.
     for (const req of bidderFilter) {
-      if (!codes.includes(req))
-        console.warn(`  warning: bidder "${req}" not found in prebid-server`);
+      if (!codes.includes(req)) console.warn(`  warning: bidder "${req}" not found in prebid-server`);
     }
-    mergeManifestPbs(join(absOut, "manifest.json"), codes);
+    mergeManifestPbs(join(absOut, 'manifest.json'), codes);
   } else {
     cleanupPbs(pbsDir, new Set(codes));
-    updateManifest(join(absOut, "manifest.json"), pbsCommit, codes);
+    updateManifest(join(absOut, 'manifest.json'), pbsCommit, codes);
   }
 
-  const scope = bidderFilter
-    ? `for ${[...bidderFilter].join(", ")}`
-    : `under ${pbsDir}`;
+  const scope = bidderFilter ? `for ${[...bidderFilter].join(', ')}` : `under ${pbsDir}`;
   console.log(`wrote ${codes.length} pbs schemas ${scope}`);
   console.log(`prebid-server @ ${pbsCommit}`);
 } finally {
-  if (!args["keep-temp"]) {
+  if (!args['keep-temp']) {
     rmSync(tmpRoot, { recursive: true, force: true });
   } else {
     console.log(`keeping clone at ${tmpRoot}`);
@@ -153,9 +138,9 @@ function readBidderInfoTitle(infoDir, code) {
   const path = join(infoDir, `${code}.yaml`);
   if (!existsSync(path)) return null;
   try {
-    const text = readFileSync(path, "utf8");
+    const text = readFileSync(path, 'utf8');
     // Simple line scan – just need the maintainer.email field.
-    for (const line of text.split("\n")) {
+    for (const line of text.split('\n')) {
       const m = line.match(/^\s*email\s*:\s*(.+)/i);
       if (m) return null; // we only wanted to confirm it's a real bidder
     }
@@ -185,40 +170,28 @@ function readBidderInfoTitle(infoDir, code) {
  * @param {string} commit - the resolved HEAD commit of the cloned repo
  */
 function writePbsSchema(dir, code, raw, _infoTitle, commit) {
-  const upstreamTitle = typeof raw.title === "string" ? raw.title.trim() : "";
+  const upstreamTitle = typeof raw.title === 'string' ? raw.title.trim() : '';
   // Normalise title: strip trailing "(Prebid Server)" variants to re-add consistently.
   const baseTitle =
     upstreamTitle
-      .replace(/\s*\(Prebid\s*Server\)$/i, "")
-      .replace(/\s*Adapter\s*Params?$/i, "")
+      .replace(/\s*\(Prebid\s*Server\)$/i, '')
+      .replace(/\s*Adapter\s*Params?$/i, '')
       .trim() || code;
 
   // Destructure the fields we control so the spread below doesn't re-insert
   // them at the wrong position (preserving key-insertion order in the output).
-  const {
-    $schema: _s,
-    $id: _i,
-    title: _t,
-    description: _d,
-    "x-source-url": _x,
-    ...rest
-  } = raw;
+  const { $schema: _s, $id: _i, title: _t, description: _d, 'x-source-url': _x, ...rest } = raw;
 
   const schema = {
-    $schema: "http://json-schema.org/draft-07/schema#",
+    $schema: 'http://json-schema.org/draft-07/schema#',
     $id: `https://prebid.org/schemas/pbs/${code}.json`,
     title: `${baseTitle} bidder params (Prebid Server)`,
-    description:
-      raw.description ??
-      `Adapter params schema for the Prebid Server "${code}" adapter.`,
-    "x-source-url": `https://github.com/prebid/prebid-server/blob/${commit}/${PBS_PARAMS_DIR}/${code}.json`,
+    description: raw.description ?? `Adapter params schema for the Prebid Server "${code}" adapter.`,
+    'x-source-url': `https://github.com/prebid/prebid-server/blob/${commit}/${PBS_PARAMS_DIR}/${code}.json`,
     ...rest,
   };
 
-  writeFileSync(
-    join(dir, `${code}.json`),
-    JSON.stringify(schema, null, 2) + "\n",
-  );
+  writeFileSync(join(dir, `${code}.json`), JSON.stringify(schema, null, 2) + '\n');
 }
 
 // ── Cleanup ───────────────────────────────────────────────────────────────────
@@ -231,8 +204,8 @@ function writePbsSchema(dir, code, raw, _infoTitle, commit) {
  */
 function cleanupPbs(dir, keep) {
   for (const f of readdirSync(dir)) {
-    if (!f.toLowerCase().endsWith(".json")) continue;
-    const base = f.replace(/\.json$/i, "");
+    if (!f.toLowerCase().endsWith('.json')) continue;
+    const base = f.replace(/\.json$/i, '');
     if (!keep.has(base)) {
       rmSync(join(dir, f));
       console.log(`  removed stale schema pbs/${f}`);
@@ -253,7 +226,7 @@ function mergeManifestPbs(path, codes) {
   /** @type {Record<string,unknown>} */
   let manifest = {};
   try {
-    manifest = JSON.parse(readFileSync(path, "utf8"));
+    manifest = JSON.parse(readFileSync(path, 'utf8'));
   } catch {
     // Start fresh if missing.
   }
@@ -267,11 +240,9 @@ function mergeManifestPbs(path, codes) {
     };
   }
 
-  manifest.bidders = Object.fromEntries(
-    Object.entries(manifest.bidders).sort(([a], [b]) => a.localeCompare(b)),
-  );
+  manifest.bidders = Object.fromEntries(Object.entries(manifest.bidders).sort(([a], [b]) => a.localeCompare(b)));
 
-  writeFileSync(path, JSON.stringify(manifest, null, 2) + "\n");
+  writeFileSync(path, JSON.stringify(manifest, null, 2) + '\n');
 }
 
 /**
@@ -291,11 +262,11 @@ function updateManifest(path, pbsCommit, codes) {
   /** @type {Record<string,unknown>} */
   let manifest;
   try {
-    manifest = JSON.parse(readFileSync(path, "utf8"));
+    manifest = JSON.parse(readFileSync(path, 'utf8'));
   } catch {
     // Bootstrap a minimal manifest if none exists yet.
     manifest = {
-      version: "0.1.0",
+      version: '0.1.0',
       sources: {},
       bidders: {},
     };
@@ -305,10 +276,10 @@ function updateManifest(path, pbsCommit, codes) {
   manifest.sources ??= {};
   manifest.sources.prebid_server ??= {};
   manifest.sources.prebid_server = {
-    repo: "https://github.com/prebid/prebid-server",
+    repo: 'https://github.com/prebid/prebid-server',
     path: PBS_PARAMS_DIR,
     commit: pbsCommit,
-    note: "Updated by tools/sync-prebid-server from static/bidder-params.",
+    note: 'Updated by tools/sync-prebid-server from static/bidder-params.',
   };
 
   manifest.bidders ??= {};
@@ -338,9 +309,7 @@ function updateManifest(path, pbsCommit, codes) {
   }
 
   // Re-sort bidder keys alphabetically for deterministic diffs.
-  manifest.bidders = Object.fromEntries(
-    Object.entries(manifest.bidders).sort(([a], [b]) => a.localeCompare(b)),
-  );
+  manifest.bidders = Object.fromEntries(Object.entries(manifest.bidders).sort(([a], [b]) => a.localeCompare(b)));
 
-  writeFileSync(path, JSON.stringify(manifest, null, 2) + "\n");
+  writeFileSync(path, JSON.stringify(manifest, null, 2) + '\n');
 }
