@@ -1,33 +1,33 @@
-import "./style.css";
-import { loadManifest, getSchema, validate } from "./validator.js";
+import './style.css';
+import { loadManifest, getSchema, validate } from './validator.js';
 
 /* ── State ─────────────────────────────────────────────────────────────── */
 /** @type {Array<{code: string, hasPbjs: boolean, hasPbs: boolean}>} */
 let allBidders = [];
 let currentBidder = null;
-let runtime = "pbjs";
+let runtime = 'pbjs';
 
 /* ── DOM refs ──────────────────────────────────────────────────────────── */
-const bidderList = document.getElementById("bidderList");
-const bidderCount = document.getElementById("bidderCount");
-const searchInput = document.getElementById("searchInput");
-const schemaLabel = document.getElementById("schemaLabel");
-const docLink = document.getElementById("docLink");
-const schemaPre = document.getElementById("schemaPre");
-const paramsEditor = document.getElementById("paramsEditor");
-const jsonStatus = document.getElementById("jsonStatus");
-const resultArea = document.getElementById("resultArea");
-const validateBtn = document.getElementById("validateBtn");
-const clearBtn = document.getElementById("clearBtn");
-const generateBtn = document.getElementById("generateBtn");
-const bidderPanel = document.getElementById("bidderPanel");
-const schemaPanel = document.getElementById("schemaPanel");
-const paramsPanel = document.getElementById("paramsPanel");
-const bidderCurrent = document.getElementById("bidderCurrent");
+const bidderList = document.getElementById('bidderList');
+const bidderCount = document.getElementById('bidderCount');
+const searchInput = document.getElementById('searchInput');
+const schemaLabel = document.getElementById('schemaLabel');
+const docLink = document.getElementById('docLink');
+const schemaPre = document.getElementById('schemaPre');
+const paramsEditor = document.getElementById('paramsEditor');
+const jsonStatus = document.getElementById('jsonStatus');
+const resultArea = document.getElementById('resultArea');
+const validateBtn = document.getElementById('validateBtn');
+const clearBtn = document.getElementById('clearBtn');
+const generateBtn = document.getElementById('generateBtn');
+const bidderPanel = document.getElementById('bidderPanel');
+const schemaPanel = document.getElementById('schemaPanel');
+const paramsPanel = document.getElementById('paramsPanel');
+const bidderCurrent = document.getElementById('bidderCurrent');
 
 /* ── Mobile accordion ──────────────────────────────────────────────────── */
-const mobileQuery = window.matchMedia("(max-width: 768px)");
-const panels = [bidderPanel, schemaPanel, paramsPanel];
+const mobileQuery = window.matchMedia('(max-width: 768px)');
+const _panels = [bidderPanel, schemaPanel, paramsPanel];
 
 function isMobile() {
   return mobileQuery.matches;
@@ -38,19 +38,19 @@ function isMobile() {
  * @param {HTMLElement} target
  */
 function togglePanel(target) {
-  target.classList.toggle("collapsed");
+  target.classList.toggle('collapsed');
 }
 
-document.querySelectorAll(".panel-head").forEach((head) => {
-  head.addEventListener("click", (e) => {
+document.querySelectorAll('.panel-head').forEach((head) => {
+  head.addEventListener('click', (e) => {
     if (!isMobile()) return;
-    if (e.target.closest("a, button")) return;
-    togglePanel(head.closest(".panel"));
+    if (e.target.closest('a, button')) return;
+    togglePanel(head.closest('.panel'));
   });
 });
 
 if (isMobile()) {
-  bidderPanel.classList.add("collapsed");
+  bidderPanel.classList.add('collapsed');
 }
 
 /* ── URL state ─────────────────────────────────────────────────────────── */
@@ -65,7 +65,7 @@ if (isMobile()) {
 function parseHash() {
   const raw = location.hash.slice(1); // strip leading '#'
   if (!raw) return { bidder: null, runtime: null, config: null };
-  const [bidder = null, rt = null, encoded = null] = raw.split("/");
+  const [bidder = null, rt = null, encoded = null] = raw.split('/');
 
   let config = null;
   if (encoded) {
@@ -79,7 +79,7 @@ function parseHash() {
 
   return {
     bidder: bidder || null,
-    runtime: ["pbjs", "pbs"].includes(rt) ? rt : null,
+    runtime: ['pbjs', 'pbs'].includes(rt) ? rt : null,
     config,
   };
 }
@@ -91,18 +91,18 @@ function parseHash() {
  */
 function pushHash() {
   const raw = paramsEditor.value.trim();
-  let encoded = "";
+  let encoded = '';
   if (raw) {
     try {
       JSON.parse(raw); // only encode valid JSON
-      encoded = "/" + btoa(raw);
+      encoded = '/' + btoa(raw);
     } catch {
       /* invalid JSON — omit config from URL */
     }
   }
   const hash = `#${currentBidder}/${runtime}${encoded}`;
   if (location.hash !== hash) {
-    history.replaceState(null, "", hash);
+    history.replaceState(null, '', hash);
   }
 }
 
@@ -116,7 +116,7 @@ async function init() {
       hasPbjs: !!manifest.bidders[code]?.pbjs?.schema,
       hasPbs: !!manifest.bidders[code]?.pbs?.schema,
     }));
-  renderList("");
+  renderList('');
 
   // Restore state from URL hash, falling back to first bidder / default runtime.
   const { bidder: hashBidder, runtime: hashRuntime, config: hashConfig } = parseHash();
@@ -134,7 +134,7 @@ async function init() {
 }
 
 // Handle browser back/forward navigation through hash changes.
-window.addEventListener("hashchange", () => {
+window.addEventListener('hashchange', () => {
   const { bidder, runtime: rt, config } = parseHash();
   if (rt && rt !== runtime) {
     runtime = rt;
@@ -159,8 +159,8 @@ function renderList(filter) {
   bidderList.innerHTML = hits.length
     ? hits
         .map((b) => {
-          const active = b.code === currentBidder ? "active" : "";
-          const dot = b.code === "ci_fixture" ? '<span class="dot"></span>' : "";
+          const active = b.code === currentBidder ? 'active' : '';
+          const dot = b.code === 'ci_fixture' ? '<span class="dot"></span>' : '';
           const pbjsBadge = b.hasPbjs
             ? '<span class="badge badge-pbjs" data-runtime="pbjs">pbjs</span>'
             : '<span class="badge badge-ghost">pbjs</span>';
@@ -169,13 +169,13 @@ function renderList(filter) {
             : '<span class="badge badge-ghost">pbs</span>';
           return `<div class="bidder-item ${active}" data-bidder="${b.code}">${dot}<span class="bidder-name">${b.code}</span><span class="bidder-badges">${pbjsBadge}${pbsBadge}</span></div>`;
         })
-        .join("")
+        .join('')
     : '<div class="list-msg">No matches.</div>';
 }
 
-bidderList.addEventListener("click", (e) => {
-  const badge = e.target.closest(".badge[data-runtime]");
-  const item = e.target.closest(".bidder-item");
+bidderList.addEventListener('click', (e) => {
+  const badge = e.target.closest('.badge[data-runtime]');
+  const item = e.target.closest('.bidder-item');
   if (!item?.dataset.bidder) return;
 
   if (badge) {
@@ -188,7 +188,7 @@ bidderList.addEventListener("click", (e) => {
   selectBidder(item.dataset.bidder);
 });
 
-searchInput.addEventListener("input", () => renderList(searchInput.value));
+searchInput.addEventListener('input', () => renderList(searchInput.value));
 
 /* ── Select bidder ─────────────────────────────────────────────────────── */
 async function selectBidder(bidder, { scroll = false } = {}) {
@@ -198,36 +198,32 @@ async function selectBidder(bidder, { scroll = false } = {}) {
   // other, auto-switch so the user always sees a meaningful schema.
   const meta = allBidders.find((b) => b.code === bidder);
   if (meta) {
-    const hasCurrentRuntime = runtime === "pbjs" ? meta.hasPbjs : meta.hasPbs;
-    const hasOtherRuntime = runtime === "pbjs" ? meta.hasPbs : meta.hasPbjs;
+    const hasCurrentRuntime = runtime === 'pbjs' ? meta.hasPbjs : meta.hasPbs;
+    const hasOtherRuntime = runtime === 'pbjs' ? meta.hasPbs : meta.hasPbjs;
     if (!hasCurrentRuntime && hasOtherRuntime) {
-      runtime = runtime === "pbjs" ? "pbs" : "pbjs";
+      runtime = runtime === 'pbjs' ? 'pbs' : 'pbjs';
     }
   }
 
   pushHash();
 
   bidderList.dataset.runtime = runtime;
-  bidderList
-    .querySelectorAll(".bidder-item")
-    .forEach((el) => el.classList.toggle("active", el.dataset.bidder === bidder));
+  bidderList.querySelectorAll('.bidder-item').forEach((el) => el.classList.toggle('active', el.dataset.bidder === bidder));
   if (scroll) {
-    bidderList
-      .querySelector(".bidder-item.active")
-      ?.scrollIntoView({ behavior: "smooth", block: "center" });
+    bidderList.querySelector('.bidder-item.active')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
 
   bidderCurrent.textContent = `— ${bidder}`;
   if (isMobile()) {
-    bidderPanel.classList.add("collapsed");
-    schemaPanel.classList.remove("collapsed");
+    bidderPanel.classList.add('collapsed');
+    schemaPanel.classList.remove('collapsed');
   }
 
   schemaLabel.textContent = bidder;
   docLink.hidden = true;
   schemaPre.innerHTML = '<span class="muted">Loading…</span>';
   clearResult();
-  paramsEditor.value = "";
+  paramsEditor.value = '';
   updateJsonStatus();
   renderSchemaHints(null);
 
@@ -235,7 +231,7 @@ async function selectBidder(bidder, { scroll = false } = {}) {
     const schema = await getSchema(runtime, bidder);
     schemaPre.innerHTML = highlight(JSON.stringify(schema, null, 2));
     renderSchemaHints(schema);
-    const srcUrl = schema?.["x-source-url"];
+    const srcUrl = schema?.['x-source-url'];
     if (srcUrl) {
       docLink.href = srcUrl;
       docLink.hidden = false;
@@ -246,7 +242,6 @@ async function selectBidder(bidder, { scroll = false } = {}) {
   }
 }
 
-
 /* ── Params editor ─────────────────────────────────────────────────────── */
 
 /** Debounced hash update — fires 600 ms after the user stops typing. */
@@ -256,7 +251,7 @@ function scheduleHashUpdate() {
   _hashDebounce = setTimeout(pushHash, 600);
 }
 
-paramsEditor.addEventListener("input", () => {
+paramsEditor.addEventListener('input', () => {
   updateJsonStatus();
   scheduleHashUpdate();
 });
@@ -264,28 +259,28 @@ paramsEditor.addEventListener("input", () => {
 function updateJsonStatus() {
   const val = paramsEditor.value.trim();
   if (!val) {
-    jsonStatus.textContent = "";
-    jsonStatus.className = "json-status";
+    jsonStatus.textContent = '';
+    jsonStatus.className = 'json-status';
     return;
   }
   try {
     JSON.parse(val);
-    jsonStatus.textContent = "✓ valid JSON";
-    jsonStatus.className = "json-status ok";
+    jsonStatus.textContent = '✓ valid JSON';
+    jsonStatus.className = 'json-status ok';
   } catch {
-    jsonStatus.textContent = "✗ invalid JSON";
-    jsonStatus.className = "json-status err";
+    jsonStatus.textContent = '✗ invalid JSON';
+    jsonStatus.className = 'json-status err';
   }
 }
 
 /* ── Generate sample ───────────────────────────────────────────────────── */
-generateBtn.addEventListener("click", runGenerate);
+generateBtn.addEventListener('click', runGenerate);
 
 async function runGenerate() {
   if (!currentBidder) return;
 
   generateBtn.disabled = true;
-  generateBtn.textContent = "Generating…";
+  generateBtn.textContent = 'Generating…';
 
   try {
     const schema = await getSchema(runtime, currentBidder);
@@ -294,16 +289,16 @@ async function runGenerate() {
     updateJsonStatus();
     pushHash();
     showResult(
-      "info",
-      "◎",
-      "Sample generated",
-      `<span class="desc">Sample params for <strong>${esc(currentBidder)}</strong> <em>${runtime}</em> — edit as needed, then Validate.</span>`
+      'info',
+      '◎',
+      'Sample generated',
+      `<span class="desc">Sample params for <strong>${esc(currentBidder)}</strong> <em>${runtime}</em> — edit as needed, then Validate.</span>`,
     );
   } catch (err) {
-    showResult("error", "✗", "Generate Error", `<span class="desc">${esc(err.message)}</span>`);
+    showResult('error', '✗', 'Generate Error', `<span class="desc">${esc(err.message)}</span>`);
   } finally {
     generateBtn.disabled = false;
-    generateBtn.textContent = "Generate";
+    generateBtn.textContent = 'Generate';
   }
 }
 
@@ -321,7 +316,7 @@ async function runGenerate() {
  * @returns {*} sample value
  */
 function generateSample(schema) {
-  if (!schema || typeof schema !== "object") return null;
+  if (!schema || typeof schema !== 'object') return null;
 
   if (schema.examples?.length) return schema.examples[0];
   if (schema.default !== undefined) return schema.default;
@@ -353,72 +348,67 @@ function generateSample(schema) {
   const type = Array.isArray(merged.type) ? merged.type[0] : merged.type;
 
   switch (type) {
-    case "object": {
+    case 'object': {
       const props = merged.properties ?? {};
       const required = new Set(merged.required ?? []);
       const keys = required.size ? [...required].filter((k) => k in props) : Object.keys(props);
       return Object.fromEntries(keys.map((k) => [k, generateSample(props[k])]));
     }
-    case "array":
+    case 'array':
       return merged.items ? [generateSample(merged.items)] : [];
-    case "integer":
+    case 'integer':
       return merged.minimum ?? 1;
-    case "number":
+    case 'number':
       return merged.minimum ?? 1.0;
-    case "boolean":
+    case 'boolean':
       return true;
-    case "string":
-      if (merged.format === "uri") return "https://example.com";
+    case 'string':
+      if (merged.format === 'uri') return 'https://example.com';
       if (merged.pattern) return merged.pattern;
-      return "example";
+      return 'example';
     default:
       return null;
   }
 }
 
 /* ── Validate ──────────────────────────────────────────────────────────── */
-validateBtn.addEventListener("click", runValidate);
-clearBtn.addEventListener("click", clearResult);
+validateBtn.addEventListener('click', runValidate);
+clearBtn.addEventListener('click', clearResult);
 
 async function runValidate() {
   if (!currentBidder) return;
 
   let params;
   try {
-    params = JSON.parse(paramsEditor.value || "{}");
+    params = JSON.parse(paramsEditor.value || '{}');
   } catch (e) {
-    showResult("error", "✗", "Parse Error", `<span class="desc">${esc(e.message)}</span>`);
+    showResult('error', '✗', 'Parse Error', `<span class="desc">${esc(e.message)}</span>`);
     return;
   }
 
   validateBtn.disabled = true;
-  validateBtn.textContent = "Validating…";
+  validateBtn.textContent = 'Validating…';
 
   try {
     const result = await validate(runtime, currentBidder, params);
 
     if (result.valid) {
       showResult(
-        "valid",
-        "✓",
-        "Valid",
-        `<span class="desc">Params conform to the <strong>${esc(currentBidder)}</strong> <em>${runtime}</em> schema.</span>`
+        'valid',
+        '✓',
+        'Valid',
+        `<span class="desc">Params conform to the <strong>${esc(currentBidder)}</strong> <em>${runtime}</em> schema.</span>`,
       );
     } else {
-      const items = (result.errors ?? []).map((e) => `<li>${esc(e)}</li>`).join("");
+      const items = (result.errors ?? []).map((e) => `<li>${esc(e)}</li>`).join('');
       const n = result.errors?.length ?? 0;
-      showResult(
-        "invalid",
-        "✗",
-        `Invalid — ${n} error${n !== 1 ? "s" : ""}`,
-        `<ul class="error-list">${items}</ul>`
-      );
+      showResult('invalid', '✗', `Invalid — ${n} error${n !== 1 ? 's' : ''}`, `<ul class="error-list">${items}</ul>`);
     }
   } catch (err) {
-    showResult("error", "✗", "Error", `<span class="desc">${esc(err.message)}</span>`);
+    showResult('error', '✗', 'Error', `<span class="desc">${esc(err.message)}</span>`);
   } finally {
     validateBtn.disabled = false;
-    validateBtn.textContent = "Validate";
+    validateBtn.textContent = 'Validate';
   }
 }
 
@@ -435,31 +425,31 @@ function clearResult() {
 }
 
 /* ── Copy schema ───────────────────────────────────────────────────────── */
-document.getElementById("copyBtn").addEventListener("click", () => {
+document.getElementById('copyBtn').addEventListener('click', () => {
   const text = schemaPre.textContent;
   if (!text || !currentBidder) return;
   navigator.clipboard.writeText(text).then(() => {
-    const btn = document.getElementById("copyBtn");
-    btn.textContent = "copied!";
-    btn.classList.add("copied");
+    const btn = document.getElementById('copyBtn');
+    btn.textContent = 'copied!';
+    btn.classList.add('copied');
     setTimeout(() => {
-      btn.textContent = "copy";
-      btn.classList.remove("copied");
+      btn.textContent = 'copy';
+      btn.classList.remove('copied');
     }, 1500);
   });
 });
 
 /* ── Copy params ────────────────────────────────────────────────────────── */
-document.getElementById("copyParamsBtn").addEventListener("click", () => {
+document.getElementById('copyParamsBtn').addEventListener('click', () => {
   const text = paramsEditor.value;
   if (!text) return;
   navigator.clipboard.writeText(text).then(() => {
-    const btn = document.getElementById("copyParamsBtn");
-    btn.textContent = "copied!";
-    btn.classList.add("copied");
+    const btn = document.getElementById('copyParamsBtn');
+    btn.textContent = 'copied!';
+    btn.classList.add('copied');
     setTimeout(() => {
-      btn.textContent = "copy";
-      btn.classList.remove("copied");
+      btn.textContent = 'copy';
+      btn.classList.remove('copied');
     }, 1500);
   });
 });
@@ -473,55 +463,47 @@ document.getElementById("copyParamsBtn").addEventListener("click", () => {
  * @param {object|null} schema
  */
 function renderSchemaHints(schema) {
-  const el = document.getElementById("schemaHints");
+  const el = document.getElementById('schemaHints');
   const rows = [];
 
   if (schema?.allOf?.length) {
     // allOf: ALL branches must be satisfied simultaneously.
     // Common pattern: each branch is {required:[field]} to declare separate required fields.
     const labels = schema.allOf.map(branchLabel);
-    rows.push(
-      hintRow("allOf", "kw-all", "All must match", labels.join('<span class="hint-sep">&amp;</span>'))
-    );
+    rows.push(hintRow('allOf', 'kw-all', 'All must match', labels.join('<span class="hint-sep">&amp;</span>')));
   }
 
   if (schema?.anyOf?.length) {
     // anyOf: AT LEAST ONE branch must be satisfied (inclusive OR).
     const labels = schema.anyOf.map(branchLabel);
-    rows.push(
-      hintRow("anyOf", "kw-any", "At least one of", labels.join('<span class="hint-sep">|</span>'))
-    );
+    rows.push(hintRow('anyOf', 'kw-any', 'At least one of', labels.join('<span class="hint-sep">|</span>')));
   }
 
   if (schema?.oneOf?.length) {
     // oneOf: EXACTLY ONE branch must be satisfied (exclusive OR).
     const labels = schema.oneOf.map(branchLabel);
-    rows.push(
-      hintRow("oneOf", "kw-one", "Exactly one of", labels.join('<span class="hint-sep">|</span>'))
-    );
+    rows.push(hintRow('oneOf', 'kw-one', 'Exactly one of', labels.join('<span class="hint-sep">|</span>')));
   }
 
   if (schema?.if) {
     // if/then/else: conditional constraint — if schema matches `if`, `then` applies; otherwise `else`.
-    const thenDesc = schema.then ? ` → then: ${esc(describeSchema(schema.then))}` : "";
-    const elseDesc = schema.else ? ` → else: ${esc(describeSchema(schema.else))}` : "";
-    rows.push(
-      hintRow("if/then/else", "kw-cond", "Conditional", `if: ${esc(describeSchema(schema.if))}${thenDesc}${elseDesc}`)
-    );
+    const thenDesc = schema.then ? ` → then: ${esc(describeSchema(schema.then))}` : '';
+    const elseDesc = schema.else ? ` → else: ${esc(describeSchema(schema.else))}` : '';
+    rows.push(hintRow('if/then/else', 'kw-cond', 'Conditional', `if: ${esc(describeSchema(schema.if))}${thenDesc}${elseDesc}`));
   }
 
   if (schema?.not) {
     // not: the params must NOT match the given schema.
-    rows.push(hintRow("not", "kw-not", "Must not match", esc(describeSchema(schema.not))));
+    rows.push(hintRow('not', 'kw-not', 'Must not match', esc(describeSchema(schema.not))));
   }
 
   if (!rows.length) {
     el.hidden = true;
-    el.innerHTML = "";
+    el.innerHTML = '';
     return;
   }
 
-  el.innerHTML = rows.join("");
+  el.innerHTML = rows.join('');
   el.hidden = false;
 }
 
@@ -549,49 +531,41 @@ function hintRow(kw, kwClass, label, desc) {
  * @returns {string}
  */
 function branchLabel(branch) {
-  const keys = Object.keys(branch).filter((k) => k !== "$comment");
+  const keys = Object.keys(branch).filter((k) => k !== '$comment');
   if (keys.length === 1 && branch.required?.length) {
-    return `<span class="hint-fields">${branch.required.map(esc).join(", ")}</span>`;
+    return `<span class="hint-fields">${branch.required.map(esc).join(', ')}</span>`;
   }
   if (branch.required?.length) {
-    return `<span class="hint-fields">${branch.required.map(esc).join(", ")}</span><span class="muted"> +more</span>`;
+    return `<span class="hint-fields">${branch.required.map(esc).join(', ')}</span><span class="muted"> +more</span>`;
   }
-  return `<span class="muted">[${keys.join(", ")}]</span>`;
+  return `<span class="muted">[${keys.join(', ')}]</span>`;
 }
 
 /** Summarise a schema node as a terse string (for if/not display). */
 function describeSchema(s) {
-  if (!s || typeof s !== "object") return String(s);
-  if (s.required?.length) return `required: ${s.required.join(", ")}`;
-  if (s.properties) return `properties: ${Object.keys(s.properties).join(", ")}`;
+  if (!s || typeof s !== 'object') return String(s);
+  if (s.required?.length) return `required: ${s.required.join(', ')}`;
+  if (s.properties) return `properties: ${Object.keys(s.properties).join(', ')}`;
   return JSON.stringify(s);
 }
 
 /* ── Helpers ───────────────────────────────────────────────────────────── */
 function esc(str) {
-  return String(str)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
+  return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
 /** Minimal JSON syntax highlighter. */
 function highlight(json) {
   return json
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(
-      /("(\\u[a-fA-F0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+-]?\d+)?)/g,
-      (m) => {
-        if (/^"/.test(m))
-          return /:$/.test(m) ? `<span class="k">${m}</span>` : `<span class="s">${m}</span>`;
-        if (/true|false/.test(m)) return `<span class="b">${m}</span>`;
-        if (/null/.test(m)) return `<span class="n">${m}</span>`;
-        return `<span class="d">${m}</span>`;
-      }
-    );
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/("(\\u[a-fA-F0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+-]?\d+)?)/g, (m) => {
+      if (/^"/.test(m)) return /:$/.test(m) ? `<span class="k">${m}</span>` : `<span class="s">${m}</span>`;
+      if (/true|false/.test(m)) return `<span class="b">${m}</span>`;
+      if (/null/.test(m)) return `<span class="n">${m}</span>`;
+      return `<span class="d">${m}</span>`;
+    });
 }
 
 init();

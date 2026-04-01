@@ -15,7 +15,7 @@ jobs:
 
       - uses: actions/setup-node@v5
         with:
-          node-version: "22"
+          node-version: '22'
           cache: npm
           cache-dependency-path: packages/js/package-lock.json
 
@@ -35,8 +35,8 @@ jobs:
 
       - uses: actions/setup-node@v5
         with:
-          node-version: "22"
-          registry-url: "https://registry.npmjs.org"
+          node-version: '22'
+          registry-url: 'https://registry.npmjs.org'
           cache: npm
           cache-dependency-path: packages/js/package-lock.json
 

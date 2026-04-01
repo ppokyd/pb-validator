@@ -1,17 +1,17 @@
-const fs = require("fs");
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const fs = require('fs');
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = (env, argv) => {
   // Production builds are deployed to GitHub Pages under /pb-validator/.
   // Dev server serves from root so assets resolve without a subpath.
-  const publicPath = argv.mode === "production" ? "/pb-validator/" : "/";
+  const publicPath = argv.mode === 'production' ? '/pb-validator/' : '/';
 
   return {
-    entry: "./src/main.js",
+    entry: './src/main.js',
     output: {
-      path: path.resolve(__dirname, "dist"),
-      filename: "bundle.[contenthash].js",
+      path: path.resolve(__dirname, 'dist'),
+      filename: 'bundle.[contenthash].js',
       clean: true,
       publicPath,
     },
@@ -19,7 +19,7 @@ module.exports = (env, argv) => {
       rules: [
         {
           test: /\.css$/,
-          use: ["style-loader", "css-loader"],
+          use: ['style-loader', 'css-loader'],
         },
       ],
     },
@@ -27,10 +27,7 @@ module.exports = (env, argv) => {
       new HtmlWebpackPlugin({
         // Read the template at config time so html-webpack-plugin receives a plain
         // string, bypassing its loader and avoiding the lodash assignWith conflict.
-        templateContent: fs.readFileSync(
-          path.resolve(__dirname, "src/index.html"),
-          "utf-8"
-        ),
+        templateContent: fs.readFileSync(path.resolve(__dirname, 'src/index.html'), 'utf-8'),
       }),
     ],
     devServer: {

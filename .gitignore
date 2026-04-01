@@ -5,3 +5,7 @@ packages/js/schemas/
 *.log
 .DS_Store
 .vscode/
+
+# Only the root package-lock.json is used (npm workspaces).
+packages/*/package-lock.json
+demo/package-lock.json

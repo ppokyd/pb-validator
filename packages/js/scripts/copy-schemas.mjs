@@ -1,10 +1,10 @@
-import { copyFile, mkdir, readdir, rm } from "node:fs/promises";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
+import { copyFile, mkdir, readdir, rm } from 'node:fs/promises';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-const root = join(dirname(fileURLToPath(import.meta.url)), "..", "..", "..");
-const fromRoot = join(root, "schemas");
-const toRoot = join(dirname(fileURLToPath(import.meta.url)), "..", "schemas");
+const root = join(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
+const fromRoot = join(root, 'schemas');
+const toRoot = join(dirname(fileURLToPath(import.meta.url)), '..', 'schemas');
 
 /** Only ship JSON schema files in the npm package (no Go sources or tests). */
 async function copyJsonDir(sub) {
@@ -15,17 +15,17 @@ async function copyJsonDir(sub) {
   try {
     names = await readdir(fromDir);
   } catch (e) {
-    if (e && e.code === "ENOENT") return;
+    if (e && e.code === 'ENOENT') return;
     throw e;
   }
   for (const name of names) {
-    if (!name.endsWith(".json")) continue;
+    if (!name.endsWith('.json')) continue;
     await copyFile(join(fromDir, name), join(toDir, name));
   }
 }
 
 await rm(toRoot, { recursive: true, force: true });
 await mkdir(toRoot, { recursive: true });
-await copyFile(join(fromRoot, "manifest.json"), join(toRoot, "manifest.json"));
-await copyJsonDir("pbjs");
-await copyJsonDir("pbs");
+await copyFile(join(fromRoot, 'manifest.json'), join(toRoot, 'manifest.json'));
+await copyJsonDir('pbjs');
+await copyJsonDir('pbs');
