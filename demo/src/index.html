@@ -13,17 +13,17 @@
     <div class="logo">
       <div class="logo-mark"></div>
       <span class="logo-name">Prebid Adapter Validator</span>
-      <span class="logo-sep">&mdash;</span>
-      <span class="logo-tag">Demo</span>
+      <span class="logo-sep logo-hide-mobile">&mdash;</span>
+      <span class="logo-tag logo-hide-mobile">Demo</span>
     </div>
     <div class="header-right">
       <a class="pkg-badge" href="https://www.npmjs.com/package/@ppokyd/pb-validator" target="_blank" rel="noopener noreferrer">@ppokyd/pb-validator</a>
     </div>
   </header>
   <div class="layout">
-    <aside class="panel">
+    <aside class="panel" id="bidderPanel">
       <div class="panel-head">
-        <span class="panel-title">Bidders</span>
+        <span class="panel-title">Bidders <span class="bidder-current" id="bidderCurrent"></span></span>
         <span class="panel-count" id="bidderCount">&mdash;</span>
       </div>
       <div class="search-bar">
@@ -33,7 +33,7 @@
         <div class="list-msg">Loading&hellip;</div>
       </div>
     </aside>
-    <section class="panel">
+    <section class="panel" id="schemaPanel">
       <div class="panel-head">
         <span class="panel-title">Schema &mdash; <span id="schemaLabel" class="accent">&mdash;</span><a id="docLink" class="doc-link" href="#" target="_blank" rel="noopener noreferrer" hidden>source ↗</a></span>
         <button class="action-btn" id="copyBtn">copy</button>
@@ -42,7 +42,7 @@
         <pre class="schema-pre" id="schemaPre"><span class="muted">Select a bidder.</span></pre>
       </div>
     </section>
-    <section class="panel">
+    <section class="panel" id="paramsPanel">
       <div class="panel-head">
         <span class="panel-title">Params</span>
         <div class="panel-head-right">

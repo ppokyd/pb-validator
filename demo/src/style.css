@@ -608,6 +608,11 @@ header {
   letter-spacing: 0.04em;
 }
 
+/* ── Mobile accordion (hidden on desktop) ──────────────────────────────── */
+.bidder-current {
+  display: none;
+}
+
 /* ── Scrollbars ────────────────────────────────────────────────────────── */
 ::-webkit-scrollbar {
   width: 5px;
@@ -619,4 +624,113 @@ header {
 ::-webkit-scrollbar-thumb {
   background: var(--border-hi);
   border-radius: 3px;
+}
+
+/* ── Mobile ────────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  body {
+    overflow: auto;
+  }
+  .logo-hide-mobile {
+    display: none;
+  }
+  .logo-name {
+    font-size: 13px;
+  }
+  header {
+    padding: 0 12px;
+    height: 44px;
+  }
+  .pkg-badge {
+    font-size: 11px;
+    padding: 1px 6px;
+  }
+
+  .layout {
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    min-height: auto;
+  }
+
+  .panel {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    overflow: visible;
+    min-height: auto;
+  }
+  .panel:last-child {
+    border-bottom: none;
+  }
+
+  /* ── Panel-head as accordion trigger ── */
+  .panel-head {
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.12s;
+  }
+  .panel-head:hover {
+    background: var(--surface2);
+  }
+  .panel-title::after {
+    content: "\25BC";
+    font-size: 9px;
+    color: var(--faint);
+    margin-left: 6px;
+    display: inline-block;
+    transition: transform 0.2s;
+  }
+  .panel.collapsed .panel-title::after {
+    transform: rotate(-90deg);
+  }
+
+  .bidder-current {
+    display: inline;
+    color: var(--accent);
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: none;
+    letter-spacing: 0;
+    margin-left: 4px;
+  }
+
+  /* ── Collapsed panel: hide everything except the header ── */
+  .panel.collapsed > *:not(.panel-head) {
+    display: none;
+  }
+
+  /* ── Expanded bidder panel constraints ── */
+  #bidderPanel:not(.collapsed) .bidder-list {
+    max-height: 45vh;
+    overflow-y: auto;
+  }
+
+  /* ── Expanded schema panel constraints ── */
+  .schema-body {
+    max-height: 50vh;
+    overflow: auto;
+  }
+  .schema-pre {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  /* ── Expanded params panel constraints ── */
+  .params-body {
+    min-height: 150px;
+  }
+  .params-editor {
+    min-height: 120px;
+    font-size: 12px;
+  }
+  .action-bar {
+    flex-wrap: wrap;
+    padding: 8px 10px;
+    gap: 6px;
+  }
+  .btn-primary,
+  .btn-ghost {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
 }
