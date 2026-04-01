@@ -1,31 +1,118 @@
-# Prebid adapter configuration validator
+# pb-validator
 
-Shared **JSON Schema** bundles under `schemas/` (manifest + per-bidder files), exposed as an npm package:
+Validate Prebid bidder adapter parameters against auto-synced JSON Schemas — for both **Prebid.js** and **Prebid Server**.
 
-- **npm** (`packages/js`): `@ppokyd/pb-validator` — Ajv-based validation; run `npm run build` to copy schemas into the package.
+[![CI](https://github.com/ppokyd/pb-validator/actions/workflows/ci.yml/badge.svg)](https://github.com/ppokyd/pb-validator/actions/workflows/ci.yml)
+[![npm](https://img.shields.io/npm/v/@ppokyd/pb-validator)](https://www.npmjs.com/package/@ppokyd/pb-validator)
+[![License](https://img.shields.io/github/license/ppokyd/pb-validator)](LICENSE)
 
-Sources of truth:
+---
 
-- **Prebid.js bidder docs:** [prebid.github.io `dev-docs/bidders`](https://github.com/prebid/prebid.github.io/tree/master/dev-docs/bidders) — `node tools/sync-prebid-client/index.mjs --out schemas` clones that repo, reads `layout: bidder` pages, writes one `schemas/pbjs/<biddercode>.json` per bidder, and updates `schemas/manifest.json` (pinned commit under `sources.prebid_github_io.commit`). Schemas are permissive objects (`additionalProperties: true`) until Bid Params tables are parsed into constraints.
-- **Prebid Server adapters:** [prebid-server `static/bidder-params`](https://github.com/prebid/prebid-server/tree/master/static/bidder-params) — `node tools/sync-prebid-server/index.mjs --out schemas` clones that repo, copies the ready-made JSON Schema files (one per adapter) to `schemas/pbs/<code>.json`, and merges `pbs` entries into `schemas/manifest.json` (pinned commit under `sources.prebid_server.commit`) while preserving existing `pbjs` entries. Each adapter schema is normalised with a canonical `$id` and `$schema`.
+**[Try the live demo](https://ppokyd.github.io/pb-validator/)** — browse bidders, inspect schemas, and validate params directly in the browser.
 
-## Demo
+---
 
-**[ppokyd.github.io/pb-validator](https://ppokyd.github.io/pb-validator/)** — interactive browser playground: browse bidders, inspect schemas, and validate params against the pbjs or pbs schema without installing anything.
+## Overview
 
-## Quick check
+This project maintains a canonical set of **JSON Schema** files for every registered Prebid bidder adapter, covering two runtimes:
+
+| Runtime | Source | Schema path |
+| ------- | ------ | ----------- |
+| **pbjs** (Prebid.js) | [prebid.github.io `dev-docs/bidders`](https://github.com/prebid/prebid.github.io/tree/master/dev-docs/bidders) | `schemas/pbjs/<bidder>.json` |
+| **pbs** (Prebid Server) | [prebid-server `static/bidder-params`](https://github.com/prebid/prebid-server/tree/master/static/bidder-params) | `schemas/pbs/<bidder>.json` |
+
+Schemas are indexed by a shared `schemas/manifest.json` (with pinned upstream commits) and published as the npm package **`@ppokyd/pb-validator`**.
+
+## Installation
 
 ```bash
-cd packages/js && npm test
+npm install @ppokyd/pb-validator
 ```
 
-## CI
+## Usage
 
-GitHub Actions (`.github/workflows/ci.yml`) runs `npm ci` + `npm test` in `packages/js` on pushes and pull requests to `main` (and pushes to `cursor/**` branches).
+### Node (ESM)
 
-## Scheduled sync
+```js
+import { validate, listBidders } from '@ppokyd/pb-validator';
 
-Two scheduled workflows keep the schemas up to date:
+const bidders = await listBidders('pbs');
+const result = await validate('appnexus', { placement_id: 123 }, 'pbs');
 
-- **`.github/workflows/sync-prebid-docs.yml`** — runs **weekly on Mondays** (and via workflow dispatch): executes `node tools/sync-prebid-client/index.mjs --out schemas` and opens a PR when documentation changes are detected (using [peter-evans/create-pull-request](https://github.com/peter-evans/create-pull-request)).
-- **`.github/workflows/sync-prebid-server.yml`** — runs **weekly on Tuesdays** (and via workflow dispatch): executes `node tools/sync-prebid-server/index.mjs --out schemas` and opens a PR when PBS adapter schema changes are detected. Existing `pbjs` entries in the manifest are preserved.
+if (!result.valid) {
+  console.error(result.errors);
+}
+```
+
+### Browser
+
+The browser entry exposes `createClient`, which accepts a custom schema provider (no `fs` dependency):
+
+```js
+import { createClient } from '@ppokyd/pb-validator/browser';
+
+const client = createClient({
+  async loadManifest() { /* fetch manifest.json */ },
+  async loadSchema(path) { /* fetch individual schema */ },
+});
+
+const result = await client.validate('appnexus', { placement_id: 123 }, 'pbs');
+```
+
+## Project structure
+
+```
+.
+├── packages/js/        # @ppokyd/pb-validator — TypeScript library (Ajv 8)
+├── demo/               # Webpack 5 browser playground (GitHub Pages)
+├── schemas/
+│   ├── manifest.json   # Bidder index with pinned upstream commits
+│   ├── pbjs/           # Prebid.js bidder schemas
+│   └── pbs/            # Prebid Server adapter schemas
+├── tools/
+│   ├── sync-prebid-client/   # Syncs pbjs schemas from prebid.github.io
+│   └── sync-prebid-server/   # Syncs pbs schemas from prebid-server
+└── .github/workflows/  # CI, publish, and scheduled sync workflows
+```
+
+## Development
+
+**Prerequisites:** Node 22+, npm 10+
+
+```bash
+# Install all workspace dependencies
+npm install
+
+# Run the library tests
+npm -w packages/js test
+
+# Start the demo dev server (http://localhost:3000)
+npm -w demo start
+
+# Lint & format
+npm run lint
+npm run format
+```
+
+### Sync schemas locally
+
+```bash
+# Prebid.js bidder docs → schemas/pbjs/
+node tools/sync-prebid-client/index.mjs --out schemas
+
+# Prebid Server adapters → schemas/pbs/
+node tools/sync-prebid-server/index.mjs --out schemas
+```
+
+## CI / CD
+
+| Workflow | Trigger | What it does |
+| -------- | ------- | ------------ |
+| **ci.yml** | Push to `main` / `cursor/**`, PRs to `main` | Lint, format check, test (`packages/js`) |
+| **publish.yml** | GitHub release published | Test, version bump from tag, `npm publish` |
+| **sync-prebid-docs.yml** | Weekly (Mon 06:00 UTC) + manual | Sync pbjs schemas, open PR if changes detected |
+| **sync-prebid-server.yml** | Weekly (Tue 06:00 UTC) + manual | Sync pbs schemas, open PR if changes detected |
+
+## License
+
+[Apache 2.0](LICENSE)
