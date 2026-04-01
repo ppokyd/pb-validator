@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/mediafuse.json",
   "title": "Mediafuse bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Mediafuse adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/mediafuse.json",
   "type": "object",
   "properties": {
     "placement_id": {
@@ -134,6 +135,5 @@
       "invCode",
       "member"
     ]
-  },
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/mediafuse.json"
+  }
 }

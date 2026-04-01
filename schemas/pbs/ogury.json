@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/ogury.json",
   "title": "Ogury bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Ogury adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/ogury.json",
   "type": "object",
   "properties": {
     "assetKey": {
@@ -41,6 +42,5 @@
         ]
       }
     }
-  ],
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/ogury.json"
+  ]
 }

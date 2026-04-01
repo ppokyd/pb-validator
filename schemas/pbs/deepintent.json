@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/deepintent.json",
   "title": "Deepintent bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Deepintent adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/deepintent.json",
   "type": "object",
   "properties": {
     "tagId": {
@@ -12,6 +13,5 @@
   },
   "required": [
     "tagId"
-  ],
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/deepintent.json"
+  ]
 }

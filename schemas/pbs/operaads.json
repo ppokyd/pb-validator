@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/operaads.json",
   "title": "OperaAds bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the OperaAds adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/operaads.json",
   "properties": {
     "placementId": {
       "description": "Placement ID",
@@ -25,6 +26,5 @@
     "endpointId",
     "publisherId"
   ],
-  "type": "object",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/operaads.json"
+  "type": "object"
 }

@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/logicad.json",
   "title": "Logicad bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Logicad adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/logicad.json",
   "type": "object",
   "properties": {
     "tid": {
@@ -12,6 +13,5 @@
   },
   "required": [
     "tid"
-  ],
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/logicad.json"
+  ]
 }

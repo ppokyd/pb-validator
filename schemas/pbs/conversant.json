@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/conversant.json",
   "title": "Epsilon (formerly Conversant) bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Epsilon (Conversant) adapter.",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/conversant.json",
   "type": "object",
   "properties": {
     "site_id": {
@@ -53,6 +54,5 @@
   },
   "required": [
     "site_id"
-  ],
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/conversant.json"
+  ]
 }

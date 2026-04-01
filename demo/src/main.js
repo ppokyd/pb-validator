@@ -12,6 +12,7 @@ const bidderList = document.getElementById("bidderList");
 const bidderCount = document.getElementById("bidderCount");
 const searchInput = document.getElementById("searchInput");
 const schemaLabel = document.getElementById("schemaLabel");
+const docLink = document.getElementById("docLink");
 const schemaPre = document.getElementById("schemaPre");
 const paramsEditor = document.getElementById("paramsEditor");
 const jsonStatus = document.getElementById("jsonStatus");
@@ -89,13 +90,10 @@ async function init() {
   const { bidder: hashBidder, runtime: hashRuntime, config: hashConfig } = parseHash();
   if (hashRuntime) {
     runtime = hashRuntime;
-    document
-      .querySelectorAll(".rt-btn")
-      .forEach((b) => b.classList.toggle("active", b.dataset.runtime === runtime));
   }
   const initial = allBidders.find((b) => b.code === hashBidder) ?? allBidders[0];
   // selectBidder clears the editor, so restore config afterwards.
-  await selectBidder(initial.code);
+  await selectBidder(initial.code, { scroll: true });
   if (hashConfig) {
     paramsEditor.value = hashConfig;
     updateJsonStatus();
@@ -108,9 +106,6 @@ window.addEventListener("hashchange", () => {
   const { bidder, runtime: rt, config } = parseHash();
   if (rt && rt !== runtime) {
     runtime = rt;
-    document
-      .querySelectorAll(".rt-btn")
-      .forEach((b) => b.classList.toggle("active", b.dataset.runtime === runtime));
   }
   // Restore config if it changed (e.g. navigating back to a shared link).
   if (config !== null && config !== paramsEditor.value) {
@@ -124,6 +119,7 @@ window.addEventListener("hashchange", () => {
 
 /* ── Bidder list ───────────────────────────────────────────────────────── */
 function renderList(filter) {
+  bidderList.dataset.runtime = runtime;
   const q = filter.toLowerCase();
   const hits = allBidders.filter((b) => b.code.toLowerCase().includes(q));
   bidderCount.textContent = hits.length;
@@ -154,9 +150,6 @@ bidderList.addEventListener("click", (e) => {
     const newRuntime = badge.dataset.runtime;
     if (newRuntime !== runtime) {
       runtime = newRuntime;
-      document
-        .querySelectorAll(".rt-btn")
-        .forEach((b) => b.classList.toggle("active", b.dataset.runtime === runtime));
     }
   }
 
@@ -166,15 +159,34 @@ bidderList.addEventListener("click", (e) => {
 searchInput.addEventListener("input", () => renderList(searchInput.value));
 
 /* ── Select bidder ─────────────────────────────────────────────────────── */
-async function selectBidder(bidder) {
+async function selectBidder(bidder, { scroll = false } = {}) {
   currentBidder = bidder;
+
+  // If the selected bidder has no schema for the current runtime but does for the
+  // other, auto-switch so the user always sees a meaningful schema.
+  const meta = allBidders.find((b) => b.code === bidder);
+  if (meta) {
+    const hasCurrentRuntime = runtime === "pbjs" ? meta.hasPbjs : meta.hasPbs;
+    const hasOtherRuntime = runtime === "pbjs" ? meta.hasPbs : meta.hasPbjs;
+    if (!hasCurrentRuntime && hasOtherRuntime) {
+      runtime = runtime === "pbjs" ? "pbs" : "pbjs";
+    }
+  }
+
   pushHash();
 
+  bidderList.dataset.runtime = runtime;
   bidderList
     .querySelectorAll(".bidder-item")
     .forEach((el) => el.classList.toggle("active", el.dataset.bidder === bidder));
+  if (scroll) {
+    bidderList
+      .querySelector(".bidder-item.active")
+      ?.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
 
   schemaLabel.textContent = bidder;
+  docLink.hidden = true;
   schemaPre.innerHTML = '<span class="muted">Loading…</span>';
   clearResult();
   paramsEditor.value = "";
@@ -185,22 +197,17 @@ async function selectBidder(bidder) {
     const schema = await getSchema(runtime, bidder);
     schemaPre.innerHTML = highlight(JSON.stringify(schema, null, 2));
     renderSchemaHints(schema);
+    const srcUrl = schema?.["x-source-url"];
+    if (srcUrl) {
+      docLink.href = srcUrl;
+      docLink.hidden = false;
+    }
   } catch (err) {
     schemaPre.innerHTML = `<span class="err">${esc(err.message)}</span>`;
     renderSchemaHints(null);
   }
 }
 
-/* ── Runtime toggle ────────────────────────────────────────────────────── */
-document.getElementById("runtimeToggle").addEventListener("click", (e) => {
-  const btn = e.target.closest(".rt-btn");
-  if (!btn || btn.dataset.runtime === runtime) return;
-  runtime = btn.dataset.runtime;
-  document
-    .querySelectorAll(".rt-btn")
-    .forEach((b) => b.classList.toggle("active", b.dataset.runtime === runtime));
-  if (currentBidder) selectBidder(currentBidder); // also calls pushHash via selectBidder
-});
 
 /* ── Params editor ─────────────────────────────────────────────────────── */
 
@@ -395,6 +402,21 @@ document.getElementById("copyBtn").addEventListener("click", () => {
   if (!text || !currentBidder) return;
   navigator.clipboard.writeText(text).then(() => {
     const btn = document.getElementById("copyBtn");
+    btn.textContent = "copied!";
+    btn.classList.add("copied");
+    setTimeout(() => {
+      btn.textContent = "copy";
+      btn.classList.remove("copied");
+    }, 1500);
+  });
+});
+
+/* ── Copy params ────────────────────────────────────────────────────────── */
+document.getElementById("copyParamsBtn").addEventListener("click", () => {
+  const text = paramsEditor.value;
+  if (!text) return;
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = document.getElementById("copyParamsBtn");
     btn.textContent = "copied!";
     btn.classList.add("copied");
     setTimeout(() => {

@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/mgid.json",
   "title": "Mgid bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Mgid adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/mgid.json",
   "type": "object",
   "properties": {
     "accountId": {
@@ -32,6 +33,5 @@
   },
   "required": [
     "accountId"
-  ],
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/mgid.json"
+  ]
 }

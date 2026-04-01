@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/grid.json",
   "title": "TheMediaGrid bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by TheMediaGrid adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/grid.json",
   "type": "object",
   "properties": {
     "uid": {
@@ -22,6 +23,5 @@
       }
     }
   },
-  "required": [],
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/grid.json"
+  "required": []
 }

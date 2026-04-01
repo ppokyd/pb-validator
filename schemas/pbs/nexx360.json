@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/nexx360.json",
   "title": "Nexx360 bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Nexx360 adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/nexx360.json",
   "type": "object",
   "properties": {
     "tagId": {
@@ -27,6 +28,5 @@
         "placement"
       ]
     }
-  ],
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/nexx360.json"
+  ]
 }

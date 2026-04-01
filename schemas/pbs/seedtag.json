@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/seedtag.json",
   "title": "Seedtag bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Seedtag adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/seedtag.json",
   "type": "object",
   "properties": {
     "adUnitId": {
@@ -13,6 +14,5 @@
   },
   "required": [
     "adUnitId"
-  ],
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/seedtag.json"
+  ]
 }

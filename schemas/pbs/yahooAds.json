@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/yahooAds.json",
   "title": "YahooAds bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the YahooAds adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/yahooAds.json",
   "type": "object",
   "properties": {
     "dcn": {
@@ -19,6 +20,5 @@
   "required": [
     "dcn",
     "pos"
-  ],
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/yahooAds.json"
+  ]
 }

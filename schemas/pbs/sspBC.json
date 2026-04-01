@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/sspBC.json",
   "title": "sspBC Bid bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the sspBC bid adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/sspBC.json",
   "type": "object",
   "properties": {
     "siteid": {
@@ -24,6 +25,5 @@
       "description": "Switch that enables test responses"
     }
   },
-  "required": [],
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/sspBC.json"
+  "required": []
 }

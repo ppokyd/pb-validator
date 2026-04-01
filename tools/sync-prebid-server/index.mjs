@@ -193,23 +193,27 @@ function writePbsSchema(dir, code, raw, _infoTitle, commit) {
       .replace(/\s*Adapter\s*Params?$/i, "")
       .trim() || code;
 
+  // Destructure the fields we control so the spread below doesn't re-insert
+  // them at the wrong position (preserving key-insertion order in the output).
+  const {
+    $schema: _s,
+    $id: _i,
+    title: _t,
+    description: _d,
+    "x-source-url": _x,
+    ...rest
+  } = raw;
+
   const schema = {
-    // Place our canonical fields first, then spread the rest.
     $schema: "http://json-schema.org/draft-07/schema#",
     $id: `https://prebid.org/schemas/pbs/${code}.json`,
     title: `${baseTitle} bidder params (Prebid Server)`,
-    ...raw,
-    // Ensure our $schema and $id win over the upstream values.
     description:
       raw.description ??
       `Adapter params schema for the Prebid Server "${code}" adapter.`,
+    "x-source-url": `https://github.com/prebid/prebid-server/blob/${commit}/${PBS_PARAMS_DIR}/${code}.json`,
+    ...rest,
   };
-
-  // Overwrite after spread so our values take precedence.
-  schema.$schema = "http://json-schema.org/draft-07/schema#";
-  schema.$id = `https://prebid.org/schemas/pbs/${code}.json`;
-  schema.title = `${baseTitle} bidder params (Prebid Server)`;
-  schema["x-source-url"] = `https://github.com/prebid/prebid-server/blob/${commit}/${PBS_PARAMS_DIR}/${code}.json`;
 
   writeFileSync(
     join(dir, `${code}.json`),

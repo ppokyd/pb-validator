@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/adpone.json",
   "title": "Adpone bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the adpone adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/adpone.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -10,6 +11,5 @@
       "description": "Placement Id"
     }
   },
-  "required": [],
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/adpone.json"
+  "required": []
 }

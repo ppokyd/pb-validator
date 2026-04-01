@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/smarthub.json",
   "title": "Attekmi (formerly SmartHub) bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Attekmi (formerly SmartHub) adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/smarthub.json",
   "type": "object",
   "properties": {
     "partnerName": {
@@ -23,6 +24,5 @@
   "required": [
     "seat",
     "token"
-  ],
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/smarthub.json"
+  ]
 }

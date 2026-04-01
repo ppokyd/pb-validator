@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/contxtful.json",
   "title": "Contxtful bidder params (Prebid Server)",
   "description": "A schema which validates params for the Contxtful adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/contxtful.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -19,6 +20,5 @@
   "required": [
     "placementId",
     "customerId"
-  ],
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/contxtful.json"
+  ]
 }

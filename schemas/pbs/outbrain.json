@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/outbrain.json",
   "title": "Outbrain bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Outbrain adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/outbrain.json",
   "type": "object",
   "properties": {
     "publisher": {
@@ -40,6 +41,5 @@
   },
   "required": [
     "publisher"
-  ],
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/outbrain.json"
+  ]
 }

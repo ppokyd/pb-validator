@@ -3,12 +3,12 @@
   "$id": "https://prebid.org/schemas/pbs/kobler.json",
   "title": "Kobler bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Kobler adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/kobler.json",
   "type": "object",
   "properties": {
     "test": {
       "type": "boolean",
       "description": "Whether the request is for testing only. When multiple ad units are submitted together, it is enough to set this parameter on the first one."
     }
-  },
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/kobler.json"
+  }
 }

@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/concert.json",
   "title": "Concert bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Concert adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/concert.json",
   "type": "object",
   "properties": {
     "partnerId": {
@@ -37,6 +38,5 @@
   },
   "required": [
     "partnerId"
-  ],
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/concert.json"
+  ]
 }

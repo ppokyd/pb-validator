@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/bidstack.json",
   "title": "Bidstack bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Bidstack adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/bidstack.json",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -22,6 +23,5 @@
   },
   "required": [
     "publisherId"
-  ],
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/bidstack.json"
+  ]
 }

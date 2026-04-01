@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/adelement.json",
   "title": "Adelement Params bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Adelement",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/adelement.json",
   "type": "object",
   "properties": {
     "supply_id": {
@@ -13,6 +14,5 @@
   },
   "required": [
     "supply_id"
-  ],
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/adelement.json"
+  ]
 }

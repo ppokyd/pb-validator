@@ -3,12 +3,12 @@
   "$id": "https://prebid.org/schemas/pbs/mobkoi.json",
   "title": "Mobkoi bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Mobkoi adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/mobkoi.json",
   "type": "object",
   "properties": {
     "placementId": {
       "type": "string",
       "description": "Placement ID"
     }
-  },
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/mobkoi.json"
+  }
 }

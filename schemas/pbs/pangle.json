@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/pangle.json",
   "title": "Pangle bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Pangle adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/pangle.json",
   "type": "object",
   "properties": {
     "token": {
@@ -31,6 +32,5 @@
     "appid": [
       "placementid"
     ]
-  },
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/pangle.json"
+  }
 }

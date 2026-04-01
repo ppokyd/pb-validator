@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/adxcg.json",
   "title": "Adxcg bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Adxcg adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/adxcg.json",
   "type": "object",
   "properties": {
     "adzoneid": {
@@ -13,6 +14,5 @@
   },
   "required": [
     "adzoneid"
-  ],
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/adxcg.json"
+  ]
 }
