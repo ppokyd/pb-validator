@@ -51,7 +51,6 @@ document.querySelectorAll(".panel-head").forEach((head) => {
 
 if (isMobile()) {
   bidderPanel.classList.add("collapsed");
-  paramsPanel.classList.add("collapsed");
 }
 
 /* ── URL state ─────────────────────────────────────────────────────────── */
