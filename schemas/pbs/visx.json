@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/visx.json",
   "title": "VIS.X bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by VIS.X adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/visx.json",
   "type": "object",
   "properties": {
     "uid": {
@@ -25,6 +26,5 @@
   },
   "required": [
     "uid"
-  ],
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/visx.json"
+  ]
 }

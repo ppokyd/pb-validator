@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/criteo.json",
   "title": "Criteo bidder params (Prebid Server)",
   "description": "The schema to validate Criteo specific params accepted by Criteo adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/criteo.json",
   "type": "object",
   "properties": {
     "zoneid": {
@@ -57,6 +58,5 @@
         "networkId"
       ]
     }
-  ],
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/criteo.json"
+  ]
 }

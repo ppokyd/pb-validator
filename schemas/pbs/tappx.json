@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/tappx.json",
   "title": "Tappx bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Tappx adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/tappx.json",
   "type": "object",
   "properties": {
     "host": {
@@ -43,6 +44,5 @@
   "required": [
     "tappxkey",
     "endpoint"
-  ],
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/tappx.json"
+  ]
 }

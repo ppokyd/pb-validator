@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/showheroes.json",
   "title": "Showheroes bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Showheroes adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/showheroes.json",
   "type": "object",
   "properties": {
     "unitId": {
@@ -13,6 +14,5 @@
   },
   "required": [
     "unitId"
-  ],
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/showheroes.json"
+  ]
 }

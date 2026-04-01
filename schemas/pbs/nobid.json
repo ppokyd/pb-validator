@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/nobid.json",
   "title": "NoBid bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the NoBid adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/nobid.json",
   "type": "object",
   "properties": {
     "siteId": {
@@ -16,6 +17,5 @@
   },
   "required": [
     "siteId"
-  ],
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/nobid.json"
+  ]
 }

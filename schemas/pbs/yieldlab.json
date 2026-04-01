@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/yieldlab.json",
   "title": "Yieldlab bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Yieldlab adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/yieldlab.json",
   "type": "object",
   "properties": {
     "adslotId": {
@@ -25,6 +26,5 @@
   "required": [
     "adslotId",
     "supplyId"
-  ],
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/yieldlab.json"
+  ]
 }

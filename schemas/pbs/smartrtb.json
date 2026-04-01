@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/smartrtb.json",
   "title": "SmartRTB bidder params (Prebid Server)",
   "description": "Required parameters for the SmartRTB server adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/smartrtb.json",
   "type": "object",
   "properties": {
     "pub_id": {
@@ -26,6 +27,5 @@
   },
   "required": [
     "pub_id"
-  ],
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/smartrtb.json"
+  ]
 }

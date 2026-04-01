@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/sharethrough.json",
   "title": "Sharethrough bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Sharethrough adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/sharethrough.json",
   "type": "object",
   "properties": {
     "pkey": {
@@ -28,6 +29,5 @@
   },
   "required": [
     "pkey"
-  ],
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/sharethrough.json"
+  ]
 }

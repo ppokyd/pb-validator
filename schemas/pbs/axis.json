@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/axis.json",
   "title": "Axis bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Axis adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/axis.json",
   "type": "object",
   "properties": {
     "integration": {
@@ -21,6 +22,5 @@
   "required": [
     "integration",
     "token"
-  ],
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/axis.json"
+  ]
 }

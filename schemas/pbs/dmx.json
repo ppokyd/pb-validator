@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/dmx.json",
   "title": "District M DMX bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the DMX adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/dmx.json",
   "type": "object",
   "properties": {
     "memberid": {
@@ -32,6 +33,5 @@
   },
   "required": [
     "memberid"
-  ],
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/dmx.json"
+  ]
 }

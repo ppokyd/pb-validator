@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/rise.json",
   "title": "Rise bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Rise adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/rise.json",
   "type": "object",
   "properties": {
     "org": {
@@ -29,6 +30,5 @@
         "publisher_id"
       ]
     }
-  ],
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/rise.json"
+  ]
 }

@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/ix.json",
   "title": "Ix bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Ix adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/ix.json",
   "type": "object",
   "properties": {
     "siteid": {
@@ -51,6 +52,5 @@
         "siteID"
       ]
     }
-  ],
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/ix.json"
+  ]
 }

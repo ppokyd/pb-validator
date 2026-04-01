@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/globalsun.json",
   "title": "Globalsun bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Globalsun adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/globalsun.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -13,6 +14,5 @@
   },
   "required": [
     "placementId"
-  ],
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/globalsun.json"
+  ]
 }

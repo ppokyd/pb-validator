@@ -17,11 +17,7 @@
       <span class="logo-tag">Demo</span>
     </div>
     <div class="header-right">
-      <span class="pkg-badge">@ppokyd/pb-validator</span>
-      <div class="runtime-toggle" id="runtimeToggle">
-        <button class="rt-btn active" data-runtime="pbjs">pbjs</button>
-        <button class="rt-btn" data-runtime="pbs">pbs</button>
-      </div>
+      <a class="pkg-badge" href="https://www.npmjs.com/package/@ppokyd/pb-validator" target="_blank" rel="noopener noreferrer">@ppokyd/pb-validator</a>
     </div>
   </header>
   <div class="layout">
@@ -39,7 +35,7 @@
     </aside>
     <section class="panel">
       <div class="panel-head">
-        <span class="panel-title">Schema &mdash; <span id="schemaLabel" class="accent">&mdash;</span></span>
+        <span class="panel-title">Schema &mdash; <span id="schemaLabel" class="accent">&mdash;</span><a id="docLink" class="doc-link" href="#" target="_blank" rel="noopener noreferrer" hidden>source ↗</a></span>
         <button class="action-btn" id="copyBtn">copy</button>
       </div>
       <div class="schema-body">
@@ -49,7 +45,10 @@
     <section class="panel">
       <div class="panel-head">
         <span class="panel-title">Params</span>
-        <span class="json-status" id="jsonStatus"></span>
+        <div class="panel-head-right">
+          <span class="json-status" id="jsonStatus"></span>
+          <button class="action-btn" id="copyParamsBtn">copy</button>
+        </div>
       </div>
       <div id="schemaHints" class="schema-hints" hidden></div>
       <div class="params-body">

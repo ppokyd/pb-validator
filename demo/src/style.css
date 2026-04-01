@@ -97,38 +97,9 @@ header {
   border: 1px solid var(--accentDim);
   padding: 2px 8px;
   border-radius: var(--r);
+  text-decoration: none;
 }
 
-/* ── Runtime toggle ────────────────────────────────────────────────────── */
-.runtime-toggle {
-  display: flex;
-  border: 1px solid var(--border-hi);
-  border-radius: var(--r);
-  overflow: hidden;
-}
-.rt-btn {
-  font-family: var(--mono);
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  padding: 4px 12px;
-  background: transparent;
-  color: var(--dim);
-  border: none;
-  cursor: pointer;
-  transition:
-    background 0.1s,
-    color 0.1s;
-}
-.rt-btn:hover {
-  color: var(--text);
-  background: var(--surface2);
-}
-.rt-btn.active {
-  background: var(--accent);
-  color: #000;
-  font-weight: 700;
-}
 
 /* ── Panels ────────────────────────────────────────────────────────────── */
 .panel {
@@ -166,6 +137,28 @@ header {
 .accent {
   color: var(--accent);
   font-weight: 400;
+}
+.doc-link {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--dim);
+  text-decoration: none;
+  border: 1px solid var(--border-hi);
+  border-radius: 2px;
+  padding: 1px 5px;
+  margin-left: 7px;
+  line-height: 1.6;
+  vertical-align: middle;
+  transition: color 0.12s, border-color 0.12s;
+}
+.doc-link:hover {
+  color: var(--text);
+  border-color: var(--dim);
 }
 
 /* ── Search + bidder list ──────────────────────────────────────────────── */
@@ -269,6 +262,10 @@ header {
   color: var(--accent);
   border-left: 2px solid var(--accent);
   padding-left: 12px;
+}
+#bidderList[data-runtime="pbs"] .bidder-item.active {
+  color: var(--blue);
+  border-left-color: var(--blue);
 }
 .dot {
   width: 5px;
@@ -401,11 +398,11 @@ header {
   display: flex;
   flex-direction: column;
   min-height: 0;
-  padding: 12px 14px;
+  padding: 14px 16px;
 }
 .params-editor {
   flex: 1;
-  background: transparent;
+  background: var(--bg);
   border: none;
   outline: none;
   resize: none;
@@ -413,6 +410,7 @@ header {
   font-size: 14px;
   color: var(--text);
   line-height: 1.7;
+  tab-size: 2;
   min-height: 0;
 }
 .params-editor::placeholder {
@@ -482,11 +480,15 @@ header {
   cursor: default;
 }
 
+.panel-head-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 .json-status {
   font-family: var(--mono);
   font-size: 13px;
   color: var(--faint);
-  margin-left: auto;
 }
 .json-status.ok {
   color: var(--green);

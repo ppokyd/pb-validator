@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/pwbid.json",
   "title": "PubWise (pwbid) bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the PubWise (pwbid) adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/pwbid.json",
   "type": "object",
   "properties": {
     "siteId": {
@@ -20,6 +21,5 @@
   },
   "required": [
     "siteId"
-  ],
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/pwbid.json"
+  ]
 }

@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/rediads.json",
   "title": "RediAds bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Rediads adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/rediads.json",
   "type": "object",
   "properties": {
     "account_id": {
@@ -17,6 +18,5 @@
   },
   "required": [
     "account_id"
-  ],
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/rediads.json"
+  ]
 }

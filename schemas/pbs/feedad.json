@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/feedad.json",
   "title": "FeedAd bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the FeedAd adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/feedad.json",
   "properties": {
     "clientToken": {
       "description": "Your FeedAd client token. Check your FeedAd admin panel.",
@@ -62,6 +63,5 @@
     "clientToken",
     "placementId"
   ],
-  "type": "object",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/feedad.json"
+  "type": "object"
 }

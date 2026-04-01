@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/flipp.json",
   "title": "Flipp bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Flipp adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/flipp.json",
   "type": "object",
   "properties": {
     "publisherNameIdentifier": {
@@ -52,6 +53,5 @@
     "publisherNameIdentifier",
     "siteId",
     "creativeType"
-  ],
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/flipp.json"
+  ]
 }

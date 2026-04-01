@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/akcelo.json",
   "title": "Akcelo bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Akcelo adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/akcelo.json",
   "type": "object",
   "properties": {
     "adUnitID": {
@@ -21,6 +22,5 @@
   "required": [
     "adUnitId",
     "siteId"
-  ],
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/akcelo.json"
+  ]
 }

@@ -3,6 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/frvradn.json",
   "title": "FRVR Ad Network bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the FRVR Ad Network adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/frvradn.json",
   "type": "object",
   "properties": {
     "publisher_id": {
@@ -21,6 +22,5 @@
   "required": [
     "publisher_id",
     "ad_unit_id"
-  ],
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/frvradn.json"
+  ]
 }
