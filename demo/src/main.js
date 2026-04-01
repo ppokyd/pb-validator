@@ -20,6 +20,39 @@ const resultArea = document.getElementById("resultArea");
 const validateBtn = document.getElementById("validateBtn");
 const clearBtn = document.getElementById("clearBtn");
 const generateBtn = document.getElementById("generateBtn");
+const bidderPanel = document.getElementById("bidderPanel");
+const schemaPanel = document.getElementById("schemaPanel");
+const paramsPanel = document.getElementById("paramsPanel");
+const bidderCurrent = document.getElementById("bidderCurrent");
+
+/* ── Mobile accordion ──────────────────────────────────────────────────── */
+const mobileQuery = window.matchMedia("(max-width: 768px)");
+const panels = [bidderPanel, schemaPanel, paramsPanel];
+
+function isMobile() {
+  return mobileQuery.matches;
+}
+
+/**
+ * Toggle a panel's collapsed state.
+ * @param {HTMLElement} target
+ */
+function togglePanel(target) {
+  target.classList.toggle("collapsed");
+}
+
+document.querySelectorAll(".panel-head").forEach((head) => {
+  head.addEventListener("click", (e) => {
+    if (!isMobile()) return;
+    if (e.target.closest("a, button")) return;
+    togglePanel(head.closest(".panel"));
+  });
+});
+
+if (isMobile()) {
+  bidderPanel.classList.add("collapsed");
+  paramsPanel.classList.add("collapsed");
+}
 
 /* ── URL state ─────────────────────────────────────────────────────────── */
 
@@ -183,6 +216,12 @@ async function selectBidder(bidder, { scroll = false } = {}) {
     bidderList
       .querySelector(".bidder-item.active")
       ?.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+
+  bidderCurrent.textContent = `— ${bidder}`;
+  if (isMobile()) {
+    bidderPanel.classList.add("collapsed");
+    schemaPanel.classList.remove("collapsed");
   }
 
   schemaLabel.textContent = bidder;
