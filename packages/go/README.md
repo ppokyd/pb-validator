@@ -178,6 +178,22 @@ if errors.Is(err, pbvalidator.ErrUnknownBidder) {
 
 ---
 
+## Releasing
+
+Both the npm and Go packages are published from a single GitHub Release. Create a release with a tag like `v1.0.0` and the **Publish** workflow will:
+
+1. Run tests for both JS and Go
+2. Publish the npm package to the registry
+3. Create the Go sub-module tag (`packages/go/v1.0.0`) and request the [Go module proxy](https://proxy.golang.org) to index it
+
+Consumers can then install the specific version:
+
+```bash
+go get github.com/ppokyd/pb-validator/packages/go@v1.0.0
+```
+
+---
+
 ## Code Generation
 
 The typed structs and embedded schemas are generated from the repo-level `schemas/` directory. Regenerate after upstream schema syncs:

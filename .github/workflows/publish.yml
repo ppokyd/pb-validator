@@ -4,8 +4,11 @@ on:
   release:
     types: [published]
 
+permissions:
+  contents: write
+
 jobs:
-  test:
+  test-js:
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -24,8 +27,25 @@ jobs:
           npm ci
           npm test
 
-  publish:
-    needs: test
+  test-go:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: packages/go/go.mod
+
+      - name: Test
+        run: go test -race -count=1 ./...
+        working-directory: packages/go
+
+      - name: Vet
+        run: go vet ./...
+        working-directory: packages/go
+
+  publish-js:
+    needs: test-js
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -53,3 +73,32 @@ jobs:
         run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+  publish-go:
+    needs: test-go
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: packages/go/go.mod
+
+      - name: Create Go sub-module tag
+        run: |
+          VERSION="${{ github.event.release.tag_name }}"
+          VERSION="${VERSION#v}"
+          GO_TAG="packages/go/v${VERSION}"
+          echo "go_tag=$GO_TAG" >> "$GITHUB_ENV"
+          git tag "$GO_TAG"
+          git push origin "$GO_TAG"
+
+      - name: Request Go module proxy indexing
+        run: |
+          MODULE="github.com/${{ github.repository }}/packages/go"
+          VERSION="${{ github.event.release.tag_name }}"
+          VERSION="${VERSION#v}"
+          echo "Requesting proxy to index ${MODULE}@v${VERSION}"
+          GOPROXY=https://proxy.golang.org go list -m "${MODULE}@v${VERSION}"
