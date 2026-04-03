@@ -21,17 +21,16 @@ This project maintains a canonical set of **JSON Schema** files for every regist
 | **pbjs** (Prebid.js)    | [prebid.github.io `dev-docs/bidders`](https://github.com/prebid/prebid.github.io/tree/master/dev-docs/bidders)   | `schemas/pbjs/<bidder>.json` |
 | **pbs** (Prebid Server) | [prebid-server `static/bidder-params`](https://github.com/prebid/prebid-server/tree/master/static/bidder-params) | `schemas/pbs/<bidder>.json`  |
 
-Schemas are indexed by a shared `schemas/manifest.json` (with pinned upstream commits) and published as the npm package **`@ppokyd/pb-validator`**.
+Schemas are indexed by a shared `schemas/manifest.json` (with pinned upstream commits) and published as language-specific packages:
 
-## Installation
-
-```bash
-npm install @ppokyd/pb-validator
-```
+| Language       | Package                              | Install                                                    |
+| -------------- | ------------------------------------ | ---------------------------------------------------------- |
+| **JavaScript** | `@ppokyd/pb-validator`               | `npm install @ppokyd/pb-validator`                         |
+| **Go**         | `github.com/ppokyd/pb-validator/packages/go` | `go get github.com/ppokyd/pb-validator/packages/go` |
 
 ## Usage
 
-### Node (ESM)
+### JavaScript (Node ESM)
 
 ```js
 import { validate, listBidders } from '@ppokyd/pb-validator';
@@ -44,7 +43,7 @@ if (!result.valid) {
 }
 ```
 
-### Browser
+### JavaScript (Browser)
 
 The browser entry exposes `createClient`, which accepts a custom schema provider (no `fs` dependency):
 
@@ -63,11 +62,30 @@ const client = createClient({
 const result = await client.validate('appnexus', { placement_id: 123 }, 'pbs');
 ```
 
+### Go
+
+```go
+import pbvalidator "github.com/ppokyd/pb-validator/packages/go"
+
+client := pbvalidator.NewClient(pbvalidator.EmbeddedProvider())
+
+bidders, _ := client.ListBidders(ctx)
+result, _ := client.Validate(ctx, pbvalidator.RuntimePbs, "appnexus", map[string]any{
+    "placement_id": 123,
+})
+
+if !result.Valid {
+    fmt.Println(result.Errors)
+}
+```
+
 ## Project structure
 
 ```
 .
-├── packages/js/        # @ppokyd/pb-validator — TypeScript library (Ajv 8)
+├── packages/
+│   ├── js/             # @ppokyd/pb-validator — TypeScript library (Ajv 8)
+│   └── go/             # Go port — same interface, schemas embedded as Go constants
 ├── demo/               # Webpack 5 browser playground (GitHub Pages)
 ├── schemas/
 │   ├── manifest.json   # Bidder index with pinned upstream commits
@@ -81,19 +99,22 @@ const result = await client.validate('appnexus', { placement_id: 123 }, 'pbs');
 
 ## Development
 
-**Prerequisites:** Node 22+, npm 10+
+**Prerequisites:** Node 22+, npm 10+, Go 1.21+
 
 ```bash
-# Install all workspace dependencies
+# Install all workspace dependencies (JS)
 npm install
 
-# Run the library tests
+# Run the JS library tests
 npm -w packages/js test
+
+# Run the Go library tests
+cd packages/go && go test ./...
 
 # Start the demo dev server (http://localhost:3000)
 npm -w demo start
 
-# Lint & format
+# Lint & format (JS)
 npm run lint
 npm run format
 ```
