@@ -39,3 +39,29 @@ jobs:
 
       - name: Build and test library
         run: npm -w packages/js test
+
+  lint-go:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.21'
+
+      - name: Lint Go package
+        uses: golangci/golangci-lint-action@v6
+        with:
+          working-directory: packages/go
+
+  test-go:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.21'
+
+      - name: Test Go package
+        run: cd packages/go && go test ./...

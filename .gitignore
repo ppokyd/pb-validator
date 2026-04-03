@@ -9,3 +9,13 @@ packages/js/schemas/
 # Only the root package-lock.json is used (npm workspaces).
 packages/*/package-lock.json
 demo/package-lock.json
+
+# Go build artifacts (binaries compiled from cmd/)
+packages/go/generate
+packages/go/generate.exe
+packages/go/cmd/generate/generate
+packages/go/cmd/generate/generate.exe
+
+# Note: packages/go/schemas_gen.go and packages/go/bidders/ are generated
+# but intentionally committed — Go modules are fetched from git, so the
+# embedded schema data and typed structs must be present in the repo.
