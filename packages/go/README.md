@@ -49,12 +49,12 @@ func main() {
 
 ## API
 
-| Method                                           | Description                                                 |
-| ------------------------------------------------ | ----------------------------------------------------------- |
-| `Validate(ctx, runtime, bidderCode, params)`     | Validate params for a bidder. Returns `*ValidationResult`.  |
-| `ListBidders(ctx)`                               | Returns a sorted slice of all supported bidder codes.       |
-| `GetSchema(ctx, runtime, bidderCode)`            | Returns the raw JSON Schema for a bidder.                   |
-| `LoadManifest(ctx)`                              | Returns the full manifest (version + bidder index).         |
+| Method                                       | Description                                                |
+| -------------------------------------------- | ---------------------------------------------------------- |
+| `Validate(ctx, runtime, bidderCode, params)` | Validate params for a bidder. Returns `*ValidationResult`. |
+| `ListBidders(ctx)`                           | Returns a sorted slice of all supported bidder codes.      |
+| `GetSchema(ctx, runtime, bidderCode)`        | Returns the raw JSON Schema for a bidder.                  |
+| `LoadManifest(ctx)`                          | Returns the full manifest (version + bidder index).        |
 
 **`runtime`** is either `RuntimePbjs` (`"pbjs"` -- Prebid.js) or `RuntimePbs` (`"pbs"` -- Prebid Server).
 
@@ -116,27 +116,27 @@ Structs give you IDE autocomplete, field documentation, and type safety when con
 
 ### Naming conventions
 
-| Bidder code  | Pbjs struct          | Pbs struct          |
-| ------------ | -------------------- | ------------------- |
-| `appnexus`   | `PbjsAppnexus`      | `PbsAppnexus`      |
-| `rubicon`    | `PbjsRubicon`        | `PbsRubicon`        |
-| `33across`   | `PbjsX33across`      | `PbsX33across`      |
-| `ci_fixture` | `PbjsCiFixture`      | --                  |
+| Bidder code  | Pbjs struct     | Pbs struct     |
+| ------------ | --------------- | -------------- |
+| `appnexus`   | `PbjsAppnexus`  | `PbsAppnexus`  |
+| `rubicon`    | `PbjsRubicon`   | `PbsRubicon`   |
+| `33across`   | `PbjsX33across` | `PbsX33across` |
+| `ci_fixture` | `PbjsCiFixture` | --             |
 
 Bidder codes starting with a digit get an `X` prefix. Snake_case is converted to PascalCase.
 
 ### Type mapping
 
-| JSON Schema type             | Go type           |
-| ---------------------------- | ----------------- |
-| `"string"`                   | `string` / `*string` |
-| `"integer"`                  | `int64` / `*int64`   |
+| JSON Schema type             | Go type                |
+| ---------------------------- | ---------------------- |
+| `"string"`                   | `string` / `*string`   |
+| `"integer"`                  | `int64` / `*int64`     |
 | `"number"`                   | `float64` / `*float64` |
-| `"boolean"`                  | `bool` / `*bool`     |
-| `["integer", "string"]`      | `any`             |
-| `"object"` (with properties) | nested struct     |
-| `"object"` (no properties)   | `map[string]any`  |
-| `"array"`                    | `[]T` or `[]any`  |
+| `"boolean"`                  | `bool` / `*bool`       |
+| `["integer", "string"]`      | `any`                  |
+| `"object"` (with properties) | nested struct          |
+| `"object"` (no properties)   | `map[string]any`       |
+| `"array"`                    | `[]T` or `[]any`       |
 
 Required fields use value types; optional fields use pointer types with `omitempty`.
 
@@ -163,10 +163,10 @@ _, err = client.Validate(ctx, pbvalidator.RuntimePbs, "1accord", map[string]any{
 
 ### Sentinel Errors
 
-| Error               | When                                       |
-| ------------------- | ------------------------------------------ |
-| `ErrUnknownBidder`  | The bidder code is not in the manifest.    |
-| `ErrNoSchema`       | The bidder has no schema for that runtime. |
+| Error              | When                                       |
+| ------------------ | ------------------------------------------ |
+| `ErrUnknownBidder` | The bidder code is not in the manifest.    |
+| `ErrNoSchema`      | The bidder has no schema for that runtime. |
 
 Use `errors.Is` to check:
 
@@ -187,6 +187,7 @@ cd packages/go && go generate ./...
 ```
 
 This runs `cmd/generate`, which reads `../../schemas/` and produces:
+
 1. `schemas_gen.go` — manifest and all schema JSON baked into Go byte-slice constants
 2. `bidders/pbjs.go` and `bidders/pbs.go` — typed Go structs for every bidder
 
