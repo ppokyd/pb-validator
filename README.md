@@ -23,9 +23,9 @@ This project maintains a canonical set of **JSON Schema** files for every regist
 
 Schemas are indexed by a shared `schemas/manifest.json` (with pinned upstream commits) and published as language-specific packages:
 
-| Language       | Package                              | Install                                                    |
-| -------------- | ------------------------------------ | ---------------------------------------------------------- |
-| **JavaScript** | `@ppokyd/pb-validator`               | `npm install @ppokyd/pb-validator`                         |
+| Language       | Package                                      | Install                                             |
+| -------------- | -------------------------------------------- | --------------------------------------------------- |
+| **JavaScript** | `@ppokyd/pb-validator`                       | `npm install @ppokyd/pb-validator`                  |
 | **Go**         | `github.com/ppokyd/pb-validator/packages/go` | `go get github.com/ppokyd/pb-validator/packages/go` |
 
 ## Usage

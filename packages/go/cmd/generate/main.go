@@ -71,7 +71,9 @@ func main() {
 	}
 
 	biddersDir := filepath.Join(goPackageDir, "bidders")
-	os.MkdirAll(biddersDir, 0o755)
+	if err := os.MkdirAll(biddersDir, 0o755); err != nil {
+		log.Fatalf("creating bidders dir: %v", err)
+	}
 
 	log.Println("generating pbjs structs...")
 	if err := generateFile(srcSchemas, biddersDir, "pbjs", mf, func(be bidderEntry) *schemaRef { return be.Pbjs }); err != nil {
@@ -149,7 +151,7 @@ func generateSchemasGo(srcSchemas, goPackageDir string, mf manifest, mfData []by
 	formatted, err := format.Source([]byte(buf.String()))
 	if err != nil {
 		debugPath := filepath.Join(goPackageDir, "schemas_gen_debug.go")
-		os.WriteFile(debugPath, []byte(buf.String()), 0o644)
+		_ = os.WriteFile(debugPath, []byte(buf.String()), 0o644)
 		return fmt.Errorf("formatting schemas_gen.go (debug written to %s): %w", debugPath, err)
 	}
 	return os.WriteFile(filepath.Join(goPackageDir, "schemas_gen.go"), formatted, 0o644)
@@ -199,7 +201,7 @@ func generateFile(schemasRoot, biddersDir, runtime string, mf manifest, getRef f
 	if err != nil {
 		// Write unformatted for debugging
 		debugPath := filepath.Join(biddersDir, runtime+"_debug.go")
-		os.WriteFile(debugPath, []byte(buf.String()), 0o644)
+		_ = os.WriteFile(debugPath, []byte(buf.String()), 0o644)
 		return fmt.Errorf("formatting %s.go (debug written to %s): %w", runtime, debugPath, err)
 	}
 	return os.WriteFile(filepath.Join(biddersDir, runtime+".go"), formatted, 0o644)
