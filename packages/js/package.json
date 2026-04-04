@@ -33,7 +33,8 @@
     "schemas"
   ],
   "scripts": {
-    "build": "tsc && tsc --project tsconfig.cjs.json && node scripts/write-cjs-pkg.mjs && node scripts/copy-schemas.mjs",
+    "generate": "node scripts/generate-types.mjs",
+    "build": "npm run generate && tsc && tsc --project tsconfig.cjs.json && node scripts/write-cjs-pkg.mjs && node scripts/copy-schemas.mjs",
     "test": "npm run build && node --test dist/index.test.js",
     "prepack": "npm run build"
   },

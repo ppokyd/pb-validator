@@ -10,5 +10,5 @@
     "skipLibCheck": true,
     "esModuleInterop": true
   },
-  "include": ["src/core.ts", "src/index-node.ts"]
+  "include": ["src/core.ts", "src/index-node.ts", "src/generated/**/*.ts"]
 }

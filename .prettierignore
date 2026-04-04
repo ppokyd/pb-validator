@@ -2,5 +2,6 @@ dist/
 node_modules/
 schemas/
 packages/js/schemas/
+packages/js/src/generated/
 package-lock.json
 *.log

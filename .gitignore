@@ -2,6 +2,7 @@ node_modules/
 dist/
 packages/js/dist/
 packages/js/schemas/
+packages/js/src/generated/
 *.log
 .DS_Store
 .vscode/

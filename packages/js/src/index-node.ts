@@ -4,6 +4,7 @@ import { createClient } from './core.js';
 
 export type { Runtime, ValidationResult, Manifest, SchemaProvider, ValidatorClient } from './core.js';
 export { createClient } from './core.js';
+export * from './generated/index.js';
 
 /**
  * CJS-compatible Node entry point. Uses the CommonJS __dirname global instead
