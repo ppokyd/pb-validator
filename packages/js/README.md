@@ -21,6 +21,32 @@ npm install @ppokyd/pb-validator
 
 ---
 
+## TypeScript bidder param types
+
+The same JSON Schemas used for validation are compiled into **TypeScript interfaces** at build time (`packages/js/scripts/generate-types.mjs`). They are re-exported from the main package and from `@ppokyd/pb-validator/browser`, so you can type bidder params without a separate import path.
+
+| Export             | Meaning                                                                                                                                                                                                                                                   |
+| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `PbjsBidderParams` | Map from Prebid.js bidder code → params interface for that bidder.                                                                                                                                                                                        |
+| `PbsBidderParams`  | Same for Prebid Server.                                                                                                                                                                                                                                   |
+| `PbjsBidderCode`   | `keyof PbjsBidderParams` — supported Prebid.js bidder codes with a schema.                                                                                                                                                                                |
+| `PbsBidderCode`    | `keyof PbsBidderParams` — supported PBS bidder codes with a schema.                                                                                                                                                                                       |
+| `Pbjs…` / `Pbs…`   | One interface per bidder (e.g. `PbjsAppnexus`, `PbsRubicon`). Names are derived from the bidder code in PascalCase with a `Pbjs` or `Pbs` prefix. If the code starts with a digit, an `X` is inserted after the prefix (e.g. `1accord` → `PbjsX1accord`). |
+
+```ts
+import type { PbjsBidderParams, PbjsAppnexus } from '@ppokyd/pb-validator';
+
+// Concrete bidder interface
+const appnexusParams: PbjsAppnexus = { placementId: 12345 };
+
+// Or index the map when you know the literal bidder code
+const same: PbjsBidderParams['appnexus'] = appnexusParams;
+```
+
+Optional fields in these interfaces follow JSON Schema `required`; nested objects may emit extra helper interfaces. For edge cases where the generator falls back to `unknown`, treat the value as untyped and rely on `validate()` at runtime.
+
+---
+
 ## Node.js
 
 The default export resolves to the Node entry point, which reads schemas from the filesystem using `node:fs`.
@@ -72,6 +98,8 @@ main();
 Destructured require works because the CJS entry exports the same named exports as the ESM build. Top-level `await` is not available in CJS, so wrap calls in an `async` function.
 
 ### TypeScript (ESM)
+
+Generated bidder param interfaces (`PbjsBidderParams`, `PbsBidderParams`, etc.) are described in [TypeScript bidder param types](#typescript-bidder-param-types) above.
 
 ```ts
 import { validate, listBidders, type Runtime, type ValidationResult } from '@ppokyd/pb-validator';
@@ -156,6 +184,8 @@ console.log(result.valid);
 ```
 
 ### TypeScript (browser)
+
+Bidder param types are the same as the main entry; see [TypeScript bidder param types](#typescript-bidder-param-types).
 
 ```ts
 import { createClient, type SchemaProvider, type ValidatorClient } from '@ppokyd/pb-validator/browser';
