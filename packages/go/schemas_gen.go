@@ -9,7 +9,7 @@ var embeddedManifestJSON = []byte([]byte(`{
     "prebid_github_io": {
       "repo": "https://github.com/prebid/prebid.github.io",
       "path": "dev-docs",
-      "commit": "e2559b3ae8367f0a851736c18ee18965806e803a",
+      "commit": "5d8e74c992573445aafdf910ccb6e0b4cbcc8afc",
       "note": "Updated by tools/sync-prebid-client from dev-docs/bidders."
     },
     "prebid_server": {
@@ -43,6 +43,24 @@ var embeddedManifestJSON = []byte([]byte(`{
     "9dotsmedia": {
       "pbjs": {
         "schema": "pbjs/9dotsmedia.json"
+      },
+      "pbs": null
+    },
+    "AdView": {
+      "pbjs": {
+        "schema": "pbjs/AdView.json"
+      },
+      "pbs": null
+    },
+    "CodeFuel": {
+      "pbjs": {
+        "schema": "pbjs/CodeFuel.json"
+      },
+      "pbs": null
+    },
+    "ProgrammaticX": {
+      "pbjs": {
+        "schema": "pbjs/ProgrammaticX.json"
       },
       "pbs": null
     },
@@ -91,6 +109,12 @@ var embeddedManifestJSON = []byte([]byte(`{
     "ad2iction": {
       "pbjs": {
         "schema": "pbjs/ad2iction.json"
+      },
+      "pbs": null
+    },
+    "adWMG": {
+      "pbjs": {
+        "schema": null
       },
       "pbs": null
     },
@@ -560,24 +584,6 @@ var embeddedManifestJSON = []byte([]byte(`{
         "schema": "pbs/adverxo.json"
       }
     },
-    "adview": {
-      "pbjs": null,
-      "pbs": {
-        "schema": "pbs/adview.json"
-      }
-    },
-    "AdView": {
-      "pbjs": {
-        "schema": "pbjs/AdView.json"
-      },
-      "pbs": null
-    },
-    "adWMG": {
-      "pbjs": {
-        "schema": null
-      },
-      "pbs": null
-    },
     "adxcg": {
       "pbjs": {
         "schema": "pbjs/adxcg.json"
@@ -750,6 +756,12 @@ var embeddedManifestJSON = []byte([]byte(`{
       },
       "pbs": null
     },
+    "appStockSSP": {
+      "pbjs": {
+        "schema": "pbjs/appStockSSP.json"
+      },
+      "pbs": null
+    },
     "appier": {
       "pbjs": {
         "schema": "pbjs/appier.json"
@@ -800,12 +812,6 @@ var embeddedManifestJSON = []byte([]byte(`{
       },
       "pbs": null
     },
-    "appStockSSP": {
-      "pbjs": {
-        "schema": "pbjs/appStockSSP.json"
-      },
-      "pbs": null
-    },
     "appush": {
       "pbjs": {
         "schema": null
@@ -852,12 +858,6 @@ var embeddedManifestJSON = []byte([]byte(`{
       },
       "pbs": null
     },
-    "audiencemedia": {
-      "pbjs": {
-        "schema": "pbjs/audiencemedia.json"
-      },
-      "pbs": null
-    },
     "audienceNetwork": {
       "pbjs": {
         "schema": "pbjs/audienceNetwork.json"
@@ -865,6 +865,12 @@ var embeddedManifestJSON = []byte([]byte(`{
       "pbs": {
         "schema": "pbs/audienceNetwork.json"
       }
+    },
+    "audiencemedia": {
+      "pbjs": {
+        "schema": "pbjs/audiencemedia.json"
+      },
+      "pbs": null
     },
     "audiencerun": {
       "pbjs": {
@@ -891,12 +897,6 @@ var embeddedManifestJSON = []byte([]byte(`{
         "schema": "pbjs/avct.json"
       },
       "pbs": null
-    },
-    "avocet": {
-      "pbjs": null,
-      "pbs": {
-        "schema": "pbs/avocet.json"
-      }
     },
     "axis": {
       "pbjs": {
@@ -946,12 +946,6 @@ var embeddedManifestJSON = []byte([]byte(`{
       },
       "pbs": {
         "schema": "pbs/beintoo.json"
-      }
-    },
-    "bematterfull": {
-      "pbjs": null,
-      "pbs": {
-        "schema": "pbs/bematterfull.json"
       }
     },
     "beop": {
@@ -1014,12 +1008,6 @@ var embeddedManifestJSON = []byte([]byte(`{
       },
       "pbs": {
         "schema": "pbs/bidmachine.json"
-      }
-    },
-    "bidmatic": {
-      "pbjs": null,
-      "pbs": {
-        "schema": "pbs/bidmatic.json"
       }
     },
     "bidmyadz": {
@@ -1166,12 +1154,6 @@ var embeddedManifestJSON = []byte([]byte(`{
         "schema": "pbs/boldwin.json"
       }
     },
-    "boldwin_rapid": {
-      "pbjs": null,
-      "pbs": {
-        "schema": "pbs/boldwin_rapid.json"
-      }
-    },
     "brainx": {
       "pbjs": {
         "schema": null
@@ -1301,12 +1283,6 @@ var embeddedManifestJSON = []byte([]byte(`{
       "pbs": {
         "schema": "pbs/clydo.json"
       }
-    },
-    "CodeFuel": {
-      "pbjs": {
-        "schema": "pbjs/CodeFuel.json"
-      },
-      "pbs": null
     },
     "cointraffic": {
       "pbjs": {
@@ -1524,12 +1500,6 @@ var embeddedManifestJSON = []byte([]byte(`{
       },
       "pbs": null
     },
-    "decenterads": {
-      "pbjs": null,
-      "pbs": {
-        "schema": "pbs/decenterads.json"
-      }
-    },
     "deepintent": {
       "pbjs": {
         "schema": "pbjs/deepintent.json"
@@ -1596,15 +1566,15 @@ var embeddedManifestJSON = []byte([]byte(`{
       },
       "pbs": null
     },
-    "digitalcaramel": {
-      "pbjs": {
-        "schema": "pbjs/digitalcaramel.json"
-      },
-      "pbs": null
-    },
     "digitalMatter": {
       "pbjs": {
         "schema": "pbjs/digitalMatter.json"
+      },
+      "pbs": null
+    },
+    "digitalcaramel": {
+      "pbjs": {
+        "schema": "pbjs/digitalcaramel.json"
       },
       "pbs": null
     },
@@ -1814,12 +1784,6 @@ var embeddedManifestJSON = []byte([]byte(`{
         "schema": "pbs/emtv.json"
       }
     },
-    "emx_digital": {
-      "pbjs": null,
-      "pbs": {
-        "schema": "pbs/emx_digital.json"
-      }
-    },
     "engageadx": {
       "pbjs": {
         "schema": "pbjs/engageadx.json"
@@ -1995,12 +1959,6 @@ var embeddedManifestJSON = []byte([]byte(`{
         "schema": "pbjs/freepass.json"
       },
       "pbs": null
-    },
-    "freewheelssp": {
-      "pbjs": null,
-      "pbs": {
-        "schema": "pbs/freewheelssp.json"
-      }
     },
     "frvradn": {
       "pbjs": {
@@ -2382,12 +2340,6 @@ var embeddedManifestJSON = []byte([]byte(`{
         "schema": "pbs/intenze.json"
       }
     },
-    "interactiveoffers": {
-      "pbjs": null,
-      "pbs": {
-        "schema": "pbs/interactiveoffers.json"
-      }
-    },
     "interactiveOffers": {
       "pbjs": {
         "schema": "pbjs/interactiveOffers.json"
@@ -2506,12 +2458,6 @@ var embeddedManifestJSON = []byte([]byte(`{
       },
       "pbs": {
         "schema": "pbs/kargo.json"
-      }
-    },
-    "kayzen": {
-      "pbjs": null,
-      "pbs": {
-        "schema": "pbs/kayzen.json"
       }
     },
     "kidoz": {
@@ -2778,15 +2724,15 @@ var embeddedManifestJSON = []byte([]byte(`{
       },
       "pbs": null
     },
-    "mediabrama": {
-      "pbjs": {
-        "schema": "pbjs/mediabrama.json"
-      },
-      "pbs": null
-    },
     "mediaConsortium": {
       "pbjs": {
         "schema": null
+      },
+      "pbs": null
+    },
+    "mediabrama": {
+      "pbjs": {
+        "schema": "pbjs/mediabrama.json"
       },
       "pbs": null
     },
@@ -3051,12 +2997,6 @@ var embeddedManifestJSON = []byte([]byte(`{
         "schema": "pbjs/newspassid.json"
       },
       "pbs": null
-    },
-    "nextmillennium": {
-      "pbjs": null,
-      "pbs": {
-        "schema": "pbs/nextmillennium.json"
-      }
     },
     "nextMillennium": {
       "pbjs": {
@@ -3480,21 +3420,15 @@ var embeddedManifestJSON = []byte([]byte(`{
       },
       "pbs": null
     },
-    "programmatica": {
-      "pbjs": {
-        "schema": "pbjs/programmatica.json"
-      },
-      "pbs": null
-    },
-    "ProgrammaticX": {
-      "pbjs": {
-        "schema": "pbjs/ProgrammaticX.json"
-      },
-      "pbs": null
-    },
     "progX": {
       "pbjs": {
         "schema": "pbjs/progX.json"
+      },
+      "pbs": null
+    },
+    "programmatica": {
+      "pbjs": {
+        "schema": "pbjs/programmatica.json"
       },
       "pbs": null
     },
@@ -3824,13 +3758,13 @@ var embeddedManifestJSON = []byte([]byte(`{
       },
       "pbs": null
     },
-    "robusta": {
+    "robustApps": {
       "pbjs": {
         "schema": null
       },
       "pbs": null
     },
-    "robustApps": {
+    "robusta": {
       "pbjs": {
         "schema": null
       },
@@ -3847,12 +3781,6 @@ var embeddedManifestJSON = []byte([]byte(`{
         "schema": "pbjs/rockyou.json"
       },
       "pbs": null
-    },
-    "roulax": {
-      "pbjs": null,
-      "pbs": {
-        "schema": "pbs/roulax.json"
-      }
     },
     "roundel": {
       "pbjs": {
@@ -4016,12 +3944,6 @@ var embeddedManifestJSON = []byte([]byte(`{
       },
       "pbs": null
     },
-    "showheroes": {
-      "pbjs": null,
-      "pbs": {
-        "schema": "pbs/showheroes.json"
-      }
-    },
     "showheroes-bs": {
       "pbjs": {
         "schema": "pbjs/showheroes-bs.json"
@@ -4085,12 +4007,6 @@ var embeddedManifestJSON = []byte([]byte(`{
         "schema": "pbjs/smartico.json"
       },
       "pbs": null
-    },
-    "smartrtb": {
-      "pbjs": null,
-      "pbs": {
-        "schema": "pbs/smartrtb.json"
-      }
     },
     "smartx": {
       "pbjs": {
@@ -4190,12 +4106,6 @@ var embeddedManifestJSON = []byte([]byte(`{
         "schema": "pbs/sovrn.json"
       }
     },
-    "sovrnXsp": {
-      "pbjs": null,
-      "pbs": {
-        "schema": "pbs/sovrnXsp.json"
-      }
-    },
     "sparteo": {
       "pbjs": {
         "schema": "pbjs/sparteo.json"
@@ -4222,12 +4132,6 @@ var embeddedManifestJSON = []byte([]byte(`{
       },
       "pbs": null
     },
-    "ssp_geniee": {
-      "pbjs": {
-        "schema": "pbjs/ssp_geniee.json"
-      },
-      "pbs": null
-    },
     "sspBC": {
       "pbjs": {
         "schema": "pbjs/sspBC.json"
@@ -4235,6 +4139,12 @@ var embeddedManifestJSON = []byte([]byte(`{
       "pbs": {
         "schema": "pbs/sspBC.json"
       }
+    },
+    "ssp_geniee": {
+      "pbjs": {
+        "schema": "pbjs/ssp_geniee.json"
+      },
+      "pbs": null
     },
     "stackadapt": {
       "pbjs": {
@@ -4256,15 +4166,15 @@ var embeddedManifestJSON = []byte([]byte(`{
         "schema": "pbs/startio.json"
       }
     },
-    "stellormedia": {
-      "pbjs": {
-        "schema": "pbjs/stellormedia.json"
-      },
-      "pbs": null
-    },
     "stellorMediaRtb": {
       "pbjs": {
         "schema": "pbjs/stellorMediaRtb.json"
+      },
+      "pbs": null
+    },
+    "stellormedia": {
+      "pbjs": {
+        "schema": "pbjs/stellormedia.json"
       },
       "pbs": null
     },
@@ -4410,12 +4320,6 @@ var embeddedManifestJSON = []byte([]byte(`{
       },
       "pbs": null
     },
-    "teqblaze": {
-      "pbjs": null,
-      "pbs": {
-        "schema": "pbs/teqblaze.json"
-      }
-    },
     "teqBlazeSalesAgent": {
       "pbjs": {
         "schema": "pbjs/teqBlazeSalesAgent.json"
@@ -4447,12 +4351,6 @@ var embeddedManifestJSON = []byte([]byte(`{
         "schema": "pbjs/themoneytizer.json"
       },
       "pbs": null
-    },
-    "thetradedesk": {
-      "pbjs": null,
-      "pbs": {
-        "schema": "pbs/thetradedesk.json"
-      }
     },
     "topon": {
       "pbjs": {
@@ -4884,12 +4782,6 @@ var embeddedManifestJSON = []byte([]byte(`{
       },
       "pbs": null
     },
-    "xeworks": {
-      "pbjs": null,
-      "pbs": {
-        "schema": "pbs/xeworks.json"
-      }
-    },
     "xtrmqb": {
       "pbjs": {
         "schema": "pbjs/xtrmqb.json"
@@ -5035,7 +4927,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/1accord.json",
   "title": "1Accord bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (1accord.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/1accord.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/1accord.md",
   "type": "object",
   "properties": {
     "tagId": {
@@ -5054,7 +4946,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/33across.json",
   "title": "33Across bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (33across.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/33across.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/33across.md",
   "type": "object",
   "properties": {
     "zoneId": {
@@ -5099,7 +4991,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/360playvid.json",
   "title": "360PlayVid bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (360playvid.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/360playvid.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/360playvid.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -5117,7 +5009,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/9dotsmedia.json",
   "title": "9Dots Media bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (9dotsmedia.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/9dotsmedia.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/9dotsmedia.md",
   "type": "object",
   "properties": {
     "aid": {
@@ -5136,7 +5028,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/AdView.json",
   "title": "AdView bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adview.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adview.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adview.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -5168,7 +5060,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/CodeFuel.json",
   "title": "CodeFuel bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (codefuel.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/codefuel.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/codefuel.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -5187,7 +5079,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/ProgrammaticX.json",
   "title": "ProgrammaticX bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (programmaticX.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/programmaticX.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/programmaticX.md",
   "type": "object",
   "properties": {
     "cId": {
@@ -5223,7 +5115,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/a1media.json",
   "title": "A1Media bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (a1media.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/a1media.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/a1media.md",
   "type": "object",
   "properties": {
     "bidfloor": {
@@ -5249,7 +5141,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/a4g.json",
   "title": "A4G bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (a4g.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/a4g.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/a4g.md",
   "type": "object",
   "properties": {
     "zoneId": {
@@ -5272,7 +5164,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/aax.json",
   "title": "AAX bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (aax.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/aax.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/aax.md",
   "type": "object",
   "properties": {
     "cid": {
@@ -5308,7 +5200,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/ablida.json",
   "title": "ablida bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (ablida.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/ablida.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/ablida.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -5334,7 +5226,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/ad2iction.json",
   "title": "Ad2iction bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (ad2iction.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/ad2iction.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/ad2iction.md",
   "type": "object",
   "properties": {
     "id": {
@@ -5350,7 +5242,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adagio.json",
   "title": "Adagio bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adagio.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adagio.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adagio.md",
   "type": "object",
   "properties": {
     "organizationId": {
@@ -5394,7 +5286,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adasta.json",
   "title": "Adasta Media bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adasta.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adasta.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adasta.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -5412,7 +5304,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adbite.json",
   "title": "Adbite bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adbite.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adbite.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adbite.md",
   "type": "object",
   "properties": {
     "host": {
@@ -5444,7 +5336,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adblender.json",
   "title": "AdBlender bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adblender.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adblender.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adblender.md",
   "type": "object",
   "properties": {
     "zone": {
@@ -5467,7 +5359,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adbookpsp.json",
   "title": "AdBookPSP bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adbookpsp.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adbookpsp.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adbookpsp.md",
   "type": "object",
   "properties": {
     "orgId": {
@@ -5487,7 +5379,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adbro.json",
   "title": "ADBRO bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adbro.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adbro.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adbro.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -5506,7 +5398,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adbutler.json",
   "title": "AdButler bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adbutler.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adbutler.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adbutler.md",
   "type": "object",
   "properties": {
     "accountID": {
@@ -5558,7 +5450,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adcluster.json",
   "title": "Adcluster bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adcluster.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adcluster.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adcluster.md",
   "type": "object",
   "properties": {
     "unitId": {
@@ -5577,7 +5469,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/addefend.json",
   "title": "AdDefend bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (addefend.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/addefend.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/addefend.md",
   "type": "object",
   "properties": {
     "pageId": {
@@ -5613,7 +5505,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adelement.json",
   "title": "AdElement bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adelement.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adelement.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adelement.md",
   "type": "object",
   "properties": {
     "supply_id": {
@@ -5632,7 +5524,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adf.json",
   "title": "AdformOpenRTB bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adf.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adf.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adf.md",
   "type": "object",
   "properties": {
     "mid": {
@@ -5668,7 +5560,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adfusion.json",
   "title": "AdFusion bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adfusion.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adfusion.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adfusion.md",
   "type": "object",
   "properties": {
     "accountId": {
@@ -5687,7 +5579,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adgeneration.json",
   "title": "Ad Generation bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adgeneration.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adgeneration.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adgeneration.md",
   "type": "object",
   "properties": {
     "id": {
@@ -5706,7 +5598,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adgrid.json",
   "title": "AdGrid bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adgrid.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adgrid.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adgrid.md",
   "type": "object",
   "properties": {
     "domainId": {
@@ -5738,7 +5630,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adhash.json",
   "title": "AdHash bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adhash.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adhash.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adhash.md",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -5774,7 +5666,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adkernel.json",
   "title": "AdKernel bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adkernel.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adkernel.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adkernel.md",
   "type": "object",
   "properties": {
     "host": {
@@ -5806,7 +5698,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adkernelAdn.json",
   "title": "AdKernelAdn bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adkernelAdn.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adkernelAdn.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adkernelAdn.md",
   "type": "object",
   "properties": {
     "host": {
@@ -5829,7 +5721,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adklip.json",
   "title": "Adklip bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adklip.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adklip.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adklip.md",
   "type": "object",
   "properties": {
     "server": {
@@ -5861,7 +5753,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adliveconnect.json",
   "title": "Adliveconnect bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adliveconnect.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adliveconnect.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adliveconnect.md",
   "type": "object",
   "properties": {
     "host": {
@@ -5893,7 +5785,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adliveplus.json",
   "title": "Adlive Plus bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adliveplus.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adliveplus.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adliveplus.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -5928,7 +5820,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adlivetech.json",
   "title": "Adlivetech bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adlivetech.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adlivetech.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adlivetech.md",
   "type": "object",
   "properties": {
     "uid": {
@@ -5955,7 +5847,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/admaru.json",
   "title": "Admaru bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (admaru.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/admaru.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/admaru.md",
   "type": "object",
   "properties": {
     "pub_id": {
@@ -5987,7 +5879,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/admatic.json",
   "title": "AdMatic bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (admatic.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/admatic.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/admatic.md",
   "type": "object",
   "properties": {
     "networkId": {
@@ -6019,7 +5911,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/admaticde.json",
   "title": "AdMatic GMBH bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (admaticde.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/admaticde.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/admaticde.md",
   "type": "object",
   "properties": {
     "networkId": {
@@ -6051,7 +5943,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/admedia.json",
   "title": "admedia bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (admedia.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/admedia.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/admedia.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -6092,7 +5984,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/admixer.json",
   "title": "AdMixer bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (admixer.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/admixer.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/admixer.md",
   "type": "object",
   "properties": {
     "zone": {
@@ -6115,7 +6007,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/admixeradx.json",
   "title": "AdmixerADX bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (admixeradx.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/admixeradx.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/admixeradx.md",
   "type": "object",
   "properties": {
     "zone": {
@@ -6138,7 +6030,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adnimation.json",
   "title": "Adnimation bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adnimation.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adnimation.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adnimation.md",
   "type": "object",
   "properties": {
     "host": {
@@ -6208,7 +6100,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adnow.json",
   "title": "AdNow bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adnow.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adnow.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adnow.md",
   "type": "object",
   "properties": {
     "codeId": {
@@ -6227,7 +6119,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adnuntius.json",
   "title": "Adnuntius bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adnuntius.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adnuntius.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adnuntius.md",
   "type": "object",
   "properties": {
     "auId": {
@@ -6266,7 +6158,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adomega.json",
   "title": "adOmega bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adomega.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adomega.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adomega.md",
   "type": "object",
   "properties": {
     "host": {
@@ -6298,7 +6190,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adot.json",
   "title": "Adot bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adot.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adot.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adot.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -6318,7 +6210,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adpartner.json",
   "title": "AdPartner bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adpartner.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adpartner.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adpartner.md",
   "type": "object",
   "properties": {
     "partnerId": {
@@ -6337,7 +6229,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adplus.json",
   "title": "AdPlus bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adplus.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adplus.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adplus.md",
   "type": "object",
   "properties": {
     "adUnitId": {
@@ -6369,7 +6261,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adpluto.json",
   "title": "AdPluto bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adpluto.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adpluto.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adpluto.md",
   "type": "object",
   "properties": {
     "host": {
@@ -6401,7 +6293,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adpluto_dsp.json",
   "title": "AdPluto DSP bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adpluto_dsp.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adpluto_dsp.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adpluto_dsp.md",
   "type": "object",
   "properties": {
     "host": {
@@ -6424,7 +6316,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adpone.json",
   "title": "Adpone bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adpone.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adpone.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adpone.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -6443,7 +6335,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adport.json",
   "title": "AdPort bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adport.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adport.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adport.md",
   "type": "object",
   "properties": {
     "adUnitId": {
@@ -6475,7 +6367,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adquery.json",
   "title": "Adquery bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adquery.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adquery.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adquery.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -6507,7 +6399,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adrelevantis.json",
   "title": "Adrelevantis bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adrelevantis.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adrelevantis.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adrelevantis.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -6529,7 +6421,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adrino.json",
   "title": "Adrino bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adrino.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adrino.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adrino.md",
   "type": "object",
   "properties": {
     "hash": {
@@ -6548,7 +6440,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adriver.json",
   "title": "adriver bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adriver.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adriver.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adriver.md",
   "type": "object",
   "properties": {
     "siteid": {
@@ -6584,7 +6476,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adrubi.json",
   "title": "AdRubi bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adrubi.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adrubi.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adrubi.md",
   "type": "object",
   "properties": {
     "networkId": {
@@ -6616,7 +6508,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/ads_interactive.json",
   "title": "Ads Interactive bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (ads_interactive.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/ads_interactive.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/ads_interactive.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -6637,7 +6529,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adsinteractive.json",
   "title": "Ads Interactive bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adsinteractive.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adsinteractive.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adsinteractive.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -6658,7 +6550,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adsolut.json",
   "title": "adsolut bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adsolut.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adsolut.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adsolut.md",
   "type": "object",
   "properties": {
     "host": {
@@ -6690,7 +6582,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adsparc.json",
   "title": "AdSparc bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adsparc.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adsparc.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adsparc.md",
   "type": "object",
   "properties": {
     "ai": {
@@ -6722,7 +6614,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adspirit.json",
   "title": "AdSpirit bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adspirit.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adspirit.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adspirit.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -6745,7 +6637,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adstir.json",
   "title": "adstir bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adstir.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adstir.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adstir.md",
   "type": "object",
   "properties": {
     "appId": {
@@ -6777,7 +6669,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adsyield.json",
   "title": "AdsYield bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adsyield.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adsyield.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adsyield.md",
   "type": "object",
   "properties": {
     "host": {
@@ -6847,7 +6739,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adt.json",
   "title": "AdTarget Teknoloji bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adt.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adt.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adt.md",
   "type": "object",
   "properties": {
     "networkId": {
@@ -6879,7 +6771,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adtarget.json",
   "title": "Adtarget bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adtarget.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adtarget.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adtarget.md",
   "type": "object",
   "properties": {
     "aid": {
@@ -6898,7 +6790,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adtelligent.json",
   "title": "Adtelligent bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adtelligent.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adtelligent.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adtelligent.md",
   "type": "object",
   "properties": {
     "aid": {
@@ -6917,7 +6809,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adtg_org.json",
   "title": "AdTarget.org bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adtarget_org.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adtarget_org.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adtarget_org.md",
   "type": "object",
   "properties": {
     "host": {
@@ -6987,7 +6879,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adtonos.json",
   "title": "AdTonos bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adtonos.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adtonos.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adtonos.md",
   "type": "object",
   "properties": {
     "supplierId": {
@@ -7006,7 +6898,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adtrgtme.json",
   "title": "Adtarget.me bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adtrgtme.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adtrgtme.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adtrgtme.md",
   "type": "object",
   "properties": {
     "sid": {
@@ -7029,7 +6921,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adtrue.json",
   "title": "AdTrue bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adtrue.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adtrue.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adtrue.md",
   "type": "object",
   "properties": {
     "zoneId": {
@@ -7065,7 +6957,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/aduptech.json",
   "title": "AdUp Technology bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (aduptech.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/aduptech.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/aduptech.md",
   "type": "object",
   "properties": {
     "publisher": {
@@ -7113,7 +7005,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/advangelists.json",
   "title": "Advangelists bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (advangelists.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/advangelists.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/advangelists.md",
   "type": "object",
   "properties": {
     "placement": {
@@ -7157,7 +7049,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/advertising.json",
   "title": "Advertising.com bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (advertising.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/advertising.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/advertising.md",
   "type": "object",
   "properties": {
     "seatId": {
@@ -7197,7 +7089,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adverxo.json",
   "title": "Adverxo bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adverxo.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adverxo.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adverxo.md",
   "type": "object",
   "properties": {
     "host": {
@@ -7233,7 +7125,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adxcg.json",
   "title": "adxcg bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adxcg.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adxcg.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adxcg.md",
   "type": "object",
   "properties": {
     "adzoneid": {
@@ -7252,7 +7144,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adyoulike.json",
   "title": "Adyoulike bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adyoulike.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adyoulike.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adyoulike.md",
   "type": "object",
   "properties": {
     "placement": {
@@ -7271,7 +7163,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/adzymic.json",
   "title": "Adzymic bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adzymic.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/adzymic.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/adzymic.md",
   "type": "object",
   "properties": {
     "placementID": {
@@ -7290,7 +7182,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/afp.json",
   "title": "AFP bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (afp.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/afp.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/afp.md",
   "type": "object",
   "properties": {
     "placeId": {
@@ -7338,7 +7230,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/afront.json",
   "title": "Afront bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (afront.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/afront.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/afront.md",
   "type": "object",
   "properties": {
     "accountId": {
@@ -7370,7 +7262,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/aja.json",
   "title": "AJA bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (aja.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/aja.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/aja.md",
   "type": "object",
   "properties": {
     "asi": {
@@ -7389,7 +7281,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/akcelo.json",
   "title": "Akcelo bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (akcelo.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/akcelo.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/akcelo.md",
   "type": "object",
   "properties": {
     "siteId": {
@@ -7425,7 +7317,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/alchemyx.json",
   "title": "AlchemyX bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (alchemyx.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/alchemyx.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/alchemyx.md",
   "type": "object",
   "properties": {
     "adUnitId": {
@@ -7457,7 +7349,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/alkimi.json",
   "title": "Alkimi bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (alkimi.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/alkimi.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/alkimi.md",
   "type": "object",
   "properties": {
     "token": {
@@ -7488,7 +7380,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/alliance_gravity.json",
   "title": "Alliance Gravity bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (alliance_gravity.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/alliance_gravity.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/alliance_gravity.md",
   "type": "object",
   "properties": {
     "srid": {
@@ -7507,7 +7399,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/altstar.json",
   "title": "Altstar Media bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (altstar.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/altstar.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/altstar.md",
   "type": "object",
   "properties": {
     "host": {
@@ -7577,7 +7469,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/alvads.json",
   "title": "Alvads bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (alvads.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/alvads.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/alvads.md",
   "type": "object",
   "properties": {
     "publisherUniqueId": {
@@ -7596,7 +7488,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/amx.json",
   "title": "AMX RTB bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (amx-server.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/amx-server.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/amx-server.md",
   "type": "object",
   "properties": {
     "tagId": {
@@ -7623,7 +7515,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/aniview.json",
   "title": "Aniview bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (aniview.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/aniview.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/aniview.md",
   "type": "object",
   "properties": {
     "AV_PUBLISHERID": {
@@ -7655,7 +7547,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/anyclip.json",
   "title": "AnyClip bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (anyclip.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/anyclip.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/anyclip.md",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -7691,7 +7583,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/anzuExchange.json",
   "title": "Anzu Exchange bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (anzuExchange.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/anzuExchange.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/anzuExchange.md",
   "type": "object",
   "properties": {
     "host": {
@@ -7761,7 +7653,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/apacdex.json",
   "title": "Apacdex bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (apacdex.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/apacdex.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/apacdex.md",
   "type": "object",
   "properties": {
     "floorPrice": {
@@ -7781,7 +7673,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/apester.json",
   "title": "Apester bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (apester.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/apester.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/apester.md",
   "type": "object",
   "properties": {
     "host": {
@@ -7842,7 +7734,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/appStockSSP.json",
   "title": "AppStockSSP bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (appStockSSP.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/appStockSSP.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/appStockSSP.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -7863,7 +7755,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/appier.json",
   "title": "Appier bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (appier.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/appier.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/appier.md",
   "type": "object",
   "properties": {
     "hzid": {
@@ -7882,7 +7774,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/appierBR.json",
   "title": "AppierBR bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (appierBR.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/appierBR.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/appierBR.md",
   "type": "object",
   "properties": {
     "hzid": {
@@ -7901,7 +7793,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/appierExt.json",
   "title": "AppierExt bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (appierExt.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/appierExt.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/appierExt.md",
   "type": "object",
   "properties": {
     "hzid": {
@@ -7920,7 +7812,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/appierGM.json",
   "title": "AppierGM bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (appierGM.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/appierGM.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/appierGM.md",
   "type": "object",
   "properties": {
     "hzid": {
@@ -7939,7 +7831,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/applogy.json",
   "title": "Applogy bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (applogy.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/applogy.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/applogy.md",
   "type": "object",
   "properties": {
     "token": {
@@ -7958,7 +7850,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/appmonsta.json",
   "title": "AppMonsta bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (appmonsta.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/appmonsta.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/appmonsta.md",
   "type": "object",
   "properties": {
     "host": {
@@ -7990,7 +7882,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/appnexus.json",
   "title": "AppNexus bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (appnexus.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/appnexus.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/appnexus.md",
   "type": "object",
   "properties": {
     "placement_id": {
@@ -8129,7 +8021,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/appstock.json",
   "title": "Appstock bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (appstock.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/appstock.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/appstock.md",
   "type": "object",
   "properties": {
     "host": {
@@ -8161,7 +8053,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/apstream.json",
   "title": "AP Stream bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (apstream.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/apstream.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/apstream.md",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -8197,7 +8089,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/arteebee.json",
   "title": "Arteebee bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (arteebee.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/arteebee.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/arteebee.md",
   "type": "object",
   "properties": {
     "pub": {
@@ -8233,7 +8125,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/aso.json",
   "title": "Adserver.Online bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (aso.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/aso.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/aso.md",
   "type": "object",
   "properties": {
     "zone": {
@@ -8256,7 +8148,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/astraone.json",
   "title": "AstraOne bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (astraone.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/astraone.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/astraone.md",
   "type": "object",
   "properties": {
     "placeId": {
@@ -8297,7 +8189,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/audienceNetwork.json",
   "title": "Audience Network bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (audienceNetwork.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/audienceNetwork.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/audienceNetwork.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -8320,7 +8212,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/audiencemedia.json",
   "title": "Audience Media bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (audiencemedia.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/audiencemedia.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/audiencemedia.md",
   "type": "object",
   "properties": {
     "host": {
@@ -8352,7 +8244,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/audiencerun.json",
   "title": "AudienceRun bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (audiencerun.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/audiencerun.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/audiencerun.md",
   "type": "object",
   "properties": {
     "zoneId": {
@@ -8375,7 +8267,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/avantisvideo.json",
   "title": "Avantis Video bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (avantisvideo.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/avantisvideo.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/avantisvideo.md",
   "type": "object",
   "properties": {
     "AV_PUBLISHERID": {
@@ -8407,7 +8299,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/avct.json",
   "title": "Avocet bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (avct.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/avct.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/avct.md",
   "type": "object",
   "properties": {
     "placement": {
@@ -8426,7 +8318,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/axis.json",
   "title": "Axis bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (axis.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/axis.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/axis.md",
   "type": "object",
   "properties": {
     "integration": {
@@ -8463,7 +8355,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/axonix.json",
   "title": "Axonix bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (axonix.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/axonix.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/axonix.md",
   "type": "object",
   "properties": {
     "supplyId": {
@@ -8494,7 +8386,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/bcm.json",
   "title": "BCM bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (bcm.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/bcm.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/bcm.md",
   "type": "object",
   "properties": {
     "host": {
@@ -8526,7 +8418,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/bcmint.json",
   "title": "BCM International bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (bcmint.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/bcmint.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/bcmint.md",
   "type": "object",
   "properties": {
     "server": {
@@ -8558,7 +8450,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/beachfront.json",
   "title": "Beachfront bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (beachfront.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/beachfront.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/beachfront.md",
   "type": "object",
   "properties": {
     "appId": {
@@ -8602,7 +8494,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/beintoo.json",
   "title": "Beintoo bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (beintoo.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/beintoo.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/beintoo.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -8620,7 +8512,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/beop.json",
   "title": "BeOp bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (beop.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/beop.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/beop.md",
   "type": "object",
   "properties": {
     "accountId": {
@@ -8663,7 +8555,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/bidbuddy.json",
   "title": "Bidbuddy bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (bidbuddy.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/bidbuddy.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/bidbuddy.md",
   "type": "object",
   "properties": {
     "host": {
@@ -8695,7 +8587,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/biddo.json",
   "title": "Biddo bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (biddo.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/biddo.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/biddo.md",
   "type": "object",
   "properties": {
     "zoneId": {
@@ -8714,7 +8606,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/bidfuse.json",
   "title": "Bidfuse bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (bidfuse.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/bidfuse.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/bidfuse.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -8732,7 +8624,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/bidgency.json",
   "title": "Bidgency Group bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (bidgency.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/bidgency.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/bidgency.md",
   "type": "object",
   "properties": {
     "server": {
@@ -8764,7 +8656,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/bidglass.json",
   "title": "Bid Glass bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (bidglass.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/bidglass.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/bidglass.md",
   "type": "object",
   "properties": {
     "adUnitId": {
@@ -8783,7 +8675,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/bidmachine.json",
   "title": "Bidmachine bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (bidmachine.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/bidmachine.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/bidmachine.md",
   "type": "object",
   "properties": {
     "host": {
@@ -8824,7 +8716,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/bidscube.json",
   "title": "BidsCube bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (bidscube.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/bidscube.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/bidscube.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -8843,7 +8735,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/bidsmind.json",
   "title": "Bidsmind bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (bidsmind.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/bidsmind.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/bidsmind.md",
   "type": "object",
   "properties": {
     "adUnitId": {
@@ -8875,7 +8767,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/bidstack.json",
   "title": "Bidstack bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (bidstack.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/bidstack.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/bidstack.md",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -8902,7 +8794,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/bidsxchange.json",
   "title": "Bidsxchange bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (bidsxchange.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/bidsxchange.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/bidsxchange.md",
   "type": "object",
   "properties": {
     "aid": {
@@ -8921,7 +8813,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/bidtheatre.json",
   "title": "Bidtheatre bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (bidtheatre.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/bidtheatre.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/bidtheatre.md",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -8940,7 +8832,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/big-richmedia.json",
   "title": "BigRichMedia bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (big-richmedia.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/big-richmedia.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/big-richmedia.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -8971,7 +8863,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/bigoad.json",
   "title": "BigoAd bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (bigoad.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/bigoad.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/bigoad.md",
   "type": "object",
   "properties": {
     "sspid": {
@@ -8990,7 +8882,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/bitmedia.json",
   "title": "Bitmedia bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (bitmedia.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/bitmedia.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/bitmedia.md",
   "type": "object",
   "properties": {
     "adUnitID": {
@@ -9013,7 +8905,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/blasto.json",
   "title": "Blasto bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (blasto.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/blasto.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/blasto.md",
   "type": "object",
   "properties": {
     "sourceId": {
@@ -9045,7 +8937,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/bliink.json",
   "title": "BLIINK bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (bliink.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/bliink.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/bliink.md",
   "type": "object",
   "properties": {
     "tagId": {
@@ -9072,7 +8964,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/blis.json",
   "title": "blis bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (blis.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/blis.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/blis.md",
   "type": "object",
   "properties": {
     "spid": {
@@ -9091,7 +8983,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/blockthrough.json",
   "title": "Blockthrough bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (blockthrough.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/blockthrough.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/blockthrough.md",
   "type": "object",
   "properties": {
     "bidderCode": {
@@ -9110,7 +9002,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/blue.json",
   "title": "Blue bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (blue.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/blue.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/blue.md",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -9133,7 +9025,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/bluebillywig.json",
   "title": "Blue Billywig bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (bluebillywig.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/bluebillywig.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/bluebillywig.md",
   "type": "object",
   "properties": {
     "publicationName": {
@@ -9191,7 +9083,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/bluesea.json",
   "title": "Bluesea bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (bluesea.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/bluesea.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/bluesea.md",
   "type": "object",
   "properties": {
     "pubid": {
@@ -9223,7 +9115,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/blutonic.json",
   "title": "bluTonic bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (blutonic.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/blutonic.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/blutonic.md",
   "type": "object",
   "properties": {
     "host": {
@@ -9255,7 +9147,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/bms.json",
   "title": "Blue Media Services LTDA bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (bms.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/bms.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/bms.md",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -9278,7 +9170,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/bmtm.json",
   "title": "Bright Mountain Media bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (bmtm.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/bmtm.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/bmtm.md",
   "type": "object",
   "properties": {
     "placement_id": {
@@ -9297,7 +9189,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/boldwin.json",
   "title": "Boldwin bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (boldwin.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/boldwin.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/boldwin.md",
   "type": "object",
   "properties": {
     "endpointId": {
@@ -9316,7 +9208,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/brainy.json",
   "title": "brainy bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (brainy.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/brainy.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/brainy.md",
   "type": "object",
   "properties": {
     "accountID": {
@@ -9366,7 +9258,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/brave.json",
   "title": "Brave bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (brave.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/brave.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/brave.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -9385,7 +9277,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/brid.json",
   "title": "Brid bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (brid.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/brid.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/brid.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -9404,7 +9296,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/bridgewell.json",
   "title": "Bridgewell bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (bridgewell.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/bridgewell.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/bridgewell.md",
   "type": "object",
   "properties": {
     "ChannelID": {
@@ -9436,7 +9328,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/brightroll.json",
   "title": "Brightroll bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (brightroll.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/brightroll.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/brightroll.md",
   "type": "object",
   "properties": {
     "publisher": {
@@ -9455,7 +9347,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/browsi.json",
   "title": "Browsi bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (browsi.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/browsi.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/browsi.md",
   "type": "object",
   "properties": {
     "pubId": {
@@ -9487,7 +9379,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/bucksense.json",
   "title": "Bucksense bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (bucksense.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/bucksense.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/bucksense.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -9506,7 +9398,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/buzzoola.json",
   "title": "Buzzoola bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (buzzoola.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/buzzoola.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/buzzoola.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -9525,7 +9417,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/c1x.json",
   "title": "C1X bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (c1x.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/c1x.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/c1x.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -9569,7 +9461,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/cadent_aperture_mx.json",
   "title": "Cadent Aperture MX bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (cadent_aperture_mx.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/cadent_aperture_mx.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/cadent_aperture_mx.md",
   "type": "object",
   "properties": {
     "tagid": {
@@ -9592,7 +9484,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/caroda.json",
   "title": "Caroda bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (caroda.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/caroda.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/caroda.md",
   "type": "object",
   "properties": {
     "ctok": {
@@ -9619,7 +9511,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/chtnw.json",
   "title": "chtnw bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (chtnw.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/chtnw.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/chtnw.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -9651,7 +9543,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/cleanmedianet.json",
   "title": "Clean Media Net bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (cleanmedianet.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/cleanmedianet.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/cleanmedianet.md",
   "type": "object",
   "properties": {
     "supplyPartnerId": {
@@ -9708,7 +9600,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/clickforce.json",
   "title": "Clickforce bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (clickforce.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/clickforce.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/clickforce.md",
   "type": "object",
   "properties": {
     "zone": {
@@ -9727,7 +9619,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/clydo.json",
   "title": "Clydo bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (clydo.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/clydo.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/clydo.md",
   "type": "object",
   "properties": {
     "partnerId": {
@@ -9757,7 +9649,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/cointraffic.json",
   "title": "Cointraffic bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (cointraffic.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/cointraffic.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/cointraffic.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -9776,7 +9668,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/coinzilla.json",
   "title": "Coinzilla bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (coinzilla.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/coinzilla.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/coinzilla.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -9795,7 +9687,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/collectcent.json",
   "title": "Collectcent bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (collectcent.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/collectcent.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/collectcent.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -9827,7 +9719,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/compass.json",
   "title": "Compass bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (compass.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/compass.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/compass.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -9845,7 +9737,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/conceptx.json",
   "title": "Conceptx bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (conceptx.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/conceptx.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/conceptx.md",
   "type": "object",
   "properties": {
     "site": {
@@ -9877,7 +9769,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/concert.json",
   "title": "Concert bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (concert.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/concert.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/concert.md",
   "type": "object",
   "properties": {
     "partnerId": {
@@ -9912,7 +9804,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/condorx.json",
   "title": "CondorX bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (condorx.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/condorx.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/condorx.md",
   "type": "object",
   "properties": {
     "widget": {
@@ -9956,7 +9848,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/connatix.json",
   "title": "Connatix bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (connatix.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/connatix.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/connatix.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -9987,7 +9879,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/connectad.json",
   "title": "ConnectAd bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (connectad.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/connectad.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/connectad.md",
   "type": "object",
   "properties": {
     "siteId": {
@@ -10023,7 +9915,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/consumable.json",
   "title": "Consumable bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (consumable-server.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/consumable-server.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/consumable-server.md",
   "type": "object",
   "properties": {
     "siteId": {
@@ -10082,7 +9974,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/contentignite.json",
   "title": "Content Ignite bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (contentignite.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/contentignite.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/contentignite.md",
   "type": "object",
   "properties": {
     "accountID": {
@@ -10126,7 +10018,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/contxtful.json",
   "title": "Contxtful bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (contxtful.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/contxtful.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/contxtful.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -10158,7 +10050,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/converge.json",
   "title": "Converge-Digital bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (converge.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/converge.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/converge.md",
   "type": "object",
   "properties": {
     "host": {
@@ -10190,7 +10082,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/conversant.json",
   "title": "Epsilon bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (epsilon.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/epsilon.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/epsilon.md",
   "type": "object",
   "properties": {
     "site_id": {
@@ -10229,7 +10121,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/copper6ssp.json",
   "title": "Copper6SSP bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (copper6ssp.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/copper6ssp.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/copper6ssp.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -10247,7 +10139,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/cordless.json",
   "title": "Cordless.co bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (cordless.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/cordless.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/cordless.md",
   "type": "object",
   "properties": {
     "server": {
@@ -10279,7 +10171,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/cox.json",
   "title": "Cox bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (cox.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/cox.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/cox.md",
   "type": "object",
   "properties": {
     "size": {
@@ -10320,7 +10212,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/cpmstar.json",
   "title": "CPMStar bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (cpmstar.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/cpmstar.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/cpmstar.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -10339,7 +10231,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/craft.json",
   "title": "craft bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (craft.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/craft.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/craft.md",
   "type": "object",
   "properties": {
     "sitekey": {
@@ -10375,7 +10267,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/criteo.json",
   "title": "Criteo bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (criteo.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/criteo.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/criteo.md",
   "type": "object",
   "properties": {
     "zoneId": {
@@ -10417,7 +10309,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/cwire.json",
   "title": "C-WIRE bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (cwire.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/cwire.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/cwire.md",
   "type": "object",
   "properties": {
     "pageId": {
@@ -10444,7 +10336,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/danmarket.json",
   "title": "DAN Marketplace bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (danmarket.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/danmarket.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/danmarket.md",
   "type": "object",
   "properties": {
     "uid": {
@@ -10467,7 +10359,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/das.json",
   "title": "DAS bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (das.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/das.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/das.md",
   "type": "object",
   "properties": {
     "network": {
@@ -10521,7 +10413,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/datablocks.json",
   "title": "DataBlocks bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (datablocks.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/datablocks.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/datablocks.md",
   "type": "object",
   "properties": {
     "source_id": {
@@ -10552,7 +10444,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/datawrkz.json",
   "title": "Datawrkz bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (datawrkz.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/datawrkz.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/datawrkz.md",
   "type": "object",
   "properties": {
     "site_id": {
@@ -10587,7 +10479,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/deepintent.json",
   "title": "Deepintent bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (deepintent.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/deepintent.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/deepintent.md",
   "type": "object",
   "properties": {
     "tagId": {
@@ -10627,7 +10519,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/definemedia.json",
   "title": "DEFINE MEDIA bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (definemedia.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/definemedia.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/definemedia.md",
   "type": "object",
   "properties": {
     "supplierDomainName": {
@@ -10650,7 +10542,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/defymedia.json",
   "title": "Defy Media bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (defymedia.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/defymedia.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/defymedia.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -10668,7 +10560,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/deltaprojects.json",
   "title": "Delta Projects bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (deltaprojects.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/deltaprojects.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/deltaprojects.md",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -10703,7 +10595,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/denakop.json",
   "title": "Denakop bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (denakop.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/denakop.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/denakop.md",
   "type": "object",
   "properties": {
     "host": {
@@ -10735,7 +10627,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/dexerto.json",
   "title": "Dexerto bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (dexerto.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/dexerto.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/dexerto.md",
   "type": "object",
   "properties": {
     "placement_id": {
@@ -10762,7 +10654,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/dianomi.json",
   "title": "Dianomi bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (dianomi.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/dianomi.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/dianomi.md",
   "type": "object",
   "properties": {
     "smartadId": {
@@ -10785,7 +10677,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/didnadisplay.json",
   "title": "diDNA Display bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (didnadisplay.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/didnadisplay.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/didnadisplay.md",
   "type": "object",
   "properties": {
     "host": {
@@ -10817,7 +10709,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/didnavideo.json",
   "title": "diDNA Video bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (didnavideo.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/didnavideo.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/didnavideo.md",
   "type": "object",
   "properties": {
     "AV_PUBLISHERID": {
@@ -10849,7 +10741,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/digiad.json",
   "title": "Digiad DMCC bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (digiad.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/digiad.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/digiad.md",
   "type": "object",
   "properties": {
     "host": {
@@ -10881,7 +10773,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/digitalMatter.json",
   "title": "Digital Matter bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (digitalmatter.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/digitalmatter.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/digitalmatter.md",
   "type": "object",
   "properties": {
     "accountId": {
@@ -10913,7 +10805,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/digitalcaramel.json",
   "title": "Digitalcaramel bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (digitalcaramel.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/digitalcaramel.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/digitalcaramel.md",
   "type": "object",
   "properties": {
     "siteId": {
@@ -10945,7 +10837,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/discovery.json",
   "title": "DiscoveryDsp bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (discovery.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/discovery.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/discovery.md",
   "type": "object",
   "properties": {
     "token": {
@@ -10990,7 +10882,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/displayioads.json",
   "title": "DisplayioAds bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (displayioads.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/displayioads.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/displayioads.md",
   "type": "object",
   "properties": {
     "host": {
@@ -11022,7 +10914,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/districtm.json",
   "title": "DistrictM bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (districtm.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/districtm.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/districtm.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -11040,7 +10932,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/distroscale.json",
   "title": "DistroScale bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (distroscale.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/distroscale.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/distroscale.md",
   "type": "object",
   "properties": {
     "pubid": {
@@ -11063,7 +10955,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/divreach.json",
   "title": "DivReach bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (divreach.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/divreach.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/divreach.md",
   "type": "object",
   "properties": {
     "accountID": {
@@ -11104,7 +10996,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/djax.json",
   "title": "Djax bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (djax.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/djax.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/djax.md",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -11123,7 +11015,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/dmx.json",
   "title": "DistrictM DMX bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (dmx.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/dmx.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/dmx.md",
   "type": "object",
   "properties": {
     "seller_id": {
@@ -11176,7 +11068,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/doceree.json",
   "title": "Doceree bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (doceree.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/doceree.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/doceree.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -11207,7 +11099,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/docereeadmanager.json",
   "title": "Doceree AdManager bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (docereeadmanager.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/docereeadmanager.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/docereeadmanager.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -11238,7 +11130,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/dpai.json",
   "title": "DPAI bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (dpai.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/dpai.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/dpai.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -11256,7 +11148,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/dsp_geniee.json",
   "title": "Geniee bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (dsp_geniee.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/dsp_geniee.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/dsp_geniee.md",
   "type": "object",
   "properties": {
     "test": {
@@ -11272,7 +11164,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/dspx.json",
   "title": "DSPx bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (dspx.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/dspx.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/dspx.md",
   "type": "object",
   "properties": {
     "placement": {
@@ -11299,7 +11191,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/duration.json",
   "title": "Duration Media bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (duration.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/duration.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/duration.md",
   "type": "object",
   "properties": {
     "siteId": {
@@ -11326,7 +11218,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/dvgroup.json",
   "title": "dvgroup bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (dvgroup.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/dvgroup.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/dvgroup.md",
   "type": "object",
   "properties": {
     "sspId": {
@@ -11345,7 +11237,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/dxkulture.json",
   "title": "DXKulture bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (dxkulture.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/dxkulture.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/dxkulture.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -11385,7 +11277,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/dxtech.json",
   "title": "DXTech bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (dxtech.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/dxtech.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/dxtech.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -11417,7 +11309,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/easybid.json",
   "title": "Easybid bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (easybid.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/easybid.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/easybid.md",
   "type": "object",
   "properties": {
     "tagId": {
@@ -11440,7 +11332,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/ebdr.json",
   "title": "EngageBDR bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (ebdr.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/ebdr.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/ebdr.md",
   "type": "object",
   "properties": {
     "zoneid": {
@@ -11479,7 +11371,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/eclick.json",
   "title": "eClick bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (eclick.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/eclick.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/eclick.md",
   "type": "object",
   "properties": {
     "zid": {
@@ -11498,7 +11390,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/eclickads.json",
   "title": "EClickAds bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (eclickads.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/eclickads.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/eclickads.md",
   "type": "object",
   "properties": {
     "zid": {
@@ -11517,7 +11409,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/edge226.json",
   "title": "Edge226 bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (edge226.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/edge226.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/edge226.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -11535,7 +11427,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/eightPod.json",
   "title": "8pod bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (eightPod.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/eightPod.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/eightPod.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -11558,7 +11450,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/embimedia.json",
   "title": "Embi Media bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (embimedia.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/embimedia.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/embimedia.md",
   "type": "object",
   "properties": {
     "host": {
@@ -11590,7 +11482,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/empower.json",
   "title": "Empower bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (empower.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/empower.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/empower.md",
   "type": "object",
   "properties": {
     "zone": {
@@ -11613,7 +11505,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/emtv.json",
   "title": "EMTV bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (emtv.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/emtv.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/emtv.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -11631,7 +11523,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/engageadx.json",
   "title": "EngageADX bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (engageadx.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/engageadx.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/engageadx.md",
   "type": "object",
   "properties": {
     "host": {
@@ -11663,7 +11555,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/engagebdr.json",
   "title": "Engage BDR bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (engagebdr.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/engagebdr.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/engagebdr.md",
   "type": "object",
   "properties": {
     "sspid": {
@@ -11682,7 +11574,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/engageya.json",
   "title": "Engageya bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (engageya.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/engageya.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/engageya.md",
   "type": "object",
   "properties": {
     "widgetId": {
@@ -11718,7 +11610,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/eplanning.json",
   "title": "E-Planning bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (eplanning.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/eplanning.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/eplanning.md",
   "type": "object",
   "properties": {
     "ci": {
@@ -11757,7 +11649,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/ergadx.json",
   "title": "eRGADX bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (ergadx.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/ergadx.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/ergadx.md",
   "type": "object",
   "properties": {
     "host": {
@@ -11789,7 +11681,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/escalax.json",
   "title": "Escalax bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (escalax.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/escalax.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/escalax.md",
   "type": "object",
   "properties": {
     "sourceId": {
@@ -11821,7 +11713,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/eskimi.json",
   "title": "Eskimi bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (eskimi.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/eskimi.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/eskimi.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -11877,7 +11769,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/evtech.json",
   "title": "Evolution Technologies bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (evtech.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/evtech.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/evtech.md",
   "type": "object",
   "properties": {
     "host": {
@@ -11909,7 +11801,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/exco.json",
   "title": "EX.CO bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (exco.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/exco.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/exco.md",
   "type": "object",
   "properties": {
     "accountId": {
@@ -11950,7 +11842,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/eywamedia.json",
   "title": "Eywamedia bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (eywamedia.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/eywamedia.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/eywamedia.md",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -11999,7 +11891,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/fairtrade.json",
   "title": "FairTrade bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (fairtrade.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/fairtrade.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/fairtrade.md",
   "type": "object",
   "properties": {
     "uid": {
@@ -12022,7 +11914,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/featureforward.json",
   "title": "Feature Forward bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (featureforward.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/featureforward.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/featureforward.md",
   "type": "object",
   "properties": {
     "pubId": {
@@ -12063,7 +11955,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/feedad.json",
   "title": "FeedAd bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (feedad.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/feedad.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/feedad.md",
   "type": "object",
   "properties": {
     "clientToken": {
@@ -12103,7 +11995,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/filmzie.json",
   "title": "Filmzie bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (filmzie.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/filmzie.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/filmzie.md",
   "type": "object",
   "properties": {
     "host": {
@@ -12135,7 +12027,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/finative.json",
   "title": "Finative bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (finative.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/finative.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/finative.md",
   "type": "object",
   "properties": {
     "adUnitId": {
@@ -12158,7 +12050,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/flatads.json",
   "title": "flatads bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (flatads.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/flatads.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/flatads.md",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -12190,7 +12082,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/flipp.json",
   "title": "flipp bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (flipp.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/flipp.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/flipp.md",
   "type": "object",
   "properties": {
     "publisherNameIdentifier": {
@@ -12254,7 +12146,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/floxis.json",
   "title": "Floxis bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (floxis.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/floxis.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/floxis.md",
   "type": "object",
   "properties": {
     "seat": {
@@ -12295,7 +12187,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/fluct.json",
   "title": "fluct bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (fluct.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/fluct.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/fluct.md",
   "type": "object",
   "properties": {
     "tagId": {
@@ -12331,7 +12223,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/freedomadnetwork.json",
   "title": "Freedom Ad Network bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (freedomadnetwork.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/freedomadnetwork.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/freedomadnetwork.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -12350,7 +12242,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/freepass.json",
   "title": "freepass bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (freepass.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/freepass.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/freepass.md",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -12373,7 +12265,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/frvradn.json",
   "title": "FRVR Ad Network bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (frvradn.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/frvradn.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/frvradn.md",
   "type": "object",
   "properties": {
     "publisher_id": {
@@ -12405,7 +12297,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/futureads.json",
   "title": "Mandeta (FutureAds) bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (futureads.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/futureads.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/futureads.md",
   "type": "object",
   "properties": {
     "zone": {
@@ -12428,7 +12320,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/fwssp.json",
   "title": "FWSSP bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (fwssp.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/fwssp.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/fwssp.md",
   "type": "object",
   "properties": {
     "custom_site_section_id": {
@@ -12574,7 +12466,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/fyber.json",
   "title": "Fyber bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (fyber.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/fyber.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/fyber.md",
   "type": "object",
   "properties": {
     "appId": {
@@ -12610,7 +12502,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/gambid.json",
   "title": "Gambid bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (gambid.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/gambid.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/gambid.md",
   "type": "object",
   "properties": {
     "supplyPartnerId": {
@@ -12667,7 +12559,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/gamma.json",
   "title": "Gamma bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (gamma.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/gamma.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/gamma.md",
   "type": "object",
   "properties": {
     "siteId": {
@@ -12699,7 +12591,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/gamoshi.json",
   "title": "Gamoshi bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (gamoshi.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/gamoshi.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/gamoshi.md",
   "type": "object",
   "properties": {
     "supplyPartnerId": {
@@ -12764,7 +12656,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/getintent.json",
   "title": "GetIntent bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (getintent.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/getintent.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/getintent.md",
   "type": "object",
   "properties": {
     "pid": {
@@ -12799,7 +12691,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/giants.json",
   "title": "IPAX bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (giants.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/giants.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/giants.md",
   "type": "object",
   "properties": {
     "zoneId": {
@@ -12818,7 +12710,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/gjirafa.json",
   "title": "Gjirafa bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (gjirafa.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/gjirafa.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/gjirafa.md",
   "type": "object",
   "properties": {
     "propertyId": {
@@ -12848,7 +12740,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/global_sun.json",
   "title": "Global Sun bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (global_sun.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/global_sun.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/global_sun.md",
   "type": "object",
   "properties": {
     "host": {
@@ -12880,7 +12772,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/glomex.json",
   "title": "Glomex bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (glomex.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/glomex.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/glomex.md",
   "type": "object",
   "properties": {
     "integrationId": {
@@ -12903,7 +12795,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/glomexbidder.json",
   "title": "Glomex Bidder bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (glomexbidder.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/glomexbidder.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/glomexbidder.md",
   "type": "object",
   "properties": {
     "tagId": {
@@ -12923,7 +12815,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/gmossp.json",
   "title": "GMOSSP bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (gmossp.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/gmossp.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/gmossp.md",
   "type": "object",
   "properties": {
     "sid": {
@@ -12942,7 +12834,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/gnet.json",
   "title": "Gnet bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (gnet.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/gnet.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/gnet.md",
   "type": "object",
   "properties": {
     "websiteId": {
@@ -12974,7 +12866,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/go2net.json",
   "title": "Go2Net bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (go2net.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/go2net.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/go2net.md",
   "type": "object",
   "properties": {
     "zone": {
@@ -12997,7 +12889,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/goldbach.json",
   "title": "Goldbach bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (goldbach.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/goldbach.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/goldbach.md",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -13033,7 +12925,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/gourmetads.json",
   "title": "Gourmet Ads bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (gourmetads.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/gourmetads.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/gourmetads.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -13051,7 +12943,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/gravite.json",
   "title": "Gravite Marketplace bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (gravite.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/gravite.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/gravite.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -13069,7 +12961,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/greedygame.json",
   "title": "GreedyGame bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (greedygame.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/greedygame.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/greedygame.md",
   "type": "object",
   "properties": {
     "host": {
@@ -13101,7 +12993,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/greenbids.json",
   "title": "Greenbids bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (greenbids.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/greenbids.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/greenbids.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -13120,7 +13012,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/grid.json",
   "title": "TheMediaGrid bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (grid.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/grid.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/grid.md",
   "type": "object",
   "properties": {
     "uid": {
@@ -13143,7 +13035,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/gridNM.json",
   "title": "TheMediaGridNM bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (gridNM.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/gridNM.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/gridNM.md",
   "type": "object",
   "properties": {
     "secid": {
@@ -13196,7 +13088,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/growads.json",
   "title": "GrowAdvertising bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (growads.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/growads.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/growads.md",
   "type": "object",
   "properties": {
     "zoneId": {
@@ -13227,7 +13119,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/gxone.json",
   "title": "GXOne bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (gxone.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/gxone.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/gxone.md",
   "type": "object",
   "properties": {
     "uid": {
@@ -13250,7 +13142,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/h12media.json",
   "title": "H12 Media bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (h12media.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/h12media.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/h12media.md",
   "type": "object",
   "properties": {
     "pubid": {
@@ -13289,7 +13181,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/harrenmedia.json",
   "title": "Harrenmedia bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (harrenmedia.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/harrenmedia.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/harrenmedia.md",
   "type": "object",
   "properties": {
     "adUnitId": {
@@ -13321,7 +13213,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/headbidder.json",
   "title": "Headbidder.net bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (headbidder.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/headbidder.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/headbidder.md",
   "type": "object",
   "properties": {
     "host": {
@@ -13353,7 +13245,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/headbidding.json",
   "title": "Head Bidding bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (headbidding.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/headbidding.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/headbidding.md",
   "type": "object",
   "properties": {
     "zoneId": {
@@ -13383,7 +13275,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/holid.json",
   "title": "Holid bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (holid.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/holid.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/holid.md",
   "type": "object",
   "properties": {
     "adUnitID": {
@@ -13402,7 +13294,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/houseofpubs.json",
   "title": "HouseOfPubs bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (houseofpubs.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/houseofpubs.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/houseofpubs.md",
   "type": "object",
   "properties": {
     "host": {
@@ -13434,7 +13326,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/huaweiads.json",
   "title": "HuaweiAds bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (huaweiads.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/huaweiads.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/huaweiads.md",
   "type": "object",
   "properties": {
     "publisherid": {
@@ -13493,7 +13385,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/huddledmasses.json",
   "title": "Huddled Masses bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (huddledmasses.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/huddledmasses.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/huddledmasses.md",
   "type": "object",
   "properties": {
     "placement_id": {
@@ -13512,7 +13404,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/hybrid.json",
   "title": "Hybrid.ai bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (hybrid.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/hybrid.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/hybrid.md",
   "type": "object",
   "properties": {
     "placeId": {
@@ -13548,7 +13440,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/hypelab.json",
   "title": "HypeLab bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (hypelab.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/hypelab.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/hypelab.md",
   "type": "object",
   "properties": {
     "property_slug": {
@@ -13580,7 +13472,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/hyperbrainz.json",
   "title": "HyperBrainz bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (hyperbrainz.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/hyperbrainz.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/hyperbrainz.md",
   "type": "object",
   "properties": {
     "host": {
@@ -13612,7 +13504,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/ias.json",
   "title": "Integral Ad Science (IAS) bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (ias.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/ias.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/ias.md",
   "type": "object",
   "properties": {
     "pubId": {
@@ -13644,7 +13536,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/iionads.json",
   "title": "iion bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (iionads.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/iionads.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/iionads.md",
   "type": "object",
   "properties": {
     "host": {
@@ -13714,7 +13606,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/illumin.json",
   "title": "Illumin bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (illumin.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/illumin.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/illumin.md",
   "type": "object",
   "properties": {
     "cId": {
@@ -13750,7 +13642,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/imds.json",
   "title": "iMedia Digital Services (iMDS) bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (imds.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/imds.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/imds.md",
   "type": "object",
   "properties": {
     "seatId": {
@@ -13790,7 +13682,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/impactify.json",
   "title": "Impactify bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (impactify.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/impactify.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/impactify.md",
   "type": "object",
   "properties": {
     "appId": {
@@ -13831,7 +13723,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/improvedigital.json",
   "title": "Improve Digital bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (improvedigital.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/improvedigital.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/improvedigital.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -13879,7 +13771,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/incrementx.json",
   "title": "IncrementX bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (incrementx.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/incrementx.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/incrementx.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -13898,7 +13790,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/indicue.json",
   "title": "Indicue bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (indiecue.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/indiecue.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/indiecue.md",
   "type": "object",
   "properties": {
     "aid": {
@@ -13917,7 +13809,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/infinety.json",
   "title": "Infinety bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (infinety.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/infinety.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/infinety.md",
   "type": "object",
   "properties": {
     "host": {
@@ -13949,7 +13841,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/infytv.json",
   "title": "InfyTV bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (infytv.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/infytv.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/infytv.md",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -13972,7 +13864,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/inmar.json",
   "title": "Inmar bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (inmar.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/inmar.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/inmar.md",
   "type": "object",
   "properties": {
     "partnerId": {
@@ -13995,7 +13887,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/inmobi.json",
   "title": "InMobi bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (inmobi.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/inmobi.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/inmobi.md",
   "type": "object",
   "properties": {
     "plc": {
@@ -14018,7 +13910,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/innity.json",
   "title": "Innity bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (innity.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/innity.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/innity.md",
   "type": "object",
   "properties": {
     "pub": {
@@ -14050,7 +13942,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/inskin.json",
   "title": "Inskin bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (inskin.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/inskin.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/inskin.md",
   "type": "object",
   "properties": {
     "siteId": {
@@ -14082,7 +13974,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/insticator.json",
   "title": "Insticator bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (insticator.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/insticator.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/insticator.md",
   "type": "object",
   "properties": {
     "adUnitId": {
@@ -14133,7 +14025,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/insurads.json",
   "title": "InsurAds bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (insurads.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/insurads.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/insurads.md",
   "type": "object",
   "properties": {
     "tagId": {
@@ -14180,7 +14072,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/integr8.json",
   "title": "Integr8 bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (integr8.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/integr8.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/integr8.md",
   "type": "object",
   "properties": {
     "propertyId": {
@@ -14220,7 +14112,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/intenze.json",
   "title": "intenze bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (intenze.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/intenze.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/intenze.md",
   "type": "object",
   "properties": {
     "accountId": {
@@ -14239,7 +14131,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/interactiveOffers.json",
   "title": "InteractiveOffers bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (interactiveOffers.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/interactiveOffers.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/interactiveOffers.md",
   "type": "object",
   "properties": {
     "partnerId": {
@@ -14258,7 +14150,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/intertech.json",
   "title": "intertech bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (intertech.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/intertech.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/intertech.md",
   "type": "object",
   "properties": {
     "pageId": {
@@ -14290,7 +14182,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/intlscoop.json",
   "title": "Intellectscoop bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (intlscoop.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/intlscoop.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/intlscoop.md",
   "type": "object",
   "properties": {
     "host": {
@@ -14322,7 +14214,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/invamia.json",
   "title": "Invamia bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (invamia.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/invamia.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/invamia.md",
   "type": "object",
   "properties": {
     "zoneId": {
@@ -14341,7 +14233,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/invibes.json",
   "title": "Invibes bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (invibes.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/invibes.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/invibes.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -14372,7 +14264,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/iprom.json",
   "title": "iPROM bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (iprom.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/iprom.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/iprom.md",
   "type": "object",
   "properties": {
     "id": {
@@ -14404,7 +14296,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/iqzone.json",
   "title": "IQzone bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (iqzone.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/iqzone.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/iqzone.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -14422,7 +14314,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/ivs.json",
   "title": "IVS Bidder Adapter bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (ivs.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/ivs.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/ivs.md",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -14441,7 +14333,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/janet.json",
   "title": "JANet bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (janet.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/janet.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/janet.md",
   "type": "object",
   "properties": {
     "aid": {
@@ -14460,7 +14352,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/jixie.json",
   "title": "Jixie bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (jixie.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/jixie.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/jixie.md",
   "type": "object",
   "properties": {
     "unit": {
@@ -14491,7 +14383,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/justpremium.json",
   "title": "Justpremium bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (justpremium.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/justpremium.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/justpremium.md",
   "type": "object",
   "properties": {
     "zone": {
@@ -14524,7 +14416,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/kargo.json",
   "title": "Kargo bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (kargo.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/kargo.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/kargo.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -14543,7 +14435,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/kidoz.json",
   "title": "Kidoz bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (kidoz.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/kidoz.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/kidoz.md",
   "type": "object",
   "properties": {
     "access_token": {
@@ -14575,7 +14467,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/kimberlite.json",
   "title": "Kimberlite bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (kimberlite.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/kimberlite.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/kimberlite.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -14594,7 +14486,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/kiviads.json",
   "title": "Kivi bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (kiviads.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/kiviads.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/kiviads.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -14612,7 +14504,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/krushmedia.json",
   "title": "Krushmedia bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (krushmedia.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/krushmedia.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/krushmedia.md",
   "type": "object",
   "properties": {
     "key": {
@@ -14631,7 +14523,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/kuantyx.json",
   "title": "Kuantyx bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (kuantyx.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/kuantyx.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/kuantyx.md",
   "type": "object",
   "properties": {
     "server": {
@@ -14663,7 +14555,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/kubient.json",
   "title": "Kubient bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (kubient.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/kubient.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/kubient.md",
   "type": "object",
   "properties": {
     "zoneid": {
@@ -14682,7 +14574,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/kueezrtb.json",
   "title": "KueezRTB bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (kueezrtb.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/kueezrtb.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/kueezrtb.md",
   "type": "object",
   "properties": {
     "cId": {
@@ -14718,7 +14610,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/kumma.json",
   "title": "Kumma bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (kumma.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/kumma.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/kumma.md",
   "type": "object",
   "properties": {
     "pubId": {
@@ -14775,7 +14667,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/lasso.json",
   "title": "Lasso bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (lasso.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/lasso.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/lasso.md",
   "type": "object",
   "properties": {
     "adUnitId": {
@@ -14800,7 +14692,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/lemmadigital.json",
   "title": "LemmaDigital bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (lemmadigital.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/lemmadigital.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/lemmadigital.md",
   "type": "object",
   "properties": {
     "pid": {
@@ -14854,7 +14746,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/lifestreet.json",
   "title": "Lifestreet bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (lifestreet.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/lifestreet.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/lifestreet.md",
   "type": "object",
   "properties": {
     "slot": {
@@ -14895,7 +14787,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/limelightDigital.json",
   "title": "Limelight Digital bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (limelightDigital.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/limelightDigital.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/limelightDigital.md",
   "type": "object",
   "properties": {
     "host": {
@@ -14965,7 +14857,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/livewrapped.json",
   "title": "Livewrapped bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (livewrapped.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/livewrapped.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/livewrapped.md",
   "type": "object",
   "properties": {
     "adUnitId": {
@@ -14996,7 +14888,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/lkqd.json",
   "title": "LKQD bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (lkqd.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/lkqd.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/lkqd.md",
   "type": "object",
   "properties": {
     "siteId": {
@@ -15026,7 +14918,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/lockerdome.json",
   "title": "LockerDome bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (lockerdome.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/lockerdome.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/lockerdome.md",
   "type": "object",
   "properties": {
     "adUnitId": {
@@ -15045,7 +14937,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/logan.json",
   "title": "Logan bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (logan.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/logan.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/logan.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -15064,7 +14956,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/logicad.json",
   "title": "Logicad for Publishers bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (logicad.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/logicad.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/logicad.md",
   "type": "object",
   "properties": {
     "tid": {
@@ -15095,7 +14987,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/loyal.json",
   "title": "Loyal bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (loyal.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/loyal.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/loyal.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -15113,7 +15005,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/lucead.json",
   "title": "Lucead bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (lucead.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/lucead.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/lucead.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -15148,7 +15040,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/luponmedia.json",
   "title": "LuponMedia bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (luponmedia.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/luponmedia.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/luponmedia.md",
   "type": "object",
   "properties": {
     "keyId": {
@@ -15167,7 +15059,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/mabidder.json",
   "title": "mabidder bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (mabidder.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/mabidder.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/mabidder.md",
   "type": "object",
   "properties": {
     "ppid": {
@@ -15186,7 +15078,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/madsense.json",
   "title": "MadSense bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (madsense.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/madsense.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/madsense.md",
   "type": "object",
   "properties": {
     "company_id": {
@@ -15213,7 +15105,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/magnite.json",
   "title": "Magnite bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (magnite.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/magnite.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/magnite.md",
   "type": "object",
   "properties": {
     "accountId": {
@@ -15254,7 +15146,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/malltv.json",
   "title": "MallTv bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (malltv.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/malltv.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/malltv.md",
   "type": "object",
   "properties": {
     "propertyId": {
@@ -15284,7 +15176,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/mantis.json",
   "title": "MANTIS Ad Network bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (mantis.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/mantis.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/mantis.md",
   "type": "object",
   "properties": {
     "property": {
@@ -15316,7 +15208,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/marsmedia.json",
   "title": "Marsmedia bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (marsmedia.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/marsmedia.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/marsmedia.md",
   "type": "object",
   "properties": {
     "zoneId": {
@@ -15335,7 +15227,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/matomy.json",
   "title": "Matomy bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (matomy.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/matomy.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/matomy.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -15353,7 +15245,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/mediabrama.json",
   "title": "MediaBrama bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (mediabrama.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/mediabrama.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/mediabrama.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -15373,7 +15265,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/mediaeyes.json",
   "title": "MediaEyes bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (mediaeyes.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/mediaeyes.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/mediaeyes.md",
   "type": "object",
   "properties": {
     "itemId": {
@@ -15396,7 +15288,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/mediaforce.json",
   "title": "MediaForce bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (mediaforce.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/mediaforce.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/mediaforce.md",
   "type": "object",
   "properties": {
     "bidfloor": {
@@ -15432,7 +15324,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/mediago.json",
   "title": "MediaGo bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (mediago.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/mediago.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/mediago.md",
   "type": "object",
   "properties": {
     "token": {
@@ -15484,7 +15376,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/mediaimpact.json",
   "title": "MEDIAIMPACT bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (mediaimpact.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/mediaimpact.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/mediaimpact.md",
   "type": "object",
   "properties": {
     "partnerId": {
@@ -15507,7 +15399,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/mediakeys.json",
   "title": "Mediakeys bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (mediakeys.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/mediakeys.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/mediakeys.md",
   "type": "object",
   "properties": {
     "context": {
@@ -15527,7 +15419,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/medianet.json",
   "title": "Media.net bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (medianet.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/medianet.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/medianet.md",
   "type": "object",
   "properties": {
     "cid": {
@@ -15567,7 +15459,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/mediasniper.json",
   "title": "Mediasniper bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (mediasniper.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/mediasniper.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/mediasniper.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -15590,7 +15482,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/mediasquare.json",
   "title": "MediaSquare bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (mediasquare.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/mediasquare.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/mediasquare.md",
   "type": "object",
   "properties": {
     "owner": {
@@ -15622,7 +15514,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/mediayo.json",
   "title": "MediaYo bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (mediayo.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/mediayo.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/mediayo.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -15640,7 +15532,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/melozen.json",
   "title": "MeloZen bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (melozen.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/melozen.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/melozen.md",
   "type": "object",
   "properties": {
     "pubId": {
@@ -15659,7 +15551,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/metax.json",
   "title": "MetaX bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (metax.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/metax.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/metax.md",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -15691,7 +15583,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/mgid.json",
   "title": "Mgid bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (mgid.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/mgid.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/mgid.md",
   "type": "object",
   "properties": {
     "accountId": {
@@ -15722,7 +15614,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/mgidX.json",
   "title": "MgidX bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (mgidX.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/mgidX.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/mgidX.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -15743,7 +15635,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/michao.json",
   "title": "Michao bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (michao.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/michao.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/michao.md",
   "type": "object",
   "properties": {
     "placement": {
@@ -15783,7 +15675,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/mile.json",
   "title": "Mile bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (mile.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/mile.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/mile.md",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -15824,7 +15716,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/missena.json",
   "title": "Missena bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (missena.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/missena.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/missena.md",
   "type": "object",
   "properties": {
     "apiKey": {
@@ -15855,7 +15747,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/mmplus.json",
   "title": "MinuteMediaPlus bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (minutemediaplus.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/minutemediaplus.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/minutemediaplus.md",
   "type": "object",
   "properties": {
     "cId": {
@@ -15900,7 +15792,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/mobilefuse.json",
   "title": "MobileFuse bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (mobilefuse.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/mobilefuse.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/mobilefuse.md",
   "type": "object",
   "properties": {
     "placement_id": {
@@ -15923,7 +15815,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/monetix.json",
   "title": "Monetix bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (monetix.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/monetix.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/monetix.md",
   "type": "object",
   "properties": {
     "host": {
@@ -15955,7 +15847,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/monetixads.json",
   "title": "Monetix Ads bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (monetixads.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/monetixads.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/monetixads.md",
   "type": "object",
   "properties": {
     "networkId": {
@@ -15987,7 +15879,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/motionspots.json",
   "title": "Motionspots bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (motionspots.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/motionspots.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/motionspots.md",
   "type": "object",
   "properties": {
     "host": {
@@ -16019,7 +15911,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/motorik.json",
   "title": "Motorik bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (motorik.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/motorik.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/motorik.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -16051,7 +15943,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/movingup.json",
   "title": "Moving Up bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (movingup.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/movingup.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/movingup.md",
   "type": "object",
   "properties": {
     "tagId": {
@@ -16071,7 +15963,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/msft.json",
   "title": "Microsoft bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (msft.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/msft.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/msft.md",
   "type": "object",
   "properties": {
     "placement_id": {
@@ -16126,7 +16018,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/my6sense.json",
   "title": "My6Sense bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (my6sense.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/my6sense.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/my6sense.md",
   "type": "object",
   "properties": {
     "key": {
@@ -16165,7 +16057,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/mycodemedia.json",
   "title": "MyCodeMedia bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (mycodemedia.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/mycodemedia.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/mycodemedia.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -16183,7 +16075,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/mytarget.json",
   "title": "myTarget bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (mytarget.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/mytarget.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/mytarget.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -16214,7 +16106,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/nativery.json",
   "title": "Nativery bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (nativery.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/nativery.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/nativery.md",
   "type": "object",
   "properties": {
     "widgetId": {
@@ -16233,7 +16125,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/netaddiction.json",
   "title": "NetAddiction bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (netaddiction.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/netaddiction.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/netaddiction.md",
   "type": "object",
   "properties": {
     "networkId": {
@@ -16265,7 +16157,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/netads.json",
   "title": "Netads bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (netads.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/netads.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/netads.md",
   "type": "object",
   "properties": {
     "tagId": {
@@ -16288,7 +16180,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/newdream.json",
   "title": "Newdream bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (newdream.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/newdream.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/newdream.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -16315,7 +16207,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/newspassid.json",
   "title": "NewsPassID bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (newspassid.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/newspassid.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/newspassid.md",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -16347,7 +16239,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/nextMillennium.json",
   "title": "NextMillennium bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (nextMillennium.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/nextMillennium.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/nextMillennium.md",
   "type": "object",
   "properties": {
     "placement_id": {
@@ -16373,7 +16265,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/nextroll.json",
   "title": "NextRoll bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (nextroll.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/nextroll.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/nextroll.md",
   "type": "object",
   "properties": {
     "sellerId": {
@@ -16404,7 +16296,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/nexx360.json",
   "title": "Nexx360 bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (nexx360.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/nexx360.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/nexx360.md",
   "type": "object",
   "properties": {
     "tagId": {
@@ -16451,7 +16343,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/ninthdecimal.json",
   "title": "NinthDecimal bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (ninthdecimal.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/ninthdecimal.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/ninthdecimal.md",
   "type": "object",
   "properties": {
     "pubid": {
@@ -16474,7 +16366,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/nobid.json",
   "title": "Nobid bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (nobid.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/nobid.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/nobid.md",
   "type": "object",
   "properties": {
     "siteId": {
@@ -16501,7 +16393,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/nuba.json",
   "title": "Nuba bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (nuba.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/nuba.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/nuba.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -16519,7 +16411,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/ocm.json",
   "title": "Orangeclickmedia bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (ocm.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/ocm.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/ocm.md",
   "type": "object",
   "properties": {
     "aid": {
@@ -16538,7 +16430,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/oftmedia.json",
   "title": "One Fifty Two Media bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (oftmedia.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/oftmedia.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/oftmedia.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -16565,7 +16457,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/ogury.json",
   "title": "ogury bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (ogury.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/ogury.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/ogury.md",
   "type": "object",
   "properties": {
     "assetKey": {
@@ -16597,7 +16489,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/omnidex.json",
   "title": "Omnidex bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (omnidex.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/omnidex.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/omnidex.md",
   "type": "object",
   "properties": {
     "cId": {
@@ -16633,7 +16525,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/onedisplay.json",
   "title": "ONE by AOL Display bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (onedisplay.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/onedisplay.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/onedisplay.md",
   "type": "object",
   "properties": {
     "placement": {
@@ -16677,7 +16569,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/onemobile.json",
   "title": "ONE by AOL Mobile bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (onemobile.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/onemobile.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/onemobile.md",
   "type": "object",
   "properties": {
     "dcn": {
@@ -16713,7 +16605,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/oneplanetonly.json",
   "title": "Oneplanetonly bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (oneplanetonly.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/oneplanetonly.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/oneplanetonly.md",
   "type": "object",
   "properties": {
     "siteId": {
@@ -16745,7 +16637,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/onetag.json",
   "title": "OneTag bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (onetag.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/onetag.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/onetag.md",
   "type": "object",
   "properties": {
     "pubId": {
@@ -16768,7 +16660,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/onomagic.json",
   "title": "Onomagic bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (onomagic.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/onomagic.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/onomagic.md",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -16791,7 +16683,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/opamarketplace.json",
   "title": "OpaMarketplace bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (opamarketplace.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/opamarketplace.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/opamarketplace.md",
   "type": "object",
   "properties": {
     "cId": {
@@ -16827,7 +16719,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/open8.json",
   "title": "OPEN8 bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (open8.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/open8.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/open8.md",
   "type": "object",
   "properties": {
     "slotKey": {
@@ -16846,7 +16738,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/openwebvideo.json",
   "title": "OpenWeb Video bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (openwebvideo.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/openwebvideo.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/openwebvideo.md",
   "type": "object",
   "properties": {
     "AV_PUBLISHERID": {
@@ -16878,7 +16770,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/openxoutstream.json",
   "title": "OpenX Outstream bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (openxoutstream.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/openxoutstream.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/openxoutstream.md",
   "type": "object",
   "properties": {
     "delDomain": {
@@ -16897,7 +16789,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/oppamedia.json",
   "title": "OppaMedia bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (oppamedia.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/oppamedia.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/oppamedia.md",
   "type": "object",
   "properties": {
     "host": {
@@ -16929,7 +16821,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/oprx.json",
   "title": "OptimizeRx bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (oprx.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/oprx.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/oprx.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -16990,7 +16882,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/opsco.json",
   "title": "OpsCo bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (opsco.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/opsco.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/opsco.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -17030,7 +16922,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/optidigital.json",
   "title": "Optidigital bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (optidigital.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/optidigital.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/optidigital.md",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -17082,7 +16974,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/optimatic.json",
   "title": "Optimatic bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (optimatic.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/optimatic.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/optimatic.md",
   "type": "object",
   "properties": {
     "placement": {
@@ -17114,7 +17006,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/optimera.json",
   "title": "Optimera bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (optimera.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/optimera.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/optimera.md",
   "type": "object",
   "properties": {
     "clientID": {
@@ -17137,7 +17029,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/optout.json",
   "title": "Opt Out Advertising bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (optout.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/optout.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/optout.md",
   "type": "object",
   "properties": {
     "publisher": {
@@ -17169,7 +17061,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/oraki.json",
   "title": "Oraki bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (oraki.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/oraki.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/oraki.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -17187,7 +17079,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/orangeclickmedia.json",
   "title": "OCM Media bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (orangeclickmedia.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/orangeclickmedia.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/orangeclickmedia.md",
   "type": "object",
   "properties": {
     "host": {
@@ -17257,7 +17149,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/orbidder.json",
   "title": "Orbidder bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (orbidder.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/orbidder.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/orbidder.md",
   "type": "object",
   "properties": {
     "accountId": {
@@ -17297,7 +17189,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/orbitsoft.json",
   "title": "Orbitsoft bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (orbitsoft.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/orbitsoft.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/orbitsoft.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -17337,7 +17229,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/otm.json",
   "title": "OTM bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (otm.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/otm.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/otm.md",
   "type": "object",
   "properties": {
     "tid": {
@@ -17364,7 +17256,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/ottadvisors.json",
   "title": "ottadvisors Video bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (ottadvisors.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/ottadvisors.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/ottadvisors.md",
   "type": "object",
   "properties": {
     "AV_PUBLISHERID": {
@@ -17396,7 +17288,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/outbrain.json",
   "title": "Outbrain bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (outbrain.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/outbrain.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/outbrain.md",
   "type": "object",
   "properties": {
     "tagid": {
@@ -17418,7 +17310,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/oveeo.json",
   "title": "Oveeo bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (oveeo.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/oveeo.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/oveeo.md",
   "type": "object",
   "properties": {
     "adUnitId": {
@@ -17479,7 +17371,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/ownadx.json",
   "title": "OwnAdX bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (ownadx.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/ownadx.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/ownadx.md",
   "type": "object",
   "properties": {
     "sspId": {
@@ -17520,7 +17412,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/ozone.json",
   "title": "Ozone Project bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (ozone.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/ozone.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/ozone.md",
   "type": "object",
   "properties": {
     "siteId": {
@@ -17565,7 +17457,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/padsquad.json",
   "title": "Padsquad bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (padsquad.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/padsquad.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/padsquad.md",
   "type": "object",
   "properties": {
     "unitId": {
@@ -17589,7 +17481,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/pagescience.json",
   "title": "Page Science bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (pagescience.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/pagescience.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/pagescience.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -17616,7 +17508,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/pangle.json",
   "title": "Pangle bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (pangle.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/pangle.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/pangle.md",
   "type": "object",
   "properties": {
     "token": {
@@ -17647,7 +17539,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/panxo.json",
   "title": "Panxo bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (panxo.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/panxo.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/panxo.md",
   "type": "object",
   "properties": {
     "propertyKey": {
@@ -17670,7 +17562,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/peak226.json",
   "title": "Peak226 bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (peak226.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/peak226.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/peak226.md",
   "type": "object",
   "properties": {
     "uid": {
@@ -17689,7 +17581,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/performax.json",
   "title": "Performax bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (performax.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/performax.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/performax.md",
   "type": "object",
   "properties": {
     "tagid": {
@@ -17708,7 +17600,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/performist.json",
   "title": "Performist bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (performist.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/performist.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/performist.md",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -17747,7 +17639,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/pgam.json",
   "title": "PGAM bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (pgam.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/pgam.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/pgam.md",
   "type": "object",
   "properties": {
     "aid": {
@@ -17766,7 +17658,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/pgammedia.json",
   "title": "PGAM MEDIA bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (pgammedia.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/pgammedia.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/pgammedia.md",
   "type": "object",
   "properties": {
     "AV_PUBLISHERID": {
@@ -17798,7 +17690,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/pgamssp.json",
   "title": "PGAMSSP bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (pgamssp.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/pgamssp.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/pgamssp.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -17816,7 +17708,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/pilotx.json",
   "title": "PilotX bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (pilotx.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/pilotx.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/pilotx.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -17835,7 +17727,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/pinkLion.json",
   "title": "PinkLion bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (pinkLion.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/pinkLion.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/pinkLion.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -17853,7 +17745,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/pixad.json",
   "title": "Pixad bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (pixad.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/pixad.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/pixad.md",
   "type": "object",
   "properties": {
     "networkId": {
@@ -17885,7 +17777,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/pixelpluses.json",
   "title": "Pixelpluses bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (pixelpluses.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/pixelpluses.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/pixelpluses.md",
   "type": "object",
   "properties": {
     "host": {
@@ -17917,7 +17809,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/playdigo.json",
   "title": "Playdigo bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (playdigo.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/playdigo.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/playdigo.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -17935,7 +17827,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/playwire.json",
   "title": "Playwire bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (playwire.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/playwire.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/playwire.md",
   "type": "object",
   "properties": {
     "uid": {
@@ -17962,7 +17854,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/pollux.json",
   "title": "Pollux Network bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (pollux.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/pollux.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/pollux.md",
   "type": "object",
   "properties": {
     "zone": {
@@ -17981,7 +17873,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/polymorph.json",
   "title": "Polymorph bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (polymorph.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/polymorph.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/polymorph.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -18007,7 +17899,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/preciso.json",
   "title": "Preciso bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (preciso.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/preciso.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/preciso.md",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -18044,7 +17936,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/prisma.json",
   "title": "Prisma bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (prisma.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/prisma.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/prisma.md",
   "type": "object",
   "properties": {
     "account": {
@@ -18076,7 +17968,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/prismassp.json",
   "title": "Prismassp bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (prismassp.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/prismassp.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/prismassp.md",
   "type": "object",
   "properties": {
     "tagId": {
@@ -18095,7 +17987,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/progX.json",
   "title": "ProgX bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (progx.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/progx.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/progx.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -18113,7 +18005,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/programmatica.json",
   "title": "Programmatica bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (programmatica.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/programmatica.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/programmatica.md",
   "type": "object",
   "properties": {
     "siteId": {
@@ -18145,7 +18037,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/projectagora.json",
   "title": "Project Agora bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (projectagora.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/projectagora.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/projectagora.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -18164,7 +18056,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/proxistore.json",
   "title": "Proxistore bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (proxistore.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/proxistore.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/proxistore.md",
   "type": "object",
   "properties": {
     "website": {
@@ -18196,7 +18088,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/pstudio.json",
   "title": "PStudio bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (pstudio.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/pstudio.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/pstudio.md",
   "type": "object",
   "properties": {
     "pubid": {
@@ -18247,7 +18139,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/pubgenius.json",
   "title": "pubGENIUS bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (pubgenius.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/pubgenius.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/pubgenius.md",
   "type": "object",
   "properties": {
     "adUnitId": {
@@ -18278,7 +18170,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/publicgood.json",
   "title": "Public Good bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (publicgood.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/publicgood.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/publicgood.md",
   "type": "object",
   "properties": {
     "partnerId": {
@@ -18310,7 +18202,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/pubmatic.json",
   "title": "PubMatic bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (pubmatic.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/pubmatic.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/pubmatic.md",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -18343,7 +18235,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/pubnative.json",
   "title": "PubNative bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (pubnative.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/pubnative.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/pubnative.md",
   "type": "object",
   "properties": {
     "zone_id": {
@@ -18375,7 +18267,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/pubrise.json",
   "title": "Pubrise bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (pubrise.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/pubrise.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/pubrise.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -18393,7 +18285,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/pubstack.json",
   "title": "Pubstack bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (pubstack.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/pubstack.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/pubstack.md",
   "type": "object",
   "properties": {
     "siteId": {
@@ -18424,7 +18316,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/pubtech.json",
   "title": "Pubtech bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (pubtech.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/pubtech.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/pubtech.md",
   "type": "object",
   "properties": {
     "tagId": {
@@ -18467,7 +18359,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/pubx.json",
   "title": "Pub-X bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (pubx.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/pubx.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/pubx.md",
   "type": "object",
   "properties": {
     "sid": {
@@ -18486,7 +18378,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/pubxai.json",
   "title": "PubxAi bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (pubxai.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/pubxai.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/pubxai.md",
   "type": "object",
   "properties": {
     "tagId": {
@@ -18509,7 +18401,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/pulsepoint.json",
   "title": "PulsePoint bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (pulsepoint.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/pulsepoint.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/pulsepoint.md",
   "type": "object",
   "properties": {
     "cp": {
@@ -18552,7 +18444,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/pxyz.json",
   "title": "Playground XYZ bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (pxyz.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/pxyz.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/pxyz.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -18571,7 +18463,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/qohere.json",
   "title": "Qohere bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (qohere.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/qohere.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/qohere.md",
   "type": "object",
   "properties": {
     "host": {
@@ -18603,7 +18495,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/qortex.json",
   "title": "Qortex bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (qortex.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/qortex.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/qortex.md",
   "type": "object",
   "properties": {
     "host": {
@@ -18635,7 +18527,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/qt.json",
   "title": "QT bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (qt.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/qt.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/qt.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -18653,7 +18545,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/quantum.json",
   "title": "Quantum bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (quantum.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/quantum.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/quantum.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -18672,7 +18564,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/qwarry.json",
   "title": "Qwarry bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (qwarry.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/qwarry.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/qwarry.md",
   "type": "object",
   "properties": {
     "zoneToken": {
@@ -18695,7 +18587,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/r2b2.json",
   "title": "r2b2 bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (r2b2.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/r2b2.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/r2b2.md",
   "type": "object",
   "properties": {
     "pid": {
@@ -18714,7 +18606,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/rads.json",
   "title": "Rads bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (rads.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/rads.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/rads.md",
   "type": "object",
   "properties": {
     "placement": {
@@ -18733,7 +18625,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/rakuten.json",
   "title": "Rakuten bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (rakuten.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/rakuten.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/rakuten.md",
   "type": "object",
   "properties": {
     "adSpotId": {
@@ -18752,7 +18644,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/ras.json",
   "title": "RingierAxelSpringer bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (ras.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/ras.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/ras.md",
   "type": "object",
   "properties": {
     "network": {
@@ -18806,7 +18698,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/readpeak.json",
   "title": "Readpeak bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (readpeak.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/readpeak.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/readpeak.md",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -18837,7 +18729,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/rediads.json",
   "title": "Rediads bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (rediads.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/rediads.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/rediads.md",
   "type": "object",
   "properties": {
     "account_id": {
@@ -18864,7 +18756,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/redtram.json",
   "title": "Redtram bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (redtram.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/redtram.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/redtram.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -18884,7 +18776,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/relaido.json",
   "title": "Relaido bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (relaido.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/relaido.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/relaido.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -18907,7 +18799,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/relay.json",
   "title": "Relay bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (relay.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/relay.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/relay.md",
   "type": "object",
   "properties": {
     "accountId": {
@@ -18925,7 +18817,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/relevantdigital.json",
   "title": "Relevant Digital bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (relevantdigital.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/relevantdigital.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/relevantdigital.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -18956,7 +18848,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/relevatehealth.json",
   "title": "RelevateHealth bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (relevatehealth.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/relevatehealth.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/relevatehealth.md",
   "type": "object",
   "properties": {
     "placement_id": {
@@ -18987,7 +18879,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/resetdigital.json",
   "title": "ResetDigital bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (resetdigital.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/resetdigital.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/resetdigital.md",
   "type": "object",
   "properties": {
     "pubId": {
@@ -19048,7 +18940,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/responsiveads.json",
   "title": "ResponsiveAds bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (responsiveads.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/responsiveads.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/responsiveads.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -19064,7 +18956,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/retailspot.json",
   "title": "RetailSpot bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (retailspot.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/retailspot.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/retailspot.md",
   "type": "object",
   "properties": {
     "placement": {
@@ -19083,7 +18975,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/revantage.json",
   "title": "Revantage bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (revantage.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/revantage.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/revantage.md",
   "type": "object",
   "properties": {
     "feedId": {
@@ -19102,7 +18994,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/revbid.json",
   "title": "RevBid bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (revbid.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/revbid.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/revbid.md",
   "type": "object",
   "properties": {
     "host": {
@@ -19134,7 +19026,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/revnew.json",
   "title": "Revnew bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (revnew.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/revnew.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/revnew.md",
   "type": "object",
   "properties": {
     "tagId": {
@@ -19154,7 +19046,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/rexrtb.json",
   "title": "REXRTB bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (rexrtb.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/rexrtb.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/rexrtb.md",
   "type": "object",
   "properties": {
     "id": {
@@ -19190,7 +19082,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/rhythmone.json",
   "title": "RhythmOne bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (rhythmone.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/rhythmone.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/rhythmone.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -19217,7 +19109,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/richaudience.json",
   "title": "Rich Audience bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (richaudience.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/richaudience.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/richaudience.md",
   "type": "object",
   "properties": {
     "pid": {
@@ -19257,7 +19149,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/ringieraxelspringer.json",
   "title": "RingierAxelSpringer bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (ringieraxelspringer.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/ringieraxelspringer.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/ringieraxelspringer.md",
   "type": "object",
   "properties": {
     "network": {
@@ -19311,7 +19203,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/rixengine.json",
   "title": "RixEngine bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (rixengine.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/rixengine.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/rixengine.md",
   "type": "object",
   "properties": {
     "endpoint": {
@@ -19352,7 +19244,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/rocketlab.json",
   "title": "RocketLab bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (rocketlab.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/rocketlab.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/rocketlab.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -19370,7 +19262,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/rockyou.json",
   "title": "RockYou bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (rockyou.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/rockyou.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/rockyou.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -19389,7 +19281,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/rtbanalytica.json",
   "title": "RtbAnalytica bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (rtbanalytica.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/rtbanalytica.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/rtbanalytica.md",
   "type": "object",
   "properties": {
     "host": {
@@ -19421,7 +19313,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/rtbdemand.json",
   "title": "Rtb Demand bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (rtbdemand.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/rtbdemand.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/rtbdemand.md",
   "type": "object",
   "properties": {
     "host": {
@@ -19491,7 +19383,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/rtbdemand_com.json",
   "title": "RtbDemand.com bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (rtbdemand_com.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/rtbdemand_com.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/rtbdemand_com.md",
   "type": "object",
   "properties": {
     "host": {
@@ -19523,7 +19415,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/rtbhouse.json",
   "title": "RTBHouse bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (rtbhouse.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/rtbhouse.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/rtbhouse.md",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -19563,7 +19455,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/rtbsape.json",
   "title": "RtbSape bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (rtbsape.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/rtbsape.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/rtbsape.md",
   "type": "object",
   "properties": {
     "placeId": {
@@ -19582,7 +19474,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/rtbstack.json",
   "title": "RTB Stack bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (rtbstack.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/rtbstack.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/rtbstack.md",
   "type": "object",
   "properties": {
     "tagId": {
@@ -19605,7 +19497,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/rubicon.json",
   "title": "Rubicon Project bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (rubicon.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/rubicon.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/rubicon.md",
   "type": "object",
   "properties": {
     "accountId": {
@@ -19691,7 +19583,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/rumble.json",
   "title": "Rumble Advertising Center bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (rumble.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/rumble.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/rumble.md",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -19731,7 +19623,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/rxrtb.json",
   "title": "rxrtb bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (rxrtb.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/rxrtb.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/rxrtb.md",
   "type": "object",
   "properties": {
     "id": {
@@ -19772,7 +19664,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/saambaa.json",
   "title": "Saambaa bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (saambaa.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/saambaa.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/saambaa.md",
   "type": "object",
   "properties": {
     "placement": {
@@ -19819,7 +19711,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/sara.json",
   "title": "SARA bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (sara.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/sara.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/sara.md",
   "type": "object",
   "properties": {
     "uid": {
@@ -19842,7 +19734,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/scalibur.json",
   "title": "Scalibur bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (scalibur.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/scalibur.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/scalibur.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -19861,7 +19753,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/scattered.json",
   "title": "Scattered bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (scattered.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/scattered.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/scattered.md",
   "type": "object",
   "properties": {
     "bidderDomain": {
@@ -19884,7 +19776,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/screencore.json",
   "title": "Screencore bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (screencore.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/screencore.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/screencore.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -19904,7 +19796,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/seedingAlliance.json",
   "title": "Seeding Alliance bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (seedingAlliance.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/seedingAlliance.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/seedingAlliance.md",
   "type": "object",
   "properties": {
     "adUnitId": {
@@ -19931,7 +19823,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/seedtag.json",
   "title": "seedtag bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (seedtag.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/seedtag.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/seedtag.md",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -19962,7 +19854,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/selectmedia.json",
   "title": "Select Media Display bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (selectmedia.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/selectmedia.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/selectmedia.md",
   "type": "object",
   "properties": {
     "aid": {
@@ -19981,7 +19873,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/selectmediavideo.json",
   "title": "SelectMedia Video bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (selectmediavideo.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/selectmediavideo.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/selectmediavideo.md",
   "type": "object",
   "properties": {
     "AV_PUBLISHERID": {
@@ -20013,7 +19905,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/setupad.json",
   "title": "Setupad bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (setupad.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/setupad.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/setupad.md",
   "type": "object",
   "properties": {
     "placement_id": {
@@ -20045,7 +19937,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/sevio.json",
   "title": "Sevio bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (sevio.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/sevio.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/sevio.md",
   "type": "object",
   "properties": {
     "zone": {
@@ -20064,7 +19956,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/sharethrough.json",
   "title": "Sharethrough bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (sharethrough.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/sharethrough.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/sharethrough.md",
   "type": "object",
   "properties": {
     "pkey": {
@@ -20101,7 +19993,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/shinezRtb.json",
   "title": "ShinezRTB bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (shinezRtb.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/shinezRtb.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/shinezRtb.md",
   "type": "object",
   "properties": {
     "cId": {
@@ -20137,7 +20029,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/showheroes-bs.json",
   "title": "ShowHeroes bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (showheroes-bs.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/showheroes-bs.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/showheroes-bs.md",
   "type": "object",
   "properties": {
     "unitId": {
@@ -20156,7 +20048,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/silvermob.json",
   "title": "SilverMob bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (silvermob.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/silvermob.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/silvermob.md",
   "type": "object",
   "properties": {
     "zoneid": {
@@ -20188,7 +20080,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/smaato.json",
   "title": "Smaato bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (smaato.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/smaato.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/smaato.md",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -20233,7 +20125,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/smartadline.json",
   "title": "smartadline bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (smartadline.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/smartadline.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/smartadline.md",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -20252,7 +20144,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/smartadserver.json",
   "title": "Smart AdServer bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (smartadserver.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/smartadserver.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/smartadserver.md",
   "type": "object",
   "properties": {
     "networkId": {
@@ -20312,7 +20204,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/smartico.json",
   "title": "smartico bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (smartico.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/smartico.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/smartico.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -20363,7 +20255,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/smartytech.json",
   "title": "SmartyTech bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (smartytech.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/smartytech.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/smartytech.md",
   "type": "object",
   "properties": {
     "endpointId": {
@@ -20382,7 +20274,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/smilewanted.json",
   "title": "Smile Wanted bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (smilewanted.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/smilewanted.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/smilewanted.md",
   "type": "object",
   "properties": {
     "zoneId": {
@@ -20401,7 +20293,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/smn.json",
   "title": "SMN bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (smn.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/smn.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/smn.md",
   "type": "object",
   "properties": {
     "zone": {
@@ -20424,7 +20316,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/smoot.json",
   "title": "Smoot bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (smoot.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/smoot.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/smoot.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -20442,7 +20334,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/smootai.json",
   "title": "SmootAI bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (smootai.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/smootai.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/smootai.md",
   "type": "object",
   "properties": {
     "host": {
@@ -20512,7 +20404,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/smrtconnect.json",
   "title": "Smrtconnect bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (smrtconnect.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/smrtconnect.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/smrtconnect.md",
   "type": "object",
   "properties": {
     "supply_id": {
@@ -20531,7 +20423,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/somoaudience.json",
   "title": "Somo Audience bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (somoaudience.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/somoaudience.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/somoaudience.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -20550,7 +20442,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/sonarads.json",
   "title": "Bridgeupp bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (bridgeupp.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/bridgeupp.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/bridgeupp.md",
   "type": "object",
   "properties": {
     "siteId": {
@@ -20573,7 +20465,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/sonic_twist.json",
   "title": "Sonic Twist Media bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (sonic_twist.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/sonic_twist.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/sonic_twist.md",
   "type": "object",
   "properties": {
     "host": {
@@ -20605,7 +20497,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/sonobi.json",
   "title": "Sonobi bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (sonobi.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/sonobi.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/sonobi.md",
   "type": "object",
   "properties": {
     "placement_id": {
@@ -20649,7 +20541,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/sovrn.json",
   "title": "Sovrn bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (sovrn.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/sovrn.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/sovrn.md",
   "type": "object",
   "properties": {
     "tagid": {
@@ -20784,7 +20676,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/sparteo.json",
   "title": "Sparteo bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (sparteo.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/sparteo.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/sparteo.md",
   "type": "object",
   "properties": {
     "networkId": {
@@ -20823,7 +20715,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/spinx.json",
   "title": "SpinX bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (spinx.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/spinx.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/spinx.md",
   "type": "object",
   "properties": {
     "host": {
@@ -20855,7 +20747,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/spotx.json",
   "title": "SpotX bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (spotx.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/spotx.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/spotx.md",
   "type": "object",
   "properties": {
     "channel_id": {
@@ -20938,7 +20830,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/ssmas.json",
   "title": "SSMas bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (ssmas.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/ssmas.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/ssmas.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -20957,7 +20849,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/sspBC.json",
   "title": "sspBC bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (sspBC.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/sspBC.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/sspBC.md",
   "type": "object",
   "properties": {
     "id": {
@@ -20993,7 +20885,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/ssp_geniee.json",
   "title": "Geniee SSP bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (ssp_geniee.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/ssp_geniee.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/ssp_geniee.md",
   "type": "object",
   "properties": {
     "zoneId": {
@@ -21016,7 +20908,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/stackadapt.json",
   "title": "StackAdapt bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (stackadapt.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/stackadapt.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/stackadapt.md",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -21053,7 +20945,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/stailamedia.json",
   "title": "stailamedia bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (stailamedia.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/stailamedia.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/stailamedia.md",
   "type": "object",
   "properties": {
     "placement_id": {
@@ -21085,7 +20977,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/startio.json",
   "title": "Start.io bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (startio.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/startio.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/startio.md",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -21108,7 +21000,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/stellorMediaRtb.json",
   "title": "Stellor Media Rtb bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (stellorMediaRtb.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/stellorMediaRtb.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/stellorMediaRtb.md",
   "type": "object",
   "properties": {
     "host": {
@@ -21178,7 +21070,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/stellormedia.json",
   "title": "StellorMedia bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (stellormedia.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/stellormedia.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/stellormedia.md",
   "type": "object",
   "properties": {
     "aid": {
@@ -21197,7 +21089,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/streamkey.json",
   "title": "Streamkey bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (streamkey.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/streamkey.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/streamkey.md",
   "type": "object",
   "properties": {
     "aid": {
@@ -21216,7 +21108,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/streamlyn.json",
   "title": "Streamlyn bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (streamlyn.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/streamlyn.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/streamlyn.md",
   "type": "object",
   "properties": {
     "host": {
@@ -21268,7 +21160,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/streamvision.json",
   "title": "Streamvision bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (streamvision.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/streamvision.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/streamvision.md",
   "type": "object",
   "properties": {
     "host": {
@@ -21338,7 +21230,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/stroeerCore.json",
   "title": "StroeerCore bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (stroeerCore.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/stroeerCore.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/stroeerCore.md",
   "type": "object",
   "properties": {
     "sid": {
@@ -21361,7 +21253,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/sublime.json",
   "title": "Sublime bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (sublime.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/sublime.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/sublime.md",
   "type": "object",
   "properties": {
     "zoneId": {
@@ -21393,7 +21285,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/suntContent.json",
   "title": "SUNT Content bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (suntContent.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/suntContent.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/suntContent.md",
   "type": "object",
   "properties": {
     "adUnitId": {
@@ -21416,7 +21308,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/supply2.json",
   "title": "Supply2 bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (supply2.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/supply2.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/supply2.md",
   "type": "object",
   "properties": {
     "uid": {
@@ -21439,7 +21331,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/taboola.json",
   "title": "Taboola bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (taboola.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/taboola.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/taboola.md",
   "type": "object",
   "properties": {
     "tagId": {
@@ -21494,7 +21386,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/tagoras.json",
   "title": "Tagoras bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (tagoras.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/tagoras.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/tagoras.md",
   "type": "object",
   "properties": {
     "cId": {
@@ -21530,7 +21422,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/talkads.json",
   "title": "Talkads bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (talkads.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/talkads.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/talkads.md",
   "type": "object",
   "properties": {
     "tag_id": {
@@ -21562,7 +21454,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/tappx.json",
   "title": "tappx bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (tappx.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/tappx.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/tappx.md",
   "type": "object",
   "properties": {
     "tappxkey": {
@@ -21612,7 +21504,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/targetVideo.json",
   "title": "TargetVideo bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (targetvideo.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/targetvideo.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/targetvideo.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -21635,7 +21527,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/teads.json",
   "title": "Teads bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (teads.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/teads.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/teads.md",
   "type": "object",
   "properties": {
     "pageId": {
@@ -21655,7 +21547,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/teal.json",
   "title": "Teal bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (teal.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/teal.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/teal.md",
   "type": "object",
   "properties": {
     "account": {
@@ -21690,7 +21582,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/telaria.json",
   "title": "Telaria bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (telaria.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/telaria.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/telaria.md",
   "type": "object",
   "properties": {
     "adCode": {
@@ -21726,7 +21618,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/temedya.json",
   "title": "TE Medya bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (temedya.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/temedya.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/temedya.md",
   "type": "object",
   "properties": {
     "widgetId": {
@@ -21749,7 +21641,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/teqBlazeSalesAgent.json",
   "title": "TeqBlazeSalesAgent bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (teqBlazeSalesAgent.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/teqBlazeSalesAgent.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/teqBlazeSalesAgent.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -21767,7 +21659,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/tgm.json",
   "title": "TGM bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (tgm.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/tgm.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/tgm.md",
   "type": "object",
   "properties": {
     "host": {
@@ -21837,7 +21729,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/theads.json",
   "title": "The Ads bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (theads.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/theads.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/theads.md",
   "type": "object",
   "properties": {
     "tagId": {
@@ -21860,7 +21752,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/theadx.json",
   "title": "TheAdx bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (theAdx.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/theAdx.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/theAdx.md",
   "type": "object",
   "properties": {
     "pid": {
@@ -21901,7 +21793,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/themoneytizer.json",
   "title": "The Moneytizer bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (themoneytizer.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/themoneytizer.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/themoneytizer.md",
   "type": "object",
   "properties": {
     "pid": {
@@ -21928,7 +21820,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/topon.json",
   "title": "TopOn bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (topon.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/topon.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/topon.md",
   "type": "object",
   "properties": {
     "pubid": {
@@ -21947,7 +21839,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/tradplus.json",
   "title": "TradPlus bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (tradplus.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/tradplus.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/tradplus.md",
   "type": "object",
   "properties": {
     "accountId": {
@@ -21970,7 +21862,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/trafficgate.json",
   "title": "TrafficGate bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (trafficgate.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/trafficgate.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/trafficgate.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -22006,7 +21898,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/trafficroots.json",
   "title": "Trafficroots bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (trafficroots.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/trafficroots.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/trafficroots.md",
   "type": "object",
   "properties": {
     "zoneId": {
@@ -22029,7 +21921,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/tremor.json",
   "title": "Tremor bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (tremor.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/tremor.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/tremor.md",
   "type": "object",
   "properties": {
     "adCode": {
@@ -22151,7 +22043,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/trion.json",
   "title": "Trion Interactive bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (trion.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/trion.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/trion.md",
   "type": "object",
   "properties": {
     "pubId": {
@@ -22183,7 +22075,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/triplelift_native.json",
   "title": "TripleLift Native bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (triplelift_native.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/triplelift_native.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/triplelift_native.md",
   "type": "object",
   "properties": {
     "inventoryCode": {
@@ -22206,7 +22098,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/truereach.json",
   "title": "TrueReach bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (truereach.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/truereach.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/truereach.md",
   "type": "object",
   "properties": {
     "site_id": {
@@ -22238,7 +22130,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/trustedstack.json",
   "title": "TrustedStack bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (trustedstack.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/trustedstack.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/trustedstack.md",
   "type": "object",
   "properties": {
     "cid": {
@@ -22278,7 +22170,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/trustx.json",
   "title": "TRUSTX bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (trustx.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/trustx.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/trustx.md",
   "type": "object",
   "properties": {
     "uid": {
@@ -22310,7 +22202,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/turktelekom.json",
   "title": "Türk Telekom bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (turktelekom.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/turktelekom.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/turktelekom.md",
   "type": "object",
   "properties": {
     "host": {
@@ -22342,7 +22234,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/twistdigital.json",
   "title": "Twist Digital bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (twistDigital.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/twistDigital.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/twistDigital.md",
   "type": "object",
   "properties": {
     "cId": {
@@ -22365,7 +22257,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/ucfunnel.json",
   "title": "ucfunnel bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (ucfunnel.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/ucfunnel.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/ucfunnel.md",
   "type": "object",
   "properties": {
     "adid": {
@@ -22384,7 +22276,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/underdogmedia.json",
   "title": "Underdog Media bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (underdogmedia.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/underdogmedia.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/underdogmedia.md",
   "type": "object",
   "properties": {
     "siteId": {
@@ -22406,7 +22298,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/undertone.json",
   "title": "Undertone bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (undertone.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/undertone.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/undertone.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -22438,7 +22330,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/unibots.json",
   "title": "Unibots bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (unibots.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/unibots.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/unibots.md",
   "type": "object",
   "properties": {
     "host": {
@@ -22470,7 +22362,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/unicorn.json",
   "title": "UNICORN bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (unicorn.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/unicorn.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/unicorn.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -22504,7 +22396,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/uniquest.json",
   "title": "UNIQUEST bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (uniquest.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/uniquest.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/uniquest.md",
   "type": "object",
   "properties": {
     "sid": {
@@ -22523,7 +22415,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/uniquest_widget.json",
   "title": "UNIQUEST Widget bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (uniquestWidget.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/uniquestWidget.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/uniquestWidget.md",
   "type": "object",
   "properties": {
     "wid": {
@@ -22542,7 +22434,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/unruly.json",
   "title": "Unruly bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (unruly.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/unruly.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/unruly.md",
   "type": "object",
   "properties": {
     "siteId": {
@@ -22569,7 +22461,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/uol.json",
   "title": "UOL bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (uol.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/uol.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/uol.md",
   "type": "object",
   "properties": {
     "placementID": {
@@ -22588,7 +22480,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/urekamedia.json",
   "title": "UrekaMedia bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (urekamedia.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/urekamedia.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/urekamedia.md",
   "type": "object",
   "properties": {
     "host": {
@@ -22620,7 +22512,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/vaayaMedia.json",
   "title": "Vaaya Media bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (vaayaMedia.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/vaayaMedia.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/vaayaMedia.md",
   "type": "object",
   "properties": {
     "host": {
@@ -22690,7 +22582,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/valuad.json",
   "title": "Valuad bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (valuad.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/valuad.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/valuad.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -22709,7 +22601,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/vdoai.json",
   "title": "VDO.AI bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (vdoai.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/vdoai.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/vdoai.md",
   "type": "object",
   "properties": {
     "host": {
@@ -22770,7 +22662,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/velonium.json",
   "title": "Velonium bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (velonium.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/velonium.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/velonium.md",
   "type": "object",
   "properties": {
     "host": {
@@ -22840,7 +22732,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/verben.json",
   "title": "Verben bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (verben.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/verben.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/verben.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -22858,7 +22750,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/vertamedia.json",
   "title": "Vertamedia bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (vertamedia.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/vertamedia.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/vertamedia.md",
   "type": "object",
   "properties": {
     "aid": {
@@ -22877,7 +22769,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/viantOrtb.json",
   "title": "Viant bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (viant.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/viant.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/viant.md",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -22896,7 +22788,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/vibrantmedia.json",
   "title": "Vibrant Media bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (vibrantmedia.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/vibrantmedia.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/vibrantmedia.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -22915,7 +22807,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/vidazoo.json",
   "title": "Vidazoo bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (vidazoo.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/vidazoo.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/vidazoo.md",
   "type": "object",
   "properties": {
     "cId": {
@@ -22955,7 +22847,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/vidcrunch.json",
   "title": "VidCrunch bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (vidcrunch.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/vidcrunch.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/vidcrunch.md",
   "type": "object",
   "properties": {
     "AV_PUBLISHERID": {
@@ -22987,7 +22879,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/vidcrunchllc.json",
   "title": "VidCrunch LLC bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (vidcrunchllc.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/vidcrunchllc.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/vidcrunchllc.md",
   "type": "object",
   "properties": {
     "aid": {
@@ -23006,7 +22898,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/videobyte.json",
   "title": "VideoByte bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (videobyte.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/videobyte.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/videobyte.md",
   "type": "object",
   "properties": {
     "pubId": {
@@ -23033,7 +22925,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/videoheroes.json",
   "title": "VideoHeroes bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (videoheroes.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/videoheroes.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/videoheroes.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -23052,7 +22944,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/videonow.json",
   "title": "videonow bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (videonow.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/videonow.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/videonow.md",
   "type": "object",
   "properties": {
     "pId": {
@@ -23083,7 +22975,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/videoreach.json",
   "title": "Video Reach bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (videoreach.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/videoreach.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/videoreach.md",
   "type": "object",
   "properties": {
     "TagId": {
@@ -23102,7 +22994,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/viewdeos.json",
   "title": "Viewdeos Server bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (viewdeos.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/viewdeos.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/viewdeos.md",
   "type": "object",
   "properties": {
     "aid": {
@@ -23121,7 +23013,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/viewdeosDX.json",
   "title": "ViewdeosDX Client bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (viewdeosDX.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/viewdeosDX.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/viewdeosDX.md",
   "type": "object",
   "properties": {
     "aid": {
@@ -23144,7 +23036,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/viously.json",
   "title": "Viously bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (viously.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/viously.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/viously.md",
   "type": "object",
   "properties": {
     "pid": {
@@ -23163,7 +23055,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/viqeo.json",
   "title": "viqeo bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (viqeo.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/viqeo.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/viqeo.md",
   "type": "object",
   "properties": {
     "user": {
@@ -23231,7 +23123,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/visiblemeasures.json",
   "title": "VisibleMeasures bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (visiblemeasures.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/visiblemeasures.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/visiblemeasures.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -23249,7 +23141,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/vistars.json",
   "title": "Vistars bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (vistars.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/vistars.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/vistars.md",
   "type": "object",
   "properties": {
     "source": {
@@ -23268,7 +23160,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/visx.json",
   "title": "YOC VIS.X bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (visx.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/visx.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/visx.md",
   "type": "object",
   "properties": {
     "uid": {
@@ -23287,7 +23179,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/vlyby.json",
   "title": "VLYBY bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (vlyby.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/vlyby.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/vlyby.md",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -23310,7 +23202,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/voisetech.json",
   "title": "Voise Tech bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (voisetech.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/voisetech.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/voisetech.md",
   "type": "object",
   "properties": {
     "host": {
@@ -23342,7 +23234,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/vox.json",
   "title": "VOX bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (vox.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/vox.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/vox.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -23385,7 +23277,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/vrtcal.json",
   "title": "VRTCAL Markets Inc. bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (vrtcal.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/vrtcal.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/vrtcal.md",
   "type": "object",
   "properties": {},
   "additionalProperties": false
@@ -23396,7 +23288,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/vungle.json",
   "title": "vungle bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (vungle.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/vungle.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/vungle.md",
   "type": "object",
   "properties": {
     "bid_token": {
@@ -23423,7 +23315,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/vuukle.json",
   "title": "Vuukle bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (vuukle.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/vuukle.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/vuukle.md",
   "type": "object",
   "properties": {
     "placement": {
@@ -23439,7 +23331,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/waardex_ak.json",
   "title": "WaardeX bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (waardex_ak.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/waardex_ak.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/waardex_ak.md",
   "type": "object",
   "properties": {
     "host": {
@@ -23471,7 +23363,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/welect.json",
   "title": "Welect bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (welect.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/welect.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/welect.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -23487,7 +23379,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/widespace.json",
   "title": "Widespace bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (widespace.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/widespace.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/widespace.md",
   "type": "object",
   "properties": {
     "sid": {
@@ -23518,7 +23410,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/winr.json",
   "title": "WINR bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (winr.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/winr.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/winr.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -23537,7 +23429,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/wipes.json",
   "title": "WIPES bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (wipes.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/wipes.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/wipes.md",
   "type": "object",
   "properties": {
     "asid": {
@@ -23556,7 +23448,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/xtrmqb.json",
   "title": "XTRM QB bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (xtrmqb.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/xtrmqb.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/xtrmqb.md",
   "type": "object",
   "properties": {
     "host": {
@@ -23588,7 +23480,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/yaleo.json",
   "title": "Yaleo bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (yaleo.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/yaleo.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/yaleo.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -23615,7 +23507,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/ybidder.json",
   "title": "Ybidder bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (ybidder.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/ybidder.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/ybidder.md",
   "type": "object",
   "properties": {
     "tagId": {
@@ -23638,7 +23530,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/yeahmobi.json",
   "title": "YeahMobi bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (yeahmobi.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/yeahmobi.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/yeahmobi.md",
   "type": "object",
   "properties": {
     "pubId": {
@@ -23670,7 +23562,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/yieldbot.json",
   "title": "Yieldbot bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (yieldbot.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/yieldbot.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/yieldbot.md",
   "type": "object",
   "properties": {
     "psn": {
@@ -23702,7 +23594,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/yieldlab.json",
   "title": "Yieldlab bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (yieldlab.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/yieldlab.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/yieldlab.md",
   "type": "object",
   "properties": {
     "adslotId": {
@@ -23750,7 +23642,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/yieldlift.json",
   "title": "YieldLift bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (yieldlift.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/yieldlift.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/yieldlift.md",
   "type": "object",
   "properties": {
     "unitId": {
@@ -23774,7 +23666,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/yieldlove.json",
   "title": "Yieldlove bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (yieldlove.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/yieldlove.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/yieldlove.md",
   "type": "object",
   "properties": {
     "rid": {
@@ -23806,7 +23698,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/yieldmo.json",
   "title": "Yieldmo bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (yieldmo.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/yieldmo.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/yieldmo.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -23833,7 +23725,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/yieldnexus.json",
   "title": "Yield Nexus bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (yieldnexus.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/yieldnexus.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/yieldnexus.md",
   "type": "object",
   "properties": {
     "spid": {
@@ -23852,7 +23744,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/yieldone.json",
   "title": "YieldOne bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (yieldone.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/yieldone.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/yieldone.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -23878,7 +23770,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/yobee.json",
   "title": "Yobee bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (yobee.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/yobee.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/yobee.md",
   "type": "object",
   "properties": {
     "networkId": {
@@ -23910,7 +23802,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/zentotem.json",
   "title": "Zentotem bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (zentotem.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/zentotem.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/zentotem.md",
   "type": "object",
   "properties": {},
   "additionalProperties": false
@@ -23921,7 +23813,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/zeroclickfraud.json",
   "title": "ZeroClickFraud bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (zeroclickfraud.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/zeroclickfraud.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/zeroclickfraud.md",
   "type": "object",
   "properties": {
     "sourceId": {
@@ -23953,7 +23845,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/zeta.json",
   "title": "Zeta Global bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (zeta_global.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/zeta_global.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/zeta_global.md",
   "type": "object",
   "properties": {
     "definerId": {
@@ -24044,7 +23936,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbjs/zmaticoo.json",
   "title": "zMaticoo bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (zmaticoo.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/e2559b3ae8367f0a851736c18ee18965806e803a/dev-docs/bidders/zmaticoo.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/zmaticoo.md",
   "type": "object",
   "properties": {
     "pubId": {
@@ -24832,31 +24724,6 @@ var embeddedSchemas = map[string][]byte{
   ]
 }
 `),
-	"pbs/adview.json": []byte(`{
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://prebid.org/schemas/pbs/adview.json",
-  "title": "AdView bidder params (Prebid Server)",
-  "description": "A schema which validates params accepted by the adview adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/adview.json",
-  "type": "object",
-  "properties": {
-    "placementId": {
-      "type": "string",
-      "description": "An ID which identifies the placement selling the impression",
-      "minLength": 1
-    },
-    "accountId": {
-      "type": "string",
-      "description": "Account id",
-      "minLength": 1
-    }
-  },
-  "required": [
-    "placementId",
-    "accountId"
-  ]
-}
-`),
 	"pbs/adxcg.json": []byte(`{
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://prebid.org/schemas/pbs/adxcg.json",
@@ -25432,37 +25299,6 @@ var embeddedSchemas = map[string][]byte{
   "required": []
 }
 `),
-	"pbs/avocet.json": []byte(`{
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://prebid.org/schemas/pbs/avocet.json",
-  "title": "Avocet bidder params (Prebid Server)",
-  "description": "A schema which validates params accepted by the Avocet adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/avocet.json",
-  "type": "object",
-  "properties": {
-    "placement": {
-      "type": "string",
-      "description": "An Avocet placement ID"
-    },
-    "placement_code": {
-      "type": "string",
-      "description": "An Avocet placement external code"
-    }
-  },
-  "oneOf": [
-    {
-      "required": [
-        "placement"
-      ]
-    },
-    {
-      "required": [
-        "placement_code"
-      ]
-    }
-  ]
-}
-`),
 	"pbs/axis.json": []byte(`{
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://prebid.org/schemas/pbs/axis.json",
@@ -25594,31 +25430,6 @@ var embeddedSchemas = map[string][]byte{
   ]
 }
 `),
-	"pbs/bematterfull.json": []byte(`{
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://prebid.org/schemas/pbs/bematterfull.json",
-  "title": "Bematterfull bidder params (Prebid Server)",
-  "description": "A schema which validates params accepted by the bematterfull adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/bematterfull.json",
-  "type": "object",
-  "properties": {
-    "env": {
-      "type": "string",
-      "description": "bematterfull environment",
-      "minLength": 1
-    },
-    "pid": {
-      "type": "string",
-      "description": "Uniq placement ID",
-      "minLength": 1
-    }
-  },
-  "required": [
-    "env",
-    "pid"
-  ]
-}
-`),
 	"pbs/beop.json": []byte(`{
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://prebid.org/schemas/pbs/beop.json",
@@ -25731,39 +25542,6 @@ var embeddedSchemas = map[string][]byte{
     "host",
     "path",
     "seller_id"
-  ]
-}
-`),
-	"pbs/bidmatic.json": []byte(`{
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://prebid.org/schemas/pbs/bidmatic.json",
-  "title": "Bidmatic bidder params (Prebid Server)",
-  "description": "A schema which validates params accepted by the Bidmatic adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/bidmatic.json",
-  "type": "object",
-  "properties": {
-    "placementId": {
-      "type": "integer",
-      "description": "An ID which identifies this placement of the impression"
-    },
-    "siteId": {
-      "type": "integer",
-      "description": "An ID which identifies the site selling the impression"
-    },
-    "source": {
-      "type": [
-        "integer",
-        "string"
-      ],
-      "description": "An ID which identifies the channel"
-    },
-    "bidFloor": {
-      "type": "number",
-      "description": "BidFloor, US Dollars"
-    }
-  },
-  "required": [
-    "source"
   ]
 }
 `),
@@ -26034,31 +25812,6 @@ var embeddedSchemas = map[string][]byte{
         "endpointId"
       ]
     }
-  ]
-}
-`),
-	"pbs/boldwin_rapid.json": []byte(`{
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://prebid.org/schemas/pbs/boldwin_rapid.json",
-  "title": "Boldwin-Rapid bidder params (Prebid Server)",
-  "description": "A schema which validates params accepted by the Boldwin-rapid adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/boldwin_rapid.json",
-  "type": "object",
-  "properties": {
-    "pid": {
-      "type": "string",
-      "minLength": 1,
-      "description": "Publisher ID"
-    },
-    "tid": {
-      "type": "string",
-      "minLength": 1,
-      "description": "Placement ID"
-    }
-  },
-  "required": [
-    "pid",
-    "tid"
   ]
 }
 `),
@@ -26684,29 +26437,6 @@ var embeddedSchemas = map[string][]byte{
   ]
 }
 `),
-	"pbs/decenterads.json": []byte(`{
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://prebid.org/schemas/pbs/decenterads.json",
-  "title": "DecenterAds bidder params (Prebid Server)",
-  "description": "A schema which validates params accepted by the DecenterAds adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/decenterads.json",
-  "type": "object",
-  "properties": {
-    "placementId": {
-      "type": "string",
-      "minLength": 1,
-      "description": "An ID which identifies the DecenterAds placement"
-    },
-    "customParams": {
-      "type": "object",
-      "description": "User-defined targeting key-value pairs."
-    }
-  },
-  "required": [
-    "placementId"
-  ]
-}
-`),
 	"pbs/deepintent.json": []byte(`{
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://prebid.org/schemas/pbs/deepintent.json",
@@ -26968,28 +26698,6 @@ var embeddedSchemas = map[string][]byte{
   ]
 }
 `),
-	"pbs/emx_digital.json": []byte(`{
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://prebid.org/schemas/pbs/emx_digital.json",
-  "title": "EMX Digital bidder params (Prebid Server)",
-  "description": "A schema which validates params accepted by the Cadent Aperture MX adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/emx_digital.json",
-  "type": "object",
-  "properties": {
-    "tagid": {
-      "type": "string",
-      "description": "The id of an inventory target"
-    },
-    "bidfloor": {
-      "type": "string",
-      "description": "The minimum price acceptable for a bid"
-    }
-  },
-  "required": [
-    "tagid"
-  ]
-}
-`),
 	"pbs/eplanning.json": []byte(`{
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://prebid.org/schemas/pbs/eplanning.json",
@@ -27230,27 +26938,6 @@ var embeddedSchemas = map[string][]byte{
     "publisherNameIdentifier",
     "siteId",
     "creativeType"
-  ]
-}
-`),
-	"pbs/freewheelssp.json": []byte(`{
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://prebid.org/schemas/pbs/freewheelssp.json",
-  "title": "FreewheelSSP bidder params (Prebid Server)",
-  "description": "A schema which validates params accepted by the FreewheelSSP adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/freewheelssp.json",
-  "type": "object",
-  "properties": {
-    "zoneId": {
-      "type": [
-        "integer",
-        "string"
-      ],
-      "description": "Zone ID"
-    }
-  },
-  "required": [
-    "zoneId"
   ]
 }
 `),
@@ -27718,22 +27405,6 @@ var embeddedSchemas = map[string][]byte{
   ]
 }
 `),
-	"pbs/interactiveoffers.json": []byte(`{
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://prebid.org/schemas/pbs/interactiveoffers.json",
-  "title": "Interactive Offers bidder params (Prebid Server)",
-  "description": "A schema which validates params accepted by Interactive Offers adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/interactiveoffers.json",
-  "type": "object",
-  "properties": {
-    "partnerId": {
-      "type": "string",
-      "description": "The partners id"
-    }
-  },
-  "required": []
-}
-`),
 	"pbs/invibes.json": []byte(`{
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://prebid.org/schemas/pbs/invibes.json",
@@ -27913,32 +27584,7 @@ var embeddedSchemas = map[string][]byte{
   ]
 }
 `),
-	"pbs/kargo.json": []byte("{\r\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\r\n  \"$id\": \"https://prebid.org/schemas/pbs/kargo.json\",\r\n  \"title\": \"Kargo bidder params (Prebid Server)\",\r\n  \"description\": \"A schema which validates params accepted by the Kargo adapter\",\r\n  \"x-source-url\": \"https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/kargo.json\",\r\n  \"type\": \"object\",\r\n  \"properties\": {\r\n    \"placementId\": {\r\n      \"type\": \"string\",\r\n      \"description\": \"An ID which identifies the adslot placement. Equivalent to the id of target inventory, ad unit code, or placement id\"\r\n    },\r\n    \"adSlotID\": {\r\n      \"type\": \"string\",\r\n      \"description\": \"[Deprecated: Use `placementId`] An ID which identifies the adslot placement. Equivalent to the id of target inventory, ad unit code, or placement id\"\r\n    }\r\n  },\r\n  \"oneOf\": [\r\n    {\r\n      \"required\": [\r\n        \"placementId\"\r\n      ]\r\n    },\r\n    {\r\n      \"required\": [\r\n        \"adSlotID\"\r\n      ]\r\n    }\r\n  ]\r\n}\r\n"),
-	"pbs/kayzen.json": []byte(`{
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://prebid.org/schemas/pbs/kayzen.json",
-  "title": "Kayzen bidder params (Prebid Server)",
-  "description": "A schema which validates params accepted by the Kayzen adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/kayzen.json",
-  "type": "object",
-  "properties": {
-    "zone": {
-      "type": "string",
-      "minLength": 1,
-      "description": "Zone ID"
-    },
-    "exchange": {
-      "type": "string",
-      "minLength": 1,
-      "description": "Exchange/Publisher Name"
-    }
-  },
-  "required": [
-    "zone",
-    "exchange"
-  ]
-}
-`),
+	"pbs/kargo.json": []byte("{\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n  \"$id\": \"https://prebid.org/schemas/pbs/kargo.json\",\n  \"title\": \"Kargo bidder params (Prebid Server)\",\n  \"description\": \"A schema which validates params accepted by the Kargo adapter\",\n  \"x-source-url\": \"https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/kargo.json\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"placementId\": {\n      \"type\": \"string\",\n      \"description\": \"An ID which identifies the adslot placement. Equivalent to the id of target inventory, ad unit code, or placement id\"\n    },\n    \"adSlotID\": {\n      \"type\": \"string\",\n      \"description\": \"[Deprecated: Use `placementId`] An ID which identifies the adslot placement. Equivalent to the id of target inventory, ad unit code, or placement id\"\n    }\n  },\n  \"oneOf\": [\n    {\n      \"required\": [\n        \"placementId\"\n      ]\n    },\n    {\n      \"required\": [\n        \"adSlotID\"\n      ]\n    }\n  ]\n}\n"),
 	"pbs/kidoz.json": []byte(`{
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://prebid.org/schemas/pbs/kidoz.json",
@@ -28927,54 +28573,6 @@ var embeddedSchemas = map[string][]byte{
   "properties": {}
 }
 `),
-	"pbs/nextmillennium.json": []byte(`{
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://prebid.org/schemas/pbs/nextmillennium.json",
-  "title": "NextMillennium bidder params (Prebid Server)",
-  "description": "A schema which validates params accepted by the NextMillennium adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/nextmillennium.json",
-  "type": "object",
-  "properties": {
-    "placement_id": {
-      "type": "string",
-      "minLength": 1,
-      "description": "An id used to identify NextMillennium placement"
-    },
-    "group_id": {
-      "type": "string",
-      "minLength": 1,
-      "description": "An id used to identify NextMillennium placement group"
-    },
-    "adSlots": {
-      "type": "array",
-      "minItems": 1,
-      "description": "IDs which identifies the ad slots",
-      "items": {
-        "type": "string"
-      }
-    },
-    "allowedAds": {
-      "type": "array",
-      "description": "List of allowed ads",
-      "items": {
-        "type": "string"
-      }
-    }
-  },
-  "anyOf": [
-    {
-      "required": [
-        "placement_id"
-      ]
-    },
-    {
-      "required": [
-        "group_id"
-      ]
-    }
-  ]
-}
-`),
 	"pbs/nexx360.json": []byte(`{
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://prebid.org/schemas/pbs/nexx360.json",
@@ -29946,31 +29544,6 @@ var embeddedSchemas = map[string][]byte{
   ]
 }
 `),
-	"pbs/roulax.json": []byte(`{
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://prebid.org/schemas/pbs/roulax.json",
-  "title": "Roulax bidder params (Prebid Server)",
-  "description": "A schema which validates params accepted by the Roulax adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/roulax.json",
-  "type": "object",
-  "properties": {
-    "PId": {
-      "type": "string",
-      "minLength": 1,
-      "description": "PID"
-    },
-    "PublisherPath": {
-      "type": "string",
-      "minLength": 1,
-      "description": "PublisherPath"
-    }
-  },
-  "required": [
-    "Pid",
-    "PublisherPath"
-  ]
-}
-`),
 	"pbs/rtbhouse.json": []byte(`{
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://prebid.org/schemas/pbs/rtbhouse.json",
@@ -30208,25 +29781,6 @@ var embeddedSchemas = map[string][]byte{
   ]
 }
 `),
-	"pbs/showheroes.json": []byte(`{
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://prebid.org/schemas/pbs/showheroes.json",
-  "title": "Showheroes bidder params (Prebid Server)",
-  "description": "A schema which validates params accepted by the Showheroes adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/showheroes.json",
-  "type": "object",
-  "properties": {
-    "unitId": {
-      "type": "string",
-      "description": "Unit ID",
-      "minLength": 8
-    }
-  },
-  "required": [
-    "unitId"
-  ]
-}
-`),
 	"pbs/silvermob.json": []byte(`{
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://prebid.org/schemas/pbs/silvermob.json",
@@ -30272,7 +29826,7 @@ var embeddedSchemas = map[string][]byte{
   ]
 }
 `),
-	"pbs/smaato.json": []byte("{\r\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\r\n  \"$id\": \"https://prebid.org/schemas/pbs/smaato.json\",\r\n  \"title\": \"Smaato bidder params (Prebid Server)\",\r\n  \"description\": \"A schema which validates params accepted by the Smaato adapter\",\r\n  \"x-source-url\": \"https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/smaato.json\",\r\n  \"type\": \"object\",\r\n  \"properties\": {\r\n    \"publisherId\": {\r\n      \"type\": \"string\",\r\n      \"description\": \"A unique identifier for this impression within the context of the bid request\"\r\n    },\r\n    \"adspaceId\": {\r\n      \"type\": \"string\",\r\n      \"description\": \"Identifier for specific ad placement is SOMA `adspaceId`\"\r\n    },\r\n    \"adbreakId\": {\r\n      \"type\": \"string\",\r\n      \"description\": \"Identifier for specific adpod placement is SOMA `adbreakId`\"\r\n    }\r\n  },\r\n  \"required\": [\r\n    \"publisherId\"\r\n  ],\r\n  \"anyOf\": [\r\n    {\r\n      \"required\": [\r\n        \"adspaceId\"\r\n      ]\r\n    },\r\n    {\r\n      \"required\": [\r\n        \"adbreakId\"\r\n      ]\r\n    }\r\n  ]\r\n}\r\n"),
+	"pbs/smaato.json": []byte("{\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n  \"$id\": \"https://prebid.org/schemas/pbs/smaato.json\",\n  \"title\": \"Smaato bidder params (Prebid Server)\",\n  \"description\": \"A schema which validates params accepted by the Smaato adapter\",\n  \"x-source-url\": \"https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/smaato.json\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"publisherId\": {\n      \"type\": \"string\",\n      \"description\": \"A unique identifier for this impression within the context of the bid request\"\n    },\n    \"adspaceId\": {\n      \"type\": \"string\",\n      \"description\": \"Identifier for specific ad placement is SOMA `adspaceId`\"\n    },\n    \"adbreakId\": {\n      \"type\": \"string\",\n      \"description\": \"Identifier for specific adpod placement is SOMA `adbreakId`\"\n    }\n  },\n  \"required\": [\n    \"publisherId\"\n  ],\n  \"anyOf\": [\n    {\n      \"required\": [\n        \"adspaceId\"\n      ]\n    },\n    {\n      \"required\": [\n        \"adbreakId\"\n      ]\n    }\n  ]\n}\n"),
 	"pbs/smartadserver.json": []byte(`{
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://prebid.org/schemas/pbs/smartadserver.json",
@@ -30353,38 +29907,6 @@ var embeddedSchemas = map[string][]byte{
   "required": [
     "seat",
     "token"
-  ]
-}
-`),
-	"pbs/smartrtb.json": []byte(`{
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://prebid.org/schemas/pbs/smartrtb.json",
-  "title": "SmartRTB bidder params (Prebid Server)",
-  "description": "Required parameters for the SmartRTB server adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/smartrtb.json",
-  "type": "object",
-  "properties": {
-    "pub_id": {
-      "type": "string",
-      "description": "Assigned publisher ID",
-      "minLength": 4
-    },
-    "med_id": {
-      "type": "string",
-      "description": "Property ID not zone ID not provided"
-    },
-    "zone_id": {
-      "type": "string",
-      "description": "Specific zone ID for this placement, belonging to app/site",
-      "minLength": 20
-    },
-    "force_bid": {
-      "type": "boolean",
-      "description": "Force bids with a test creative"
-    }
-  },
-  "required": [
-    "pub_id"
   ]
 }
 `),
@@ -30600,38 +30122,6 @@ var embeddedSchemas = map[string][]byte{
         "tagId"
       ]
     }
-  ]
-}
-`),
-	"pbs/sovrnXsp.json": []byte(`{
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://prebid.org/schemas/pbs/sovrnXsp.json",
-  "title": "Sovrn XSP bidder params (Prebid Server)",
-  "description": "Schema validating params accepted by the Sovrn XSP adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/sovrnXsp.json",
-  "type": "object",
-  "properties": {
-    "pub_id": {
-      "type": "string",
-      "description": "Assigned publisher ID",
-      "minLength": 4
-    },
-    "med_id": {
-      "type": "string",
-      "description": "Property ID not zone ID not provided"
-    },
-    "zone_id": {
-      "type": "string",
-      "description": "Specific zone ID for this placement, belonging to app/site",
-      "minLength": 20
-    },
-    "force_bid": {
-      "type": "boolean",
-      "description": "Force bids with a test creative"
-    }
-  },
-  "required": [
-    "pub_id"
   ]
 }
 `),
@@ -30887,39 +30377,6 @@ var embeddedSchemas = map[string][]byte{
   ]
 }
 `),
-	"pbs/teqblaze.json": []byte(`{
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://prebid.org/schemas/pbs/teqblaze.json",
-  "title": "TeqBlaze bidder params (Prebid Server)",
-  "description": "A schema which validates params accepted by the TeqBlaze adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/teqblaze.json",
-  "type": "object",
-  "properties": {
-    "placementId": {
-      "type": "string",
-      "minLength": 1,
-      "description": "Placement ID"
-    },
-    "endpointId": {
-      "type": "string",
-      "minLength": 1,
-      "description": "Endpoint ID"
-    }
-  },
-  "oneOf": [
-    {
-      "required": [
-        "placementId"
-      ]
-    },
-    {
-      "required": [
-        "endpointId"
-      ]
-    }
-  ]
-}
-`),
 	"pbs/theadx.json": []byte(`{
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://prebid.org/schemas/pbs/theadx.json",
@@ -30965,30 +30422,6 @@ var embeddedSchemas = map[string][]byte{
         "tagid"
       ]
     }
-  ]
-}
-`),
-	"pbs/thetradedesk.json": []byte(`{
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://prebid.org/schemas/pbs/thetradedesk.json",
-  "title": "The Trade Desk bidder params (Prebid Server)",
-  "description": "A schema which validates params accepted by the The Trade Desk adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/thetradedesk.json",
-  "type": "object",
-  "properties": {
-    "publisherId": {
-      "type": "string",
-      "minLength": 1,
-      "description": "An ID which identifies the publisher"
-    },
-    "supplySourceId": {
-      "type": "string",
-      "minLength": 1,
-      "description": "An ID provided by TheTradeDesk used to determine which endpoint to use"
-    }
-  },
-  "required": [
-    "publisherId"
   ]
 }
 `),
@@ -31474,31 +30907,6 @@ var embeddedSchemas = map[string][]byte{
   "required": [
     "app_store_id",
     "placement_reference_id"
-  ]
-}
-`),
-	"pbs/xeworks.json": []byte(`{
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://prebid.org/schemas/pbs/xeworks.json",
-  "title": "xe.works bidder params (Prebid Server)",
-  "description": "A schema which validates params accepted by the xe.works adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/99009c08fb6204ec10f236653a7fc47c229339c3/static/bidder-params/xeworks.json",
-  "type": "object",
-  "properties": {
-    "env": {
-      "type": "string",
-      "description": "xe.works environment",
-      "minLength": 1
-    },
-    "pid": {
-      "type": "string",
-      "description": "Uniq placement ID",
-      "minLength": 1
-    }
-  },
-  "required": [
-    "env",
-    "pid"
   ]
 }
 `),
