@@ -121,12 +121,13 @@ header {
   border-bottom: 1px solid var(--border);
   flex-shrink: 0;
 }
-.panel-title {
+h2.panel-title {
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--dim);
+  margin: 0;
 }
 .panel-count {
   font-family: var(--mono);
@@ -598,16 +599,54 @@ header {
   border-color: rgba(74, 222, 128, 0.3);
 }
 
+/* ── Screen-reader only ────────────────────────────────────────────────── */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* ── Footer ────────────────────────────────────────────────────────────── */
-.copyright {
+.site-footer {
   flex-shrink: 0;
   text-align: center;
-  padding: 6px 20px;
+  padding: 14px 20px 10px;
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+}
+.footer-about {
+  max-width: 640px;
+  margin: 0 auto 8px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--dim);
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+.footer-links a {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--dim);
+  text-decoration: none;
+  transition: color 0.12s;
+}
+.footer-links a:hover {
+  color: var(--text);
+}
+.copyright {
   font-family: var(--mono);
   font-size: 11px;
   color: var(--faint);
-  border-top: 1px solid var(--border);
-  background: var(--surface);
   letter-spacing: 0.04em;
 }
 

@@ -3,7 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prebid Adapter Validator — Demo</title>
+    <title>Prebid Adapter Validator — Browse Schemas & Validate Params</title>
+    <meta name="description" content="Browse every Prebid.js and Prebid Server bidder schema, generate sample params, and validate adapter configurations instantly in the browser." />
+    <meta name="keywords" content="prebid, prebid.js, prebid server, bidder adapter, json schema, validator, params, header bidding, programmatic advertising" />
+    <meta name="author" content="ppokyd" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+    <meta name="theme-color" content="#f0c040" />
+    <link rel="canonical" href="https://ppokyd.github.io/pb-validator/" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polygon points='50,0 100,25 100,75 50,100 0,75 0,25' fill='%23f0c040'/></svg>" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Prebid Adapter Validator — Browse Schemas & Validate Params" />
+    <meta property="og:description" content="Interactive playground for Prebid bidder adapters. Inspect JSON Schemas for Prebid.js and Prebid Server, auto-generate sample params, and validate configurations in real time." />
+    <meta property="og:url" content="https://ppokyd.github.io/pb-validator/" />
+    <meta property="og:site_name" content="Prebid Adapter Validator" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Prebid Adapter Validator — Browse Schemas & Validate Params" />
+    <meta name="twitter:description" content="Browse every Prebid.js and Prebid Server bidder schema, generate sample params, and validate adapter configurations instantly." />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Prebid Adapter Validator",
+        "description": "Browse every Prebid.js and Prebid Server bidder schema, generate sample params, and validate adapter configurations in the browser.",
+        "url": "https://ppokyd.github.io/pb-validator/",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "All",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "author": { "@type": "Organization", "name": "ppokyd", "url": "https://github.com/ppokyd" },
+        "featureList": [
+          "Browse all Prebid.js and Prebid Server bidder schemas",
+          "Real-time JSON Schema validation",
+          "Auto-generate sample adapter params",
+          "Shareable deep links to bidder configs",
+          "Syntax-highlighted schema viewer"
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Prebid Adapter Validator", "item": "https://ppokyd.github.io/pb-validator/" }
+        ]
+      }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,65 +76,87 @@
       gtag('config', 'G-0LWKPKCY4J');
     </script>
     <header>
+      <h1 class="sr-only">Prebid Adapter Validator — Browse Schemas &amp; Validate Params</h1>
       <div class="logo">
-        <div class="logo-mark"></div>
+        <div class="logo-mark" role="img" aria-label="Prebid Adapter Validator logo"></div>
         <span class="logo-name">Prebid Adapter Validator</span>
         <span class="logo-sep logo-hide-mobile">&mdash;</span>
         <span class="logo-tag logo-hide-mobile">Demo</span>
       </div>
-      <div class="header-right">
+      <nav class="header-right" aria-label="External links">
         <a class="pkg-badge" href="https://www.npmjs.com/package/@ppokyd/pb-validator" target="_blank" rel="noopener noreferrer"
           >@ppokyd/pb-validator</a
         >
-      </div>
+      </nav>
     </header>
-    <div class="layout">
-      <aside class="panel" id="bidderPanel">
+    <noscript>
+      <div style="padding:2rem;text-align:center;font-family:system-ui,sans-serif;color:#e2e2e2;background:#0c0c0c;">
+        <h2>Prebid Adapter Validator</h2>
+        <p>This interactive tool requires JavaScript to browse bidder schemas, generate sample params, and validate adapter configurations.</p>
+        <p style="margin-top:1rem;">You can use the validator programmatically via the npm package:
+          <a href="https://www.npmjs.com/package/@ppokyd/pb-validator" style="color:#f0c040;">@ppokyd/pb-validator</a>
+        </p>
+      </div>
+    </noscript>
+    <main class="layout" role="main">
+      <aside class="panel" id="bidderPanel" aria-label="Bidder list">
         <div class="panel-head">
-          <span class="panel-title">Bidders <span class="bidder-current" id="bidderCurrent"></span></span>
-          <span class="panel-count" id="bidderCount">&mdash;</span>
+          <h2 class="panel-title">Bidders <span class="bidder-current" id="bidderCurrent"></span></h2>
+          <span class="panel-count" id="bidderCount" aria-live="polite">&mdash;</span>
         </div>
         <div class="search-bar">
-          <input class="search-input" id="searchInput" type="text" placeholder="Search&hellip;" autocomplete="off" spellcheck="false" />
+          <label for="searchInput" class="sr-only">Search bidders</label>
+          <input class="search-input" id="searchInput" type="search" placeholder="Search&hellip;" autocomplete="off" spellcheck="false" />
         </div>
-        <div class="bidder-list" id="bidderList">
+        <div class="bidder-list" id="bidderList" role="listbox" aria-label="Available bidders">
           <div class="list-msg">Loading&hellip;</div>
         </div>
       </aside>
-      <section class="panel" id="schemaPanel">
+      <section class="panel" id="schemaPanel" aria-label="Schema viewer">
         <div class="panel-head">
-          <span class="panel-title"
+          <h2 class="panel-title"
             >Schema &mdash; <span id="schemaLabel" class="accent">&mdash;</span
-            ><a id="docLink" class="doc-link" href="#" target="_blank" rel="noopener noreferrer" hidden>source ↗</a></span
+            ><a id="docLink" class="doc-link" href="#" target="_blank" rel="noopener noreferrer" hidden>source ↗</a></h2
           >
-          <button class="action-btn" id="copyBtn">copy</button>
+          <button class="action-btn" id="copyBtn" aria-label="Copy schema to clipboard">copy</button>
         </div>
         <div class="schema-body">
-          <pre class="schema-pre" id="schemaPre"><span class="muted">Select a bidder.</span></pre>
+          <pre class="schema-pre" id="schemaPre" aria-live="polite"><span class="muted">Select a bidder.</span></pre>
         </div>
       </section>
-      <section class="panel" id="paramsPanel">
+      <section class="panel" id="paramsPanel" aria-label="Parameter editor and validator">
         <div class="panel-head">
-          <span class="panel-title">Params</span>
+          <h2 class="panel-title">Params</h2>
           <div class="panel-head-right">
-            <span class="json-status" id="jsonStatus"></span>
-            <button class="action-btn" id="copyParamsBtn">copy</button>
+            <span class="json-status" id="jsonStatus" aria-live="polite"></span>
+            <button class="action-btn" id="copyParamsBtn" aria-label="Copy params to clipboard">copy</button>
           </div>
         </div>
         <div id="schemaHints" class="schema-hints" hidden></div>
         <div class="params-body">
+          <label for="paramsEditor" class="sr-only">Bidder adapter params (JSON)</label>
           <textarea id="paramsEditor" class="params-editor" spellcheck="false" placeholder='{ "key": "value" }'></textarea>
         </div>
-        <div class="action-bar">
+        <div class="action-bar" role="toolbar" aria-label="Validation actions">
           <button class="btn-ghost btn-generate" id="generateBtn">Generate</button>
           <button class="btn-primary" id="validateBtn">Validate</button>
           <button class="btn-ghost" id="clearBtn">Clear</button>
         </div>
-        <div class="result-area" id="resultArea">
+        <div class="result-area" id="resultArea" aria-live="polite">
           <p class="result-idle">Enter params or press Generate, then Validate.</p>
         </div>
       </section>
-    </div>
-    <footer class="copyright">&copy; 2026 Prebid Adapter Validator &mdash; Apache 2.0 License</footer>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-about">
+        <p><strong>Prebid Adapter Validator</strong> is a free, open-source tool for browsing and validating bidder adapter parameters against auto-synced JSON Schemas for Prebid.js and Prebid Server. Inspect schemas, generate sample configs, and share deep links — all in the browser.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="https://github.com/ppokyd/pb-validator" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.npmjs.com/package/@ppokyd/pb-validator" target="_blank" rel="noopener noreferrer">npm</a>
+        <a href="https://prebid.org" target="_blank" rel="noopener noreferrer">Prebid.org</a>
+      </nav>
+      <p class="copyright">&copy; 2026 Prebid Adapter Validator &mdash; Apache 2.0 License</p>
+    </footer>
   </body>
 </html>
