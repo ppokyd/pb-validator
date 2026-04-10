@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = (env, argv) => {
   // Production builds are deployed to GitHub Pages under /pb-validator/.
@@ -28,6 +29,12 @@ module.exports = (env, argv) => {
         // Read the template at config time so html-webpack-plugin receives a plain
         // string, bypassing its loader and avoiding the lodash assignWith conflict.
         templateContent: fs.readFileSync(path.resolve(__dirname, 'src/index.html'), 'utf-8'),
+      }),
+      new CopyPlugin({
+        patterns: [
+          { from: 'src/robots.txt', to: 'robots.txt' },
+          { from: 'src/sitemap.xml', to: 'sitemap.xml' },
+        ],
       }),
     ],
     devServer: {
