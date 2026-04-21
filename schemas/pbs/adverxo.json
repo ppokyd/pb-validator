@@ -3,7 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/adverxo.json",
   "title": "Adverxo bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Adverxo adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/adverxo.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/adverxo.json",
   "type": "object",
   "properties": {
     "adUnitId": {

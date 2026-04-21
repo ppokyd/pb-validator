@@ -15,7 +15,7 @@ var embeddedManifestJSON = []byte([]byte(`{
     "prebid_server": {
       "repo": "https://github.com/prebid/prebid-server",
       "path": "static/bidder-params",
-      "commit": "563940c47ac5c00db09822ce208b9e4b7304c9db",
+      "commit": "d7f8515b86258688304b0d9b6668c6a0e258bc9e",
       "note": "Updated by tools/sync-prebid-server from static/bidder-params."
     }
   },
@@ -24121,7 +24121,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/33across.json",
   "title": "33Across bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the 33Across adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/33across.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/33across.json",
   "type": "object",
   "properties": {
     "productId": {
@@ -24158,7 +24158,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/aax.json",
   "title": "Aax bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Aax adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/aax.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/aax.json",
   "type": "object",
   "properties": {
     "cid": {
@@ -24183,7 +24183,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/aceex.json",
   "title": "Aceex bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Aceex adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/aceex.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/aceex.json",
   "type": "object",
   "properties": {
     "accountid": {
@@ -24202,7 +24202,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/acuityads.json",
   "title": "AcuityAds bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the AcuityAds adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/acuityads.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/acuityads.json",
   "type": "object",
   "properties": {
     "host": {
@@ -24227,7 +24227,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/adagio.json",
   "title": "Adagio bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Adagio adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/adagio.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/adagio.json",
   "type": "object",
   "properties": {
     "organizationId": {
@@ -24262,7 +24262,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/adelement.json",
   "title": "Adelement Params bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Adelement",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/adelement.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/adelement.json",
   "type": "object",
   "properties": {
     "supply_id": {
@@ -24281,7 +24281,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/adf.json",
   "title": "Adf bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the adf adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/adf.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/adf.json",
   "type": "object",
   "properties": {
     "mid": {
@@ -24332,7 +24332,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/adgeneration.json",
   "title": "AdGeneration bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the AdGeneration adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/adgeneration.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/adgeneration.json",
   "type": "object",
   "properties": {
     "id": {
@@ -24350,7 +24350,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/adhese.json",
   "title": "Adhese Adapter Parameters bidder params (Prebid Server)",
   "description": "Validation for parameters handled by the Adhese adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/adhese.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/adhese.json",
   "type": "object",
   "properties": {
     "account": {
@@ -24384,7 +24384,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/adkernel.json",
   "title": "Adkernel bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Adkernel adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/adkernel.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/adkernel.json",
   "type": "object",
   "properties": {
     "zoneId": {
@@ -24403,7 +24403,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/adkernelAdn.json",
   "title": "AdkernelAdn bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the AdkernelAdn adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/adkernelAdn.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/adkernelAdn.json",
   "type": "object",
   "properties": {
     "pubId": {
@@ -24422,7 +24422,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/adman.json",
   "title": "Adman bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Adman adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/adman.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/adman.json",
   "type": "object",
   "properties": {
     "TagID": {
@@ -24440,7 +24440,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/admatic.json",
   "title": "AdMatic bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the AdMatic adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/admatic.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/admatic.json",
   "type": "object",
   "properties": {
     "host": {
@@ -24463,7 +24463,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/admixer.json",
   "title": "Admixer bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Admixer adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/admixer.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/admixer.json",
   "type": "object",
   "properties": {
     "zone": {
@@ -24491,7 +24491,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/adnuntius.json",
   "title": "Adnuntius bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Adnuntius adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/adnuntius.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/adnuntius.json",
   "type": "object",
   "properties": {
     "auId": {
@@ -24525,7 +24525,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/adot.json",
   "title": "The Adot bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by Adot adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/adot.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/adot.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -24553,7 +24553,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/adpone.json",
   "title": "Adpone bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the adpone adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/adpone.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/adpone.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -24569,7 +24569,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/adprime.json",
   "title": "Adprime bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Adprime adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/adprime.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/adprime.json",
   "type": "object",
   "properties": {
     "TagID": {
@@ -24601,7 +24601,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/adquery.json",
   "title": "Adquery bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Adquery adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/adquery.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/adquery.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -24627,7 +24627,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/adrino.json",
   "title": "Adrino bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Adrino adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/adrino.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/adrino.json",
   "type": "object",
   "properties": {
     "hash": {
@@ -24646,7 +24646,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/adtarget.json",
   "title": "Adtarget bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Adtarget adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/adtarget.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/adtarget.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -24679,7 +24679,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/adtelligent.json",
   "title": "Adtelligent bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Adtelligent adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/adtelligent.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/adtelligent.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -24712,7 +24712,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/adtonos.json",
   "title": "AdTonos bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the AdTonos adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/adtonos.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/adtonos.json",
   "type": "object",
   "properties": {
     "supplierId": {
@@ -24730,7 +24730,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/adtrgtme.json",
   "title": "Adtrgtme bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Adtrgtme adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/adtrgtme.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/adtrgtme.json",
   "type": "object",
   "properties": {
     "site_id": {
@@ -24748,7 +24748,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/aduptech.json",
   "title": "AdUp Tech bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the AdUp Tech adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/aduptech.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/aduptech.json",
   "type": "object",
   "properties": {
     "publisher": {
@@ -24789,7 +24789,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/advangelists.json",
   "title": "Advangelists bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Advangelists adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/advangelists.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/advangelists.json",
   "type": "object",
   "properties": {
     "pubid": {
@@ -24812,7 +24812,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/adverxo.json",
   "title": "Adverxo bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Adverxo adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/adverxo.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/adverxo.json",
   "type": "object",
   "properties": {
     "adUnitId": {
@@ -24837,7 +24837,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/adview.json",
   "title": "AdView bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the adview adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/adview.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/adview.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -24862,7 +24862,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/adxcg.json",
   "title": "Adxcg bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Adxcg adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/adxcg.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/adxcg.json",
   "type": "object",
   "properties": {
     "adzoneid": {
@@ -24881,7 +24881,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/adyoulike.json",
   "title": "AdYouLike bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the AdYouLike adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/adyoulike.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/adyoulike.json",
   "type": "object",
   "properties": {
     "placement": {
@@ -24919,7 +24919,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/afront.json",
   "title": "Afront bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Afront adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/afront.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/afront.json",
   "type": "object",
   "properties": {
     "accountId": {
@@ -24944,7 +24944,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/aidem.json",
   "title": "AIDEM bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the AIDEM adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/aidem.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/aidem.json",
   "type": "object",
   "properties": {
     "siteId": {
@@ -24979,7 +24979,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/aja.json",
   "title": "AJA bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the AJA adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/aja.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/aja.json",
   "type": "object",
   "properties": {
     "asi": {
@@ -24997,7 +24997,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/akcelo.json",
   "title": "Akcelo bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Akcelo adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/akcelo.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/akcelo.json",
   "type": "object",
   "properties": {
     "adUnitID": {
@@ -25024,7 +25024,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/algorix.json",
   "title": "AlgoriX bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the AlgoriX adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/algorix.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/algorix.json",
   "type": "object",
   "properties": {
     "sid": {
@@ -25066,7 +25066,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/alkimi.json",
   "title": "Alkimi bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Alkimi adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/alkimi.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/alkimi.json",
   "type": "object",
   "properties": {
     "token": {
@@ -25097,7 +25097,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/alliance_gravity.json",
   "title": "Alliance Gravity bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Alliance Gravity adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/alliance_gravity.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/alliance_gravity.json",
   "type": "object",
   "properties": {
     "srid": {
@@ -25116,7 +25116,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/amx.json",
   "title": "AMX RTB bidder params (Prebid Server)",
   "description": "A schema to validate params accepted by the AMX adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/amx.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/amx.json",
   "type": "object",
   "properties": {
     "tagId": {
@@ -25135,7 +25135,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/apacdex.json",
   "title": "Apacdex bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Apacdex adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/apacdex.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/apacdex.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -25170,7 +25170,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/appnexus.json",
   "title": "Appnexus bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the AppNexus adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/appnexus.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/appnexus.json",
   "type": "object",
   "properties": {
     "placement_id": {
@@ -25348,7 +25348,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/appush.json",
   "title": "Appush bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Appush adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/appush.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/appush.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -25381,7 +25381,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/aso.json",
   "title": "Adserver.Online bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the aso adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/aso.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/aso.json",
   "type": "object",
   "properties": {
     "zone": {
@@ -25399,7 +25399,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/audienceNetwork.json",
   "title": "Facebook Audience Network bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Facebook Audience Network adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/audienceNetwork.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/audienceNetwork.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -25417,7 +25417,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/automatad.json",
   "title": "Automatad bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Automatad adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/automatad.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/automatad.json",
   "type": "object",
   "properties": {
     "position": {
@@ -25437,7 +25437,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/avocet.json",
   "title": "Avocet bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Avocet adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/avocet.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/avocet.json",
   "type": "object",
   "properties": {
     "placement": {
@@ -25468,7 +25468,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/axis.json",
   "title": "Axis bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Axis adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/axis.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/axis.json",
   "type": "object",
   "properties": {
     "integration": {
@@ -25495,7 +25495,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/axonix.json",
   "title": "Axonix bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Axonix adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/axonix.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/axonix.json",
   "type": "object",
   "properties": {
     "supplyId": {
@@ -25514,7 +25514,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/beachfront.json",
   "title": "Beachfront bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Beachfront adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/beachfront.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/beachfront.json",
   "type": "object",
   "properties": {
     "appId": {
@@ -25577,7 +25577,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/beintoo.json",
   "title": "Beintoo bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Beintoo adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/beintoo.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/beintoo.json",
   "type": "object",
   "properties": {
     "tagid": {
@@ -25599,7 +25599,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/bematterfull.json",
   "title": "Bematterfull bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the bematterfull adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/bematterfull.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/bematterfull.json",
   "type": "object",
   "properties": {
     "env": {
@@ -25624,7 +25624,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/beop.json",
   "title": "BeOp bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the BeOp adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/beop.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/beop.json",
   "type": "object",
   "properties": {
     "pid": {
@@ -25660,7 +25660,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/between.json",
   "title": "BetweenDigital bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the BetweenDigital adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/between.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/between.json",
   "type": "object",
   "properties": {
     "host": {
@@ -25689,7 +25689,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/beyondmedia.json",
   "title": "AndBeyond.Media bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the AndBeyond.Media adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/beyondmedia.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/beyondmedia.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -25708,7 +25708,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/bidmachine.json",
   "title": "Bidmachine bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Kidoz adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/bidmachine.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/bidmachine.json",
   "type": "object",
   "properties": {
     "host": {
@@ -25739,7 +25739,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/bidmatic.json",
   "title": "Bidmatic bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Bidmatic adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/bidmatic.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/bidmatic.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -25772,7 +25772,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/bidmyadz.json",
   "title": "BidMyAdz bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the BidMyAdz adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/bidmyadz.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/bidmyadz.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -25789,7 +25789,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/bidscube.json",
   "title": "BidsCube bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the BidsCube adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/bidscube.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/bidscube.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -25812,7 +25812,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/bidstack.json",
   "title": "Bidstack bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Bidstack adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/bidstack.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/bidstack.json",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -25840,7 +25840,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/bidtheatre.json",
   "title": "Bidtheatre bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Bidtheatre adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/bidtheatre.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/bidtheatre.json",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -25859,7 +25859,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/bigoad.json",
   "title": "BigoAd bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the BigoAd adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/bigoad.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/bigoad.json",
   "type": "object",
   "properties": {
     "sspid": {
@@ -25877,7 +25877,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/blasto.json",
   "title": "Blasto bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Blasto adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/blasto.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/blasto.json",
   "type": "object",
   "properties": {
     "accountId": {
@@ -25902,7 +25902,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/bliink.json",
   "title": "Bliink bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Bliink adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/bliink.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/bliink.json",
   "type": "object",
   "properties": {
     "tagId": {
@@ -25924,7 +25924,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/blis.json",
   "title": "Blis bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Blis adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/blis.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/blis.json",
   "type": "object",
   "properties": {
     "spid": {
@@ -25943,7 +25943,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/blue.json",
   "title": "Blue bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Blue adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/blue.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/blue.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -25965,7 +25965,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/bluesea.json",
   "title": "Bluesea bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Bluesea adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/bluesea.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/bluesea.json",
   "type": "object",
   "properties": {
     "pubid": {
@@ -25990,7 +25990,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/bmtm.json",
   "title": "Bright Mountain Media bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Bright Mountain Media adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/bmtm.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/bmtm.json",
   "type": "object",
   "properties": {
     "placement_id": {
@@ -26009,7 +26009,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/boldwin.json",
   "title": "Boldwin bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Boldwin adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/boldwin.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/boldwin.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -26042,7 +26042,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/boldwin_rapid.json",
   "title": "Boldwin-Rapid bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Boldwin-rapid adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/boldwin_rapid.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/boldwin_rapid.json",
   "type": "object",
   "properties": {
     "pid": {
@@ -26067,7 +26067,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/brave.json",
   "title": "Brave bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Brave adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/brave.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/brave.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -26085,7 +26085,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/bwx.json",
   "title": "BoldwinX bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the BoldwinX adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/bwx.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/bwx.json",
   "type": "object",
   "properties": {
     "env": {
@@ -26109,7 +26109,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/cadent_aperture_mx.json",
   "title": "Cadent Aperture MX bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Cadent Aperture MX adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/cadent_aperture_mx.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/cadent_aperture_mx.json",
   "type": "object",
   "properties": {
     "tagid": {
@@ -26131,7 +26131,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/ccx.json",
   "title": "Clickonometrics bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Clickonometrics adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/ccx.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/ccx.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -26149,7 +26149,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/clydo.json",
   "title": "Clydo bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Clydo adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/clydo.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/clydo.json",
   "type": "object",
   "properties": {
     "partnerId": {
@@ -26178,7 +26178,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/cointraffic.json",
   "title": "Cointraffic bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Cointraffic adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/cointraffic.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/cointraffic.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -26197,7 +26197,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/coinzilla.json",
   "title": "Coinzilla bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Coinzilla adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/coinzilla.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/coinzilla.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -26216,7 +26216,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/colossus.json",
   "title": "Colossus bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Colossus adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/colossus.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/colossus.json",
   "type": "object",
   "properties": {
     "TagID": {
@@ -26247,7 +26247,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/compass.json",
   "title": "Compass bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Compass adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/compass.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/compass.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -26280,7 +26280,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/concert.json",
   "title": "Concert bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Concert adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/concert.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/concert.json",
   "type": "object",
   "properties": {
     "partnerId": {
@@ -26323,7 +26323,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/connatix.json",
   "title": "Connatix bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Connatix adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/connatix.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/connatix.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -26346,7 +26346,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/connectad.json",
   "title": "ConnectAd S2S dapter Params bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the ConnectAd Adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/connectad.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/connectad.json",
   "type": "object",
   "properties": {
     "networkId": {
@@ -26379,7 +26379,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/consumable.json",
   "title": "Consumable bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Consumable adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/consumable.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/consumable.json",
   "type": "object",
   "properties": {
     "siteId": {
@@ -26429,7 +26429,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/contxtful.json",
   "title": "Contxtful bidder params (Prebid Server)",
   "description": "A schema which validates params for the Contxtful adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/contxtful.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/contxtful.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -26454,7 +26454,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/conversant.json",
   "title": "Epsilon (formerly Conversant) bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Epsilon (Conversant) adapter.",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/conversant.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/conversant.json",
   "type": "object",
   "properties": {
     "site_id": {
@@ -26513,7 +26513,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/copper6ssp.json",
   "title": "Copper6SSPs bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Copper6SSP adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/copper6ssp.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/copper6ssp.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -26546,7 +26546,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/cpmstar.json",
   "title": "Cpmstar bidder params (Prebid Server)",
   "description": "Schema to validate params accepted by the Cpmstar adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/cpmstar.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/cpmstar.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -26568,7 +26568,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/criteo.json",
   "title": "Criteo bidder params (Prebid Server)",
   "description": "The schema to validate Criteo specific params accepted by Criteo adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/criteo.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/criteo.json",
   "type": "object",
   "properties": {
     "zoneid": {
@@ -26631,7 +26631,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/cwire.json",
   "title": "CWire bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the CWire adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/cwire.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/cwire.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -26670,7 +26670,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/datablocks.json",
   "title": "Datablocks bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Datablocks adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/datablocks.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/datablocks.json",
   "type": "object",
   "properties": {
     "sourceId": {
@@ -26689,7 +26689,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/decenterads.json",
   "title": "DecenterAds bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the DecenterAds adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/decenterads.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/decenterads.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -26712,7 +26712,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/deepintent.json",
   "title": "Deepintent bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Deepintent adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/deepintent.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/deepintent.json",
   "type": "object",
   "properties": {
     "tagId": {
@@ -26730,7 +26730,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/definemedia.json",
   "title": "Define Media bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the DM adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/definemedia.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/definemedia.json",
   "type": "object",
   "properties": {
     "mandantId": {
@@ -26752,7 +26752,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/dianomi.json",
   "title": "Dianomi bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Dianomi adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/dianomi.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/dianomi.json",
   "type": "object",
   "properties": {
     "smartadId": {
@@ -26781,7 +26781,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/displayio.json",
   "title": "Display.io bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Display.io adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/displayio.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/displayio.json",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -26809,7 +26809,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/dmx.json",
   "title": "District M DMX bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the DMX adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/dmx.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/dmx.json",
   "type": "object",
   "properties": {
     "memberid": {
@@ -26847,7 +26847,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/driftpixel.json",
   "title": "DriftPixel bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the DriftPixel adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/driftpixel.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/driftpixel.json",
   "type": "object",
   "properties": {
     "env": {
@@ -26871,7 +26871,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/e_volution.json",
   "title": "E-volution bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the E-volution adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/e_volution.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/e_volution.json",
   "type": "object",
   "properties": {
     "key": {
@@ -26889,7 +26889,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/edge226.json",
   "title": "Edge226 bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Edge226 adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/edge226.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/edge226.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -26922,7 +26922,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/elementaltv.json",
   "title": "ElementalTV bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the ElementalTV adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/elementaltv.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/elementaltv.json",
   "type": "object",
   "properties": {
     "adunit": {
@@ -26940,7 +26940,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/emtv.json",
   "title": "EMTV bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the EMTV adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/emtv.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/emtv.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -26973,7 +26973,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/emx_digital.json",
   "title": "EMX Digital bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Cadent Aperture MX adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/emx_digital.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/emx_digital.json",
   "type": "object",
   "properties": {
     "tagid": {
@@ -26995,7 +26995,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/eplanning.json",
   "title": "EPlanning bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the EPlanning adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/eplanning.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/eplanning.json",
   "type": "object",
   "properties": {
     "ci": {
@@ -27021,7 +27021,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/epom.json",
   "title": "Epom bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Epom adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/epom.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/epom.json",
   "type": "object",
   "properties": {}
 }
@@ -27031,7 +27031,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/escalax.json",
   "title": "Escalax bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Escalax adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/escalax.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/escalax.json",
   "type": "object",
   "properties": {
     "accountId": {
@@ -27056,7 +27056,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/exco.json",
   "title": "The Exco bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by Exco adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/exco.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/exco.json",
   "type": "object",
   "properties": {
     "accountId": {
@@ -27087,7 +27087,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/feedad.json",
   "title": "FeedAd bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the FeedAd adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/feedad.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/feedad.json",
   "properties": {
     "clientToken": {
       "description": "Your FeedAd client token. Check your FeedAd admin panel.",
@@ -27155,7 +27155,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/flatads.json",
   "title": "Flatads bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Flatads adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/flatads.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/flatads.json",
   "type": "object",
   "properties": {
     "token": {
@@ -27180,7 +27180,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/flipp.json",
   "title": "Flipp bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Flipp adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/flipp.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/flipp.json",
   "type": "object",
   "properties": {
     "publisherNameIdentifier": {
@@ -27238,7 +27238,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/freewheelssp.json",
   "title": "FreewheelSSP bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the FreewheelSSP adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/freewheelssp.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/freewheelssp.json",
   "type": "object",
   "properties": {
     "zoneId": {
@@ -27259,7 +27259,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/frvradn.json",
   "title": "FRVR Ad Network bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the FRVR Ad Network adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/frvradn.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/frvradn.json",
   "type": "object",
   "properties": {
     "publisher_id": {
@@ -27286,7 +27286,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/fwssp.json",
   "title": "FWSSP bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the FWSSP adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/fwssp.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/fwssp.json",
   "type": "object",
   "properties": {
     "custom_site_section_id": {
@@ -27314,7 +27314,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/gamma.json",
   "title": "Gamma bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by Gamma adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/gamma.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/gamma.json",
   "type": "object",
   "properties": {
     "id": {
@@ -27342,7 +27342,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/gamoshi.json",
   "title": "Gamoshi bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by Gamoshi adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/gamoshi.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/gamoshi.json",
   "type": "object",
   "properties": {
     "supplyPartnerId": {
@@ -27364,7 +27364,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/globalsun.json",
   "title": "Globalsun bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Globalsun adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/globalsun.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/globalsun.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -27383,7 +27383,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/goldbach.json",
   "title": "Goldbach bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Goldbach adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/goldbach.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/goldbach.json",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -27425,7 +27425,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/grid.json",
   "title": "TheMediaGrid bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by TheMediaGrid adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/grid.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/grid.json",
   "type": "object",
   "properties": {
     "uid": {
@@ -27453,7 +27453,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/gumgum.json",
   "title": "GumGum bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the GumGum adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/gumgum.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/gumgum.json",
   "type": "object",
   "properties": {
     "zone": {
@@ -27497,7 +27497,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/huaweiads.json",
   "title": "HuaweiAds bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the HuaweiAds adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/huaweiads.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/huaweiads.json",
   "type": "object",
   "properties": {
     "publisherid": {
@@ -27540,7 +27540,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/imds.json",
   "title": "iMedia Digital Services (IMDS) bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the iMedia Digital Services (IMDS) adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/imds.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/imds.json",
   "type": "object",
   "properties": {
     "seatId": {
@@ -27562,7 +27562,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/impactify.json",
   "title": "Impactify bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Impactify adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/impactify.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/impactify.json",
   "type": "object",
   "properties": {
     "appId": {
@@ -27593,7 +27593,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/improvedigital.json",
   "title": "Improve Digital bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by Improve Digital adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/improvedigital.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/improvedigital.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -27637,7 +27637,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/infytv.json",
   "title": "InfyTV bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the InfyTV adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/infytv.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/infytv.json",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -27659,7 +27659,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/inmobi.json",
   "title": "InMobi bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the InMobi adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/inmobi.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/inmobi.json",
   "type": "object",
   "properties": {
     "plc": {
@@ -27679,7 +27679,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/insticator.json",
   "title": "Insticator bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by Insticator",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/insticator.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/insticator.json",
   "type": "object",
   "properties": {
     "adUnitId": {
@@ -27704,7 +27704,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/intenze.json",
   "title": "Intenze bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Intenze adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/intenze.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/intenze.json",
   "type": "object",
   "properties": {
     "accountId": {
@@ -27723,7 +27723,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/interactiveoffers.json",
   "title": "Interactive Offers bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by Interactive Offers adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/interactiveoffers.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/interactiveoffers.json",
   "type": "object",
   "properties": {
     "partnerId": {
@@ -27739,7 +27739,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/invibes.json",
   "title": "Invibes bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Invibes adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/invibes.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/invibes.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -27774,7 +27774,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/iqx.json",
   "title": "IQX bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the iqzonex adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/iqx.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/iqx.json",
   "type": "object",
   "properties": {
     "env": {
@@ -27799,7 +27799,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/iqzone.json",
   "title": "IQzone bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the IQzone adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/iqzone.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/iqzone.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -27830,7 +27830,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/ix.json",
   "title": "Ix bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Ix adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/ix.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/ix.json",
   "type": "object",
   "properties": {
     "siteid": {
@@ -27887,7 +27887,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/jixie.json",
   "title": "Jixie bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Jixie adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/jixie.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/jixie.json",
   "type": "object",
   "properties": {
     "unit": {
@@ -27913,13 +27913,13 @@ var embeddedSchemas = map[string][]byte{
   ]
 }
 `),
-	"pbs/kargo.json": []byte("{\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n  \"$id\": \"https://prebid.org/schemas/pbs/kargo.json\",\n  \"title\": \"Kargo bidder params (Prebid Server)\",\n  \"description\": \"A schema which validates params accepted by the Kargo adapter\",\n  \"x-source-url\": \"https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/kargo.json\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"placementId\": {\n      \"type\": \"string\",\n      \"description\": \"An ID which identifies the adslot placement. Equivalent to the id of target inventory, ad unit code, or placement id\"\n    },\n    \"adSlotID\": {\n      \"type\": \"string\",\n      \"description\": \"[Deprecated: Use `placementId`] An ID which identifies the adslot placement. Equivalent to the id of target inventory, ad unit code, or placement id\"\n    }\n  },\n  \"oneOf\": [\n    {\n      \"required\": [\n        \"placementId\"\n      ]\n    },\n    {\n      \"required\": [\n        \"adSlotID\"\n      ]\n    }\n  ]\n}\n"),
+	"pbs/kargo.json": []byte("{\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n  \"$id\": \"https://prebid.org/schemas/pbs/kargo.json\",\n  \"title\": \"Kargo bidder params (Prebid Server)\",\n  \"description\": \"A schema which validates params accepted by the Kargo adapter\",\n  \"x-source-url\": \"https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/kargo.json\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"placementId\": {\n      \"type\": \"string\",\n      \"description\": \"An ID which identifies the adslot placement. Equivalent to the id of target inventory, ad unit code, or placement id\"\n    },\n    \"adSlotID\": {\n      \"type\": \"string\",\n      \"description\": \"[Deprecated: Use `placementId`] An ID which identifies the adslot placement. Equivalent to the id of target inventory, ad unit code, or placement id\"\n    }\n  },\n  \"oneOf\": [\n    {\n      \"required\": [\n        \"placementId\"\n      ]\n    },\n    {\n      \"required\": [\n        \"adSlotID\"\n      ]\n    }\n  ]\n}\n"),
 	"pbs/kayzen.json": []byte(`{
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://prebid.org/schemas/pbs/kayzen.json",
   "title": "Kayzen bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Kayzen adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/kayzen.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/kayzen.json",
   "type": "object",
   "properties": {
     "zone": {
@@ -27944,7 +27944,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/kidoz.json",
   "title": "Kidoz bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Kidoz adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/kidoz.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/kidoz.json",
   "type": "object",
   "properties": {
     "access_token": {
@@ -27969,7 +27969,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/kiviads.json",
   "title": "Kivi bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Kivi adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/kiviads.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/kiviads.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -28002,7 +28002,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/kobler.json",
   "title": "Kobler bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Kobler adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/kobler.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/kobler.json",
   "type": "object",
   "properties": {
     "test": {
@@ -28017,7 +28017,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/krushmedia.json",
   "title": "Krushmedia bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Krushmedia adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/krushmedia.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/krushmedia.json",
   "type": "object",
   "properties": {
     "key": {
@@ -28035,7 +28035,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/kueezrtb.json",
   "title": "Kueez RTB bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Kueez RTB adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/kueezrtb.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/kueezrtb.json",
   "type": "object",
   "properties": {
     "cId": {
@@ -28055,7 +28055,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/lemmadigital.json",
   "title": "Lemma bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Lemma adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/lemmadigital.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/lemmadigital.json",
   "type": "object",
   "properties": {
     "pid": {
@@ -28078,7 +28078,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/limelightDigital.json",
   "title": "Limelight Digital bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Limelight Digital adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/limelightDigital.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/limelightDigital.json",
   "type": "object",
   "properties": {
     "host": {
@@ -28108,7 +28108,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/lm_kiviads.json",
   "title": "Lm_Kiviads bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the lmkiviads adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/lm_kiviads.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/lm_kiviads.json",
   "type": "object",
   "properties": {
     "env": {
@@ -28133,7 +28133,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/lockerdome.json",
   "title": "LockerDome bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the LockerDome adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/lockerdome.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/lockerdome.json",
   "type": "object",
   "properties": {
     "adUnitId": {
@@ -28151,7 +28151,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/logan.json",
   "title": "Logan bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Logan adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/logan.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/logan.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -28170,7 +28170,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/logicad.json",
   "title": "Logicad bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Logicad adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/logicad.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/logicad.json",
   "type": "object",
   "properties": {
     "tid": {
@@ -28188,7 +28188,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/loopme.json",
   "title": "Loopme bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Loopme adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/loopme.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/loopme.json",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -28217,7 +28217,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/loyal.json",
   "title": "Loyal bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Loyal adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/loyal.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/loyal.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -28250,7 +28250,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/lunamedia.json",
   "title": "LunaMedia bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the LunaMedia adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/lunamedia.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/lunamedia.json",
   "type": "object",
   "properties": {
     "pubid": {
@@ -28273,7 +28273,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/mabidder.json",
   "title": "Mabidder bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Mabidder adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/mabidder.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/mabidder.json",
   "type": "object",
   "properties": {
     "ppid": {
@@ -28291,7 +28291,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/madsense.json",
   "title": "madSense bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the madSense adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/madsense.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/madsense.json",
   "type": "object",
   "properties": {
     "company_id": {
@@ -28310,7 +28310,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/madvertise.json",
   "title": "Madvertise bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Madvertise adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/madvertise.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/madvertise.json",
   "type": "object",
   "properties": {
     "zoneId": {
@@ -28329,7 +28329,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/marsmedia.json",
   "title": "Marsmedia bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Marsmedia adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/marsmedia.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/marsmedia.json",
   "type": "object",
   "properties": {
     "zoneId": {
@@ -28347,7 +28347,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/mediafuse.json",
   "title": "Mediafuse bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Mediafuse adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/mediafuse.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/mediafuse.json",
   "type": "object",
   "properties": {
     "placement_id": {
@@ -28487,7 +28487,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/mediago.json",
   "title": "MediaGo bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the MediaGo adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/mediago.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/mediago.json",
   "type": "object",
   "properties": {
     "token": {
@@ -28520,7 +28520,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/medianet.json",
   "title": "Medianet bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Medianet adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/medianet.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/medianet.json",
   "type": "object",
   "properties": {
     "cid": {
@@ -28545,7 +28545,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/mediasquare.json",
   "title": "Mediasquare bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Mediasquare adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/mediasquare.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/mediasquare.json",
   "type": "object",
   "properties": {
     "owner": {
@@ -28570,7 +28570,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/melozen.json",
   "title": "MeloZen bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the MeloZen adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/melozen.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/melozen.json",
   "type": "object",
   "properties": {
     "pubId": {
@@ -28589,7 +28589,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/metax.json",
   "title": "MetaX bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the MetaX adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/metax.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/metax.json",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -28614,7 +28614,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/mgid.json",
   "title": "Mgid bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Mgid adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/mgid.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/mgid.json",
   "type": "object",
   "properties": {
     "accountId": {
@@ -28652,7 +28652,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/mgidX.json",
   "title": "MGIDX bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the MGIDX adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/mgidX.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/mgidX.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -28685,7 +28685,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/minutemedia.json",
   "title": "MinuteMedia bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the MinuteMedia adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/minutemedia.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/minutemedia.json",
   "type": "object",
   "properties": {
     "org": {
@@ -28704,7 +28704,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/missena.json",
   "title": "Missena bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Missena adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/missena.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/missena.json",
   "type": "object",
   "properties": {
     "apiKey": {
@@ -28742,7 +28742,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/mobfoxpb.json",
   "title": "Mobfox bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Mobfox adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/mobfoxpb.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/mobfoxpb.json",
   "type": "object",
   "properties": {
     "TagID": {
@@ -28775,7 +28775,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/mobilefuse.json",
   "title": "MobileFuse bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the MobileFuse adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/mobilefuse.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/mobilefuse.json",
   "type": "object",
   "properties": {
     "placement_id": {
@@ -28793,7 +28793,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/mobkoi.json",
   "title": "Mobkoi bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Mobkoi adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/mobkoi.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/mobkoi.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -28808,7 +28808,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/motorik.json",
   "title": "Motorik bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Motorik adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/motorik.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/motorik.json",
   "type": "object",
   "properties": {
     "accountId": {
@@ -28833,7 +28833,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/msft.json",
   "title": "Microsoft bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Microsoft adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/msft.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/msft.json",
   "type": "object",
   "properties": {
     "placement_id": {
@@ -28904,7 +28904,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/nativery.json",
   "title": "Nativery bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Nativery adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/nativery.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/nativery.json",
   "type": "object",
   "properties": {
     "widgetId": {
@@ -28922,7 +28922,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/nativo.json",
   "title": "Nativo bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Nativo adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/nativo.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/nativo.json",
   "type": "object",
   "properties": {}
 }
@@ -28932,7 +28932,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/nextmillennium.json",
   "title": "NextMillennium bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the NextMillennium adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/nextmillennium.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/nextmillennium.json",
   "type": "object",
   "properties": {
     "placement_id": {
@@ -28980,7 +28980,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/nexx360.json",
   "title": "Nexx360 bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Nexx360 adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/nexx360.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/nexx360.json",
   "type": "object",
   "properties": {
     "tagId": {
@@ -29013,7 +29013,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/nobid.json",
   "title": "NoBid bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the NoBid adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/nobid.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/nobid.json",
   "type": "object",
   "properties": {
     "siteId": {
@@ -29035,7 +29035,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/ogury.json",
   "title": "Ogury bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Ogury adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/ogury.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/ogury.json",
   "type": "object",
   "properties": {
     "assetKey": {
@@ -29082,7 +29082,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/oms.json",
   "title": "Online Media Solutions bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the OMS adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/oms.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/oms.json",
   "type": "object",
   "properties": {
     "pid": {
@@ -29115,7 +29115,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/onetag.json",
   "title": "Onetag bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Onetag adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/onetag.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/onetag.json",
   "type": "object",
   "properties": {
     "pubId": {
@@ -29138,7 +29138,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/openweb.json",
   "title": "OpenWeb bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the OpenWeb adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/openweb.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/openweb.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -29178,7 +29178,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/openx.json",
   "title": "Openx bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Openx adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/openx.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/openx.json",
   "type": "object",
   "properties": {
     "unit": {
@@ -29237,7 +29237,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/operaads.json",
   "title": "OperaAds bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the OperaAds adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/operaads.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/operaads.json",
   "properties": {
     "placementId": {
       "description": "Placement ID",
@@ -29268,7 +29268,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/optidigital.json",
   "title": "Optidigital bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Optidigital adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/optidigital.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/optidigital.json",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -29301,7 +29301,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/oraki.json",
   "title": "Oraki bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Oraki adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/oraki.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/oraki.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -29334,7 +29334,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/orbidder.json",
   "title": "Orbidder bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Orbidder adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/orbidder.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/orbidder.json",
   "type": "object",
   "properties": {
     "accountId": {
@@ -29362,7 +29362,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/outbrain.json",
   "title": "Outbrain bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Outbrain adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/outbrain.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/outbrain.json",
   "type": "object",
   "properties": {
     "publisher": {
@@ -29408,7 +29408,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/ownadx.json",
   "title": "OwnAdx bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the OwnAdx adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/ownadx.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/ownadx.json",
   "type": "object",
   "properties": {
     "sspId": {
@@ -29436,7 +29436,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/pangle.json",
   "title": "Pangle bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Pangle adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/pangle.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/pangle.json",
   "type": "object",
   "properties": {
     "token": {
@@ -29473,7 +29473,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/pgamssp.json",
   "title": "PgamSSP bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the PgamSSP adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/pgamssp.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/pgamssp.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -29506,7 +29506,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/playdigo.json",
   "title": "Playdigo bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Playdigo adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/playdigo.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/playdigo.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -29539,7 +29539,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/pubmatic.json",
   "title": "Pubmatic bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Pubmatic adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/pubmatic.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/pubmatic.json",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -29621,7 +29621,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/pubnative.json",
   "title": "Pubnative bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Pubnative adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/pubnative.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/pubnative.json",
   "type": "object",
   "properties": {
     "zone_id": {
@@ -29644,7 +29644,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/pubrise.json",
   "title": "Pubrise bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Pubrise adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/pubrise.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/pubrise.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -29677,7 +29677,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/pulsepoint.json",
   "title": "Pulsepoint bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Pulsepoint adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/pulsepoint.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/pulsepoint.json",
   "type": "object",
   "properties": {
     "cp": {
@@ -29706,7 +29706,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/pwbid.json",
   "title": "PubWise (pwbid) bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the PubWise (pwbid) adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/pwbid.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/pwbid.json",
   "type": "object",
   "properties": {
     "siteId": {
@@ -29732,7 +29732,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/qt.json",
   "title": "QT bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the QT adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/qt.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/qt.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -29765,7 +29765,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/readpeak.json",
   "title": "Readpeak bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Readpeak adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/readpeak.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/readpeak.json",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -29795,7 +29795,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/rediads.json",
   "title": "RediAds bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Rediads adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/rediads.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/rediads.json",
   "type": "object",
   "properties": {
     "account_id": {
@@ -29818,7 +29818,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/relevantdigital.json",
   "title": "Relevant Digital bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Relevant Digital adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/relevantdigital.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/relevantdigital.json",
   "type": "object",
   "properties": {
     "accountId": {
@@ -29850,7 +29850,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/resetdigital.json",
   "title": "ResetDigital bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the ResetDigital adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/resetdigital.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/resetdigital.json",
   "type": "object",
   "properties": {
     "placement_id": {
@@ -29870,7 +29870,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/revcontent.json",
   "title": "Revcontent bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Revcontent adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/revcontent.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/revcontent.json",
   "type": "object",
   "properties": {},
   "required": []
@@ -29881,7 +29881,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/richaudience.json",
   "title": "richaudience bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the richaudience adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/richaudience.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/richaudience.json",
   "type": "object",
   "properties": {
     "pid": {
@@ -29916,7 +29916,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/rise.json",
   "title": "Rise bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Rise adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/rise.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/rise.json",
   "type": "object",
   "properties": {
     "org": {
@@ -29951,7 +29951,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/roulax.json",
   "title": "Roulax bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Roulax adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/roulax.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/roulax.json",
   "type": "object",
   "properties": {
     "PId": {
@@ -29976,7 +29976,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/rtbhouse.json",
   "title": "RTB House bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the RTB House adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/rtbhouse.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/rtbhouse.json",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -30006,7 +30006,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/rubicon.json",
   "title": "Rubicon bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Rubicon adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/rubicon.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/rubicon.json",
   "type": "object",
   "properties": {
     "accountId": {
@@ -30107,7 +30107,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/sa_lunamedia.json",
   "title": "Sa_Lunamedia bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Sa_Lunamedia adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/sa_lunamedia.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/sa_lunamedia.json",
   "type": "object",
   "properties": {
     "key": {
@@ -30133,7 +30133,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/seedingAlliance.json",
   "title": "Seeding Alliance bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Seeding Alliance adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/seedingAlliance.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/seedingAlliance.json",
   "type": "object",
   "properties": {
     "adUnitId": {
@@ -30160,7 +30160,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/seedtag.json",
   "title": "Seedtag bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Seedtag adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/seedtag.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/seedtag.json",
   "type": "object",
   "properties": {
     "adUnitId": {
@@ -30179,7 +30179,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/sharethrough.json",
   "title": "Sharethrough bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Sharethrough adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/sharethrough.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/sharethrough.json",
   "type": "object",
   "properties": {
     "pkey": {
@@ -30213,7 +30213,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/showheroes.json",
   "title": "Showheroes bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Showheroes adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/showheroes.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/showheroes.json",
   "type": "object",
   "properties": {
     "unitId": {
@@ -30232,7 +30232,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/silvermob.json",
   "title": "SilverMob bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the SilverMob adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/silvermob.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/silvermob.json",
   "type": "object",
   "properties": {
     "zoneid": {
@@ -30255,7 +30255,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/silverpush.json",
   "title": "Silverpush OpenRTB Bidder Adapter bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the SilverPush adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/silverpush.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/silverpush.json",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -30272,13 +30272,13 @@ var embeddedSchemas = map[string][]byte{
   ]
 }
 `),
-	"pbs/smaato.json": []byte("{\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n  \"$id\": \"https://prebid.org/schemas/pbs/smaato.json\",\n  \"title\": \"Smaato bidder params (Prebid Server)\",\n  \"description\": \"A schema which validates params accepted by the Smaato adapter\",\n  \"x-source-url\": \"https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/smaato.json\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"publisherId\": {\n      \"type\": \"string\",\n      \"description\": \"A unique identifier for this impression within the context of the bid request\"\n    },\n    \"adspaceId\": {\n      \"type\": \"string\",\n      \"description\": \"Identifier for specific ad placement is SOMA `adspaceId`\"\n    },\n    \"adbreakId\": {\n      \"type\": \"string\",\n      \"description\": \"Identifier for specific adpod placement is SOMA `adbreakId`\"\n    }\n  },\n  \"required\": [\n    \"publisherId\"\n  ],\n  \"anyOf\": [\n    {\n      \"required\": [\n        \"adspaceId\"\n      ]\n    },\n    {\n      \"required\": [\n        \"adbreakId\"\n      ]\n    }\n  ]\n}\n"),
+	"pbs/smaato.json": []byte("{\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n  \"$id\": \"https://prebid.org/schemas/pbs/smaato.json\",\n  \"title\": \"Smaato bidder params (Prebid Server)\",\n  \"description\": \"A schema which validates params accepted by the Smaato adapter\",\n  \"x-source-url\": \"https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/smaato.json\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"publisherId\": {\n      \"type\": \"string\",\n      \"description\": \"A unique identifier for this impression within the context of the bid request\"\n    },\n    \"adspaceId\": {\n      \"type\": \"string\",\n      \"description\": \"Identifier for specific ad placement is SOMA `adspaceId`\"\n    },\n    \"adbreakId\": {\n      \"type\": \"string\",\n      \"description\": \"Identifier for specific adpod placement is SOMA `adbreakId`\"\n    }\n  },\n  \"required\": [\n    \"publisherId\"\n  ],\n  \"anyOf\": [\n    {\n      \"required\": [\n        \"adspaceId\"\n      ]\n    },\n    {\n      \"required\": [\n        \"adbreakId\"\n      ]\n    }\n  ]\n}\n"),
 	"pbs/smartadserver.json": []byte(`{
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://prebid.org/schemas/pbs/smartadserver.json",
   "title": "Smartadserver bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Smartadserver adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/smartadserver.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/smartadserver.json",
   "type": "object",
   "properties": {
     "siteId": {
@@ -30332,7 +30332,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/smarthub.json",
   "title": "Attekmi (formerly SmartHub) bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Attekmi (formerly SmartHub) adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/smarthub.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/smarthub.json",
   "type": "object",
   "properties": {
     "partnerName": {
@@ -30361,7 +30361,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/smartrtb.json",
   "title": "SmartRTB bidder params (Prebid Server)",
   "description": "Required parameters for the SmartRTB server adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/smartrtb.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/smartrtb.json",
   "type": "object",
   "properties": {
     "pub_id": {
@@ -30393,7 +30393,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/smartx.json",
   "title": "smartclip.tv bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the smartclip.tv adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/smartx.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/smartx.json",
   "type": "object",
   "properties": {
     "tagId": {
@@ -30444,7 +30444,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/smartyads.json",
   "title": "SmartyAds bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the SmartyAds adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/smartyads.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/smartyads.json",
   "type": "object",
   "properties": {
     "host": {
@@ -30472,7 +30472,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/smilewanted.json",
   "title": "SmileWanted bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the SmileWanted adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/smilewanted.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/smilewanted.json",
   "type": "object",
   "properties": {
     "zoneId": {
@@ -30491,7 +30491,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/smoot.json",
   "title": "Smoot bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Smoot adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/smoot.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/smoot.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -30524,7 +30524,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/smrtconnect.json",
   "title": "Smrtconnect Params bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Smrtconnect",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/smrtconnect.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/smrtconnect.json",
   "type": "object",
   "properties": {
     "supply_id": {
@@ -30543,7 +30543,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/sonobi.json",
   "title": "Sonobi bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Sonobi adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/sonobi.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/sonobi.json",
   "type": "object",
   "properties": {
     "TagID": {
@@ -30561,7 +30561,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/sovrn.json",
   "title": "Sovrn bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Sovrn adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/sovrn.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/sovrn.json",
   "type": "object",
   "properties": {
     "tagid": {
@@ -30608,7 +30608,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/sovrnXsp.json",
   "title": "Sovrn XSP bidder params (Prebid Server)",
   "description": "Schema validating params accepted by the Sovrn XSP adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/sovrnXsp.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/sovrnXsp.json",
   "type": "object",
   "properties": {
     "pub_id": {
@@ -30640,7 +30640,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/sparteo.json",
   "title": "Sparteo Params bidder params (Prebid Server)",
   "description": "Adapter params schema for the Prebid Server \"sparteo\" adapter.",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/sparteo.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/sparteo.json",
   "type": "object",
   "properties": {
     "networkId": {
@@ -30679,7 +30679,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/sspBC.json",
   "title": "sspBC Bid bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the sspBC bid adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/sspBC.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/sspBC.json",
   "type": "object",
   "properties": {
     "siteid": {
@@ -30709,7 +30709,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/startio.json",
   "title": "Start.io bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Start.io adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/startio.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/startio.json",
   "type": "object",
   "properties": {},
   "required": []
@@ -30720,7 +30720,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/stroeerCore.json",
   "title": "StroeerCore bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the StroeerCore adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/stroeerCore.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/stroeerCore.json",
   "type": "object",
   "properties": {
     "sid": {
@@ -30738,7 +30738,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/taboola.json",
   "title": "Taboola bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Taboola adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/taboola.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/taboola.json",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -30798,7 +30798,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/tappx.json",
   "title": "Tappx bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Tappx adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/tappx.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/tappx.json",
   "type": "object",
   "properties": {
     "host": {
@@ -30847,7 +30847,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/teads.json",
   "title": "Teads bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Teads adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/teads.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/teads.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -30866,7 +30866,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/telaria.json",
   "title": "Telaria bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Telaria adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/telaria.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/telaria.json",
   "type": "object",
   "properties": {
     "adCode": {
@@ -30892,7 +30892,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/teqblaze.json",
   "title": "TeqBlaze bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the TeqBlaze adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/teqblaze.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/teqblaze.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -30925,7 +30925,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/theadx.json",
   "title": "Theadx bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the theadx adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/theadx.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/theadx.json",
   "type": "object",
   "properties": {
     "pid": {
@@ -30973,7 +30973,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/thetradedesk.json",
   "title": "The Trade Desk bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the The Trade Desk adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/thetradedesk.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/thetradedesk.json",
   "type": "object",
   "properties": {
     "publisherId": {
@@ -30997,7 +30997,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/tpmn.json",
   "title": "TPMN bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the TPMN adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/tpmn.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/tpmn.json",
   "type": "object",
   "properties": {
     "inventoryId": {
@@ -31016,7 +31016,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/tradplus.json",
   "title": "TradPlus bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the TradPlus adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/tradplus.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/tradplus.json",
   "type": "object",
   "properties": {
     "accountId": {
@@ -31039,7 +31039,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/trafficgate.json",
   "title": "TrafficGate bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the TrafficGate adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/trafficgate.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/trafficgate.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -31068,7 +31068,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/triplelift.json",
   "title": "Triplelift bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Triplelift adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/triplelift.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/triplelift.json",
   "type": "object",
   "properties": {
     "inventoryCode": {
@@ -31090,7 +31090,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/triplelift_native.json",
   "title": "Triplelift bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Triplelift adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/triplelift_native.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/triplelift_native.json",
   "type": "object",
   "properties": {
     "inventoryCode": {
@@ -31113,7 +31113,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/trustedstack.json",
   "title": "Trustedstack bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Trustedstack adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/trustedstack.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/trustedstack.json",
   "type": "object",
   "properties": {
     "cid": {
@@ -31138,7 +31138,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/trustx.json",
   "title": "TRUSTX bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the TRUSTX adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/trustx.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/trustx.json",
   "type": "object",
   "properties": {
     "uid": {
@@ -31157,7 +31157,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/ucfunnel.json",
   "title": "Ucfunnel bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Ucfunnel adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/ucfunnel.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/ucfunnel.json",
   "type": "object",
   "properties": {
     "adunitid": {
@@ -31179,7 +31179,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/undertone.json",
   "title": "Undertone bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Undertone adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/undertone.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/undertone.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -31204,7 +31204,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/unicorn.json",
   "title": "UNICORN bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the UNICORN adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/unicorn.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/unicorn.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -31234,7 +31234,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/unruly.json",
   "title": "Unruly bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Unruly adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/unruly.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/unruly.json",
   "type": "object",
   "properties": {
     "siteid": {
@@ -31265,7 +31265,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/vidazoo.json",
   "title": "Vidazoo bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Vidazoo adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/vidazoo.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/vidazoo.json",
   "type": "object",
   "properties": {
     "cId": {
@@ -31284,7 +31284,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/videobyte.json",
   "title": "VideoByte bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the VideoByte adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/videobyte.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/videobyte.json",
   "type": "object",
   "properties": {
     "pubId": {
@@ -31310,7 +31310,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/videoheroes.json",
   "title": "VideoHeroes bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the VideoHeroes adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/videoheroes.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/videoheroes.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -31328,7 +31328,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/vidoomy.json",
   "title": "Vidoomy bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Vidoomy adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/vidoomy.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/vidoomy.json",
   "type": "object",
   "properties": {
     "zoneId": {
@@ -31347,7 +31347,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/visiblemeasures.json",
   "title": "VisibleMeasures bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the VisibleMeasures adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/visiblemeasures.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/visiblemeasures.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -31380,7 +31380,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/visx.json",
   "title": "VIS.X bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by VIS.X adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/visx.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/visx.json",
   "type": "object",
   "properties": {
     "uid": {
@@ -31411,7 +31411,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/vox.json",
   "title": "Vox bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Vox adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/vox.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/vox.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -31441,7 +31441,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/vrtcal.json",
   "title": "Vrtcal bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Vrtcal adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/vrtcal.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/vrtcal.json",
   "type": "object",
   "properties": {
     "just_an_unused_vrtcal_param": {
@@ -31457,7 +31457,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/vungle.json",
   "title": "Vungle bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Vungle adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/vungle.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/vungle.json",
   "type": "object",
   "properties": {
     "app_store_id": {
@@ -31482,7 +31482,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/xeworks.json",
   "title": "xe.works bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the xe.works adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/xeworks.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/xeworks.json",
   "type": "object",
   "properties": {
     "env": {
@@ -31507,7 +31507,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/yahooAds.json",
   "title": "YahooAds bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the YahooAds adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/yahooAds.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/yahooAds.json",
   "type": "object",
   "properties": {
     "dcn": {
@@ -31532,7 +31532,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/yandex.json",
   "title": "Yandex bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Yandex adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/yandex.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/yandex.json",
   "type": "object",
   "properties": {
     "page_id": {
@@ -31573,7 +31573,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/yeahmobi.json",
   "title": "Yeahmobi bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Yeahmobi adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/yeahmobi.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/yeahmobi.json",
   "type": "object",
   "properties": {
     "pubId": {
@@ -31598,7 +31598,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/yieldlab.json",
   "title": "Yieldlab bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Yieldlab adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/yieldlab.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/yieldlab.json",
   "type": "object",
   "properties": {
     "adslotId": {
@@ -31629,7 +31629,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/yieldmo.json",
   "title": "Yieldmo bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Yieldmo adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/yieldmo.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/yieldmo.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -31647,7 +31647,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/yieldone.json",
   "title": "Yieldone bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Yieldone adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/yieldone.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/yieldone.json",
   "type": "object",
   "properties": {
     "placementId": {
@@ -31665,7 +31665,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/zentotem.json",
   "title": "Zentotem bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Zentotem adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/zentotem.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/zentotem.json",
   "type": "object",
   "properties": {}
 }
@@ -31675,7 +31675,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/zeroclickfraud.json",
   "title": "ZeroClickFraud bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the ZeroClickFraud adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/zeroclickfraud.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/zeroclickfraud.json",
   "type": "object",
   "properties": {
     "sourceId": {
@@ -31699,7 +31699,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/zeta_global_ssp.json",
   "title": "Zeta Global SSP bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Zeta Global SSP adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/zeta_global_ssp.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/zeta_global_ssp.json",
   "type": "object",
   "properties": {
     "sid": {
@@ -31714,7 +31714,7 @@ var embeddedSchemas = map[string][]byte{
   "$id": "https://prebid.org/schemas/pbs/zmaticoo.json",
   "title": "zMaticoo bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the zMaticoo adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/zmaticoo.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/zmaticoo.json",
   "type": "object",
   "properties": {
     "pubId": {
