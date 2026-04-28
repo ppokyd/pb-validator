@@ -60,7 +60,7 @@ jobs:
         run: |
           VERSION="${{ github.event.release.tag_name }}"
           VERSION="${VERSION#v}"
-          npm version "$VERSION" --no-git-tag-version
+          npm version "$VERSION" --no-git-tag-version --allow-same-version
 
       - name: Publish to npm
         working-directory: packages/js
@@ -86,8 +86,12 @@ jobs:
           VERSION="${VERSION#v}"
           GO_TAG="packages/go/v${VERSION}"
           echo "go_tag=$GO_TAG" >> "$GITHUB_ENV"
-          git tag "$GO_TAG"
-          git push origin "$GO_TAG"
+          if git ls-remote --exit-code --tags origin "$GO_TAG" >/dev/null; then
+            echo "Go sub-module tag already exists: $GO_TAG"
+          else
+            git tag "$GO_TAG"
+            git push origin "$GO_TAG"
+          fi
 
       - name: Request Go module proxy indexing
         run: |
