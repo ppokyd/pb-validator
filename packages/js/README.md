@@ -8,16 +8,16 @@ Validate Prebid bidder params using JSON Schemas aligned with [prebid.github.io]
 npm install @ppokyd/pb-validator
 ```
 
-## API
+## Node API
 
-| Method                                  | Description                                                 |
-| --------------------------------------- | ----------------------------------------------------------- |
-| `validate(runtime, bidderCode, params)` | Validate params for a bidder. Returns `{ valid, errors? }`. |
-| `listBidders()`                         | Returns a sorted array of all supported bidder codes.       |
-| `getSchema(runtime, bidderCode)`        | Returns the raw JSON Schema for a bidder.                   |
-| `loadManifest()`                        | Returns the full manifest (version + bidder index).         |
+| Method                                  | Description                                                             |
+| --------------------------------------- | ----------------------------------------------------------------------- |
+| `validate(runtime, bidderCode, params)` | Validate params for a bidder. Returns `{ valid, errors? }`.             |
+| `listBidders(runtime?)`                 | Returns a sorted array of bidder codes, optionally filtered by runtime. |
+| `getSchema(runtime, bidderCode)`        | Returns the raw JSON Schema for a bidder.                               |
+| `loadManifest()`                        | Returns the full manifest (version + bidder index).                     |
 
-**`runtime`** is either `"pbjs"` (Prebid.js) or `"pbs"` (Prebid Server).
+**`runtime`** is either `"pbjs"` (Prebid.js) or `"pbs"` (Prebid Server). Omitting it from `listBidders()` returns bidders with either runtime.
 
 ---
 
@@ -49,7 +49,7 @@ Optional fields in these interfaces follow JSON Schema `required`; nested object
 
 ## Node.js
 
-The default export resolves to the Node entry point, which reads schemas from the filesystem using `node:fs`.
+The main package entry resolves to the Node entry point, which reads schemas from the filesystem using `node:fs`.
 
 ### ESM
 
@@ -65,9 +65,9 @@ if (result.valid) {
   // e.g. ["/ must have required property 'placementId'"]
 }
 
-// List all supported bidders
-const bidders = await listBidders();
-console.log(bidders); // ["1accord", "33across", "appnexus", ...]
+// List bidders with Prebid Server schemas
+const bidders = await listBidders('pbs');
+console.log(bidders); // ["33across", "appnexus", "rubicon", ...]
 
 // Fetch the raw JSON Schema
 const schema = await getSchema('pbs', 'appnexus');
@@ -88,7 +88,7 @@ async function main() {
   const result = await validate('pbjs', 'appnexus', { placementId: 12345 });
   console.log(result.valid); // true
 
-  const bidders = await listBidders();
+  const bidders = await listBidders('pbjs');
   console.log(bidders); // ["1accord", "33across", "appnexus", ...]
 }
 
@@ -113,7 +113,11 @@ async function checkBidder(runtime: Runtime, bidder: string, params: unknown): P
 
 ## Browser
 
-The browser entry point exports only `createClient` — no Node.js builtins are used. You supply a `SchemaProvider` that tells the client how to load schemas in your environment (bundler, fetch, CDN, etc.).
+The browser entry point has no Node.js builtins. It exports `createClient` plus TypeScript types, and you supply a `SchemaProvider` that tells the client how to load schemas in your environment (bundler, fetch, CDN, etc.).
+
+Do not import `validate`, `listBidders`, `getSchema`, or `loadManifest` directly from `@ppokyd/pb-validator` in browser code. Bundlers resolve the package root to the browser entry, where those methods are available only from a client returned by `createClient()`.
+
+The npm package ships schema JSON files under `schemas/`, but only `.` and `./browser` are package export paths. Browser builds should load those JSON files through a bundler file glob, a copied public directory, or a URL.
 
 ### Vite / ESBuild — `import.meta.glob`
 
@@ -121,13 +125,14 @@ The browser entry point exports only `createClient` — no Node.js builtins are 
 import { createClient } from '@ppokyd/pb-validator/browser';
 
 // Eagerly import all schemas at build time
-const schemaModules = import.meta.glob('./node_modules/@ppokyd/pb-validator/schemas/**/*.json', {
+const schemaModules = import.meta.glob('/node_modules/@ppokyd/pb-validator/schemas/**/*.json', {
   eager: true,
+  import: 'default',
 });
 
 // Strip the path prefix so keys match the manifest's relative paths
 // e.g. "pbjs/appnexus.json" or "manifest.json"
-const schemasBase = './node_modules/@ppokyd/pb-validator/schemas/';
+const schemasBase = '/node_modules/@ppokyd/pb-validator/schemas/';
 const files = Object.fromEntries(Object.entries(schemaModules).map(([k, v]) => [k.replace(schemasBase, ''), v]));
 
 const { validate, listBidders, getSchema, loadManifest } = createClient({
@@ -135,6 +140,7 @@ const { validate, listBidders, getSchema, loadManifest } = createClient({
   getSchemaData: async (path) => files[path],
 });
 
+const bidders = await listBidders('pbjs');
 const result = await validate('pbjs', 'appnexus', { placementId: 12345 });
 console.log(result.valid); // true
 ```
@@ -144,11 +150,8 @@ console.log(result.valid); // true
 ```js
 import { createClient } from '@ppokyd/pb-validator/browser';
 
-const ctx = require.context(
-  '@ppokyd/pb-validator/schemas',
-  true, // recursive
-  /\.json$/,
-);
+// Copy node_modules/@ppokyd/pb-validator/schemas to ./src/schemas before bundling.
+const ctx = require.context('./schemas', true, /\.json$/);
 const files = Object.fromEntries(ctx.keys().map((k) => [k.replace(/^\.\//, ''), ctx(k)]));
 
 const { validate, listBidders } = createClient({

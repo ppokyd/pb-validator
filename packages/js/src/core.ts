@@ -31,7 +31,7 @@ export interface SchemaProvider {
 
 export interface ValidatorClient {
   loadManifest(): Promise<Manifest>;
-  listBidders(): Promise<string[]>;
+  listBidders(runtime?: Runtime): Promise<string[]>;
   getSchema(runtime: Runtime, bidderCode: string): Promise<Record<string, unknown>>;
   validate(runtime: Runtime, bidderCode: string, params: unknown): Promise<ValidationResult>;
 }
@@ -49,9 +49,12 @@ export function createClient(provider: SchemaProvider): ValidatorClient {
     return provider.getManifest();
   }
 
-  async function listBidders(): Promise<string[]> {
+  async function listBidders(runtime?: Runtime): Promise<string[]> {
     const m = await loadManifest();
-    return Object.keys(m.bidders).sort();
+    return Object.entries(m.bidders)
+      .filter(([, refs]) => !runtime || !!refs[runtime]?.schema)
+      .map(([code]) => code)
+      .sort();
   }
 
   async function getSchema(runtime: Runtime, bidderCode: string): Promise<Record<string, unknown>> {

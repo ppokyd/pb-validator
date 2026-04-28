@@ -493,15 +493,6 @@ type PbjsAdport struct {
 	Auth *string `json:"auth,omitempty"`
 }
 
-// PbjsAdquery represents params for the "adquery" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (adquery.md).
-type PbjsAdquery struct {
-	// Placement ID provided by Adquery (must match the type/format in dashboard)
-	PlacementId *string `json:"placementId,omitempty"`
-	// Ad format/type – tells Adquery what kind of creative to return
-	TypeField *string `json:"type,omitempty"`
-}
-
 // PbjsAdrelevantis represents params for the "adrelevantis" bidder (pbjs).
 // Generated from prebid.github.io dev-docs/bidders (adrelevantis.md).
 type PbjsAdrelevantis struct {
@@ -3209,15 +3200,6 @@ type PbjsInvibes struct {
 	PlacementId string `json:"placementId,omitempty"`
 }
 
-// PbjsIprom represents params for the "iprom" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (iprom.md).
-type PbjsIprom struct {
-	// iPROM specific bidding zone.
-	Dimension *string `json:"dimension,omitempty"`
-	// The site ID from iPROM.
-	ID *string `json:"id,omitempty"`
-}
-
 // PbjsIqzone represents params for the "iqzone" bidder (pbjs).
 // Generated from prebid.github.io dev-docs/bidders (iqzone.md).
 type PbjsIqzone struct {
@@ -3683,8 +3665,6 @@ type PbjsMgid struct {
 	BidFloor *float64 `json:"bidFloor,omitempty"`
 	// Currency of request and response
 	Currency *string `json:"currency,omitempty"`
-	// The placement ID from Mgid
-	PlacementId *string `json:"placementId,omitempty"`
 }
 
 // PbjsMgidX represents params for the "mgidX" bidder (pbjs).
@@ -4797,17 +4777,6 @@ type PbjsReadpeak struct {
 	TagId *string `json:"tagId,omitempty"`
 }
 
-// PbjsRediads represents params for the "rediads" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (rediads.md).
-type PbjsRediads struct {
-	// Account ID generated on the Rediads Platform.
-	AccountID string `json:"account_id,omitempty"`
-	// Only to be used if RediAds team provides you with one.
-	Endpoint *string `json:"endpoint,omitempty"`
-	// Unique identifier for the ad slot generated on the platform.
-	Slot *string `json:"slot,omitempty"`
-}
-
 // PbjsRedtram represents params for the "redtram" bidder (pbjs).
 // Generated from prebid.github.io dev-docs/bidders (redtram.md).
 type PbjsRedtram struct {
@@ -4815,6 +4784,15 @@ type PbjsRedtram struct {
 	BidFloor *float64 `json:"bidFloor,omitempty"`
 	// The placement ID from Redtram
 	PlacementId *string `json:"placementId,omitempty"`
+}
+
+// PbjsReklamup represents params for the "reklamup" bidder (pbjs).
+// Generated from prebid.github.io dev-docs/bidders (reklamup.md).
+type PbjsReklamup struct {
+	// Endpoint Id
+	EndpointId any `json:"endpointId,omitempty"`
+	// Placement Id
+	PlacementId any `json:"placementId,omitempty"`
 }
 
 // PbjsRelaido represents params for the "relaido" bidder (pbjs).
@@ -5255,13 +5233,6 @@ type PbjsShinezRtb struct {
 	CId *string `json:"cId,omitempty"`
 	// The publisher ID from shinezRtb.
 	PId *string `json:"pId,omitempty"`
-}
-
-// PbjsShowheroesBs represents params for the "showheroes-bs" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (showheroes-bs.md).
-type PbjsShowheroesBs struct {
-	// ShowHeroes MAX unit ID
-	UnitId string `json:"unitId,omitempty"`
 }
 
 // PbjsSilvermob represents params for the "silvermob" bidder (pbjs).

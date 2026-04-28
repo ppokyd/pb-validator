@@ -37,6 +37,18 @@ test('list bidders is sorted and includes fixtures', async () => {
   assert.ok(codes.includes('ci_fixture'));
 });
 
+test('list bidders can filter by runtime', async () => {
+  const pbjsCodes = await listBidders('pbjs');
+  const pbsCodes = await listBidders('pbs');
+
+  assert.deepEqual(pbjsCodes, [...pbjsCodes].sort());
+  assert.deepEqual(pbsCodes, [...pbsCodes].sort());
+  assert.ok(pbjsCodes.includes('1accord'));
+  assert.ok(!pbsCodes.includes('1accord'));
+  assert.ok(pbjsCodes.includes('appnexus'));
+  assert.ok(pbsCodes.includes('appnexus'));
+});
+
 test('unknown bidder throws', async () => {
   await assert.rejects(() => validate('pbjs', 'not-a-real-bidder', {}), /unknown bidder/);
 });

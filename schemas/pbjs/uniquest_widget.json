@@ -3,7 +3,7 @@
   "$id": "https://prebid.org/schemas/pbjs/uniquest_widget.json",
   "title": "UNIQUEST Widget bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (uniquestWidget.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5d8e74c992573445aafdf910ccb6e0b4cbcc8afc/dev-docs/bidders/uniquestWidget.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/d3ff5e90f0abebdb8a36abb6dd3cba2be8c4c23c/dev-docs/bidders/uniquestWidget.md",
   "type": "object",
   "properties": {
     "wid": {
