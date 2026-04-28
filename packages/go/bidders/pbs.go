@@ -269,15 +269,6 @@ type PbsAdverxo struct {
 	Auth string `json:"auth,omitempty"`
 }
 
-// PbsAdview represents params for the "adview" bidder (pbs).
-// A schema which validates params accepted by the adview adapter
-type PbsAdview struct {
-	// Account id
-	AccountId string `json:"accountId,omitempty"`
-	// An ID which identifies the placement selling the impression
-	PlacementId string `json:"placementId,omitempty"`
-}
-
 // PbsAdxcg represents params for the "adxcg" bidder (pbs).
 // A schema which validates params accepted by the Adxcg adapter
 type PbsAdxcg struct {
@@ -470,15 +461,6 @@ type PbsAutomatad struct {
 	Position *string `json:"position,omitempty"`
 }
 
-// PbsAvocet represents params for the "avocet" bidder (pbs).
-// A schema which validates params accepted by the Avocet adapter
-type PbsAvocet struct {
-	// An Avocet placement ID
-	Placement *string `json:"placement,omitempty"`
-	// An Avocet placement external code
-	PlacementCode *string `json:"placement_code,omitempty"`
-}
-
 // PbsAxis represents params for the "axis" bidder (pbs).
 // A schema which validates params accepted by the Axis adapter
 type PbsAxis struct {
@@ -526,15 +508,6 @@ type PbsBeintoo struct {
 	Tagid string `json:"tagid,omitempty"`
 }
 
-// PbsBematterfull represents params for the "bematterfull" bidder (pbs).
-// A schema which validates params accepted by the bematterfull adapter
-type PbsBematterfull struct {
-	// bematterfull environment
-	Env string `json:"env,omitempty"`
-	// Uniq placement ID
-	Pid string `json:"pid,omitempty"`
-}
-
 // PbsBeop represents params for the "beop" bidder (pbs).
 // A schema which validates params accepted by the BeOp adapter
 type PbsBeop struct {
@@ -571,19 +544,6 @@ type PbsBidmachine struct {
 	Path string `json:"path,omitempty"`
 	// Seller Identifier
 	SellerID string `json:"seller_id,omitempty"`
-}
-
-// PbsBidmatic represents params for the "bidmatic" bidder (pbs).
-// A schema which validates params accepted by the Bidmatic adapter
-type PbsBidmatic struct {
-	// BidFloor, US Dollars
-	BidFloor *float64 `json:"bidFloor,omitempty"`
-	// An ID which identifies this placement of the impression
-	PlacementId *int64 `json:"placementId,omitempty"`
-	// An ID which identifies the site selling the impression
-	SiteId *int64 `json:"siteId,omitempty"`
-	// An ID which identifies the channel
-	Source any `json:"source,omitempty"`
 }
 
 // PbsBidmyadz represents params for the "bidmyadz" bidder (pbs).
@@ -683,15 +643,6 @@ type PbsBoldwin struct {
 	EndpointId *string `json:"endpointId,omitempty"`
 	// Placement ID
 	PlacementId *string `json:"placementId,omitempty"`
-}
-
-// PbsBoldwinRapid represents params for the "boldwin_rapid" bidder (pbs).
-// A schema which validates params accepted by the Boldwin-rapid adapter
-type PbsBoldwinRapid struct {
-	// Publisher ID
-	Pid string `json:"pid,omitempty"`
-	// Placement ID
-	Tid string `json:"tid,omitempty"`
 }
 
 // PbsBrave represents params for the "brave" bidder (pbs).
@@ -908,15 +859,6 @@ type PbsDatablocks struct {
 	SourceId int64 `json:"sourceId,omitempty"`
 }
 
-// PbsDecenterads represents params for the "decenterads" bidder (pbs).
-// A schema which validates params accepted by the DecenterAds adapter
-type PbsDecenterads struct {
-	// User-defined targeting key-value pairs.
-	CustomParams map[string]any `json:"customParams,omitempty"`
-	// An ID which identifies the DecenterAds placement
-	PlacementId string `json:"placementId,omitempty"`
-}
-
 // PbsDeepintent represents params for the "deepintent" bidder (pbs).
 // A schema which validates params accepted by the Deepintent adapter
 type PbsDeepintent struct {
@@ -1011,15 +953,6 @@ type PbsEmtv struct {
 	PlacementId *string `json:"placementId,omitempty"`
 }
 
-// PbsEmxDigital represents params for the "emx_digital" bidder (pbs).
-// A schema which validates params accepted by the Cadent Aperture MX adapter
-type PbsEmxDigital struct {
-	// The minimum price acceptable for a bid
-	Bidfloor *string `json:"bidfloor,omitempty"`
-	// The id of an inventory target
-	Tagid string `json:"tagid,omitempty"`
-}
-
 // PbsEplanning represents params for the "eplanning" bidder (pbs).
 // A schema which validates params accepted by the EPlanning adapter
 type PbsEplanning struct {
@@ -1089,13 +1022,6 @@ type PbsFlippOptions struct {
 	ContentCode  *string `json:"contentCode,omitempty"`
 	DwellExpand  *bool   `json:"dwellExpand,omitempty"`
 	StartCompact *bool   `json:"startCompact,omitempty"`
-}
-
-// PbsFreewheelssp represents params for the "freewheelssp" bidder (pbs).
-// A schema which validates params accepted by the FreewheelSSP adapter
-type PbsFreewheelssp struct {
-	// Zone ID
-	ZoneId any `json:"zoneId,omitempty"`
 }
 
 // PbsFrvradn represents params for the "frvradn" bidder (pbs).
@@ -1274,13 +1200,6 @@ type PbsIntenze struct {
 	AccountId string `json:"accountId,omitempty"`
 }
 
-// PbsInteractiveoffers represents params for the "interactiveoffers" bidder (pbs).
-// A schema which validates params accepted by Interactive Offers adapter
-type PbsInteractiveoffers struct {
-	// The partners id
-	PartnerId *string `json:"partnerId,omitempty"`
-}
-
 // PbsInvibes represents params for the "invibes" bidder (pbs).
 // A schema which validates params accepted by the Invibes adapter
 type PbsInvibes struct {
@@ -1352,15 +1271,6 @@ type PbsKargo struct {
 	AdSlotID *string `json:"adSlotID,omitempty"`
 	// An ID which identifies the adslot placement. Equivalent to the id of target inventory, ad unit code, or placement id
 	PlacementId *string `json:"placementId,omitempty"`
-}
-
-// PbsKayzen represents params for the "kayzen" bidder (pbs).
-// A schema which validates params accepted by the Kayzen adapter
-type PbsKayzen struct {
-	// Exchange/Publisher Name
-	Exchange string `json:"exchange,omitempty"`
-	// Zone ID
-	Zone string `json:"zone,omitempty"`
 }
 
 // PbsKidoz represents params for the "kidoz" bidder (pbs).
@@ -1709,19 +1619,6 @@ type PbsNativery struct {
 	WidgetId string `json:"widgetId,omitempty"`
 }
 
-// PbsNextmillennium represents params for the "nextmillennium" bidder (pbs).
-// A schema which validates params accepted by the NextMillennium adapter
-type PbsNextmillennium struct {
-	// IDs which identifies the ad slots
-	AdSlots []string `json:"adSlots,omitempty"`
-	// List of allowed ads
-	AllowedAds []string `json:"allowedAds,omitempty"`
-	// An id used to identify NextMillennium placement group
-	GroupID *string `json:"group_id,omitempty"`
-	// An id used to identify NextMillennium placement
-	PlacementID *string `json:"placement_id,omitempty"`
-}
-
 // PbsNexx360 represents params for the "nexx360" bidder (pbs).
 // A schema which validates params accepted by the Nexx360 adapter
 type PbsNexx360 struct {
@@ -2043,15 +1940,6 @@ type PbsRise struct {
 	PublisherID *string `json:"publisher_id,omitempty"`
 }
 
-// PbsRoulax represents params for the "roulax" bidder (pbs).
-// A schema which validates params accepted by the Roulax adapter
-type PbsRoulax struct {
-	// PID
-	PId *string `json:"PId,omitempty"`
-	// PublisherPath
-	PublisherPath string `json:"PublisherPath,omitempty"`
-}
-
 // PbsRtbhouse represents params for the "rtbhouse" bidder (pbs).
 // A schema which validates params accepted by the RTB House adapter
 type PbsRtbhouse struct {
@@ -2200,19 +2088,6 @@ type PbsSmarthub struct {
 	Token string `json:"token,omitempty"`
 }
 
-// PbsSmartrtb represents params for the "smartrtb" bidder (pbs).
-// Required parameters for the SmartRTB server adapter
-type PbsSmartrtb struct {
-	// Force bids with a test creative
-	ForceBid *bool `json:"force_bid,omitempty"`
-	// Property ID not zone ID not provided
-	MedID *string `json:"med_id,omitempty"`
-	// Assigned publisher ID
-	PubID string `json:"pub_id,omitempty"`
-	// Specific zone ID for this placement, belonging to app/site
-	ZoneID *string `json:"zone_id,omitempty"`
-}
-
 // PbsSmartx represents params for the "smartx" bidder (pbs).
 // A schema which validates params accepted by the smartclip.tv adapter
 type PbsSmartx struct {
@@ -2281,19 +2156,6 @@ type PbsSovrn struct {
 	TagId *string `json:"tagId,omitempty"`
 	// An ID which identifies the sovrn ad tag
 	Tagid *string `json:"tagid,omitempty"`
-}
-
-// PbsSovrnXsp represents params for the "sovrnXsp" bidder (pbs).
-// Schema validating params accepted by the Sovrn XSP adapter
-type PbsSovrnXsp struct {
-	// Force bids with a test creative
-	ForceBid *bool `json:"force_bid,omitempty"`
-	// Property ID not zone ID not provided
-	MedID *string `json:"med_id,omitempty"`
-	// Assigned publisher ID
-	PubID string `json:"pub_id,omitempty"`
-	// Specific zone ID for this placement, belonging to app/site
-	ZoneID *string `json:"zone_id,omitempty"`
 }
 
 // PbsSparteo represents params for the "sparteo" bidder (pbs).
@@ -2384,15 +2246,6 @@ type PbsTelaria struct {
 	SeatCode string `json:"seatCode,omitempty"`
 }
 
-// PbsTeqblaze represents params for the "teqblaze" bidder (pbs).
-// A schema which validates params accepted by the TeqBlaze adapter
-type PbsTeqblaze struct {
-	// Endpoint ID
-	EndpointId *string `json:"endpointId,omitempty"`
-	// Placement ID
-	PlacementId *string `json:"placementId,omitempty"`
-}
-
 // PbsTheadx represents params for the "theadx" bidder (pbs).
 // A schema which validates params accepted by the theadx adapter
 type PbsTheadx struct {
@@ -2402,15 +2255,6 @@ type PbsTheadx struct {
 	Tagid any `json:"tagid,omitempty"`
 	// An ID which identifies the Theadx inventory source id
 	Wid any `json:"wid,omitempty"`
-}
-
-// PbsThetradedesk represents params for the "thetradedesk" bidder (pbs).
-// A schema which validates params accepted by the The Trade Desk adapter
-type PbsThetradedesk struct {
-	// An ID which identifies the publisher
-	PublisherId string `json:"publisherId,omitempty"`
-	// An ID provided by TheTradeDesk used to determine which endpoint to use
-	SupplySourceId *string `json:"supplySourceId,omitempty"`
 }
 
 // PbsTpmn represents params for the "tpmn" bidder (pbs).
@@ -2591,15 +2435,6 @@ type PbsVungle struct {
 	AppStoreID string `json:"app_store_id,omitempty"`
 	// Placement Reference ID
 	PlacementReferenceID string `json:"placement_reference_id,omitempty"`
-}
-
-// PbsXeworks represents params for the "xeworks" bidder (pbs).
-// A schema which validates params accepted by the xe.works adapter
-type PbsXeworks struct {
-	// xe.works environment
-	Env string `json:"env,omitempty"`
-	// Uniq placement ID
-	Pid string `json:"pid,omitempty"`
 }
 
 // PbsYahooAds represents params for the "yahooAds" bidder (pbs).
