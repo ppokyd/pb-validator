@@ -36,7 +36,7 @@ Schemas are indexed by a shared `schemas/manifest.json` (with pinned upstream co
 import { validate, listBidders } from '@ppokyd/pb-validator';
 
 const bidders = await listBidders('pbs');
-const result = await validate('appnexus', { placement_id: 123 }, 'pbs');
+const result = await validate('pbs', 'appnexus', { placement_id: 123 });
 
 if (!result.valid) {
   console.error(result.errors);
@@ -45,21 +45,24 @@ if (!result.valid) {
 
 ### JavaScript (Browser)
 
-The browser entry exposes `createClient`, which accepts a custom schema provider (no `fs` dependency):
+Bundlers resolve `@ppokyd/pb-validator` to the browser entry, which exports `createClient` only. Use `@ppokyd/pb-validator/browser` and destructure `validate`, `listBidders`, and `getSchema` from a client with your schema provider:
 
 ```js
 import { createClient } from '@ppokyd/pb-validator/browser';
 
-const client = createClient({
-  async loadManifest() {
-    /* fetch manifest.json */
+const { validate, listBidders } = createClient({
+  async getManifest() {
+    const res = await fetch('/schemas/manifest.json');
+    return res.json();
   },
-  async loadSchema(path) {
-    /* fetch individual schema */
+  async getSchemaData(path) {
+    const res = await fetch(`/schemas/${path}`);
+    return res.json();
   },
 });
 
-const result = await client.validate('appnexus', { placement_id: 123 }, 'pbs');
+const bidders = await listBidders('pbs');
+const result = await validate('pbs', 'appnexus', { placement_id: 123 });
 ```
 
 ### Go

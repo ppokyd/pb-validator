@@ -5,7 +5,7 @@
  * bundler (webpack require.context, Vite import.meta.glob, fetch, etc.).
  *
  * @example
- * import { createClient } from "@prebid/adapter-validator";
+ * import { createClient } from "@ppokyd/pb-validator/browser";
  *
  * const ctx = require.context("./schemas", true, /\.json$/);
  * const files = Object.fromEntries(ctx.keys().map(k => [k.replace(/^\.\//, ""), ctx(k)]));
