@@ -3,7 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/adhese.json",
   "title": "Adhese Adapter Parameters bidder params (Prebid Server)",
   "description": "Validation for parameters handled by the Adhese adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/563940c47ac5c00db09822ce208b9e4b7304c9db/static/bidder-params/adhese.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/adhese.json",
   "type": "object",
   "properties": {
     "account": {
