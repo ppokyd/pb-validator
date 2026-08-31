@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbjs/tadvertising_blis.json",
+  "title": "T-Advertising Solutions bidder params (Prebid.js)",
+  "description": "Generated from prebid.github.io dev-docs/bidders (tadvertising_blis.md).",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/a7998e045c95618601270f08fc80d1501f0ffe35/dev-docs/bidders/tadvertising_blis.md",
+  "type": "object",
+  "properties": {
+    "publisherId": {
+      "type": "string",
+      "description": "The publisher ID"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "publisherId"
+  ]
+}

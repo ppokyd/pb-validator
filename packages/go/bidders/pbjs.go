@@ -38,6 +38,23 @@ type PbjsX9dotsmedia struct {
 	Aid int64 `json:"aid,omitempty"`
 }
 
+// PbjsX9dotsmedialtd represents params for the "9dotsmedialtd" bidder (pbjs).
+// Generated from prebid.github.io dev-docs/bidders (9dotsmedialtd.md).
+type PbjsX9dotsmedialtd struct {
+	// Custom targeting field 1
+	Custom1 *string `json:"custom1,omitempty"`
+	// Custom targeting field 2
+	Custom2 *string `json:"custom2,omitempty"`
+	// Custom targeting field 3
+	Custom3 *string `json:"custom3,omitempty"`
+	// Custom targeting field 4
+	Custom4 *string `json:"custom4,omitempty"`
+	// Custom targeting field 5
+	Custom5 *string `json:"custom5,omitempty"`
+	// Publisher ID
+	PublisherId string `json:"publisherId,omitempty"`
+}
+
 // PbjsAdView represents params for the "AdView" bidder (pbjs).
 // Generated from prebid.github.io dev-docs/bidders (adview.md).
 type PbjsAdView struct {
@@ -45,24 +62,6 @@ type PbjsAdView struct {
 	AccountId *string `json:"accountId,omitempty"`
 	// Placement ID
 	PlacementId *string `json:"placementId,omitempty"`
-}
-
-// PbjsCodeFuel represents params for the "CodeFuel" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (codefuel.md).
-type PbjsCodeFuel struct {
-	// Placement-Id defined by the caller
-	PlacementId string `json:"placementId,omitempty"`
-}
-
-// PbjsProgrammaticX represents params for the "ProgrammaticX" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (programmaticX.md).
-type PbjsProgrammaticX struct {
-	// The minimum bid value desired. ProgrammaticX will not respond with bids lower than this value.
-	BidFloor *float64 `json:"bidFloor,omitempty"`
-	// The connection ID from ProgrammaticX.
-	CId *string `json:"cId,omitempty"`
-	// The publisher ID from ProgrammaticX.
-	PId *string `json:"pId,omitempty"`
 }
 
 // PbjsA1media represents params for the "a1media" bidder (pbjs).
@@ -378,29 +377,6 @@ type PbjsAdmixeradx struct {
 	Zone string `json:"zone,omitempty"`
 }
 
-// PbjsAdnimation represents params for the "adnimation" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (adnimation.md).
-type PbjsAdnimation struct {
-	// Ad Unit Id will be generated on Adnimation Platform.
-	AdUnitId *int64 `json:"adUnitId,omitempty"`
-	// Type of Ad Unit ('video', 'banner')
-	AdUnitType *string `json:"adUnitType,omitempty"`
-	// Custom targeting field 1
-	Custom1 *string `json:"custom1,omitempty"`
-	// Custom targeting field 2
-	Custom2 *string `json:"custom2,omitempty"`
-	// Custom targeting field 3
-	Custom3 *string `json:"custom3,omitempty"`
-	// Custom targeting field 4
-	Custom4 *string `json:"custom4,omitempty"`
-	// Custom targeting field 5
-	Custom5 *string `json:"custom5,omitempty"`
-	// Ad network's RTB host
-	Host *string `json:"host,omitempty"`
-	// Publisher ID
-	PublisherId *string `json:"publisherId,omitempty"`
-}
-
 // PbjsAdnow represents params for the "adnow" bidder (pbjs).
 // Generated from prebid.github.io dev-docs/bidders (adnow.md).
 type PbjsAdnow struct {
@@ -423,15 +399,6 @@ type PbjsAdnuntius struct {
 	Targeting *string `json:"targeting,omitempty"`
 	// Allows you to set a specific user id in the request.
 	UserId *string `json:"userId,omitempty"`
-}
-
-// PbjsAdomega represents params for the "adomega" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (adomega.md).
-type PbjsAdomega struct {
-	// Host Name
-	Host *string `json:"host,omitempty"`
-	// Zone Id
-	ZoneId *int64 `json:"zoneId,omitempty"`
 }
 
 // PbjsAdot represents params for the "adot" bidder (pbjs).
@@ -663,15 +630,6 @@ type PbjsAdtonos struct {
 	SupplierId string `json:"supplierId,omitempty"`
 }
 
-// PbjsAdtrgtme represents params for the "adtrgtme" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (adtrgtme.md).
-type PbjsAdtrgtme struct {
-	// Site ID
-	Sid string `json:"sid,omitempty"`
-	// Zone ID
-	Zid *float64 `json:"zid,omitempty"`
-}
-
 // PbjsAdtrue represents params for the "adtrue" bidder (pbjs).
 // Generated from prebid.github.io dev-docs/bidders (adtrue.md).
 type PbjsAdtrue struct {
@@ -826,13 +784,6 @@ type PbjsAlkimi struct {
 	Token string `json:"token,omitempty"`
 }
 
-// PbjsAllianceGravity represents params for the "alliance_gravity" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (alliance_gravity.md).
-type PbjsAllianceGravity struct {
-	// Stored Request ID
-	Srid string `json:"srid,omitempty"`
-}
-
 // PbjsAltstar represents params for the "altstar" bidder (pbjs).
 // Generated from prebid.github.io dev-docs/bidders (altstar.md).
 type PbjsAltstar struct {
@@ -926,27 +877,6 @@ type PbjsApacdex struct {
 	Geo map[string]any `json:"geo,omitempty"`
 }
 
-// PbjsApester represents params for the "apester" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (apester.md).
-type PbjsApester struct {
-	// Ad Unit Id will be generated on Apester Platform.
-	AdUnitId *int64 `json:"adUnitId,omitempty"`
-	// Type of Ad Unit ('video', 'banner')
-	AdUnitType *string `json:"adUnitType,omitempty"`
-	// Custom targeting field 1
-	Custom1 *string `json:"custom1,omitempty"`
-	// Custom targeting field 2
-	Custom2 *string `json:"custom2,omitempty"`
-	// Custom targeting field 3
-	Custom3 *string `json:"custom3,omitempty"`
-	// Custom targeting field 4
-	Custom4 *string `json:"custom4,omitempty"`
-	// Custom targeting field 5
-	Custom5 *string `json:"custom5,omitempty"`
-	// Ad network's RTB host
-	Host *string `json:"host,omitempty"`
-}
-
 // PbjsAppStockSSP represents params for the "appStockSSP" bidder (pbjs).
 // Generated from prebid.github.io dev-docs/bidders (appStockSSP.md).
 type PbjsAppStockSSP struct {
@@ -1009,7 +939,7 @@ type PbjsAppnexus struct {
 	AllowSmallerSizes *bool `json:"allowSmallerSizes,omitempty"`
 	// If true, ads smaller than the values in your ad unit's sizes array will be allowed to serve. Defaults to false.
 	AllowSmallerSizesAlt *bool `json:"allow_smaller_sizes,omitempty"`
-	// Object containing mobile app parameters.  See the [App Object](#appnexus-app-object) for details.
+	// Object containing mobile app parameters. See the [App Object](#appnexus-app-object) for details.
 	App map[string]any `json:"app,omitempty"`
 	// Specifies predefined value passed on the query string that can be used in reporting. The value must be entered into the system before it is logged.
 	ExtInvCode *string `json:"extInvCode,omitempty"`
@@ -1027,15 +957,15 @@ type PbjsAppnexus struct {
 	InvCode *string `json:"invCode,omitempty"`
 	// The inventory code from AppNexus. Must be used with member.
 	InvCodeAlt *string `json:"inv_code,omitempty"`
-	// A set of key-value pairs applied to all ad slots on the page.  Mapped to [buy-side segment targeting](https://learn.microsoft.com/en-us/xandr/monetize/segment-targeting) (login required). A maximum...
+	// A set of key-value pairs applied to all ad slots on the page. Mapped to [buy-side segment targeting](https://learn.microsoft.com/en-us/xandr/monetize/segment-targeting) (login required). A maximum ...
 	Keywords map[string]any `json:"keywords,omitempty"`
-	// The member ID  from AppNexus. Must be used with invCode.
+	// The member ID from AppNexus. Must be used with invCode.
 	Member *string `json:"member,omitempty"`
-	// The placement ID from AppNexus.  You may identify a placement using the invCode and member instead of a placement ID. This parameter can be either a string or integer for Prebid.js, however integer...
+	// The placement ID from AppNexus. You may identify a placement using the invCode and member instead of a placement ID. This parameter can be either a string or integer for Prebid.js, however integer ...
 	PlacementId *int64 `json:"placementId,omitempty"`
-	// The placement ID from AppNexus.  You may identify a placement using the invCode and member instead of a placement ID. This parameter can be either a string or integer for Prebid.js, however integer...
+	// The placement ID from AppNexus. You may identify a placement using the invCode and member instead of a placement ID. This parameter can be either a string or integer for Prebid.js, however integer ...
 	PlacementID *int64 `json:"placement_id,omitempty"`
-	// Identify the placement as above or below the fold.  Allowed values: Unknown: unknown; Above the fold: above; Below the fold: below
+	// Identify the placement as above or below the fold. Allowed values: Unknown: unknown; Above the fold: above; Below the fold: below
 	Position *string `json:"position,omitempty"`
 	// Specifies a publisher-supplied URL for third-party click tracking. This is just a placeholder into which the publisher can insert their own click tracker. This parameter should be used for an unenc...
 	PubClick *string `json:"pubClick,omitempty"`
@@ -1061,7 +991,7 @@ type PbjsAppnexus struct {
 	UsePmtRule *bool `json:"use_pmt_rule,omitempty"`
 	// Object that specifies information about an external user. See [User Object](#appnexus-user-object) for details.
 	User map[string]any `json:"user,omitempty"`
-	// Object containing video targeting parameters.  See [Video Object](#appnexus-video-object) for details.
+	// Object containing video targeting parameters. See [Video Object](#appnexus-video-object) for details.
 	Video map[string]any `json:"video,omitempty"`
 }
 
@@ -1100,15 +1030,6 @@ type PbjsArteebee struct {
 	Pub *string `json:"pub,omitempty"`
 	// RTB traffic source id
 	Source *string `json:"source,omitempty"`
-}
-
-// PbjsAso represents params for the "aso" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (aso.md).
-type PbjsAso struct {
-	// Custom bidder endpoint
-	Server *string `json:"server,omitempty"`
-	// Zone ID
-	Zone int64 `json:"zone,omitempty"`
 }
 
 // PbjsAstraone represents params for the "astraone" bidder (pbjs).
@@ -1243,15 +1164,6 @@ type PbjsBeop struct {
 	NetworkPartnerId *string `json:"networkPartnerId,omitempty"`
 }
 
-// PbjsBidbuddy represents params for the "bidbuddy" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (bidbuddy.md).
-type PbjsBidbuddy struct {
-	// RTB host
-	Host *string `json:"host,omitempty"`
-	// Zone Id
-	ZoneId *int64 `json:"zoneId,omitempty"`
-}
-
 // PbjsBiddo represents params for the "biddo" bidder (pbjs).
 // Generated from prebid.github.io dev-docs/bidders (biddo.md).
 type PbjsBiddo struct {
@@ -1266,15 +1178,6 @@ type PbjsBidfuse struct {
 	EndpointId any `json:"endpointId,omitempty"`
 	// Placement Id
 	PlacementId any `json:"placementId,omitempty"`
-}
-
-// PbjsBidgency represents params for the "bidgency" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (bidgency.md).
-type PbjsBidgency struct {
-	// Server endpoint
-	Server *string `json:"server,omitempty"`
-	// Zone ID
-	Zone *int64 `json:"zone,omitempty"`
 }
 
 // PbjsBidglass represents params for the "bidglass" bidder (pbjs).
@@ -1293,6 +1196,13 @@ type PbjsBidmachine struct {
 	Path *string `json:"path,omitempty"`
 	// Your ID in Bidmachine system
 	SellerID *string `json:"seller_id,omitempty"`
+}
+
+// PbjsBidmatic represents params for the "bidmatic" bidder (pbjs).
+// Generated from prebid.github.io dev-docs/bidders (bidmatic.md).
+type PbjsBidmatic struct {
+	// Traffic source origin id
+	Source int64 `json:"source,omitempty"`
 }
 
 // PbjsBidscube represents params for the "bidscube" bidder (pbjs).
@@ -1320,6 +1230,13 @@ type PbjsBidstack struct {
 	PlacementId *string `json:"placementId,omitempty"`
 	// Publisher ID
 	PublisherId string `json:"publisherId,omitempty"`
+}
+
+// PbjsBidstailamedia represents params for the "bidstailamedia" bidder (pbjs).
+// Generated from prebid.github.io dev-docs/bidders (bidstailamedia.md).
+type PbjsBidstailamedia struct {
+	// tag ID
+	TagId string `json:"tagId,omitempty"`
 }
 
 // PbjsBidsxchange represents params for the "bidsxchange" bidder (pbjs).
@@ -1615,6 +1532,13 @@ type PbjsClydo struct {
 	Region any `json:"region,omitempty"`
 }
 
+// PbjsCodefuel represents params for the "codefuel" bidder (pbjs).
+// Generated from prebid.github.io dev-docs/bidders (codefuel.md).
+type PbjsCodefuel struct {
+	// Placement-Id defined by the caller
+	PlacementId string `json:"placementId,omitempty"`
+}
+
 // PbjsCointraffic represents params for the "cointraffic" bidder (pbjs).
 // Generated from prebid.github.io dev-docs/bidders (cointraffic.md).
 type PbjsCointraffic struct {
@@ -1699,17 +1623,6 @@ type PbjsConnatix struct {
 	ViewabilityPercentage *float64 `json:"viewabilityPercentage,omitempty"`
 }
 
-// PbjsConnectad represents params for the "connectad" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (connectad.md).
-type PbjsConnectad struct {
-	// Requested Floorprice
-	Bidfloor *float64 `json:"bidfloor,omitempty"`
-	// The network ID from ConnectAd.
-	NetworkId *int64 `json:"networkId,omitempty"`
-	// The site ID from ConnectAd.
-	SiteId *int64 `json:"siteId,omitempty"`
-}
-
 // PbjsConsumable represents params for the "consumable" bidder (pbjs).
 // Generated from prebid.github.io dev-docs/bidders (consumable-server.md).
 type PbjsConsumable struct {
@@ -1773,15 +1686,6 @@ type PbjsConversant struct {
 	TagID *string `json:"tag_id,omitempty"`
 	// Override the destination URL the request is sent to.
 	WhiteLabelURL *string `json:"white_label_url,omitempty"`
-}
-
-// PbjsCopper6ssp represents params for the "copper6ssp" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (copper6ssp.md).
-type PbjsCopper6ssp struct {
-	// Endpoint Id
-	EndpointId any `json:"endpointId,omitempty"`
-	// Placement Id
-	PlacementId any `json:"placementId,omitempty"`
 }
 
 // PbjsCordless represents params for the "cordless" bidder (pbjs).
@@ -1921,15 +1825,6 @@ type PbjsDeepintent struct {
 	User map[string]any `json:"user,omitempty"`
 	// width of the creative
 	Width *float64 `json:"width,omitempty"`
-}
-
-// PbjsDefinemedia represents params for the "definemedia" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (definemedia.md).
-type PbjsDefinemedia struct {
-	// This parameter enables our development endpoint instead of the production endpoint. All requests done with this parameter set to "true" are *NOT* billable
-	DevMode *bool `json:"devMode,omitempty"`
-	// The domain name of the last supplier in the chain. Under this domain a sellers.json must be available under https://${supplierDomainName}/sellers.json
-	SupplierDomainName string `json:"supplierDomainName,omitempty"`
 }
 
 // PbjsDefymedia represents params for the "defymedia" bidder (pbjs).
@@ -2227,13 +2122,6 @@ type PbjsEclick struct {
 	Zid string `json:"zid,omitempty"`
 }
 
-// PbjsEclickads represents params for the "eclickads" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (eclickads.md).
-type PbjsEclickads struct {
-	// The Zone Id
-	Zid string `json:"zid,omitempty"`
-}
-
 // PbjsEdge226 represents params for the "edge226" bidder (pbjs).
 // Generated from prebid.github.io dev-docs/bidders (edge226.md).
 type PbjsEdge226 struct {
@@ -2241,24 +2129,6 @@ type PbjsEdge226 struct {
 	EndpointId any `json:"endpointId,omitempty"`
 	// Placement Id
 	PlacementId any `json:"placementId,omitempty"`
-}
-
-// PbjsEightPod represents params for the "eightPod" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (eightPod.md).
-type PbjsEightPod struct {
-	// The unique identifier of the ad placement. Could be obtained from the 8pod UI or from your account manager.
-	PlacementId string `json:"placementId,omitempty"`
-	// The unique identifier of the publisher.
-	PublisherId *string `json:"publisherId,omitempty"`
-}
-
-// PbjsEmbimedia represents params for the "embimedia" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (embimedia.md).
-type PbjsEmbimedia struct {
-	// Ad network's RTB host
-	Host *string `json:"host,omitempty"`
-	// Publisher ID
-	PublisherId *int64 `json:"publisherId,omitempty"`
 }
 
 // PbjsEmpower represents params for the "empower" bidder (pbjs).
@@ -2306,6 +2176,13 @@ type PbjsEngageya struct {
 	WidgetId *int64 `json:"widgetId,omitempty"`
 }
 
+// PbjsEngerio represents params for the "engerio" bidder (pbjs).
+// Generated from prebid.github.io dev-docs/bidders (engerio.md).
+type PbjsEngerio struct {
+	// The ad slot identifier configured in the Engerio admin for this placement.
+	AdUnitCode string `json:"adUnitCode,omitempty"`
+}
+
 // PbjsEplanning represents params for the "eplanning" bidder (pbjs).
 // Generated from prebid.github.io dev-docs/bidders (eplanning.md).
 type PbjsEplanning struct {
@@ -2339,27 +2216,6 @@ type PbjsEscalax struct {
 	AccountId *string `json:"accountId,omitempty"`
 	// Patner name
 	SourceId *string `json:"sourceId,omitempty"`
-}
-
-// PbjsEskimi represents params for the "eskimi" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (eskimi.md).
-type PbjsEskimi struct {
-	// ORTB blocked advertiser domains
-	Badv []string `json:"badv,omitempty"`
-	// ORTB blocked applications
-	Bapp []string `json:"bapp,omitempty"`
-	// ORTB blocked categories
-	Bcat []string `json:"bcat,omitempty"`
-	// Minimum CPM
-	BidFloor *float64 `json:"bidFloor,omitempty"`
-	// Currency of bid floor
-	BidFloorCur *string `json:"bidFloorCur,omitempty"`
-	// Set to true to enable COPPA
-	Coppa *bool `json:"coppa,omitempty"`
-	// The placement ID from Eskimi.
-	PlacementId int64 `json:"placementId,omitempty"`
-	// Set to 1 to enable test mode
-	Test *int64 `json:"test,omitempty"`
 }
 
 // PbjsEvtech represents params for the "evtech" bidder (pbjs).
@@ -2484,17 +2340,6 @@ type PbjsFlipp struct {
 	UserKey any `json:"userKey,omitempty"`
 	// Zones to request from bidder
 	ZoneIds any `json:"zoneIds,omitempty"`
-}
-
-// PbjsFloxis represents params for the "floxis" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (floxis.md).
-type PbjsFloxis struct {
-	// Partner identifier provided by Floxis
-	Partner *string `json:"partner,omitempty"`
-	// Region identifier for routing
-	Region *string `json:"region,omitempty"`
-	// Seat identifier provided by Floxis
-	Seat *string `json:"seat,omitempty"`
 }
 
 // PbjsFluct represents params for the "fluct" bidder (pbjs).
@@ -2879,15 +2724,6 @@ type PbjsHolid struct {
 	AdUnitID string `json:"adUnitID,omitempty"`
 }
 
-// PbjsHouseofpubs represents params for the "houseofpubs" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (houseofpubs.md).
-type PbjsHouseofpubs struct {
-	// Our Host
-	Host *string `json:"host,omitempty"`
-	// Example RTB zone id
-	ZoneId *int64 `json:"zoneId,omitempty"`
-}
-
 // PbjsHuaweiads represents params for the "huaweiads" bidder (pbjs).
 // Generated from prebid.github.io dev-docs/bidders (huaweiads.md).
 type PbjsHuaweiads struct {
@@ -2901,13 +2737,6 @@ type PbjsHuaweiads struct {
 	Signkey *string `json:"signkey,omitempty"`
 	// Slot Id
 	Slotid *string `json:"slotid,omitempty"`
-}
-
-// PbjsHuddledmasses represents params for the "huddledmasses" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (huddledmasses.md).
-type PbjsHuddledmasses struct {
-	// Placement Id will be generated on Huddled Masses SSP Platform.
-	PlacementID int64 `json:"placement_id,omitempty"`
 }
 
 // PbjsHybrid represents params for the "hybrid" bidder (pbjs).
@@ -2928,15 +2757,6 @@ type PbjsHypelab struct {
 	PlacementSlug *string `json:"placement_slug,omitempty"`
 	// The property slug
 	PropertySlug *string `json:"property_slug,omitempty"`
-}
-
-// PbjsHyperbrainz represents params for the "hyperbrainz" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (hyperbrainz.md).
-type PbjsHyperbrainz struct {
-	// RTB host
-	Host *string `json:"host,omitempty"`
-	// Zone Id
-	ZoneId *int64 `json:"zoneId,omitempty"`
 }
 
 // PbjsIas represents params for the "ias" bidder (pbjs).
@@ -2971,17 +2791,6 @@ type PbjsIionads struct {
 	PublisherId *string `json:"publisherId,omitempty"`
 }
 
-// PbjsIllumin represents params for the "illumin" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (illumin.md).
-type PbjsIllumin struct {
-	// The minimum bid value desired. Illumin will not respond with bids lower than this value.
-	BidFloor *float64 `json:"bidFloor,omitempty"`
-	// The connection ID from Illumin.
-	CId *string `json:"cId,omitempty"`
-	// The publisher ID from Illumin.
-	PId *string `json:"pId,omitempty"`
-}
-
 // PbjsImds represents params for the "imds" bidder (pbjs).
 // Generated from prebid.github.io dev-docs/bidders (imds.md).
 type PbjsImds struct {
@@ -2998,11 +2807,17 @@ type PbjsImds struct {
 // PbjsImpactify represents params for the "impactify" bidder (pbjs).
 // Generated from prebid.github.io dev-docs/bidders (impactify.md).
 type PbjsImpactify struct {
-	// Impactify publisher id  (Contact us)
+	// Impactify publisher ID.
+	AccountId *string `json:"accountId,omitempty"`
+	// Impactify inventory ID.
 	AppId *string `json:"appId,omitempty"`
-	// Impactify ad format (screen or display)
+	// Impactify ad format. Use screen for rich media and banner, and player for instream video.
 	Format *string `json:"format,omitempty"`
-	// Impactify ad style (inline, impact or static)
+	// Render options. See sub-options below.
+	Render map[string]any `json:"render,omitempty"`
+	// Impactify ad size.
+	Size *string `json:"size,omitempty"`
+	// Impactify ad style. Supported values depend on the integration type. See below.
 	Style *string `json:"style,omitempty"`
 }
 
@@ -3286,31 +3101,11 @@ type PbjsKrushmedia struct {
 	Key string `json:"key,omitempty"`
 }
 
-// PbjsKuantyx represents params for the "kuantyx" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (kuantyx.md).
-type PbjsKuantyx struct {
-	// Server endpoint
-	Server *string `json:"server,omitempty"`
-	// Zone ID
-	Zone *int64 `json:"zone,omitempty"`
-}
-
 // PbjsKubient represents params for the "kubient" bidder (pbjs).
 // Generated from prebid.github.io dev-docs/bidders (kubient.md).
 type PbjsKubient struct {
 	// The AdUnit or Tag specific ID
 	Zoneid string `json:"zoneid,omitempty"`
-}
-
-// PbjsKueezrtb represents params for the "kueezrtb" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (kueezrtb.md).
-type PbjsKueezrtb struct {
-	// The minimum bid value desired. KueezRTB will not respond with bids lower than this value.
-	BidFloor *float64 `json:"bidFloor,omitempty"`
-	// The connection ID from KueezRTB.
-	CId *string `json:"cId,omitempty"`
-	// The publisher ID from KueezRTB (pbjs only).
-	PId *string `json:"pId,omitempty"`
 }
 
 // PbjsKumma represents params for the "kumma" bidder (pbjs).
@@ -3563,25 +3358,6 @@ type PbjsMediaforce struct {
 	PublisherID *string `json:"publisher_id,omitempty"`
 }
 
-// PbjsMediago represents params for the "mediago" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (mediago.md).
-type PbjsMediago struct {
-	// Sets a floor price for the bid. This parameter is available for PBJS only.
-	Bidfloor *float64 `json:"bidfloor,omitempty"`
-	// The AD placement ID
-	PlacementId *string `json:"placementId,omitempty"`
-	// publisher id
-	Publisher *string `json:"publisher,omitempty"`
-	// Server region for PBS request: US for US Region, EU for EU Region, APAC for APAC Region, default is US. This parameter expects all imps to be the same. This parameter is available for PBS only.
-	Region *string `json:"region,omitempty"`
-	// Tag identifier for the impression
-	Tagid *string `json:"tagid,omitempty"`
-	// 0(default): production env mode. <br> 1: dev env mode and no charge.we will bid Higher frequency to make debug easier. This parameter is available for PBJS only.
-	Test *float64 `json:"test,omitempty"`
-	// publisher token, This parameter expects all imps to be the same
-	Token *string `json:"token,omitempty"`
-}
-
 // PbjsMediaimpact represents params for the "mediaimpact" bidder (pbjs).
 // Generated from prebid.github.io dev-docs/bidders (mediaimpact.md).
 type PbjsMediaimpact struct {
@@ -3707,8 +3483,6 @@ type PbjsMile struct {
 type PbjsMissena struct {
 	// Missena's publisher token
 	ApiKey string `json:"apiKey,omitempty"`
-	// An array of formats to request (banner, native, or video)
-	Formats []any `json:"formats,omitempty"`
 	// Placement Type, default: 'sticky'
 	Placement *string `json:"placement,omitempty"`
 	// An object containing extra settings for the Missena adapter
@@ -3735,15 +3509,6 @@ type PbjsMobilefuse struct {
 	Bidfloor *float64 `json:"bidfloor,omitempty"`
 	// An ID which identifies this specific inventory placement
 	PlacementID int64 `json:"placement_id,omitempty"`
-}
-
-// PbjsMonetix represents params for the "monetix" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (monetix.md).
-type PbjsMonetix struct {
-	// RTB host
-	Host *string `json:"host,omitempty"`
-	// Zone Id
-	ZoneId *int64 `json:"zoneId,omitempty"`
 }
 
 // PbjsMonetixads represents params for the "monetixads" bidder (pbjs).
@@ -3793,13 +3558,13 @@ type PbjsMsft struct {
 	ExtImpID *string `json:"ext_imp_id,omitempty"`
 	// Specifies predefined value passed on the query string that can be used in reporting. The value must be entered into the system before it is logged.
 	ExtInvCode *string `json:"ext_inv_code,omitempty"`
-	// The inventory code from Microsoft Monetize.  Must be used with member.
+	// The inventory code from Microsoft Monetize. Must be used with member.
 	InvCode *string `json:"inv_code,omitempty"`
 	// A comma-delimited string of key-value pairs (or terms) applied to this specific ad slot on the page. Mapped to [buy-side segment targeting](https://learn.microsoft.com/en-us/xandr/monetize/segment-...
 	Keywords *string `json:"keywords,omitempty"`
-	// The member ID from Microsoft Monetize.  Must be used with inv_code.
+	// The member ID from Microsoft Monetize. Must be used with inv_code.
 	Member *int64 `json:"member,omitempty"`
-	// The placement ID from Microsoft Monetize.  You may identify a placement using the inv_code and member instead of a placement ID.
+	// The placement ID from Microsoft Monetize. You may identify a placement using the inv_code and member instead of a placement ID.
 	PlacementID *int64 `json:"placement_id,omitempty"`
 	// Specifies a publisher-supplied URL for third-party click tracking. This is just a placeholder into which the publisher can insert their own click tracker. This parameter should be used for an unenc...
 	Pubclick *string `json:"pubclick,omitempty"`
@@ -3967,13 +3732,6 @@ type PbjsNuba struct {
 	PlacementId any `json:"placementId,omitempty"`
 }
 
-// PbjsOcm represents params for the "ocm" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (ocm.md).
-type PbjsOcm struct {
-	// The source ID from OCM.
-	Aid int64 `json:"aid,omitempty"`
-}
-
 // PbjsOftmedia represents params for the "oftmedia" bidder (pbjs).
 // Generated from prebid.github.io dev-docs/bidders (oftmedia.md).
 type PbjsOftmedia struct {
@@ -3990,17 +3748,6 @@ type PbjsOgury struct {
 	AdUnitId *string `json:"adUnitId,omitempty"`
 	// The asset key provided by Ogury
 	AssetKey *string `json:"assetKey,omitempty"`
-}
-
-// PbjsOmnidex represents params for the "omnidex" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (omnidex.md).
-type PbjsOmnidex struct {
-	// The minimum bid value desired. omnidex will not respond with bids lower than this value.
-	BidFloor *float64 `json:"bidFloor,omitempty"`
-	// The connection ID from Omnidex.
-	CId *string `json:"cId,omitempty"`
-	// The publisher ID from Omnidex (pbjs only).
-	PId *string `json:"pId,omitempty"`
 }
 
 // PbjsOnedisplay represents params for the "onedisplay" bidder (pbjs).
@@ -4054,17 +3801,6 @@ type PbjsOnomagic struct {
 	BidFloor *float64 `json:"bidFloor,omitempty"`
 	// The publisher ID from Onomagic
 	PublisherId int64 `json:"publisherId,omitempty"`
-}
-
-// PbjsOpamarketplace represents params for the "opamarketplace" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (opamarketplace.md).
-type PbjsOpamarketplace struct {
-	// The minimum bid value desired. OpaMarketplace will not respond with bids lower than this value.
-	BidFloor *float64 `json:"bidFloor,omitempty"`
-	// The connection ID from OpaMarketplace.
-	CId *string `json:"cId,omitempty"`
-	// The publisher ID from OpaMarketplace (pbjs only).
-	PId *string `json:"pId,omitempty"`
 }
 
 // PbjsOpen8 represents params for the "open8" bidder (pbjs).
@@ -4386,22 +4122,6 @@ type PbjsPerformist struct {
 	Custom5 *string `json:"custom5,omitempty"`
 	// Publisher ID
 	PublisherId string `json:"publisherId,omitempty"`
-}
-
-// PbjsPgam represents params for the "pgam" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (pgam.md).
-type PbjsPgam struct {
-	// The source ID from PGAM.
-	Aid int64 `json:"aid,omitempty"`
-}
-
-// PbjsPgammedia represents params for the "pgammedia" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (pgammedia.md).
-type PbjsPgammedia struct {
-	// Channel id
-	AVCHANNELID *string `json:"AV_CHANNELID,omitempty"`
-	// Publisher/Netid
-	AVPUBLISHERID *string `json:"AV_PUBLISHERID,omitempty"`
 }
 
 // PbjsPgamssp represents params for the "pgamssp" bidder (pbjs).
@@ -4749,21 +4469,6 @@ type PbjsRakuten struct {
 	AdSpotId int64 `json:"adSpotId,omitempty"`
 }
 
-// PbjsRas represents params for the "ras" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (ras.md).
-type PbjsRas struct {
-	// Ad unit category name; only case-insensitive alphanumeric with underscores and hyphens are allowed
-	Area *string `json:"area,omitempty"`
-	// Specific identifier provided by RAS
-	Network *string `json:"network,omitempty"`
-	// Web page context data
-	PageContext map[string]any `json:"pageContext,omitempty"`
-	// Specific identifier name (case-insensitive) that is associated with this ad unit and provided by RAS
-	Site *string `json:"site,omitempty"`
-	// Ad unit placement name (case-insensitive) provided by RAS
-	Slot *string `json:"slot,omitempty"`
-}
-
 // PbjsReadpeak represents params for the "readpeak" bidder (pbjs).
 // Generated from prebid.github.io dev-docs/bidders (readpeak.md).
 type PbjsReadpeak struct {
@@ -4784,15 +4489,6 @@ type PbjsRedtram struct {
 	BidFloor *float64 `json:"bidFloor,omitempty"`
 	// The placement ID from Redtram
 	PlacementId *string `json:"placementId,omitempty"`
-}
-
-// PbjsReklamup represents params for the "reklamup" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (reklamup.md).
-type PbjsReklamup struct {
-	// Endpoint Id
-	EndpointId any `json:"endpointId,omitempty"`
-	// Placement Id
-	PlacementId any `json:"placementId,omitempty"`
 }
 
 // PbjsRelaido represents params for the "relaido" bidder (pbjs).
@@ -4933,9 +4629,7 @@ type PbjsRichaudience struct {
 	// A key-value applied only to the configured bid. This value is optional. Strings separated by semicolon.
 	Keywords *string `json:"keywords,omitempty"`
 	// The placement ID from Rich Audience.
-	Pid *string `json:"pid,omitempty"`
-	// Define if site or app.
-	SupplyType *string `json:"supplyType,omitempty"`
+	Pid string `json:"pid,omitempty"`
 }
 
 // PbjsRingieraxelspringer represents params for the "ringieraxelspringer" bidder (pbjs).
@@ -4978,15 +4672,6 @@ type PbjsRocketlab struct {
 type PbjsRockyou struct {
 	// The placement ID assigned to the publisher by RockYou
 	PlacementId int64 `json:"placementId,omitempty"`
-}
-
-// PbjsRtbanalytica represents params for the "rtbanalytica" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (rtbanalytica.md).
-type PbjsRtbanalytica struct {
-	// RtbAnalytica RTB host
-	Host *string `json:"host,omitempty"`
-	// Zone Id
-	ZoneId *int64 `json:"zoneId,omitempty"`
 }
 
 // PbjsRtbdemand represents params for the "rtbdemand" bidder (pbjs).
@@ -5094,17 +4779,6 @@ type PbjsRumble struct {
 	ZoneId *float64 `json:"zoneId,omitempty"`
 }
 
-// PbjsRxrtb represents params for the "rxrtb" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (rxrtb.md).
-type PbjsRxrtb struct {
-	// endpoint id
-	ID *int64 `json:"id,omitempty"`
-	// traffic source id
-	Source *string `json:"source,omitempty"`
-	// endpoint token
-	Token *string `json:"token,omitempty"`
-}
-
 // PbjsSaambaa represents params for the "saambaa" bidder (pbjs).
 // Generated from prebid.github.io dev-docs/bidders (saambaa.md).
 type PbjsSaambaa struct {
@@ -5130,13 +4804,6 @@ type PbjsSara struct {
 	Uid int64 `json:"uid,omitempty"`
 }
 
-// PbjsScalibur represents params for the "scalibur" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (scalibur.md).
-type PbjsScalibur struct {
-	// Placement identifier provided by Scalibur
-	PlacementId string `json:"placementId,omitempty"`
-}
-
 // PbjsScattered represents params for the "scattered" bidder (pbjs).
 // Generated from prebid.github.io dev-docs/bidders (scattered.md).
 type PbjsScattered struct {
@@ -5144,6 +4811,13 @@ type PbjsScattered struct {
 	BidderDomain string `json:"bidderDomain,omitempty"`
 	// Is test bid
 	Test *int64 `json:"test,omitempty"`
+}
+
+// PbjsScoremedia represents params for the "scoremedia" bidder (pbjs).
+// Generated from prebid.github.io dev-docs/bidders (scoremedia.md).
+type PbjsScoremedia struct {
+	// tag ID
+	TagId string `json:"tagId,omitempty"`
 }
 
 // PbjsScreencore represents params for the "screencore" bidder (pbjs).
@@ -5164,26 +4838,6 @@ type PbjsSeedingAlliance struct {
 	AdUnitId string `json:"adUnitId,omitempty"`
 	// URL from the Page
 	URL *string `json:"url,omitempty"`
-}
-
-// PbjsSeedtag represents params for the "seedtag" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (seedtag.md).
-type PbjsSeedtag struct {
-	// The adunit id.
-	AdUnitId *string `json:"adUnitId,omitempty"`
-	// IntegrationType. Posibles values: publisherToken, RonId
-	IntegrationType *string `json:"integrationType,omitempty"`
-	// Adunit placement, posibles values: inScreen, inArticle
-	Placement *string `json:"placement,omitempty"`
-	// The publisher id.
-	PublisherId string `json:"publisherId,omitempty"`
-}
-
-// PbjsSelectmedia represents params for the "selectmedia" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (selectmedia.md).
-type PbjsSelectmedia struct {
-	// The traffic source ID
-	Aid int64 `json:"aid,omitempty"`
 }
 
 // PbjsSelectmediavideo represents params for the "selectmediavideo" bidder (pbjs).
@@ -5222,17 +4876,6 @@ type PbjsSharethrough struct {
 	EqtvNetworkId *int64 `json:"eqtvNetworkId,omitempty"`
 	// The placement key
 	Pkey string `json:"pkey,omitempty"`
-}
-
-// PbjsShinezRtb represents params for the "shinezRtb" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (shinezRtb.md).
-type PbjsShinezRtb struct {
-	// The minimum bid value desired. shinezRtb will not respond with bids lower than this value.
-	BidFloor *float64 `json:"bidFloor,omitempty"`
-	// The connection ID from shinezRtb.
-	CId *string `json:"cId,omitempty"`
-	// The publisher ID from shinezRtb.
-	PId *string `json:"pId,omitempty"`
 }
 
 // PbjsSilvermob represents params for the "silvermob" bidder (pbjs).
@@ -5388,15 +5031,6 @@ type PbjsSonarads struct {
 	SiteId string `json:"siteId,omitempty"`
 }
 
-// PbjsSonicTwist represents params for the "sonic_twist" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (sonic_twist.md).
-type PbjsSonicTwist struct {
-	// Our Host
-	Host *string `json:"host,omitempty"`
-	// Example RTB zone id
-	ZoneId *int64 `json:"zoneId,omitempty"`
-}
-
 // PbjsSonobi represents params for the "sonobi" bidder (pbjs).
 // Generated from prebid.github.io dev-docs/bidders (sonobi.md).
 type PbjsSonobi struct {
@@ -5503,6 +5137,13 @@ type PbjsSpinx struct {
 	ZoneId *int64 `json:"zoneId,omitempty"`
 }
 
+// PbjsSpm represents params for the "spm" bidder (pbjs).
+// Generated from prebid.github.io dev-docs/bidders (spm.md).
+type PbjsSpm struct {
+	// tag ID
+	TagId string `json:"tagId,omitempty"`
+}
+
 // PbjsSpotx represents params for the "spotx" bidder (pbjs).
 // Generated from prebid.github.io dev-docs/bidders (spotx.md).
 type PbjsSpotx struct {
@@ -5569,23 +5210,6 @@ type PbjsSspGeniee struct {
 	Currency *string `json:"currency,omitempty"`
 	// Zone ID
 	ZoneId int64 `json:"zoneId,omitempty"`
-}
-
-// PbjsStackadapt represents params for the "stackadapt" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (stackadapt.md).
-type PbjsStackadapt struct {
-	// Description
-	Name any `json:"Name,omitempty"`
-	// banner supporting expdir
-	Banner map[string]any `json:"banner,omitempty"`
-	// bid floor price
-	Bidfloor *float64 `json:"bidfloor,omitempty"`
-	// Directions the banner may expand.
-	Expdir any `json:"expdir,omitempty"`
-	// StackAdapt provided id
-	PlacementId *string `json:"placementId,omitempty"`
-	// StackAdapt provided id
-	PublisherId string `json:"publisherId,omitempty"`
 }
 
 // PbjsStailamedia represents params for the "stailamedia" bidder (pbjs).
@@ -5742,15 +5366,11 @@ type PbjsTaboola struct {
 	TagId *string `json:"tagId,omitempty"`
 }
 
-// PbjsTagoras represents params for the "tagoras" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (tagoras.md).
-type PbjsTagoras struct {
-	// The minimum bid value desired. Tagoras will not respond with bids lower than this value.
-	BidFloor *float64 `json:"bidFloor,omitempty"`
-	// The connection ID from Tagoras.
-	CId *string `json:"cId,omitempty"`
-	// The publisher ID from Tagoras.
-	PId *string `json:"pId,omitempty"`
+// PbjsTadvertisingBlis represents params for the "tadvertising_blis" bidder (pbjs).
+// Generated from prebid.github.io dev-docs/bidders (tadvertising_blis.md).
+type PbjsTadvertisingBlis struct {
+	// The publisher ID
+	PublisherId string `json:"publisherId,omitempty"`
 }
 
 // PbjsTalkads represents params for the "talkads" bidder (pbjs).
@@ -6013,19 +5633,6 @@ type PbjsTruereach struct {
 	SiteID *string `json:"site_id,omitempty"`
 }
 
-// PbjsTrustedstack represents params for the "trustedstack" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (trustedstack.md).
-type PbjsTrustedstack struct {
-	// Bidfloor for the impression
-	Bidfloor *float64 `json:"bidfloor,omitempty"`
-	// The customer id provided by TrustedStack.
-	Cid *string `json:"cid,omitempty"`
-	// The placement id provided by TrustedStack.
-	Crid *string `json:"crid,omitempty"`
-	// Object containing video targeting parameters.  See [Video Object](#video-object) for details.
-	Video map[string]any `json:"video,omitempty"`
-}
-
 // PbjsTrustx represents params for the "trustx" bidder (pbjs).
 // Generated from prebid.github.io dev-docs/bidders (trustx.md).
 type PbjsTrustx struct {
@@ -6048,15 +5655,6 @@ type PbjsTurktelekom struct {
 	Host *string `json:"host,omitempty"`
 	// Zone Id
 	ZoneId *int64 `json:"zoneId,omitempty"`
-}
-
-// PbjsTwistdigital represents params for the "twistdigital" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (twistDigital.md).
-type PbjsTwistdigital struct {
-	// The minimum bid value desired. Twist Digital will not respond with bids lower than this value.
-	BidFloor *float64 `json:"bidFloor,omitempty"`
-	// The connection ID from Twist Digital.
-	CId string `json:"cId,omitempty"`
 }
 
 // PbjsUcfunnel represents params for the "ucfunnel" bidder (pbjs).
@@ -6090,35 +5688,6 @@ type PbjsUnibots struct {
 	Host *string `json:"host,omitempty"`
 	// Zone Id
 	ZoneId *int64 `json:"zoneId,omitempty"`
-}
-
-// PbjsUnicorn represents params for the "unicorn" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (unicorn.md).
-type PbjsUnicorn struct {
-	// Account ID for charge request (provided by UNICORN)
-	AccountId int64 `json:"accountId,omitempty"`
-	// Blocked IAB categories
-	Bcat any `json:"bcat,omitempty"`
-	// Publisher specific media id.
-	MediaId *string `json:"mediaId,omitempty"`
-	// Your placement ID
-	PlacementId *string `json:"placementId,omitempty"`
-	// Account specific publisher id.
-	PublisherId *string `json:"publisherId,omitempty"`
-}
-
-// PbjsUniquest represents params for the "uniquest" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (uniquest.md).
-type PbjsUniquest struct {
-	// The AdUnit ID from UNIQUEST
-	Sid string `json:"sid,omitempty"`
-}
-
-// PbjsUniquestWidget represents params for the "uniquest_widget" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (uniquestWidget.md).
-type PbjsUniquestWidget struct {
-	// The Ad ID from UNIQUEST Widget
-	Wid string `json:"wid,omitempty"`
 }
 
 // PbjsUnruly represents params for the "unruly" bidder (pbjs).
@@ -6178,27 +5747,6 @@ type PbjsValuad struct {
 	PlacementId string `json:"placementId,omitempty"`
 }
 
-// PbjsVdoai represents params for the "vdoai" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (vdoai.md).
-type PbjsVdoai struct {
-	// Ad Unit Id will be generated on VDO.AI Platform.
-	AdUnitId *int64 `json:"adUnitId,omitempty"`
-	// Type of Ad Unit ('video', 'banner')
-	AdUnitType *string `json:"adUnitType,omitempty"`
-	// Custom targeting field 1
-	Custom1 *string `json:"custom1,omitempty"`
-	// Custom targeting field 2
-	Custom2 *string `json:"custom2,omitempty"`
-	// Custom targeting field 3
-	Custom3 *string `json:"custom3,omitempty"`
-	// Custom targeting field 4
-	Custom4 *string `json:"custom4,omitempty"`
-	// Custom targeting field 5
-	Custom5 *string `json:"custom5,omitempty"`
-	// Ad network's RTB host
-	Host *string `json:"host,omitempty"`
-}
-
 // PbjsVelonium represents params for the "velonium" bidder (pbjs).
 // Generated from prebid.github.io dev-docs/bidders (velonium.md).
 type PbjsVelonium struct {
@@ -6238,9 +5786,9 @@ type PbjsVertamedia struct {
 	Aid int64 `json:"aid,omitempty"`
 }
 
-// PbjsViantOrtb represents params for the "viantOrtb" bidder (pbjs).
+// PbjsViant represents params for the "viant" bidder (pbjs).
 // Generated from prebid.github.io dev-docs/bidders (viant.md).
-type PbjsViantOrtb struct {
+type PbjsViant struct {
 	// PublisherId to identify the Site from which Bid Requests will be seen.
 	PublisherId int64 `json:"publisherId,omitempty"`
 }
@@ -6250,19 +5798,6 @@ type PbjsViantOrtb struct {
 type PbjsVibrantmedia struct {
 	// Placement id from Vibrant Media
 	PlacementId int64 `json:"placementId,omitempty"`
-}
-
-// PbjsVidazoo represents params for the "vidazoo" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (vidazoo.md).
-type PbjsVidazoo struct {
-	// The minimum bid value desired. Vidazoo will not respond with bids lower than this value.
-	BidFloor *float64 `json:"bidFloor,omitempty"`
-	// The connection ID from Vidazoo.
-	CId *string `json:"cId,omitempty"`
-	// The publisher ID from Vidazoo (pbjs only).
-	PId *string `json:"pId,omitempty"`
-	// Sets the server subdomain, default: 'prebid'.
-	SubDomain *string `json:"subDomain,omitempty"`
 }
 
 // PbjsVidcrunch represents params for the "vidcrunch" bidder (pbjs).
@@ -6324,15 +5859,6 @@ type PbjsVideoreach struct {
 type PbjsViewdeos struct {
 	// The source ID from member zone
 	Aid int64 `json:"aid,omitempty"`
-}
-
-// PbjsViewdeosDX represents params for the "viewdeosDX" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (viewdeosDX.md).
-type PbjsViewdeosDX struct {
-	// The source ID from member zone
-	Aid int64 `json:"aid,omitempty"`
-	// Oustream player settings object
-	Outstream map[string]any `json:"outstream,omitempty"`
 }
 
 // PbjsViously represents params for the "viously" bidder (pbjs).
@@ -6493,17 +6019,6 @@ type PbjsXtrmqb struct {
 	PublisherId *int64 `json:"publisherId,omitempty"`
 }
 
-// PbjsYaleo represents params for the "yaleo" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (yaleo.md).
-type PbjsYaleo struct {
-	// Maximum CPM value. Bids with a CPM higher than the specified value will be rejected.
-	MaxCpm *float64 `json:"maxCpm,omitempty"`
-	// Member identifier.
-	MemberId *float64 `json:"memberId,omitempty"`
-	// Yaleo placement identifier.
-	PlacementId string `json:"placementId,omitempty"`
-}
-
 // PbjsYbidder represents params for the "ybidder" bidder (pbjs).
 // Generated from prebid.github.io dev-docs/bidders (ybidder.md).
 type PbjsYbidder struct {
@@ -6638,45 +6153,6 @@ type PbjsZeta struct {
 	Device map[string]any `json:"device,omitempty"`
 	// An extension object that allows for custom fields and objects to be sent  (See OpenRTB spec)
 	Ext map[string]any `json:"ext,omitempty"`
-	// The object containing site data (See OpenRTB spec)
-	Site map[string]any `json:"site,omitempty"`
-	// A Source object that provides data about the inventory source and which entity makes the final decision (See OpenRTB spec)
-	Source map[string]any `json:"source,omitempty"`
-	// Flag which will induce a sample bid response when true; only set to true for testing purposes (1 = true, 0 = false)
-	Test *int64 `json:"test,omitempty"`
-	// Maximum time in milliseconds the exchange allows for bids to be received including Internet latency to avoid timeout
-	Tmax *int64 `json:"tmax,omitempty"`
-	// The object containing user data (See OpenRTB spec)
-	User map[string]any `json:"user,omitempty"`
-	// White list of languages for creatives
-	Wlang any `json:"wlang,omitempty"`
-	// White list of buyer seats (e.g., advertisers, agencies) allowed to bid on this impression
-	Wseat any `json:"wseat,omitempty"`
-}
-
-// PbjsZmaticoo represents params for the "zmaticoo" bidder (pbjs).
-// Generated from prebid.github.io dev-docs/bidders (zmaticoo.md).
-type PbjsZmaticoo struct {
-	// Flag to indicate that the impressions offered represent all the impressions available in context (1 = true, 0 = false)
-	Allimps *int64 `json:"allimps,omitempty"`
-	// The object containing app data (See OpenRTB spec)
-	App map[string]any `json:"app,omitempty"`
-	// Auction type, where 1 = First Price, 2 = Second Price Plus
-	At *int64 `json:"at,omitempty"`
-	// Block list of advertisers by their domains
-	Badv any `json:"badv,omitempty"`
-	// Block list of applications by their platform-specific exchange independent application identifiers
-	Bapp any `json:"bapp,omitempty"`
-	// Blocked advertiser categories using the IAB content categories
-	Bcat any `json:"bcat,omitempty"`
-	// Block list of buyer seats (e.g., advertisers, agencies) restricted from bidding on this impression
-	Bseat any `json:"bseat,omitempty"`
-	// The object containing device data (See OpenRTB spec)
-	Device map[string]any `json:"device,omitempty"`
-	// An extension object that allows for custom fields and objects to be sent  (See OpenRTB spec)
-	Ext map[string]any `json:"ext,omitempty"`
-	// The pubId provided by zmaticoo
-	PubId string `json:"pubId,omitempty"`
 	// The object containing site data (See OpenRTB spec)
 	Site map[string]any `json:"site,omitempty"`
 	// A Source object that provides data about the inventory source and which entity makes the final decision (See OpenRTB spec)

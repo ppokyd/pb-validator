@@ -3,20 +3,20 @@
   "$id": "https://prebid.org/schemas/pbjs/msft.json",
   "title": "Microsoft bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (msft.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/d3ff5e90f0abebdb8a36abb6dd3cba2be8c4c23c/dev-docs/bidders/msft.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/a7998e045c95618601270f08fc80d1501f0ffe35/dev-docs/bidders/msft.md",
   "type": "object",
   "properties": {
     "placement_id": {
       "type": "integer",
-      "description": "The placement ID from Microsoft Monetize.  You may identify a placement using the inv_code and member instead of a placement ID."
+      "description": "The placement ID from Microsoft Monetize. You may identify a placement using the inv_code and member instead of a placement ID."
     },
     "member": {
       "type": "integer",
-      "description": "The member ID from Microsoft Monetize.  Must be used with inv_code."
+      "description": "The member ID from Microsoft Monetize. Must be used with inv_code."
     },
     "inv_code": {
       "type": "string",
-      "description": "The inventory code from Microsoft Monetize.  Must be used with member."
+      "description": "The inventory code from Microsoft Monetize. Must be used with member."
     },
     "allow_smaller_sizes": {
       "type": "boolean",
