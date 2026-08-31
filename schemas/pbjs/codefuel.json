@@ -1,9 +1,9 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://prebid.org/schemas/pbjs/CodeFuel.json",
+  "$id": "https://prebid.org/schemas/pbjs/codefuel.json",
   "title": "CodeFuel bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (codefuel.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/d3ff5e90f0abebdb8a36abb6dd3cba2be8c4c23c/dev-docs/bidders/codefuel.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/a7998e045c95618601270f08fc80d1501f0ffe35/dev-docs/bidders/codefuel.md",
   "type": "object",
   "properties": {
     "placementId": {

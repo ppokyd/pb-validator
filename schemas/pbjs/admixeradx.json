@@ -3,7 +3,7 @@
   "$id": "https://prebid.org/schemas/pbjs/admixeradx.json",
   "title": "AdmixerADX bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (admixeradx.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/d3ff5e90f0abebdb8a36abb6dd3cba2be8c4c23c/dev-docs/bidders/admixeradx.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/a7998e045c95618601270f08fc80d1501f0ffe35/dev-docs/bidders/admixeradx.md",
   "type": "object",
   "properties": {
     "zone": {

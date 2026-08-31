@@ -3,24 +3,41 @@
   "$id": "https://prebid.org/schemas/pbjs/impactify.json",
   "title": "Impactify bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (impactify.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/d3ff5e90f0abebdb8a36abb6dd3cba2be8c4c23c/dev-docs/bidders/impactify.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/a7998e045c95618601270f08fc80d1501f0ffe35/dev-docs/bidders/impactify.md",
   "type": "object",
   "properties": {
+    "accountId": {
+      "type": "string",
+      "description": "Impactify publisher ID."
+    },
     "appId": {
       "type": "string",
-      "description": "Impactify publisher id  (Contact us)"
+      "description": "Impactify inventory ID."
     },
     "format": {
       "type": "string",
-      "description": "Impactify ad format (screen or display)"
+      "description": "Impactify ad format. Use screen for rich media and banner, and player for instream video."
     },
     "style": {
       "type": "string",
-      "description": "Impactify ad style (inline, impact or static)"
+      "description": "Impactify ad style. Supported values depend on the integration type. See below."
+    },
+    "size": {
+      "type": "string",
+      "description": "Impactify ad size."
+    },
+    "render": {
+      "type": "object",
+      "description": "Render options. See sub-options below."
     }
   },
   "additionalProperties": false,
   "allOf": [
+    {
+      "required": [
+        "accountId"
+      ]
+    },
     {
       "required": [
         "appId"

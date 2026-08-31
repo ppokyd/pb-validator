@@ -3,20 +3,20 @@
   "$id": "https://prebid.org/schemas/pbjs/appnexus.json",
   "title": "AppNexus bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (appnexus.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/d3ff5e90f0abebdb8a36abb6dd3cba2be8c4c23c/dev-docs/bidders/appnexus.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/a7998e045c95618601270f08fc80d1501f0ffe35/dev-docs/bidders/appnexus.md",
   "type": "object",
   "properties": {
     "placement_id": {
       "type": "integer",
-      "description": "The placement ID from AppNexus.  You may identify a placement using the invCode and member instead of a placement ID. This parameter can be either a string or integer for Prebid.js, however integer is preferred. Legacy code can retain the string value. **Prebid Server requires an integer value.**"
+      "description": "The placement ID from AppNexus. You may identify a placement using the invCode and member instead of a placement ID. This parameter can be either a string or integer for Prebid.js, however integer is preferred. Legacy code can retain the string value. **Prebid Server requires an integer value.**"
     },
     "placementId": {
       "type": "integer",
-      "description": "The placement ID from AppNexus.  You may identify a placement using the invCode and member instead of a placement ID. This parameter can be either a string or integer for Prebid.js, however integer is preferred. Legacy code can retain the string value. **Prebid Server requires an integer value.**"
+      "description": "The placement ID from AppNexus. You may identify a placement using the invCode and member instead of a placement ID. This parameter can be either a string or integer for Prebid.js, however integer is preferred. Legacy code can retain the string value. **Prebid Server requires an integer value.**"
     },
     "member": {
       "type": "string",
-      "description": "The member ID  from AppNexus. Must be used with invCode."
+      "description": "The member ID from AppNexus. Must be used with invCode."
     },
     "invCode": {
       "type": "string",
@@ -59,15 +59,15 @@
     },
     "keywords": {
       "type": "object",
-      "description": "A set of key-value pairs applied to all ad slots on the page.  Mapped to [buy-side segment targeting](https://learn.microsoft.com/en-us/xandr/monetize/segment-targeting) (login required). A maximum of 100 key/value pairs can be defined at the page level. Each tag can have up to 100 additional key/value pairs defined. Values can be empty. See [Passing Keys Without Values](#appnexus-no-value) below for examples. If you want to pass keywords for all adUnits, see [Auction Level Keywords](#appnexus-auction-keywords) for an example. Note that to use keyword with the Prebid Server adapter, that feature must be enabled for your account by an AppNexus account manager."
+      "description": "A set of key-value pairs applied to all ad slots on the page. Mapped to [buy-side segment targeting](https://learn.microsoft.com/en-us/xandr/monetize/segment-targeting) (login required). A maximum of 100 key/value pairs can be defined at the page level. Each tag can have up to 100 additional key/value pairs defined. Values can be empty. See [Passing Keys Without Values](#appnexus-no-value) below for examples. If you want to pass keywords for all adUnits, see [Auction Level Keywords](#appnexus-auction-keywords) for an example. Note that to use keyword with the Prebid Server adapter, that feature must be enabled for your account by an AppNexus account manager."
     },
     "video": {
       "type": "object",
-      "description": "Object containing video targeting parameters.  See [Video Object](#appnexus-video-object) for details."
+      "description": "Object containing video targeting parameters. See [Video Object](#appnexus-video-object) for details."
     },
     "app": {
       "type": "object",
-      "description": "Object containing mobile app parameters.  See the [App Object](#appnexus-app-object) for details."
+      "description": "Object containing mobile app parameters. See the [App Object](#appnexus-app-object) for details."
     },
     "reserve": {
       "type": "number",
@@ -75,7 +75,7 @@
     },
     "position": {
       "type": "string",
-      "description": "Identify the placement as above or below the fold.  Allowed values: Unknown: unknown; Above the fold: above; Below the fold: below"
+      "description": "Identify the placement as above or below the fold. Allowed values: Unknown: unknown; Above the fold: above; Below the fold: below"
     },
     "trafficSourceCode": {
       "type": "string",

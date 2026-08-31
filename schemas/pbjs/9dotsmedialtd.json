@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbjs/9dotsmedialtd.json",
+  "title": "9dots media LTD bidder params (Prebid.js)",
+  "description": "Generated from prebid.github.io dev-docs/bidders (9dotsmedialtd.md).",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/a7998e045c95618601270f08fc80d1501f0ffe35/dev-docs/bidders/9dotsmedialtd.md",
+  "type": "object",
+  "properties": {
+    "publisherId": {
+      "type": "string",
+      "description": "Publisher ID"
+    },
+    "custom1": {
+      "type": "string",
+      "description": "Custom targeting field 1"
+    },
+    "custom2": {
+      "type": "string",
+      "description": "Custom targeting field 2"
+    },
+    "custom3": {
+      "type": "string",
+      "description": "Custom targeting field 3"
+    },
+    "custom4": {
+      "type": "string",
+      "description": "Custom targeting field 4"
+    },
+    "custom5": {
+      "type": "string",
+      "description": "Custom targeting field 5"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "publisherId"
+  ]
+}
