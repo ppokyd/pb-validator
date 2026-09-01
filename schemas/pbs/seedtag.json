@@ -3,16 +3,38 @@
   "$id": "https://prebid.org/schemas/pbs/seedtag.json",
   "title": "Seedtag bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Seedtag adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/seedtag.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/8537cb10dc72944e64a287200b0e30a8c8be7b0c/static/bidder-params/seedtag.json",
   "type": "object",
   "properties": {
     "adUnitId": {
       "type": "string",
-      "description": "Ad Unit ID",
+      "description": "Ad Unit ID for the placement",
       "minLength": 1
+    },
+    "publisherId": {
+      "type": "string",
+      "description": "Publisher group ID for RON integration",
+      "minLength": 1
+    },
+    "integrationType": {
+      "type": "string",
+      "description": "Integration type. Use 'ronId' when integrating via publisherToken",
+      "enum": [
+        "ronId"
+      ]
     }
   },
-  "required": [
-    "adUnitId"
+  "oneOf": [
+    {
+      "required": [
+        "adUnitId"
+      ]
+    },
+    {
+      "required": [
+        "publisherId",
+        "integrationType"
+      ]
+    }
   ]
 }

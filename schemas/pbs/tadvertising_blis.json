@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/tadvertising_blis.json",
+  "title": "T-Advertising-Blis bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the T-Advertising-Blis adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/8537cb10dc72944e64a287200b0e30a8c8be7b0c/static/bidder-params/tadvertising_blis.json",
+  "type": "object",
+  "properties": {
+    "publisherId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 32,
+      "description": "Unique ID of the publisher/supply partner provided by T-Advertising"
+    }
+  },
+  "required": [
+    "publisherId"
+  ]
+}

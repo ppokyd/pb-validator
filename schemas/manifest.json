@@ -10,7 +10,7 @@
     "prebid_server": {
       "repo": "https://github.com/prebid/prebid-server",
       "path": "static/bidder-params",
-      "commit": "d7f8515b86258688304b0d9b6668c6a0e258bc9e",
+      "commit": "8537cb10dc72944e64a287200b0e30a8c8be7b0c",
       "note": "Updated by tools/sync-prebid-server from static/bidder-params."
     }
   },
@@ -38,24 +38,6 @@
     "9dotsmedia": {
       "pbjs": {
         "schema": "pbjs/9dotsmedia.json"
-      },
-      "pbs": null
-    },
-    "AdView": {
-      "pbjs": {
-        "schema": "pbjs/AdView.json"
-      },
-      "pbs": null
-    },
-    "CodeFuel": {
-      "pbjs": {
-        "schema": "pbjs/CodeFuel.json"
-      },
-      "pbs": null
-    },
-    "ProgrammaticX": {
-      "pbjs": {
-        "schema": "pbjs/ProgrammaticX.json"
       },
       "pbs": null
     },
@@ -104,12 +86,6 @@
     "ad2iction": {
       "pbjs": {
         "schema": "pbjs/ad2iction.json"
-      },
-      "pbs": null
-    },
-    "adWMG": {
-      "pbjs": {
-        "schema": null
       },
       "pbs": null
     },
@@ -585,6 +561,24 @@
         "schema": "pbs/adverxo.json"
       }
     },
+    "adview": {
+      "pbjs": null,
+      "pbs": {
+        "schema": "pbs/adview.json"
+      }
+    },
+    "AdView": {
+      "pbjs": {
+        "schema": "pbjs/AdView.json"
+      },
+      "pbs": null
+    },
+    "adWMG": {
+      "pbjs": {
+        "schema": null
+      },
+      "pbs": null
+    },
     "adxcg": {
       "pbjs": {
         "schema": "pbjs/adxcg.json"
@@ -757,18 +751,6 @@
       },
       "pbs": null
     },
-    "appMonstaMedia": {
-      "pbjs": {
-        "schema": null
-      },
-      "pbs": null
-    },
-    "appStockSSP": {
-      "pbjs": {
-        "schema": "pbjs/appStockSSP.json"
-      },
-      "pbs": null
-    },
     "appier": {
       "pbjs": {
         "schema": "pbjs/appier.json"
@@ -805,6 +787,12 @@
       },
       "pbs": null
     },
+    "appMonstaMedia": {
+      "pbjs": {
+        "schema": null
+      },
+      "pbs": null
+    },
     "appnexus": {
       "pbjs": {
         "schema": "pbjs/appnexus.json"
@@ -816,6 +804,12 @@
     "appstock": {
       "pbjs": {
         "schema": "pbjs/appstock.json"
+      },
+      "pbs": null
+    },
+    "appStockSSP": {
+      "pbjs": {
+        "schema": "pbjs/appStockSSP.json"
       },
       "pbs": null
     },
@@ -865,6 +859,12 @@
       },
       "pbs": null
     },
+    "audiencemedia": {
+      "pbjs": {
+        "schema": "pbjs/audiencemedia.json"
+      },
+      "pbs": null
+    },
     "audienceNetwork": {
       "pbjs": {
         "schema": "pbjs/audienceNetwork.json"
@@ -872,12 +872,6 @@
       "pbs": {
         "schema": "pbs/audienceNetwork.json"
       }
-    },
-    "audiencemedia": {
-      "pbjs": {
-        "schema": "pbjs/audiencemedia.json"
-      },
-      "pbs": null
     },
     "audiencerun": {
       "pbjs": {
@@ -904,6 +898,12 @@
         "schema": "pbjs/avct.json"
       },
       "pbs": null
+    },
+    "avocet": {
+      "pbjs": null,
+      "pbs": {
+        "schema": "pbs/avocet.json"
+      }
     },
     "axis": {
       "pbjs": {
@@ -953,6 +953,12 @@
       },
       "pbs": {
         "schema": "pbs/beintoo.json"
+      }
+    },
+    "bematterfull": {
+      "pbjs": null,
+      "pbs": {
+        "schema": "pbs/bematterfull.json"
       }
     },
     "beop": {
@@ -1015,6 +1021,12 @@
       },
       "pbs": {
         "schema": "pbs/bidmachine.json"
+      }
+    },
+    "bidmatic": {
+      "pbjs": null,
+      "pbs": {
+        "schema": "pbs/bidmatic.json"
       }
     },
     "bidmyadz": {
@@ -1161,6 +1173,12 @@
         "schema": "pbs/boldwin.json"
       }
     },
+    "boldwin_rapid": {
+      "pbjs": null,
+      "pbs": {
+        "schema": "pbs/boldwin_rapid.json"
+      }
+    },
     "brainx": {
       "pbjs": {
         "schema": null
@@ -1290,6 +1308,12 @@
       "pbs": {
         "schema": "pbs/clydo.json"
       }
+    },
+    "CodeFuel": {
+      "pbjs": {
+        "schema": "pbjs/CodeFuel.json"
+      },
+      "pbs": null
     },
     "cointraffic": {
       "pbjs": {
@@ -1507,6 +1531,12 @@
       },
       "pbs": null
     },
+    "decenterads": {
+      "pbjs": null,
+      "pbs": {
+        "schema": "pbs/decenterads.json"
+      }
+    },
     "deepintent": {
       "pbjs": {
         "schema": "pbjs/deepintent.json"
@@ -1573,15 +1603,15 @@
       },
       "pbs": null
     },
-    "digitalMatter": {
-      "pbjs": {
-        "schema": "pbjs/digitalMatter.json"
-      },
-      "pbs": null
-    },
     "digitalcaramel": {
       "pbjs": {
         "schema": "pbjs/digitalcaramel.json"
+      },
+      "pbs": null
+    },
+    "digitalMatter": {
+      "pbjs": {
+        "schema": "pbjs/digitalMatter.json"
       },
       "pbs": null
     },
@@ -1791,6 +1821,12 @@
         "schema": "pbs/emtv.json"
       }
     },
+    "emx_digital": {
+      "pbjs": null,
+      "pbs": {
+        "schema": "pbs/emx_digital.json"
+      }
+    },
     "engageadx": {
       "pbjs": {
         "schema": "pbjs/engageadx.json"
@@ -1855,7 +1891,9 @@
       "pbjs": {
         "schema": "pbjs/eskimi.json"
       },
-      "pbs": null
+      "pbs": {
+        "schema": "pbs/eskimi.json"
+      }
     },
     "etarget": {
       "pbjs": {
@@ -1888,6 +1926,12 @@
         "schema": "pbjs/eywamedia.json"
       },
       "pbs": null
+    },
+    "ezoic": {
+      "pbjs": null,
+      "pbs": {
+        "schema": "pbs/ezoic.json"
+      }
     },
     "fairtrade": {
       "pbjs": {
@@ -1966,6 +2010,12 @@
         "schema": "pbjs/freepass.json"
       },
       "pbs": null
+    },
+    "freewheelssp": {
+      "pbjs": null,
+      "pbs": {
+        "schema": "pbs/freewheelssp.json"
+      }
     },
     "frvradn": {
       "pbjs": {
@@ -2353,6 +2403,12 @@
         "schema": "pbs/intenze.json"
       }
     },
+    "interactiveoffers": {
+      "pbjs": null,
+      "pbs": {
+        "schema": "pbs/interactiveoffers.json"
+      }
+    },
     "interactiveOffers": {
       "pbjs": {
         "schema": "pbjs/interactiveOffers.json"
@@ -2471,6 +2527,12 @@
       },
       "pbs": {
         "schema": "pbs/kargo.json"
+      }
+    },
+    "kayzen": {
+      "pbjs": null,
+      "pbs": {
+        "schema": "pbs/kayzen.json"
       }
     },
     "kidoz": {
@@ -2737,15 +2799,15 @@
       },
       "pbs": null
     },
-    "mediaConsortium": {
-      "pbjs": {
-        "schema": null
-      },
-      "pbs": null
-    },
     "mediabrama": {
       "pbjs": {
         "schema": "pbjs/mediabrama.json"
+      },
+      "pbs": null
+    },
+    "mediaConsortium": {
+      "pbjs": {
+        "schema": null
       },
       "pbs": null
     },
@@ -3010,6 +3072,12 @@
         "schema": "pbjs/newspassid.json"
       },
       "pbs": null
+    },
+    "nextmillennium": {
+      "pbjs": null,
+      "pbs": {
+        "schema": "pbs/nextmillennium.json"
+      }
     },
     "nextMillennium": {
       "pbjs": {
@@ -3387,7 +3455,9 @@
       "pbjs": {
         "schema": null
       },
-      "pbs": null
+      "pbs": {
+        "schema": "pbs/pixfuture.json"
+      }
     },
     "playdigo": {
       "pbjs": {
@@ -3439,15 +3509,21 @@
       },
       "pbs": null
     },
-    "progX": {
-      "pbjs": {
-        "schema": "pbjs/progX.json"
-      },
-      "pbs": null
-    },
     "programmatica": {
       "pbjs": {
         "schema": "pbjs/programmatica.json"
+      },
+      "pbs": null
+    },
+    "ProgrammaticX": {
+      "pbjs": {
+        "schema": "pbjs/ProgrammaticX.json"
+      },
+      "pbs": null
+    },
+    "progX": {
+      "pbjs": {
+        "schema": "pbjs/progX.json"
       },
       "pbs": null
     },
@@ -3461,7 +3537,9 @@
       "pbjs": {
         "schema": "pbjs/proxistore.json"
       },
-      "pbs": null
+      "pbs": {
+        "schema": "pbs/proxistore.json"
+      }
     },
     "pstudio": {
       "pbjs": {
@@ -3789,13 +3867,13 @@
       },
       "pbs": null
     },
-    "robustApps": {
+    "robusta": {
       "pbjs": {
         "schema": null
       },
       "pbs": null
     },
-    "robusta": {
+    "robustApps": {
       "pbjs": {
         "schema": null
       },
@@ -3812,6 +3890,12 @@
         "schema": "pbjs/rockyou.json"
       },
       "pbs": null
+    },
+    "roulax": {
+      "pbjs": null,
+      "pbs": {
+        "schema": "pbs/roulax.json"
+      }
     },
     "roundel": {
       "pbjs": {
@@ -3855,7 +3939,9 @@
       "pbjs": {
         "schema": "pbjs/rtbstack.json"
       },
-      "pbs": null
+      "pbs": {
+        "schema": "pbs/rtbstack.json"
+      }
     },
     "rubicon": {
       "pbjs": {
@@ -3901,7 +3987,9 @@
       "pbjs": {
         "schema": "pbjs/scalibur.json"
       },
-      "pbs": null
+      "pbs": {
+        "schema": "pbs/scalibur.json"
+      }
     },
     "scattered": {
       "pbjs": {
@@ -4041,6 +4129,12 @@
       },
       "pbs": null
     },
+    "smartrtb": {
+      "pbjs": null,
+      "pbs": {
+        "schema": "pbs/smartrtb.json"
+      }
+    },
     "smartx": {
       "pbjs": {
         "schema": null
@@ -4139,6 +4233,12 @@
         "schema": "pbs/sovrn.json"
       }
     },
+    "sovrnXsp": {
+      "pbjs": null,
+      "pbs": {
+        "schema": "pbs/sovrnXsp.json"
+      }
+    },
     "sparteo": {
       "pbjs": {
         "schema": "pbjs/sparteo.json"
@@ -4165,6 +4265,12 @@
       },
       "pbs": null
     },
+    "ssp_geniee": {
+      "pbjs": {
+        "schema": "pbjs/ssp_geniee.json"
+      },
+      "pbs": null
+    },
     "sspBC": {
       "pbjs": {
         "schema": "pbjs/sspBC.json"
@@ -4173,17 +4279,13 @@
         "schema": "pbs/sspBC.json"
       }
     },
-    "ssp_geniee": {
-      "pbjs": {
-        "schema": "pbjs/ssp_geniee.json"
-      },
-      "pbs": null
-    },
     "stackadapt": {
       "pbjs": {
         "schema": "pbjs/stackadapt.json"
       },
-      "pbs": null
+      "pbs": {
+        "schema": "pbs/stackadapt.json"
+      }
     },
     "stailamedia": {
       "pbjs": {
@@ -4199,15 +4301,15 @@
         "schema": "pbs/startio.json"
       }
     },
-    "stellorMediaRtb": {
-      "pbjs": {
-        "schema": "pbjs/stellorMediaRtb.json"
-      },
-      "pbs": null
-    },
     "stellormedia": {
       "pbjs": {
         "schema": "pbjs/stellormedia.json"
+      },
+      "pbs": null
+    },
+    "stellorMediaRtb": {
+      "pbjs": {
+        "schema": "pbjs/stellorMediaRtb.json"
       },
       "pbs": null
     },
@@ -4279,6 +4381,12 @@
       },
       "pbs": null
     },
+    "synapseHX": {
+      "pbjs": null,
+      "pbs": {
+        "schema": "pbs/synapseHX.json"
+      }
+    },
     "taboola": {
       "pbjs": {
         "schema": "pbjs/taboola.json"
@@ -4292,6 +4400,12 @@
         "schema": null
       },
       "pbs": null
+    },
+    "tadvertising_blis": {
+      "pbjs": null,
+      "pbs": {
+        "schema": "pbs/tadvertising_blis.json"
+      }
     },
     "tagoras": {
       "pbjs": {
@@ -4323,7 +4437,9 @@
       "pbjs": {
         "schema": "pbjs/targetVideo.json"
       },
-      "pbs": null
+      "pbs": {
+        "schema": "pbs/targetVideo.json"
+      }
     },
     "teads": {
       "pbjs": {
@@ -4337,7 +4453,9 @@
       "pbjs": {
         "schema": "pbjs/teal.json"
       },
-      "pbs": null
+      "pbs": {
+        "schema": "pbs/teal.json"
+      }
     },
     "telaria": {
       "pbjs": {
@@ -4352,6 +4470,12 @@
         "schema": "pbjs/temedya.json"
       },
       "pbs": null
+    },
+    "teqblaze": {
+      "pbjs": null,
+      "pbs": {
+        "schema": "pbs/teqblaze.json"
+      }
     },
     "teqBlazeSalesAgent": {
       "pbjs": {
@@ -4384,6 +4508,12 @@
         "schema": "pbjs/themoneytizer.json"
       },
       "pbs": null
+    },
+    "thetradedesk": {
+      "pbjs": null,
+      "pbs": {
+        "schema": "pbs/thetradedesk.json"
+      }
     },
     "topon": {
       "pbjs": {
@@ -4814,6 +4944,12 @@
         "schema": null
       },
       "pbs": null
+    },
+    "xeworks": {
+      "pbjs": null,
+      "pbs": {
+        "schema": "pbs/xeworks.json"
+      }
     },
     "xtrmqb": {
       "pbjs": {

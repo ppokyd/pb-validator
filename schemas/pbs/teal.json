@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/teal.json",
+  "title": "Teal bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Teal adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/8537cb10dc72944e64a287200b0e30a8c8be7b0c/static/bidder-params/teal.json",
+  "type": "object",
+  "properties": {
+    "account": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Account ID"
+    },
+    "placement": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Placement ID or name (optional)"
+    }
+  },
+  "required": [
+    "account"
+  ]
+}

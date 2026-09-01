@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/pixfuture.json",
+  "title": "PixFuture bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the PixFuture adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/8537cb10dc72944e64a287200b0e30a8c8be7b0c/static/bidder-params/pixfuture.json",
+  "type": "object",
+  "properties": {
+    "pix_id": {
+      "type": "string",
+      "description": "PixFuture placement ID",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "pix_id"
+  ],
+  "additionalProperties": false
+}

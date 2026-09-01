@@ -3,7 +3,7 @@
   "$id": "https://prebid.org/schemas/pbs/zeroclickfraud.json",
   "title": "ZeroClickFraud bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the ZeroClickFraud adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/zeroclickfraud.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/8537cb10dc72944e64a287200b0e30a8c8be7b0c/static/bidder-params/zeroclickfraud.json",
   "type": "object",
   "properties": {
     "sourceId": {
@@ -13,7 +13,8 @@
     },
     "host": {
       "type": "string",
-      "description": "Network Host to request from"
+      "description": "Network Host to request from",
+      "pattern": "^[a-zA-Z0-9.-]+(:[0-9]+)?$"
     }
   },
   "required": [

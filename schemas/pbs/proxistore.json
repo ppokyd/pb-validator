@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/proxistore.json",
+  "title": "Proxistore bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Proxistore adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/8537cb10dc72944e64a287200b0e30a8c8be7b0c/static/bidder-params/proxistore.json",
+  "type": "object",
+  "properties": {
+    "website": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Publisher website identifier"
+    },
+    "language": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Language code (e.g., 'fr', 'en')"
+    }
+  },
+  "required": [
+    "website",
+    "language"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/rtbstack.json",
+  "title": "RTBStack bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the RTBStack adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/8537cb10dc72944e64a287200b0e30a8c8be7b0c/static/bidder-params/rtbstack.json",
+  "type": "object",
+  "properties": {
+    "route": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Full route URL used to derive RTBStack endpoint (contains region, client, endpoint, ssp)."
+    },
+    "tagId": {
+      "type": "string",
+      "description": "AdUnit tag id."
+    },
+    "customParams": {
+      "type": "object",
+      "description": "Custom values for targeting."
+    }
+  },
+  "required": [
+    "route",
+    "tagId"
+  ]
+}
