@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/stackadapt.json",
+  "title": "StackAdapt bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the StackAdapt adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/8537cb10dc72944e64a287200b0e30a8c8be7b0c/static/bidder-params/stackadapt.json",
+  "type": "object",
+  "properties": {
+    "publisherId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "An ID which identifies the publisher, provided by StackAdapt"
+    },
+    "supplyId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "An ID which identifies the supply source, provided by StackAdapt"
+    },
+    "placementId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "An ID which identifies the placement"
+    },
+    "banner": {
+      "type": "object",
+      "description": "Banner-specific parameters",
+      "properties": {
+        "expdir": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "description": "Expandable ad directions (1=left, 2=right, 3=up, 4=down, 5=fullscreen)"
+        }
+      }
+    },
+    "bidfloor": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Bid floor price in USD"
+    }
+  },
+  "required": [
+    "publisherId",
+    "supplyId"
+  ]
+}

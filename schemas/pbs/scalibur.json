@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/scalibur.json",
+  "title": "Scalibur bidder params (Prebid Server)",
+  "description": "A valid BidderParams object for the Scalibur adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/8537cb10dc72944e64a287200b0e30a8c8be7b0c/static/bidder-params/scalibur.json",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "bidfloor": {
+      "type": "number",
+      "minimum": 0
+    },
+    "bidfloorcur": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "placementId"
+  ]
+}

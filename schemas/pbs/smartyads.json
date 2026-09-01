@@ -3,12 +3,13 @@
   "$id": "https://prebid.org/schemas/pbs/smartyads.json",
   "title": "SmartyAds bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the SmartyAds adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/smartyads.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/8537cb10dc72944e64a287200b0e30a8c8be7b0c/static/bidder-params/smartyads.json",
   "type": "object",
   "properties": {
     "host": {
       "type": "string",
-      "description": "Network host to send request"
+      "description": "Network host to send request",
+      "pattern": "^[a-zA-Z0-9.-]+(:[0-9]+)?$"
     },
     "sourceid": {
       "type": "string",

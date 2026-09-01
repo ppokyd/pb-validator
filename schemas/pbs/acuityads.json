@@ -3,13 +3,14 @@
   "$id": "https://prebid.org/schemas/pbs/acuityads.json",
   "title": "AcuityAds bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the AcuityAds adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/acuityads.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/8537cb10dc72944e64a287200b0e30a8c8be7b0c/static/bidder-params/acuityads.json",
   "type": "object",
   "properties": {
     "host": {
       "type": "string",
       "description": "Network host to send request",
-      "minLength": 1
+      "minLength": 1,
+      "pattern": "^[a-zA-Z0-9.-]+(:[0-9]+)?$"
     },
     "accountid": {
       "type": "string",
