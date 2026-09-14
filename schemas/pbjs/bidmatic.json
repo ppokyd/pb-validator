@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbjs/bidmatic.json",
+  "title": "Bidmatic bidder params (Prebid.js)",
+  "description": "Generated from prebid.github.io dev-docs/bidders (bidmatic.md).",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/edab290c611a21bd8f88480ebcdd1f7c2d018649/dev-docs/bidders/bidmatic.md",
+  "type": "object",
+  "properties": {
+    "source": {
+      "type": "integer",
+      "description": "Traffic source origin id"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "source"
+  ]
+}

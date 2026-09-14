@@ -3,7 +3,7 @@
   "$id": "https://prebid.org/schemas/pbjs/stellormedia.json",
   "title": "StellorMedia bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (stellormedia.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/d3ff5e90f0abebdb8a36abb6dd3cba2be8c4c23c/dev-docs/bidders/stellormedia.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/edab290c611a21bd8f88480ebcdd1f7c2d018649/dev-docs/bidders/stellormedia.md",
   "type": "object",
   "properties": {
     "aid": {
