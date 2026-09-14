@@ -866,15 +866,6 @@ type PbsDeepintent struct {
 	TagId string `json:"tagId,omitempty"`
 }
 
-// PbsDefinemedia represents params for the "definemedia" bidder (pbs).
-// A schema which validates params accepted by the DM adapter
-type PbsDefinemedia struct {
-	// The adslot id. This is a unique identifier for your adslot and may change on subparts on a website. Please contact your account manager for more information.
-	AdslotId *int64 `json:"adslotId,omitempty"`
-	// The DEFINE-MEDIA mandant id. This is a unique identifier for your account. Please contact your account manager for more information.
-	MandantId int64 `json:"mandantId,omitempty"`
-}
-
 // PbsDianomi represents params for the "dianomi" bidder (pbs).
 // A schema which validates params accepted by the Dianomi adapter
 type PbsDianomi struct {
@@ -2173,17 +2164,6 @@ type PbsSparteo struct {
 	Custom5 *string `json:"custom5,omitempty"`
 	// Sparteo network ID. This information will be given to you by the Sparteo team.
 	NetworkId string `json:"networkId,omitempty"`
-}
-
-// PbsSspBC represents params for the "sspBC" bidder (pbs).
-// A schema which validates params accepted by the sspBC bid adapter
-type PbsSspBC struct {
-	// Identifier of adslot that the auction in running on
-	ID *string `json:"id,omitempty"`
-	// Identifier of site that is selling the impression
-	Siteid *string `json:"siteid,omitempty"`
-	// Switch that enables test responses
-	Test *int64 `json:"test,omitempty"`
 }
 
 // PbsStroeerCore represents params for the "stroeerCore" bidder (pbs).
