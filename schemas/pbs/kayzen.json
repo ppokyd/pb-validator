@@ -3,12 +3,13 @@
   "$id": "https://prebid.org/schemas/pbs/kayzen.json",
   "title": "Kayzen bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the Kayzen adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/kayzen.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/f660bedc03ef1a51f6af8dcd0dd6ab61e1d4c417/static/bidder-params/kayzen.json",
   "type": "object",
   "properties": {
     "zone": {
       "type": "string",
       "minLength": 1,
+      "pattern": "^[a-zA-Z0-9.-]+$",
       "description": "Zone ID"
     },
     "exchange": {
