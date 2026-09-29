@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/ezoic.json",
+  "title": "Ezoic bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Ezoic adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/8cf6dd22cb217f5d7bc52366880c0e7fb254e4db/static/bidder-params/ezoic.json",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": "string",
+      "description": "Optional placement identifier assigned during Ezoic onboarding"
+    }
+  },
+  "required": []
+}
