@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbjs/nexbid.json",
+  "title": "NexBid bidder params (Prebid.js)",
+  "description": "Generated from prebid.github.io dev-docs/bidders (nexbid.md).",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/5af8c50b4c3eff343a40036ab2501fabdc0486e0/dev-docs/bidders/nexbid.md",
+  "type": "object",
+  "properties": {
+    "publisherId": {
+      "type": "string",
+      "description": "NexBid publisher account identifier"
+    },
+    "placementId": {
+      "type": "string",
+      "description": "NexBid placement identifier"
+    },
+    "configId": {
+      "type": "string",
+      "description": "NexBid demand configuration identifier"
+    },
+    "test": {
+      "type": "boolean",
+      "description": "Enables the documented NexBid test placement only"
+    }
+  },
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "required": [
+        "publisherId"
+      ]
+    },
+    {
+      "required": [
+        "placementId"
+      ]
+    }
+  ]
+}
