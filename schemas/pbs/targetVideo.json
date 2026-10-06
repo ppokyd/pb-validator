@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/targetVideo.json",
+  "title": "TargetVideo bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the TargetVideo adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/fa73b89049767eaab6d9f48dc3b0a275db563233/static/bidder-params/targetVideo.json",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": [
+        "integer",
+        "string"
+      ],
+      "pattern": "^\\d+$",
+      "description": "An ID which identifies this placement of the impression"
+    }
+  },
+  "required": [
+    "placementId"
+  ]
+}
