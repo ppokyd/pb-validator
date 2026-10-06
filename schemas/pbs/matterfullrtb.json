@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/matterfullrtb.json",
+  "title": "Matterfull RTB bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Matterfull RTB adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/fa73b89049767eaab6d9f48dc3b0a275db563233/static/bidder-params/matterfullrtb.json",
+  "type": "object",
+  "properties": {
+    "pid": {
+      "type": "string",
+      "description": "Publisher token for the separately provisioned Matterfull RTB OpenRTB integration.",
+      "minLength": 20
+    }
+  },
+  "required": [
+    "pid"
+  ]
+}
