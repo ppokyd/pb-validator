@@ -3,7 +3,7 @@
   "$id": "https://prebid.org/schemas/pbjs/adot.json",
   "title": "Adot bidder params (Prebid.js)",
   "description": "Generated from prebid.github.io dev-docs/bidders (adot.md).",
-  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/d3ff5e90f0abebdb8a36abb6dd3cba2be8c4c23c/dev-docs/bidders/adot.md",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/4a8beee1884deadf174b92dd155045c3a7a0b53b/dev-docs/bidders/adot.md",
   "type": "object",
   "properties": {
     "placementId": {
@@ -12,7 +12,7 @@
     },
     "video": {
       "type": "object",
-      "description": "Object containing video targeting parameters. See [Video Object](#adot-video-object) for details."
+      "description": "Object containing video targeting parameters. See [Video Object](#video-object) for details."
     }
   },
   "additionalProperties": false
