@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/aps.json",
+  "title": "APS bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the APS adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/f1e9d0d2164e76a8bcb5f10021ebb56e00dbfe9a/static/bidder-params/aps.json",
+  "type": "object",
+  "properties": {
+    "accountID": {
+      "type": "string",
+      "description": "The APS publisher account id."
+    },
+    "region": {
+      "type": "string",
+      "enum": [
+        "na",
+        "eu",
+        "fe"
+      ],
+      "description": "APS regional S2S origin to route to. Optional; defaults to na."
+    }
+  },
+  "required": [
+    "accountID"
+  ]
+}
