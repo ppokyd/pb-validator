@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/peak226.json",
+  "title": "Peak226 bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Peak226 adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/f1e9d0d2164e76a8bcb5f10021ebb56e00dbfe9a/static/bidder-params/peak226.json",
+  "type": "object",
+  "properties": {
+    "publisherId": {
+      "type": "string",
+      "description": "Publisher/account ID",
+      "minLength": 1
+    },
+    "placementId": {
+      "type": "string",
+      "description": "Placement ID for this ad unit",
+      "minLength": 1
+    },
+    "region": {
+      "type": "string",
+      "description": "Data center to send the request to. Defaults to us.",
+      "enum": [
+        "us",
+        "eu",
+        "jp"
+      ]
+    }
+  },
+  "required": [
+    "publisherId",
+    "placementId"
+  ]
+}
