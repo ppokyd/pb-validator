@@ -1,9 +1,9 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://prebid.org/schemas/pbs/connectad.json",
-  "title": "ConnectAd S2S dapter Params bidder params (Prebid Server)",
+  "title": "ConnectAd S2S bidder params (Prebid Server)",
   "description": "A schema which validates params accepted by the ConnectAd Adapter",
-  "x-source-url": "https://github.com/prebid/prebid-server/blob/d7f8515b86258688304b0d9b6668c6a0e258bc9e/static/bidder-params/connectad.json",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/4239545b20e9ca4f6e7ff288738b37f7a57a691a/static/bidder-params/connectad.json",
   "type": "object",
   "properties": {
     "networkId": {
@@ -22,7 +22,11 @@
     },
     "bidfloor": {
       "type": "number",
-      "description": "Requests Floorprice"
+      "description": "Requested Floorprice"
+    },
+    "endpointUrl": {
+      "type": "string",
+      "description": "Client-side only (Prebid.js): override the bid endpoint URL for testing or a custom datacenter. Prebid Server always uses its configured endpoint and does not route based on this value; if present it may still be forwarded inside imp.ext.bidder."
     }
   },
   "required": [

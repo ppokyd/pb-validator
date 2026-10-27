@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/superedge.json",
+  "title": "SuperEdge bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the SuperEdge adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/4239545b20e9ca4f6e7ff288738b37f7a57a691a/static/bidder-params/superedge.json",
+  "type": "object",
+  "properties": {
+    "sk": {
+      "type": "string",
+      "description": "Publisher token, communicated by SuperEdge.",
+      "minLength": 1
+    },
+    "region": {
+      "type": "string",
+      "description": "Server region: US for US Region, EU for EU Region, SG for Singapore Region. Default is US.",
+      "enum": [
+        "US",
+        "EU",
+        "APAC"
+      ]
+    }
+  },
+  "required": [
+    "sk"
+  ],
+  "additionalProperties": false
+}

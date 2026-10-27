@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/viant.json",
+  "title": "Viant bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Viant adapter.",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/4239545b20e9ca4f6e7ff288738b37f7a57a691a/static/bidder-params/viant.json",
+  "type": "object",
+  "properties": {
+    "publisherId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Viant-assigned publisher ID."
+    }
+  },
+  "required": [
+    "publisherId"
+  ]
+}
