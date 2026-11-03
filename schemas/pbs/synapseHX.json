@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/synapseHX.json",
+  "title": "Synapse HX bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Synapse HX adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/361cd6c93d7e1212aa41c9584016659c50f0c13d/static/bidder-params/synapseHX.json",
+  "type": "object",
+  "properties": {
+    "tenantId": {
+      "type": "string",
+      "description": "Synapse HX tenant identifier",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "tenantId"
+  ]
+}
