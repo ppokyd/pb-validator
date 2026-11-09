@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbjs/viant.json",
+  "title": "Viant bidder params (Prebid.js)",
+  "description": "Generated from prebid.github.io dev-docs/bidders (viant.md).",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/4376a2186ec802fec2c95e63ce21230bef0149b0/dev-docs/bidders/viant.md",
+  "type": "object",
+  "properties": {
+    "publisherId": {
+      "type": "string",
+      "description": "Publisher ID assigned by Viant during onboarding."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "publisherId"
+  ]
+}
