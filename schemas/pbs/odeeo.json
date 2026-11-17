@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/odeeo.json",
+  "title": "Odeeo bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Odeeo adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/4e296450de2fcc62741340b2e5f7d1df6c1744a5/static/bidder-params/odeeo.json",
+  "type": "object",
+  "properties": {
+    "sp": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Odeeo Supply Partner ID"
+    },
+    "tk": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Odeeo-issued verification token"
+    }
+  },
+  "required": [
+    "sp",
+    "tk"
+  ]
+}
