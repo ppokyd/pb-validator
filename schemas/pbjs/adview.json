@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbjs/adview.json",
+  "title": "AdView bidder params (Prebid.js)",
+  "description": "Generated from prebid.github.io dev-docs/bidders (adview.md).",
+  "x-source-url": "https://github.com/prebid/prebid.github.io/blob/b20c83d5f4a623854b540d6907c97b40ec065e27/dev-docs/bidders/adview.md",
+  "type": "object",
+  "properties": {
+    "placementId": {
+      "type": "string",
+      "description": "Placement ID"
+    },
+    "accountId": {
+      "type": "string",
+      "description": "Account ID"
+    }
+  },
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "required": [
+        "placementId"
+      ]
+    },
+    {
+      "required": [
+        "accountId"
+      ]
+    }
+  ]
+}
