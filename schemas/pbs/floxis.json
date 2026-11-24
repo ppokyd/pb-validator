@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/floxis.json",
+  "title": "Floxis bidder params (Prebid Server)",
+  "description": "A schema which validates params accepted by the Floxis adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/0f7916bfd975b82a185e9677d8196d94b2ea4dcc/static/bidder-params/floxis.json",
+  "type": "object",
+  "properties": {
+    "seat": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The Floxis seat ID this publisher buys through"
+    }
+  },
+  "required": [
+    "seat"
+  ]
+}
