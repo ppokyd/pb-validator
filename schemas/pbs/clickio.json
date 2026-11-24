@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://prebid.org/schemas/pbs/clickio.json",
+  "title": "Clickio bidder params (Prebid Server)",
+  "description": "OpenRTB params for Clickio SSP adapter",
+  "x-source-url": "https://github.com/prebid/prebid-server/blob/0f7916bfd975b82a185e9677d8196d94b2ea4dcc/static/bidder-params/clickio.json",
+  "type": "object",
+  "properties": {
+    "said": {
+      "type": "string",
+      "description": "Ad unit identifier. Required for all requests."
+    },
+    "psid": {
+      "type": "string",
+      "description": "Optional preset identifier."
+    },
+    "template": {
+      "type": "string",
+      "description": "Optional template identifier."
+    }
+  },
+  "required": [
+    "said"
+  ],
+  "additionalProperties": false
+}
